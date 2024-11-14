@@ -1,0 +1,16 @@
+import requests
+
+# URL of the file
+url = 'https://open.canada.ca/data/en/datastore/dump/7c131a87-7784-4208-8e5c-043451240d95?bom=True'
+
+# Send HTTP GET request
+response = requests.get(url)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Save the content to a file
+    with open('infobase_en.csv', 'wb') as file:
+        file.write(response.content)
+    print('File downloaded successfully!')
+else:
+    print(f'Failed to download file. Status code: {response.status_code}')

@@ -1,0 +1,39 @@
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# URL of the page you want to scrape
+url = 'https://laws-lois.justice.gc.ca/eng/acts/F-11/page-19.html#h-230472'
+
+# Send an HTTP GET request to the URL
+response = requests.get(url)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Parse the content of the request with BeautifulSoup
+    soup = BeautifulSoup(response.content, 'html.parser')
+    
+    # Extract the sections containing the names
+    sections = soup.find_all('div', {'class': 'Section'})
+    
+    english_names = []
+    french_names = []
+    
+    for section in sections:
+        english_name = section.find('a', {'name': lambda x: x and x.startswith('sec')}).get_text(strip=True)
+        french_name = section.find('a', {'name': lambda x: x and x.startswith('sec_fr')}).get_text(strip=True)
+        
+        english_names.append(english_name)
+        french_names.append(french_name)
+    
+    # Create a DataFrame
+    data = {'English Name': english_names, 'French Name': french_names}
+    df = pd.DataFrame(data)
+    
+    # Print the DataFrame
+    print(df)
+    
+    # Save the DataFrame to a CSV file
+    df.to_csv('names.csv', index=False)
+else:
+    print(f'Failed to retrieve the page. Status code: {response.status_code}')

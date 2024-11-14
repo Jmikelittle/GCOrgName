@@ -28,14 +28,7 @@ if response.status_code == 200:
     root = ET.fromstring(response.content)
     
     # Remove namespaces
-    print("Removing namespaces...")
     remove_namespace(root, 'http://justice.gc.ca/lims')
-    
-    # Print the root element and its children to verify structure
-    print("Root element tag:", root.tag)
-    print("Root element children tags:")
-    for child in root:
-        print(child.tag)
     
     # Lists to hold English and French names
     english_names = []
@@ -43,41 +36,26 @@ if response.status_code == 200:
     
     # Find all Schedule elements
     schedules = root.findall('.//Schedule')
-    print(f"Found {len(schedules)} Schedule elements.")
 
     # Iterate through Schedule elements and look for BilingualGroup with id="230508"
-    for i, schedule in enumerate(schedules):
-        print(f"Inspecting Schedule {i + 1}...")
-        for elem in schedule.iter():
-            print(f"Tag: {elem.tag}, Attributes: {elem.attrib}")
-        
+    for schedule in schedules:
         section = schedule.find('.//BilingualGroup[@id="230508"]')
         
-        # Add a print statement for debugging
         if section is not None:
-            print("Section found: BilingualGroup[@id='230508']")
-            
             # Extract all BilingualItemEn and BilingualItemFr elements
             english_items = section.findall('.//BilingualItemEn')
             french_items = section.findall('.//BilingualItemFr')
             
             # Append the text content to the respective lists
             for item in english_items:
-                print("English item found:", item.text)
                 english_names.append(item.text)
             
             for item in french_items:
-                print("French item found:", item.text)
                 french_names.append(item.text)
-        else:
-            print("Section not found in this schedule.")
     
     # Create a DataFrame
     data = {'English Name': english_names, 'French Name': french_names}
     df = pd.DataFrame(data)
-    
-    # Print the DataFrame
-    print(df)
     
     # Save the DataFrame to a CSV file with UTF-8 encoding
     df.to_csv('FAA 2 names.csv', index=True, encoding='utf-8')

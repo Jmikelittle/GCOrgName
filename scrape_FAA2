@@ -56,7 +56,7 @@ if response.status_code == 200:
                 faa_values.append('2')
     
     # Create a DataFrame
-    data = {'English Name': english_names, 'French Name': french_names}
+    data = {'English Name': english_names, 'French Name': french_names, 'FAA': faa_values}
     df = pd.DataFrame(data)
     
     # Save the DataFrame to a CSV file with UTF-8 encoding

@@ -23,6 +23,8 @@ dfs = []
 for file in csv_files:
     try:
         df = pd.read_csv(file)
+        # Ensure all values in the 'FAA' column are strings
+        df['FAA'] = df['FAA'].astype(str)
         dfs.append(df)
         print(f"Successfully read {file}")
     except Exception as e:
@@ -33,20 +35,27 @@ if dfs:
     # Concatenate all DataFrames into one
     combined_df = pd.concat(dfs, ignore_index=True)
     
+    # Trim whitespace from English Name and French Name columns
+    combined_df['English Name'] = combined_df['English Name'].str.strip()
+    combined_df['French Name'] = combined_df['French Name'].str.strip()
+    
     # Define the priority order for the 'FAA' column
     priority_order = {'1': 1, '4': 2, '3': 3, '2': 4, 'i1': 5}
     
     # Map the priority order to a new column
     combined_df['priority'] = combined_df['FAA'].map(priority_order)
     
-    # Sort the DataFrame based on priority
-    combined_df = combined_df.sort_values(by='priority')
+    # Sort the DataFrame based on English Name, French Name, and priority
+    combined_df = combined_df.sort_values(by=['English Name', 'French Name', 'priority'])
     
-    # Drop duplicates, keeping the highest priority
+    # Drop duplicates based on English Name and French Name, keeping the highest priority
     combined_df = combined_df.drop_duplicates(subset=['English Name', 'French Name'], keep='first')
     
     # Drop the priority column as it's no longer needed
     combined_df = combined_df.drop(columns=['priority'])
+    
+    # Sort the DataFrame based on the 'FAA' field for readability
+    combined_df = combined_df.sort_values(by='FAA')
     
     # Save the combined DataFrame to a new CSV file with UTF-8 encoding
     combined_df.to_csv(os.path.join(script_folder, 'combined_FAA_names.csv'), index=False, encoding='utf-8-sig')

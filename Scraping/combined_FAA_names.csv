@@ -1,70 +1,5 @@
 ﻿Unnamed: 0,English Name,French Name,FAA
-0,Administrative Tribunals Support Service of Canada,Service canadien d’appui aux tribunaux administratifs,i1
-1,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,i1
-2,Canada Water Agency,Agence canadienne de l’eau,i1
-3,Canadian Grain Commission,Commission canadienne des grains,i1
-4,Canadian Human Rights Commission,Commission canadienne des droits de la personne,i1
-5,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes,i1
-6,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,i1
-7,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,i1
-8,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,i1
-9,Canadian Space Agency,Agence spatiale canadienne,i1
-10,Canadian Transportation Agency,Office des transports du Canada,i1
-11,Civilian Review and Complaints Commission for the Royal Canadian Mounted Police,Commission civile d’examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,i1
-12,Communications Security Establishment,Centre de la sécurité des télécommunications,i1
-13,Copyright Board,Commission du droit d’auteur,i1
-14,Correctional Service of Canada,Service correctionnel du Canada,i1
-15,Courts Administration Service,Service administratif des tribunaux judiciaires ,i1
-16,Economic Development Agency of Canada for the Regions of Quebec,Agence de développement économique du Canada pour les régions du Québec,i1
-17,Federal Economic Development Agency for Northern Ontario,Agence fédérale de développement économique pour le Nord de l’Ontario,i1
-18,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l’Ontario,i1
-19,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,i1
-20,Financial Transactions and Reports Analysis Centre of Canada,Centre d’analyse des opérations et déclarations financières du Canada,i1
-21,Immigration and Refugee Board,Commission de l’immigration et du statut de réfugié,i1
-22,Impact Assessment Agency of Canada,Agence canadienne d’évaluation d’impact,i1
-23,Leaders’ Debates Commission,Commission des débats des chefs,i1
-24,Library and Archives of Canada,Bibliothèque et Archives du Canada,i1
-25,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,i1
-26,Military Police Complaints Commission,Commission d’examen des plaintes concernant la police militaire,i1
-27,National Farm Products Council,Conseil national des produits agricoles,i1
-28,National Film Board,Office national du film,i1
-29,National Security and Intelligence Review Agency Secretariat,Secrétariat de l’Office de surveillance des activités en matière de sécurité nationale et de renseignement,i1
-30,Northern Pipeline Agency,Administration du pipe-line du Nord,i1
-31,Office of the Auditor General,Bureau du vérificateur général,i1
-32,Office of the Chief Electoral Officer,Bureau du directeur général des élections,i1
-33,Office of the Commissioner for Federal Judicial Affairs,Bureau du commissaire à la magistrature fédérale,i1
-34,Office of the Commissioner of Lobbying,Commissariat au lobbying,i1
-35,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,i1
-36,Office of the Correctional Investigator of Canada,Bureau de l’enquêteur correctionnel du Canada,i1
-37,Office of the Director of Public Prosecutions,Bureau du directeur des poursuites pénales,i1
-38,Office of the Governor General’s Secretary,Bureau du secrétaire du gouverneur général,i1
-39,Office of the Intelligence Commissioner,Bureau du commissaire au renseignement,i1
-40,Office of the Public Sector Integrity Commissioner,Commissariat à l’intégrité du secteur public,i1
-41,Office of the Superintendent of Financial Institutions,Bureau du surintendant des institutions financières,i1
-42,Offices of the Information and Privacy Commissioners of Canada,Commissariats à l’information et à la protection de la vie privée du Canada,i1
-43,Pacific Economic Development Agency of Canada,Agence de développement économique du Pacifique Canada,i1
-44,Parole Board of Canada,Commission des libérations conditionnelles du Canada,i1
-45,Patented Medicine Prices Review Board,Conseil d’examen du prix des médicaments brevetés,i1
-46,Privy Council Office,Bureau du Conseil privé,i1
-47,Public Health Agency of Canada,Agence de la santé publique du Canada,i1
-48,Public Service Commission,Commission de la fonction publique,i1
-49,Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act,Registraire de la Cour suprême du Canada et le secteur de l’administration publique fédérale nommé en vertu du paragraphe 12(2) de la Loi sur la Cour suprême,i1
-50,Royal Canadian Mounted Police,Gendarmerie royale du Canada,i1
-51,Royal Canadian Mounted Police External Review Committee,Comité externe d’examen de la Gendarmerie royale du Canada,i1
-52,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,i1
-53,Shared Services Canada,Services partagés Canada,i1
-54,Statistics Canada,Statistique Canada,i1
-55,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel),i1
-0,Department for Women and Gender Equality,Ministère des Femmes et de l’Égalité des genres,1
-1,Department of Agriculture and Agri-Food,Ministère de l’Agriculture et de l’Agroalimentaire,1
-2,Department of Canadian Heritage,Ministère du Patrimoine canadien,1
-3,Department of Citizenship and Immigration,Ministère de la Citoyenneté et de l’Immigration,1
-4,Department of Crown-Indigenous Relations and Northern Affairs,Ministère des Relations Couronne-Autochtones et des Affaires du Nord,1
-5,Department of Employment and Social Development,Ministère de l’Emploi et du Développement social,1
-6,Department of Finance,Ministère des Finances,1
-7,Department of Fisheries and Oceans,Ministère des Pêches et des Océans,1
-8,"Department of Foreign Affairs, Trade and Development","Ministère des Affaires étrangères, du Commerce et du Développement",1
-9,Department of Health,Ministère de la Santé,1
+21,Department of Veterans Affairs,Ministère des Anciens Combattants,1
 10,"Department of Housing, Infrastructure and Communities","Ministère du Logement, de l’Infrastructure et des Collectivités",1
 11,Department of Indigenous Services,Ministère des Services aux Autochtones,1
 12,Department of Industry,Ministère de l’Industrie,1
@@ -73,77 +8,139 @@
 15,Department of Natural Resources,Ministère des Ressources naturelles,1
 16,Department of Public Safety and Emergency Preparedness,Ministère de la Sécurité publique et de la Protection civile,1
 17,Department of Public Works and Government Services,Ministère des Travaux publics et des Services gouvernementaux,1
-18,Department of the Environment,Ministère de l’Environnement,1
 19,Department of Transport,Ministère des Transports,1
-20,Treasury Board,Conseil du Trésor,1
-21,Department of Veterans Affairs,Ministère des Anciens Combattants,1
+9,Department of Health,Ministère de la Santé,1
 22,Department of Western Economic Diversification,Ministère de la Diversification de l’économie de l’Ouest canadien,1
-0,Canada Border Services Agency,Agence des services frontaliers du Canada,2
-1,Canada Emission Reduction Incentives Agency,Agence canadienne pour l’incitation à la réduction des émissions,2
-2,Canada Employment Insurance Commission,Commission de l’assurance-emploi du Canada,2
-3,Canada Revenue Agency,Agence du revenu du Canada,2
-4,Canada School of Public Service,École de la fonction publique du Canada,2
-5,Canadian Accessibility Standards Development Organization ,Organisation canadienne d’élaboration de normes d’accessibilité,2
-6,Canadian Centre for Occupational Health and Safety,Centre canadien d’hygiène et de sécurité au travail,2
-7,Canadian Energy Regulator,Régie canadienne de l’énergie,2
-8,Canadian Food Inspection Agency,Agence canadienne d’inspection des aliments,2
-9,Canadian High Arctic Research Station,Station canadienne de recherche dans l’Extrême-Arctique,2
-10,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada,2
+18,Department of the Environment,Ministère de l’Environnement,1
+7,Department of Fisheries and Oceans,Ministère des Pêches et des Océans,1
+8,"Department of Foreign Affairs, Trade and Development","Ministère des Affaires étrangères, du Commerce et du Développement",1
+6,Department of Finance,Ministère des Finances,1
+5,Department of Employment and Social Development,Ministère de l’Emploi et du Développement social,1
+4,Department of Crown-Indigenous Relations and Northern Affairs,Ministère des Relations Couronne-Autochtones et des Affaires du Nord,1
+0,Department for Women and Gender Equality,Ministère des Femmes et de l’Égalité des genres,1
+1,Department of Agriculture and Agri-Food,Ministère de l’Agriculture et de l’Agroalimentaire,1
+2,Department of Canadian Heritage,Ministère du Patrimoine canadien,1
+20,Treasury Board,Conseil du Trésor,1
+3,Department of Citizenship and Immigration,Ministère de la Citoyenneté et de l’Immigration,1
 11,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire,2
-12,Canadian Transportation Accident Investigation and Safety Board,Bureau canadien d’enquête sur les accidents de transport et de la sécurité des transports,2
-13,Invest in Canada Hub,Investir au Canada,2
-14,Law Commission of Canada,Commission du droit du Canada,2
-15,The National Battlefields Commission,Commission des champs de bataille nationaux,2
 16,National Research Council of Canada,Conseil national de recherches du Canada,2
-17,Natural Sciences and Engineering Research Council,Conseil de recherches en sciences naturelles et en génie,2
-18,Parks Canada Agency,Agence Parcs Canada,2
 19,Social Sciences and Humanities Research Council,Conseil de recherches en sciences humaines,2
-0,Atlantic Pilotage Authority,Administration de pilotage de l’Atlantique,3
-1,Atomic Energy of Canada Limited,"Énergie atomique du Canada, Limitée",3
-2,Business Development Bank of Canada,Banque de développement du Canada,3
-3,Canada Deposit Insurance Corporation,Société d’assurance-dépôts du Canada,3
-4,Canada Infrastructure Bank,Banque de l’infrastructure du Canada,3
-5,Canada Lands Company Limited,Société immobilière du Canada Limitée,3
-6,Canada Mortgage and Housing Corporation,Société canadienne d’hypothèques et de logement,3
-7,Canada Post Corporation,Société canadienne des postes,3
-8,Canadian Air Transport Security Authority,Administration canadienne de la sûreté du transport aérien,3
-9,Canadian Commercial Corporation,Corporation commerciale canadienne,3
-10,Canadian Dairy Commission,Commission canadienne du lait,3
-11,Canadian Museum for Human Rights,Musée canadien des droits de la personne,3
-12,Canadian Museum of History,Musée canadien de l’histoire,3
-13,Canadian Museum of Immigration at Pier 21,Musée canadien de l’immigration du Quai 21,3
-14,Canadian Museum of Nature,Musée canadien de la nature,3
-15,Canadian Tourism Commission,Commission canadienne du tourisme,3
-16,Defence Construction (1951) Limited,Construction de défense (1951) Limitée,3
-17,Export Development Canada,Exportation et développement Canada,3
+10,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada,2
+9,Canadian High Arctic Research Station,Station canadienne de recherche dans l’Extrême-Arctique,2
+13,Invest in Canada Hub,Investir au Canada,2
+18,Parks Canada Agency,Agence Parcs Canada,2
+7,Canadian Energy Regulator,Régie canadienne de l’énergie,2
+2,Canada Employment Insurance Commission,Commission de l’assurance-emploi du Canada,2
+17,Natural Sciences and Engineering Research Council,Conseil de recherches en sciences naturelles et en génie,2
+6,Canadian Centre for Occupational Health and Safety,Centre canadien d’hygiène et de sécurité au travail,2
+15,The National Battlefields Commission,Commission des champs de bataille nationaux,2
+3,Canada Revenue Agency,Agence du revenu du Canada,2
+8,Canadian Food Inspection Agency,Agence canadienne d’inspection des aliments,2
+31,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit,3
 18,Farm Credit Canada,Financement agricole Canada,3
-19,The Federal Bridge Corporation Limited,La Société des ponts fédéraux Limitée,3
 20,Freshwater Fish Marketing Corporation,Office de commercialisation du poisson d’eau douce,3
 21,Great Lakes Pilotage Authority,Administration de pilotage des Grands Lacs,3
-22,The Jacques-Cartier and Champlain Bridges Inc.,Les Ponts Jacques-Cartier et Champlain Inc.,3
 23,Laurentian Pilotage Authority,Administration de pilotage des Laurentides,3
-24,Marine Atlantic Inc.,Marine Atlantique S.C.C.,3
-25,National Capital Commission,Commission de la capitale nationale,3
-26,National Gallery of Canada,Musée des beaux-arts du Canada,3
 27,National Museum of Science and Technology,Musée national des sciences et de la technologie,3
+26,National Gallery of Canada,Musée des beaux-arts du Canada,3
+24,Marine Atlantic Inc.,Marine Atlantique S.C.C.,3
+17,Export Development Canada,Exportation et développement Canada,3
+16,Defence Construction (1951) Limited,Construction de défense (1951) Limitée,3
 28,Pacific Pilotage Authority,Administration de pilotage du Pacifique,3
+25,National Capital Commission,Commission de la capitale nationale,3
+19,The Federal Bridge Corporation Limited,La Société des ponts fédéraux Limitée,3
+6,Canada Mortgage and Housing Corporation,Société canadienne d’hypothèques et de logement,3
+8,Canadian Air Transport Security Authority,Administration canadienne de la sûreté du transport aérien,3
+9,Canadian Commercial Corporation,Corporation commerciale canadienne,3
+5,Canada Lands Company Limited,Société immobilière du Canada Limitée,3
 29,Standards Council of Canada,Conseil canadien des normes,3
+11,Canadian Museum for Human Rights,Musée canadien des droits de la personne,3
+22,The Jacques-Cartier and Champlain Bridges Inc.,Les Ponts Jacques-Cartier et Champlain Inc.,3
+13,Canadian Museum of Immigration at Pier 21,Musée canadien de l’immigration du Quai 21,3
+14,Canadian Museum of Nature,Musée canadien de la nature,3
+12,Canadian Museum of History,Musée canadien de l’histoire,3
+4,Canada Infrastructure Bank,Banque de l’infrastructure du Canada,3
+15,Canadian Tourism Commission,Commission canadienne du tourisme,3
+3,Canada Deposit Insurance Corporation,Société d’assurance-dépôts du Canada,3
+2,Business Development Bank of Canada,Banque de développement du Canada,3
+1,Atomic Energy of Canada Limited,"Énergie atomique du Canada, Limitée",3
+0,Atlantic Pilotage Authority,Administration de pilotage de l’Atlantique,3
 30,VIA Rail Canada Inc.,VIA Rail Canada Inc.,3
-31,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit,3
-2,Canada Border Services Agency ,Agence des services frontaliers du Canada,4
-3,Canada Border Services Agency ,Agence des services frontaliers du Canada ,4
+7,Canada Post Corporation,Société canadienne des postes,3
+36,Office of the Chief Electoral Officer,Bureau du directeur général des élections,4
+48,The portion of the federal public administration in the Office of the Chief Electoral Officer in which the employees referred to in section 509.3 of the,Le secteur de l’administration publique fédérale faisant partie du bureau du directeur général des élections dans lequel les employés visés à l’article 509.3 de la,4
+38,Office of the Commissioner of Lobbying,Commissariat au lobbying,4
+39,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,4
+40,Office of the Director of Public Prosecutions,Bureau du directeur des poursuites pénales,4
+41,Office of the Governor General’s Secretary,Secrétariat du gouverneur général,4
+37,Office of the Commissioner for Federal Judicial Affairs,Bureau du commissaire à la magistrature fédérale,4
+46,Parole Board of Canada,Commission des libérations conditionnelles du Canada,4
+43,Office of the Superintendent of Bankruptcy,Bureau du surintendant des faillites,4
+47,Patented Medicine Prices Review Board,Conseil d’examen du prix des médicaments brevetés,4
+49,Prairie Farm Rehabilitation Administration,Administration du rétablissement agricole des Prairies,4
+50,Privy Council Office,Bureau du Conseil privé,4
+51,Public Health Agency of Canada,Agence de la santé publique du Canada,4
+52,Public Service Commission,Commission de la fonction publique,4
+53,Royal Canadian Mounted Police,Gendarmerie royale du Canada,4
+42,Office of the Public Sector Integrity Commissioner,Commissariat à l’intégrité du secteur public,4
+54,Royal Canadian Mounted Police External Review Committee,Comité externe d’examen de la Gendarmerie royale du Canada,4
+56,Shared Services Canada,Services partagés Canada,4
+57,Staff of the Supreme Court,Personnel de la Cour suprême,4
+58,Statistics Canada,Statistique Canada,4
+23,"The Director, The Veterans’ Land Act",Directeur des terres destinées aux anciens combattants,4
+35,National Farm Products Council,Conseil national des produits agricoles,4
+44,Offices of the Information and Privacy Commissioners of Canada,Commissariats à l’information et à la protection de la vie privée du Canada,4
+55,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,4
+45,Pacific Economic Development Agency of Canada,Agence de développement économique du Pacifique Canada,4
+0,Administrative Tribunals Support Service of Canada,Service canadien d’appui aux tribunaux administratifs,4
+33,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,4
+34,Military Police Complaints Commission,Commission d’examen des plaintes concernant la police militaire,4
+19,Copyright Board,Commission du droit d’auteur,4
 18,Communication Canada,Communication Canada,4
+17,Civilian Review and Complaints Commission for the Royal Canadian Mounted Police,Commission civile d’examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,4
+16,Canadian Transportation Agency,Office des transports du Canada,4
+15,Canadian Transportation Accident Investigation and Safety Board,Bureau canadien d’enquête sur les accidents de transport et de la sécurité des transports,4
+14,Canadian Space Agency,Agence spatiale canadienne,4
+13,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,4
+12,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,4
+11,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes,4
+10,Canadian Human Rights Commission,Commission canadienne des droits de la personne,4
+9,Canadian Grain Commission,Commission canadienne des grains,4
+8,Canadian Dairy Commission,Commission canadienne du lait,4
+7,Canadian Accessibility Standards Development Organization,Organisation canadienne d’élaboration de normes d’accessibilité,4
+6,Canada Water Agency,Agence canadienne de l’eau,4
+5,Canada School of Public Service,École de la fonction publique du Canada,4
+4,Canada Emission Reduction Incentives Agency,Agence canadienne pour l’incitation à la réduction des émissions,4
+2,Canada Border Services Agency,Agence des services frontaliers du Canada,4
+1,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,4
 21,Courts Administration Service,Service administratif des tribunaux judiciaires,4
 22,Director of Soldier Settlement,Directeur de l’établissement de soldats,4
-23,"The Director, The Veterans’ Land Act",Directeur des terres destinées aux anciens combattants,4
-25,Energy Supplies Allocation Board,Office de répartition des approvisionnements d’énergie,4
+20,Correctional Service of Canada,Service correctionnel du Canada,4
+29,Impact Assessment Agency of Canada,Agence canadienne d’évaluation d’impact,4
+32,Library and Archives of Canada,Bibliothèque et Archives du Canada,4
+31,Law Commission of Canada,Commission du droit du Canada,4
 30,International Joint Commission (Canadian Section),Commission mixte internationale (section canadienne),4
-41,Office of the Governor General’s Secretary,Secrétariat du gouverneur général,4
-43,Office of the Superintendent of Bankruptcy,Bureau du surintendant des faillites,4
-48,The portion of the federal public administration in the Office of the Chief Electoral Officer in which the employees referred to in section 509.3 of the ,Le secteur de l’administration publique fédérale faisant partie du bureau du directeur général des élections dans lequel les employés visés à l’article 509.3 de la ,4
-49,Prairie Farm Rehabilitation Administration,Administration du rétablissement agricole des Prairies,4
-57,Staff of the Supreme Court,Personnel de la Cour suprême,4
+24,Economic Development Agency of Canada for the Regions of Quebec,Agence de développement économique du Canada pour les régions du Québec,4
+28,Immigration and Refugee Board,Commission de l’immigration et du statut de réfugié,4
+25,Energy Supplies Allocation Board,Office de répartition des approvisionnements d’énergie,4
+59,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel),4
+27,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l’Ontario,4
+26,Federal Economic Development Agency for Northern Ontario,Agence fédérale de développement économique pour le Nord de l’Ontario,4
 0,Canada Investment and Savings,Placements Épargne Canada,5
 11,Indian Oil and Gas Canada,Pétrole et gaz des Indiens Canada,5
-19,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,5
 25,"Staff of the Non-Public Funds, Canadian Forces","Personnel des fonds non publics, Forces canadiennes",5
+19,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,5
+19,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,i1
+28,National Film Board,Office national du film,i1
+23,Leaders’ Debates Commission,Commission des débats des chefs,i1
+29,National Security and Intelligence Review Agency Secretariat,Secrétariat de l’Office de surveillance des activités en matière de sécurité nationale et de renseignement,i1
+39,Office of the Intelligence Commissioner,Bureau du commissaire au renseignement,i1
+31,Office of the Auditor General,Bureau du vérificateur général,i1
+38,Office of the Governor General’s Secretary,Bureau du secrétaire du gouverneur général,i1
+12,Communications Security Establishment,Centre de la sécurité des télécommunications,i1
+8,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,i1
+20,Financial Transactions and Reports Analysis Centre of Canada,Centre d’analyse des opérations et déclarations financières du Canada,i1
+49,Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act,Registraire de la Cour suprême du Canada et le secteur de l’administration publique fédérale nommé en vertu du paragraphe 12(2) de la Loi sur la Cour suprême,i1
+36,Office of the Correctional Investigator of Canada,Bureau de l’enquêteur correctionnel du Canada,i1
+30,Northern Pipeline Agency,Administration du pipe-line du Nord,i1
+41,Office of the Superintendent of Financial Institutions,Bureau du surintendant des institutions financières,i1

@@ -32,6 +32,7 @@ if response.status_code == 200:
     # Lists to hold the data
     divisions_en = []
     divisions_fr = []
+    faa_values = []
 
     # Find the tbody element with lims:id="230503"
     tbody = root.find('.//tbody[@id="230503"]')
@@ -48,9 +49,10 @@ if response.status_code == 200:
             if division_en and division_fr:
                 divisions_en.append(division_en)
                 divisions_fr.append(division_fr)
+                faa_values.append('i1')
 
     # Create a DataFrame
-    data = {'English Division': divisions_en, 'French Division': divisions_fr}
+    data = {'English Division': divisions_en, 'French Division': divisions_fr, 'FAA': faa_values}
     df = pd.DataFrame(data)
     
     # Save the DataFrame to a CSV file with UTF-8 encoding

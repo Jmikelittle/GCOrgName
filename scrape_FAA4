@@ -52,12 +52,13 @@ if response.status_code == 200:
             
             for item in french_items:
                 french_names.append(item.text)
+                faa_values.append('4')
     
     # Create a DataFrame
     data = {'English Name': english_names, 'French Name': french_names}
     df = pd.DataFrame(data)
     
     # Save the DataFrame to a CSV file with UTF-8 encoding
-    df.to_csv('FAA 4 names.csv', index=True, encoding='utf-8')
+    df.to_csv('FAA 4 names.csv', index=True, encoding='utf-8-sig')
 else:
     print(f'Failed to retrieve the XML file. Status code: {response.status_code}')

@@ -29,34 +29,31 @@ if response.status_code == 200:
     # Remove namespaces
     remove_namespace(root, 'http://justice.gc.ca/lims')
     
-    # Lists to hold English and French names
-    english_names = []
-    french_names = []
-    
-    # Find all Schedule elements
-    schedules = root.findall('.//Schedule')
+    # Lists to hold the data
+    divisions_en = []
+    divisions_fr = []
 
-    # Iterate through Schedule elements and look for BilingualGroup with id="230503"
-    for schedule in schedules:
-        section = schedule.find('.//BilingualGroup[@id="230503"]')
-        
-        if section is not None:
-            # Extract all BilingualItemEn and BilingualItemFr elements
-            english_items = section.findall('.//BilingualItemEn')
-            french_items = section.findall('.//BilingualItemFr')
-            
-            # Append the text content to the respective lists
-            for item in english_items:
-                english_names.append(item.text)
-            
-            for item in french_items:
-                french_names.append(item.text)
+    # Find the tbody element with lims:id="230503"
+    tbody = root.find('.//tbody[@id="230503"]')
     
+    if tbody is not None:
+        # Iterate through each row in the tbody
+        for row in tbody.findall('.//row'):
+            # Extract English and French division names
+            division_entry_en = row.find('.//BilingualGroup//BilingualItemEn')
+            division_entry_fr = row.find('.//BilingualGroup//BilingualItemFr')
+            division_en = division_entry_en.text if division_entry_en is not None else None
+            division_fr = division_entry_fr.text if division_entry_fr is not None else None
+            
+            if division_en and division_fr:
+                divisions_en.append(division_en)
+                divisions_fr.append(division_fr)
+
     # Create a DataFrame
-    data = {'English Name': english_names, 'French Name': french_names}
+    data = {'English Division': divisions_en, 'French Division': divisions_fr}
     df = pd.DataFrame(data)
     
     # Save the DataFrame to a CSV file with UTF-8 encoding
-    df.to_csv('names.csv', index=True, encoding='utf-8')
+    df.to_csv('FAA i1 names.csv', index=True, encoding='utf-8-sig')
 else:
     print(f'Failed to retrieve the XML file. Status code: {response.status_code}')

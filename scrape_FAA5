@@ -33,7 +33,8 @@ if response.status_code == 200:
     # Lists to hold English and French names
     english_names = []
     french_names = []
-    
+    faa_values = []
+     
     # Find all Schedule elements
     schedules = root.findall('.//Schedule')
 

@@ -1,10 +1,19 @@
-import pandas as pd
+import os
 import glob
+import pandas as pd
 
-# List of CSV files to combine
-csv_files = glob.glob('FAA*.csv')
+# Path to the 'Scraping' folder
+scraping_folder = os.path.join(os.getcwd(), 'Scraping')
 
-# Check which files are found
+# Print the current working directory and the path to the 'Scraping' folder
+print("Current Working Directory:", os.getcwd())
+print("Scraping Folder Path:", scraping_folder)
+
+# List all files in the 'Scraping' folder
+print("Files in the Scraping Folder:", os.listdir(scraping_folder))
+
+# List CSV files matching the pattern 'FAA*.csv' in the 'Scraping' folder
+csv_files = glob.glob(os.path.join(scraping_folder, 'FAA*.csv'))
 print("CSV files found:", csv_files)
 
 # List to hold individual DataFrames
@@ -25,7 +34,7 @@ if dfs:
     combined_df = pd.concat(dfs, ignore_index=True)
     
     # Save the combined DataFrame to a new CSV file with UTF-8 encoding
-    combined_df.to_csv('combined_FAA_names.csv', index=False, encoding='utf-8-sig')
+    combined_df.to_csv(os.path.join(scraping_folder, 'combined_FAA_names.csv'), index=False, encoding='utf-8-sig')
     
     print("All CSV files have been combined into combined_FAA_names.csv")
 else:

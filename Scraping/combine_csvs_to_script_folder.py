@@ -22,14 +22,16 @@ dfs = []
 # Function to remove specific values from the DataFrame
 def remove_specific_values(df, filename):
     if filename == 'FAA 4 names.csv':
+        # Remove specific long entry
+        df = df[df['English Name'].str.strip() != "The portion of the federal public administration in the Office of the Chief Electoral Officer in which the employees referred to in section 509.3 of the"]
         df = df[df['English Name'] != "Office of the Governor General’s Secretary"]
         df = df[df['English Name'] != "Staff of the Supreme Court"]
-        df = df[df['English Name'] != "The portion of the federal public administration in the Office of the Chief Electoral Officer in which the employees referred to in section 509.3 of the"]
         df = df[df['English Name'] != "Offices of the Information and Privacy Commissioners of Canada"]
     elif filename == 'FAA 5 names.csv':
         df = df[df['English Name'] != "Office of the Auditor General of Canada"]
     elif filename == 'FAA i1 names.csv':
         df = df[df['English Name'] != "Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act"]
+        df = df[df['English Name'] != "Offices of the Information and Privacy Commissioners of Canada"]
     return df
 
 # Read each CSV file, filter out specific values, and append to the list of DataFrames

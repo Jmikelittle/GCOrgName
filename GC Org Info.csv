@@ -1,4 +1,4 @@
-﻿GC OrgID,Organization Legal Name English,Organization Legal Name French
+GC OrgID,Organization Legal Name English,Organization Legal Name French
 2222,Department of Agriculture and Agri-Food,Ministère de l’Agriculture et de l’Agroalimentaire
 2223,Department of Canadian Heritage,Ministère du Patrimoine canadien
 2224,Department of Citizenship and Immigration,Ministère de la Citoyenneté et de l'Immigration
@@ -47,7 +47,7 @@
 2267,Parole Board of Canada,Commission des libérations conditionnelles du Canada
 2268,Northern Pipeline Agency,Administration du pipe-line du Nord
 2269,"Department of Housing, Infrastructure and Communities","Ministère du Logement, de l’Infrastructure et des Collectivités"
-2270,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada
+2270,Office of the Auditor General,Bureau du vérificateur général
 2271,Office of the Chief Electoral Officer,Bureau du directeur général des élections
 2272,Office of the Commissioner for Federal Judicial Affairs,Commissariat à la magistrature fédérale
 2273,Office of the Commissioner of Lobbying,Commissariat au lobbying
@@ -385,5 +385,3 @@
 3700,The Halifax 2011 Canada Games Host Society,Société d’accueil des Jeux de 2011 de Halifax
 3701,Prince George 2015 Canada Winter Games Host Society,Société hôtesse des Jeux d'hiver du Canada Prince George 2015
 3702,2010 Games Operating Trust Society,Société du legs des Jeux de 2010
-3703,Canada Water Agency,Agence canadienne de l’eau
-3704,Treasury Board,Conseil du Trésor

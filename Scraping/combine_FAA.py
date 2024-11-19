@@ -23,6 +23,10 @@ dfs = []
 for file in csv_files:
     try:
         df = pd.read_csv(file)
+        
+        # Replace typographic apostrophes with standard apostrophes and trim whitespace in all string columns
+        df = df.apply(lambda x: x.str.replace('’', "'").str.strip() if x.dtype == "object" else x)
+        
         dfs.append(df)
         print(f"Successfully read {file}")
     except Exception as e:
@@ -34,7 +38,7 @@ if dfs:
     combined_df = pd.concat(dfs, ignore_index=True)
     
     # Save the combined DataFrame to a new CSV file with UTF-8 encoding
-    combined_df.to_csv(os.path.join(scraping_folder, 'combined_FAA_names.csv'), index=False, encoding='utf-8-sig')
+    combined_df.to_csv(os.path.join(scraping_folder, 'combined_FAA_names1.csv'), index=False, encoding='utf-8-sig')
     
     print("All CSV files have been combined into combined_FAA_names.csv")
 else:

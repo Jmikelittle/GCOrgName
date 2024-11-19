@@ -256,8 +256,7 @@
 3416.0,North Portage Development Corporation (operating as The Forks North Portage Partnership),North Portage Development Corporation (exploitée sous le nom de The Forks North Portage Partnership),,,,0
 2268.0,Northern Pipeline Agency,Administration du pipe-line du Nord,Administration du pipe-line du Nord,i1,Northern Pipeline Agency,0
 3581.0,Occupational Health and Safety Tribunal Canada,Tribunal de santé et sécurité au travail Canada,,,,0
-,Office of the Auditor General,,Bureau du vérificateur général,i1,Office of the Auditor General,0
-2270.0,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,,,,0
+2270.0,Office of the Auditor General,Bureau du vérificateur général,Bureau du vérificateur général,i1,Office of the Auditor General,0
 2271.0,Office of the Chief Electoral Officer,Bureau du directeur général des élections,Bureau du directeur général des élections,4,Office of the Chief Electoral Officer,0
 3582.0,Office of the Chief Military Judge,Le cabinet du juge militaire en chef,,,,0
 3611.0,Office of the Chief Science Advisor of Canada,Bureau du conseiller scientifique en chef du Canada,,,,0
@@ -270,11 +269,11 @@
 2277.0,Office of the Director of Public Prosecutions,Bureau du directeur des poursuites pénales,Bureau du directeur des poursuites pénales,4,Office of the Director of Public Prosecutions,0
 3571.0,Office of the Federal Ombudsperson for Victims Of Crime,Bureau de l'ombudsman fédéral des victimes d'actes criminels,,,,0
 2278.0,Office of the Governor General's Secretary,Bureau du secrétaire du gouverneur général,Bureau du secrétaire du gouverneur général,i1,Office of the Governor General's Secretary,0
-2281.0,Office of the Information Commissioner,Commissariat à l'information au Canada,,,,0
+2281.0,Office of the Information Commissioner,Commissariat à l'information au Canada,Commissariat à l'information au Canada,4,Office of the Information Commissioner,0
 2275.0,Office of the Intelligence Commissioner,Bureau du commissaire au renseignement,Bureau du commissaire au renseignement,i1,Office of the Intelligence Commissioner,0
 3583.0,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,Bureau de l'ombudsman de la Défense nationale et des Forces armées canadiennes,,,,0
 3433.0,Office of the Parliamentary Budget Officer,Bureau du directeur parlementaire du budget,,,,0
-2282.0,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,,,,0
+2282.0,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,Commissariat à la protection de la vie privée du Canada,4,Office of the Privacy Commissioner of Canada,0
 3585.0,Office of the Procurement Ombudsman,Bureau de l'ombudsman de l'approvisionnement,,,,0
 2279.0,Office of the Public Sector Integrity Commissioner,Commissariat à l'intégrité du secteur public,Commissariat à l'intégrité du secteur public,4,Office of the Public Sector Integrity Commissioner,0
 3418.0,Office of the Superintendent of Bankruptcy,Bureau du surintendant des faillites,Bureau du surintendant des faillites,4,Office of the Superintendent of Bankruptcy,0
@@ -282,7 +281,7 @@
 3594.0,Office of the Taxpayers' Ombudsperson,Bureau de l'ombudsman des contribuables,,,,0
 3688.0,Office of the Umpire,Bureau du juge-arbitre,,,,0
 3595.0,Office of the Veterans' Ombudsman,Bureau de l'ombud des vétérans,,,,0
-,Offices of the Information and Privacy Commissioners of Canada,,Commissariats à l'information et à la protection de la vie privée du Canada,4,Offices of the Information and Privacy Commissioners of Canada,0
+,Offices of the Information and Privacy Commissioners of Canada,,Commissariats à l'information et à la protection de la vie privée du Canada,i1,Offices of the Information and Privacy Commissioners of Canada,0
 3689.0,Old Port of Montreal Corporation Inc.,Société du Vieux-Port de Montréal Inc.,,,,0
 3481.0,Oshawa Port Authority,Administration portuaire d'Oshawa,,,,0
 3482.0,Ottawa International Airport Authority,Administration de l'aéroport international d'Ottawa,,,,0
@@ -322,7 +321,6 @@
 3490.0,Québec Port Authority,Administration portuaire de Québec,,,,0
 3491.0,Regina Airport Authority Inc.,Regina Airport Authority Inc.,,,,0
 2287.0,Registrar of the Supreme Court of Canada,Registraire de la Cour suprême du Canada,,,,0
-,Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act,,Registraire de la Cour suprême du Canada et le secteur de l'administration publique fédérale nommé en vertu du paragraphe 12(2) de la Loi sur la Cour suprême,i1,Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act,0
 3694.0,Registry of the Competition Tribunal,Greffe du Tribunal de la concurrence,,,,0
 3695.0,Registry of the Public Servants Disclosure Protection Tribunal,Greffe du Tribunal de la protection des fonctionnaires divulgateurs d'actes répréhensibles,,,,0
 3696.0,Registry of the Specific Claims Tribunal,Greffe du Tribunal des revendications particulières,,,,0
@@ -352,7 +350,6 @@
 3500.0,St. John's Port Authority,Administration portuaire de St. John's,,,,0
 3501.0,St. Lawrence Seaway Management Corporation,Corporation de gestion de la Voie maritime du Saint-Laurent,,,,0
 3425.0,"Staff of the Non-Public Funds, Canadian Forces","Personnel des fonds non publics, Forces canadiennes","Personnel des fonds non publics, Forces canadiennes",5,"Staff of the Non-Public Funds, Canadian Forces",0
-,Staff of the Supreme Court,,Personnel de la Cour suprême,4,Staff of the Supreme Court,0
 3648.0,Standards Council of Canada,Conseil canadien des normes,Conseil canadien des normes,3,Standards Council of Canada,0
 2293.0,Statistics Canada,Statistique Canada,Statistique Canada,4,Statistics Canada,0
 3426.0,Statistics Survey Operations,Opérations des enquêtes statistiques,,,,0

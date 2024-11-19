@@ -46,6 +46,9 @@ if not unmatched_in_combined_faa.empty:
     print("Values in 'combined_FAA_names.csv' not found in 'Manual org ID link.csv':")
     print(unmatched_in_combined_faa['Organization Legal Name English'].to_list())
 
+# Sort the joined DataFrame alphabetically based on the 'Organization Legal Name English' field
+joined_df = joined_df.sort_values(by='Organization Legal Name English')
+
 # Save the joined DataFrame to a new CSV file with UTF-8 encoding
 output_file = os.path.join(script_folder, 'verify org ID with FAA.csv')
 joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')

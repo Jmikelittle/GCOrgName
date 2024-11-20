@@ -7,10 +7,12 @@ script_folder = os.path.dirname(os.path.abspath(__file__))
 # Paths to the CSV files
 manual_org_file = os.path.join(script_folder, 'Manual org ID link.csv')
 combined_faa_file = os.path.join(script_folder, 'Scraping', 'combined_FAA_names.csv')
+applied_en_file = os.path.join(script_folder, 'applied_en.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)
 combined_faa_df = pd.read_csv(combined_faa_file)
+applied_en_df = pd.read_csv(applied_en_file)
 
 # Remove the 'Unnamed: 0' field if it exists
 if 'Unnamed: 0' in combined_faa_df.columns:
@@ -19,6 +21,7 @@ if 'Unnamed: 0' in combined_faa_df.columns:
 # Replace typographic apostrophes with standard apostrophes and trim whitespace in all string columns
 manual_org_df = manual_org_df.apply(lambda x: x.str.replace('’', "'").str.strip() if x.dtype == "object" else x)
 combined_faa_df = combined_faa_df.apply(lambda x: x.str.replace('’', "'").str.strip() if x.dtype == "object" else x)
+applied_en_df = applied_en_df.apply(lambda x: x.str.replace('’', "'").str.strip() if x.dtype == "object" else x)
 
 # Preserve the original 'English Name' column
 combined_faa_df['Original English Name'] = combined_faa_df['English Name']
@@ -46,11 +49,14 @@ if not unmatched_in_combined_faa.empty:
     print("Values in 'combined_FAA_names.csv' not found in 'Manual org ID link.csv':")
     print(unmatched_in_combined_faa['Organization Legal Name English'].to_list())
 
-# Sort the joined DataFrame alphabetically based on the 'Organization Legal Name English' field
-joined_df = joined_df.sort_values(by='Organization Legal Name English')
+# Join with applied_en_df on 'Legal Title' and 'Organization Legal Name English'
+final_joined_df = pd.merge(joined_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal Title', how='outer')
 
-# Save the joined DataFrame to a new CSV file with UTF-8 encoding
-output_file = os.path.join(script_folder, 'verify org ID with FAA.csv')
-joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
+# Sort the final joined DataFrame alphabetically based on the 'Organization Legal Name English' field
+final_joined_df = final_joined_df.sort_values(by='Organization Legal Name English')
 
-print(f"The joined DataFrame has been saved to {output_file}")
+# Save the final joined DataFrame to a new CSV file with UTF-8 encoding
+output_file = os.path.join(script_folder, 'verify org ID with FAA and applied_en.csv')
+final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
+
+print(f"The final joined DataFrame has been saved to {output_file}")

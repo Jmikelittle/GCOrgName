@@ -49,8 +49,8 @@ if not unmatched_in_combined_faa.empty:
     print("Values in 'combined_FAA_names.csv' not found in 'Manual org ID link.csv':")
     print(unmatched_in_combined_faa['Organization Legal Name English'].to_list())
 
-# Join with applied_en_df on 'Legal Title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(joined_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal Title', how='outer')
+# Join with applied_en_df on 'Legal title' and 'Organization Legal Name English'
+final_joined_df = pd.merge(joined_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='outer')
 
 # Sort the final joined DataFrame alphabetically based on the 'Organization Legal Name English' field
 final_joined_df = final_joined_df.sort_values(by='Organization Legal Name English')

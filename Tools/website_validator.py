@@ -1,5 +1,6 @@
 import requests
 import csv
+import os
 
 def check_websites_from_csv(file_path):
     invalid_websites = []
@@ -17,8 +18,14 @@ def check_websites_from_csv(file_path):
                 invalid_websites.append(website)
     return invalid_websites
 
+# Get the directory of the current script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the full path to the websites.csv file
+file_path = os.path.join(current_dir, 'websites.csv')
+
 # Check the validity of websites listed in websites.csv
-invalid_websites = check_websites_from_csv('websites.csv')
+invalid_websites = check_websites_from_csv(file_path)
 
 print("Invalid websites:")
 for website in invalid_websites:

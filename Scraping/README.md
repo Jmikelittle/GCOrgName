@@ -12,5 +12,5 @@ Verified Schedules
 | i.1 | Verified     |
 | 2    | Verified   |
 | 3  | Broken   |
-| 4 | ?    |
-| 5   | ?  |
+| 4 | Verified    |
+| 5   | Verified  |

@@ -50,8 +50,35 @@ joined_df = joined_df[joined_df['Names Match'] == 0]
 # Join with applied_en_df on 'Legal title' and 'Organization Legal Name English'
 final_joined_df = pd.merge(joined_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='outer')
 
-# Sort the final joined DataFrame alphabetically based on the 'Organization Legal Name English' field
-final_joined_df = final_joined_df.sort_values(by='Organization Legal Name English')
+# Set the field 'GC OrgID' so that there are no decimals
+final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]
+
+# Rename fields as specified
+final_joined_df = final_joined_df.rename(columns={
+    'Organization Legal Name English': 'legal_title',
+    'Organization Legal Name French': 'appellation_légale',
+    'FAA': 'FAA_LGFP',
+    'Applied title': 'preferred_name',
+    "Titre d'usage": 'nom_préféré',
+    'Abbreviation': 'abbreviation',
+    'Abreviation': 'abreviation'
+})
+
+# Remove specified fields from the final output
+fields_to_remove = [
+    'French Name', 
+    'Original English Name', 
+    'Names Match', 
+    'FAA/LGFP', 
+    'Legal title', 
+    'Appellation legale', 
+    'Footnote', 
+    'Note de bas de page'
+]
+final_joined_df = final_joined_df.drop(columns=fields_to_remove, errors='ignore')
+
+# Sort the final joined DataFrame by GC OrgID from lowest to highest
+final_joined_df = final_joined_df.sort_values(by='GC OrgID')
 
 # Save the final joined DataFrame to a new CSV file with UTF-8 encoding
 output_file = os.path.join(script_folder, 'verify org ID with FAA and applied_en.csv')

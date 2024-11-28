@@ -20,8 +20,8 @@ def standardize_text(df):
 manual_org_df = standardize_text(manual_org_df)
 applied_en_df = standardize_text(applied_en_df)
 
-# Perform an inner join on the 'Organization Legal Name English' column from manual_org_df and 'Legal title' column from applied_en_df
-joined_df = pd.merge(manual_org_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='inner')
+# Perform a left join to include all entries from manual_org_df and only matching entries from applied_en_df
+joined_df = pd.merge(manual_org_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='left')
 
 # Create the 'preferred_name' field
 joined_df['preferred_name'] = joined_df['Applied title']

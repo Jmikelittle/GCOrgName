@@ -7,12 +7,10 @@ script_folder = os.path.dirname(os.path.abspath(__file__))
 # Paths to the CSV files
 manual_org_file = os.path.join(script_folder, 'Manual org ID link.csv')
 combined_faa_file = os.path.join(script_folder, 'Scraping', 'combined_FAA_names.csv')
-applied_en_file = os.path.join(script_folder, 'applied_en.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)
 combined_faa_df = pd.read_csv(combined_faa_file)
-applied_en_df = pd.read_csv(applied_en_file)
 
 # Remove the 'Unnamed: 0' field if it exists
 if 'Unnamed: 0' in combined_faa_df.columns:
@@ -25,7 +23,6 @@ def standardize_text(df):
 # Apply the function to all dataframes
 manual_org_df = standardize_text(manual_org_df)
 combined_faa_df = standardize_text(combined_faa_df)
-applied_en_df = standardize_text(applied_en_df)
 
 # Preserve the original 'English Name' column
 combined_faa_df['Original English Name'] = combined_faa_df['English Name']
@@ -47,42 +44,30 @@ unmatched_values = joined_df[joined_df['Names Match'] == 1]
 # Remove unmatched values from the joined DataFrame
 joined_df = joined_df[joined_df['Names Match'] == 0]
 
-# Join with applied_en_df on 'Legal title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(joined_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='outer')
-
 # Set the field 'GC OrgID' so that there are no decimals
-final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]
+joined_df['GC OrgID'] = joined_df['GC OrgID'].astype(str).str.split('.').str[0]
 
 # Rename fields as specified
-final_joined_df = final_joined_df.rename(columns={
+joined_df = joined_df.rename(columns={
     'Organization Legal Name English': 'legal_title',
     'Organization Legal Name French': 'appellation_légale',
-    'FAA': 'FAA_LGFP',
-    'Applied title': 'preferred_name',
-    "Titre d'usage": 'nom_préféré',
-    'Abbreviation': 'abbreviation',
-    'Abreviation': 'abreviation'
+    'FAA': 'FAA_LGFP'
 })
 
 # Remove specified fields from the final output
 fields_to_remove = [
     'French Name', 
     'Original English Name', 
-    'Names Match', 
-    'FAA/LGFP', 
-    'Legal title', 
-    'Appellation legale', 
-    'Footnote', 
-    'Note de bas de page'
+    'Names Match'
 ]
-final_joined_df = final_joined_df.drop(columns=fields_to_remove, errors='ignore')
+joined_df = joined_df.drop(columns=fields_to_remove, errors='ignore')
 
 # Sort the final joined DataFrame by GC OrgID from lowest to highest
-final_joined_df = final_joined_df.sort_values(by='GC OrgID')
+joined_df = joined_df.sort_values(by='GC OrgID')
 
 # Save the final joined DataFrame to a new CSV file with UTF-8 encoding
-output_file = os.path.join(script_folder, 'verify org ID with FAA and applied_en.csv')
-final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
+output_file = os.path.join(script_folder, 'verify org ID with FAA.csv')
+joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
 # Save the unmatched values to a separate CSV file with UTF-8 encoding
 unmatched_output_file = os.path.join(script_folder, 'unmatched_org_IDs.csv')

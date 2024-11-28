@@ -67,6 +67,9 @@ final_joined_df.loc[final_joined_df['nom_harmonisé'].isna(), 'nom_harmonisé'] 
 # Set the field 'GC OrgID' so that there are no decimals
 final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]
 
+# Rename 'GC OrgID' to 'gc_orgID'
+final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID'})
+
 # Rename 'Status' to 'status_statut' and set value to 'a' if empty
 final_joined_df = final_joined_df.rename(columns={'Status': 'status_statut'})
 final_joined_df['status_statut'] = final_joined_df['status_statut'].fillna('a')
@@ -75,8 +78,8 @@ final_joined_df['status_statut'] = final_joined_df['status_statut'].fillna('a')
 final_joined_df = final_joined_df.rename(columns={'End date': 'end_date_fin'})
 final_joined_df['end_date_fin'] = final_joined_df['end_date_fin'].replace('.', '')
 
-# Remove rows where 'GC OrgID' is NaN
-final_joined_df = final_joined_df.dropna(subset=['GC OrgID'])
+# Remove rows where 'gc_orgID' is NaN
+final_joined_df = final_joined_df.dropna(subset=['gc_orgID'])
 
 # Rename fields as specified
 final_joined_df = final_joined_df.rename(columns={
@@ -103,11 +106,17 @@ fields_to_remove = [
 ]
 final_joined_df = final_joined_df.drop(columns=fields_to_remove, errors='ignore')
 
-# Sort the final joined DataFrame by GC OrgID from lowest to highest
-final_joined_df = final_joined_df.sort_values(by='GC OrgID')
+# Reorder the fields
+ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'legal_title', 'appellation_légale', 
+                  'preferred_name', 'nom_préféré', 'abbreviation', 'abreviation', 'FAA_LGFP', 
+                  'status_statut', 'end_date_fin']
+final_joined_df = final_joined_df[ordered_fields]
+
+# Sort the final joined DataFrame by gc_orgID from lowest to highest
+final_joined_df = final_joined_df.sort_values(by='gc_orgID')
 
 # Save the final joined DataFrame to a new CSV file with UTF-8 encoding
-output_file = os.path.join(script_folder, 'verify org ID with FAA and applied_en.csv')
+output_file = os.path.join(script_folder, 'GC Org Info.csv')
 final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
 # Save the unmatched values to a separate CSV file with UTF-8 encoding

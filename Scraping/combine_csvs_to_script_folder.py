@@ -75,7 +75,7 @@ if dfs:
     combined_df['French Name'] = combined_df['French Name'].str.replace('’', "'").str.strip()
     
     # Define the priority order for the 'FAA' column
-    priority_order = {'1': 1, '4': 2, '3': 3, '2': 4, 'i1': 5, '5': 6}
+    priority_order = {'1': 1, 'i1': 2, '4': 3, '2': 4, '3': 5, '5': 6}
     
     # Map the priority order to a new column
     combined_df['priority'] = combined_df['FAA'].map(priority_order)

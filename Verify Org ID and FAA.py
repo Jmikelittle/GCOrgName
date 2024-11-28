@@ -18,10 +18,14 @@ applied_en_df = pd.read_csv(applied_en_file)
 if 'Unnamed: 0' in combined_faa_df.columns:
     combined_faa_df = combined_faa_df.drop(columns=['Unnamed: 0'])
 
-# Replace typographic apostrophes with standard apostrophes and trim whitespace in all string columns
-manual_org_df = manual_org_df.apply(lambda x: x.str.replace('’', "'").str.strip() if x.dtype == "object" else x)
-combined_faa_df = combined_faa_df.apply(lambda x: x.str.replace('’', "'").str.strip() if x.dtype == "object" else x)
-applied_en_df = applied_en_df.apply(lambda x: x.str.replace('’', "'").str.strip() if x.dtype == "object" else x)
+# Function to replace typographic apostrophes and non-breaking hyphens with standard ones
+def standardize_text(df):
+    return df.apply(lambda x: x.str.replace('’', "'").str.replace('\u2011', '-').str.strip() if x.dtype == "object" else x)
+
+# Apply the function to all dataframes
+manual_org_df = standardize_text(manual_org_df)
+combined_faa_df = standardize_text(combined_faa_df)
+applied_en_df = standardize_text(applied_en_df)
 
 # Preserve the original 'English Name' column
 combined_faa_df['Original English Name'] = combined_faa_df['English Name']
@@ -37,26 +41,52 @@ joined_df['Names Match'] = joined_df.apply(
     lambda row: 0 if pd.notna(row['Organization Legal Name English']) else 1, axis=1
 )
 
-# Print notifications for unmatched values
-unmatched_in_manual_org = joined_df[joined_df['Names Match'] == 1][['Organization Legal Name English']]
-unmatched_in_combined_faa = joined_df[joined_df['Names Match'] == 1][['Organization Legal Name English']]
+# Separate unmatched values into a different DataFrame
+unmatched_values = joined_df[joined_df['Names Match'] == 1]
 
-if not unmatched_in_manual_org.empty:
-    print("Values in 'Manual org ID link.csv' not found in 'combined_FAA_names.csv':")
-    print(unmatched_in_manual_org['Organization Legal Name English'].to_list())
-
-if not unmatched_in_combined_faa.empty:
-    print("Values in 'combined_FAA_names.csv' not found in 'Manual org ID link.csv':")
-    print(unmatched_in_combined_faa['Organization Legal Name English'].to_list())
+# Remove unmatched values from the joined DataFrame
+joined_df = joined_df[joined_df['Names Match'] == 0]
 
 # Join with applied_en_df on 'Legal title' and 'Organization Legal Name English'
 final_joined_df = pd.merge(joined_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='outer')
 
-# Sort the final joined DataFrame alphabetically based on the 'Organization Legal Name English' field
-final_joined_df = final_joined_df.sort_values(by='Organization Legal Name English')
+# Set the field 'GC OrgID' so that there are no decimals
+final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]
+
+# Rename fields as specified
+final_joined_df = final_joined_df.rename(columns={
+    'Organization Legal Name English': 'legal_title',
+    'Organization Legal Name French': 'appellation_légale',
+    'FAA': 'FAA_LGFP',
+    'Applied title': 'preferred_name',
+    "Titre d'usage": 'nom_préféré',
+    'Abbreviation': 'abbreviation',
+    'Abreviation': 'abreviation'
+})
+
+# Remove specified fields from the final output
+fields_to_remove = [
+    'French Name', 
+    'Original English Name', 
+    'Names Match', 
+    'FAA/LGFP', 
+    'Legal title', 
+    'Appellation legale', 
+    'Footnote', 
+    'Note de bas de page'
+]
+final_joined_df = final_joined_df.drop(columns=fields_to_remove, errors='ignore')
+
+# Sort the final joined DataFrame by GC OrgID from lowest to highest
+final_joined_df = final_joined_df.sort_values(by='GC OrgID')
 
 # Save the final joined DataFrame to a new CSV file with UTF-8 encoding
 output_file = os.path.join(script_folder, 'verify org ID with FAA and applied_en.csv')
 final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
+# Save the unmatched values to a separate CSV file with UTF-8 encoding
+unmatched_output_file = os.path.join(script_folder, 'unmatched_org_IDs.csv')
+unmatched_values.to_csv(unmatched_output_file, index=False, encoding='utf-8-sig')
+
 print(f"The final joined DataFrame has been saved to {output_file}")
+print(f"The unmatched values have been saved to {unmatched_output_file}")

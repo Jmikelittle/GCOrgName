@@ -23,13 +23,13 @@ applied_en_df = standardize_text(applied_en_df)
 # Perform a left join to include all entries from manual_org_df and only matching entries from applied_en_df
 joined_df = pd.merge(manual_org_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='left')
 
-# Create the 'preferred_name' field
-joined_df['preferred_name'] = joined_df['Applied title']
-joined_df.loc[joined_df['preferred_name'].isna(), 'preferred_name'] = joined_df['Organization Legal Name English']
+# Create the 'harmonized_name' field
+joined_df['harmonized_name'] = joined_df['Applied title']
+joined_df.loc[joined_df['harmonized_name'].isna(), 'harmonized_name'] = joined_df['Organization Legal Name English']
 
-# Create the 'nom_préféré' field
-joined_df['nom_préféré'] = joined_df["Titre d'usage"]
-joined_df.loc[joined_df['nom_préféré'].isna(), 'nom_préféré'] = joined_df['Organization Legal Name French']
+# Create the 'nom_harmonisé' field
+joined_df['nom_harmonisé'] = joined_df["Titre d'usage"]
+joined_df.loc[joined_df['nom_harmonisé'].isna(), 'nom_harmonisé'] = joined_df['Organization Legal Name French']
 
 # Set the field 'GC OrgID' so that there are no decimals
 joined_df['GC OrgID'] = joined_df['GC OrgID'].astype(str).str.split('.').str[0]

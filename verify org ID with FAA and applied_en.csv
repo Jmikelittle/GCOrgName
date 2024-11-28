@@ -1,394 +1,389 @@
-﻿GC OrgID,legal_title,appellation_légale,FAA_LGFP,preferred_name,nom_préféré,abbreviation,abreviation
-2222,Department of Agriculture and Agri-Food,Ministère de l'Agriculture et de l'Agroalimentaire,1,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,AAFC,AAC
-2223,Department of Canadian Heritage,Ministère du Patrimoine canadien,1,Canadian Heritage,Patrimoine canadien,PCH,PCH
-2224,Department of Citizenship and Immigration,Ministère de la Citoyenneté et de l'Immigration,1,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",IRCC,IRCC
-2225,Department of Finance,Ministère des Finances,1,Department of Finance Canada,Ministère des Finances Canada,FIN,FIN
-2226,Department of Fisheries and Oceans,Ministère des Pêches et des Océans,1,Fisheries and Oceans Canada,Pêches et Océans Canada,DFO,MPO
-2227,"Department of Foreign Affairs, Trade and Development","Ministère des Affaires étrangères, du Commerce et du Développement",1,Global Affairs Canada,Affaires mondiales Canada,GAC,AMC
-2228,Department of Health,Ministère de la Santé,1,Health Canada,Santé Canada,HC,SC
-2229,Department of Employment and Social Development,Ministère de l'Emploi et du Développement social,1,Employment and Social Development Canada,Emploi et Développement social Canada,ESDC,EDSC
-2230,Department of Crown-Indigenous Relations and Northern Affairs,Ministère des Relations Couronne-Autochtones et des Affaires du Nord,1,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada,CIRNAC,RCAANC
-2231,Department of Industry,Ministère de l'Industrie,1,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",ISED,ISDE
-2232,Department of Justice,Ministère de la Justice,1,Department of Justice Canada,Ministère de la Justice Canada,JUS,JUS
-2233,Department of National Defence,Ministère de la Défense nationale,1,National Defence,Défense nationale,DND,MDN
-2234,Department of Natural Resources,Ministère des Ressources naturelles,1,Natural Resources Canada,Ressources naturelles Canada,NRCan,RNCan
-2235,Department of Public Safety and Emergency Preparedness,Ministère de la Sécurité publique et de la Protection civile,1,Public Safety Canada,Sécurité publique Canada,PS,SP
-2236,Department of Public Works and Government Services,Ministère des Travaux publics et des Services gouvernementaux,1,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,PSPC,SPAC
-2237,Department of the Environment,Ministère de l'Environnement,1,Environment and Climate Change Canada,Environnement et Changement climatique Canada,ECCC,ECCC
-2238,Department of Transport,Ministère des Transports,1,Transport Canada,Transports Canada,TC,TC
-2239,Department of Veterans Affairs,Ministère des Anciens Combattants,1,Veterans Affairs Canada,Anciens Combattants Canada,VAC,ACC
-2240,Department of Western Economic Diversification,Ministère de la Diversification de l'économie de l'Ouest canadien,1,Prairies Economic Development Canada,Développement économique Canada pour les Prairies,PrairiesCan,PrairiesCan
-2241,Department for Women and Gender Equality,Ministère des Femmes et de l'Égalité des genres,1,Women and Gender Equality Canada,Femmes et Égalité des genres Canada,WAGE,FEGC
-2242,Treasury Board Secretariat,Secrétariat du Conseil du Trésor,,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada,TBS,SCT
-2243,Department of Indigenous Services,Ministère des Services aux Autochtones,1,Indigenous Services Canada,Services aux Autochtones Canada,ISC,SAC
-2244,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,i1,,,ACOA,APECA
-2245,Impact Assessment Agency of Canada,Agence canadienne d'évaluation d'impact,i1,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada,IAAC,AEIC
-2246,Canadian Grain Commission,Commission canadienne des grains,i1,,,CGC,CCG
-2247,Canadian Human Rights Commission,Commission canadienne des droits de la personne,i1,,,CHRC,CCDP
-2248,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes,i1,,,CICS,SCIC
-2249,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,i1,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,CanNor,CanNor
-2250,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,i1,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,CSIS,SCRS
-2251,Canadian Space Agency,Agence spatiale canadienne,i1,Canadian Space Agency,Agence spatiale canadienne,CSA,ASC
-2252,Canadian Transportation Agency,Office des transports du Canada,i1,Canadian Transportation Agency,Office des transports du Canada,CTA,OTC
-2253,Communications Security Establishment,Centre de la sécurité des télécommunications,i1,Communications Security Establishment Canada,Centre de la sécurité des télécommunications Canada,CSE,CST
-2254,Copyright Board,Commission du droit d'auteur,i1,Copyright Board Canada,Commission du droit d'auteur Canada,CB,CDA
-2255,Correctional Service of Canada,Service correctionnel du Canada,i1,Correctional Service Canada,Service correctionnel Canada,CSC,SCC
-2256,Courts Administration Service,Service administratif des tribunaux judiciaires,i1,Courts Administration Service,Service administratif des tribunaux judiciaires,CAS,SATJ
-2257,Economic Development Agency of Canada for the Regions of Quebec,Agence de développement économique du Canada pour les régions du Québec,i1,Canada Economic Development for Quebec Regions,Développement économique Canada pour les régions du Québec,CED,DEC
-2258,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,i1,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,FedDev Ontario,FedDev Ontario
-2259,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,i1,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,FCAC,ACFC
-2260,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,i1,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,FINTRAC,CANAFE
-2261,Immigration and Refugee Board,Commission de l'immigration et du statut de réfugié,i1,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,IRB,CISR
-2262,Library and Archives of Canada,Bibliothèque et Archives du Canada,i1,Library and Archives Canada,Bibliothèque et Archives Canada,LAC,BAC
-2263,Military Grievances External Review Committee,Comité externe d'examen des griefs militaires,i1,Military Grievances External Review Committee,Comité externe d'examen des griefs militaires,MGERC,CEEGM
-2264,Military Police Complaints Commission,Commission d'examen des plaintes concernant la police militaire,i1,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,MPCC,CPPM
-2265,National Farm Products Council,Conseil national des produits agricoles,i1,Farm Products Council of Canada,Conseil des produits agricoles du Canada,FPCC,CPAC
-2266,National Film Board,Office national du film,i1,,,NFB,ONF
-2267,Parole Board of Canada,Commission des libérations conditionnelles du Canada,i1,Parole Board of Canada,Commission des libérations conditionnelles du Canada,PBC,CLCC
-2268,Northern Pipeline Agency,Administration du pipe-line du Nord,i1,Northern Pipeline Agency Canada,Administration du pipe-line du Nord Canada,NPA,APN
-2269,"Department of Housing, Infrastructure and Communities","Ministère du Logement, de l'Infrastructure et des Collectivités",1,"Housing, Infrastructure and Communities Canada","Logement, Infrastructures et Collectivités Canada",HICC,LICC
-2270,Office of the Auditor General,Bureau du vérificateur général,i1,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,OAG,BVG
-2271,Office of the Chief Electoral Officer,Bureau du directeur général des élections,i1,,,elections,elections
-2272,Office of the Commissioner for Federal Judicial Affairs,Commissariat à la magistrature fédérale,i1,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada,FJA,CMF
-2273,Office of the Commissioner of Lobbying,Commissariat au lobbying,i1,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada,OCL,CAL
-2274,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,i1,,,OCOL,CLO
-2275,Office of the Intelligence Commissioner,Bureau du commissaire au renseignement,i1,,,,
-2276,Office of the Correctional Investigator of Canada,Bureau de l'enquêteur correctionnel du Canada,i1,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada,OCI,BEC
-2277,Office of the Director of Public Prosecutions,Bureau du directeur des poursuites pénales,i1,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,PPSC,SPPC
-2278,Office of the Governor General's Secretary,Bureau du secrétaire du gouverneur général,i1,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général,OSGG,BSGG
-2279,Office of the Public Sector Integrity Commissioner,Commissariat à l'intégrité du secteur public,i1,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada,PSIC,ISPC
-2280,Office of the Superintendent of Financial Institutions,Bureau du surintendant des institutions financières,i1,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada,OSFI,BSIF
-2281,Office of the Information Commissioner,Commissariat à l'information au Canada,4,,,,
-2282,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,4,,,,
-2283,Patented Medicine Prices Review Board,Conseil d'examen du prix des médicaments brevetés,i1,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada,PMPRB,CEPMB
-2284,Privy Council Office,Bureau du Conseil privé,i1,Privy Council Office,Bureau du Conseil privé,PCO,BCP
-2285,Public Health Agency of Canada,Agence de la santé publique du Canada,i1,Public Health Agency of Canada,Agence de la santé publique du Canada,PHAC,ASPC
-2286,Public Service Commission,Commission de la fonction publique,i1,Public Service Commission of Canada,Commission de la fonction publique du Canada,PSC,CFP
-2287,Registrar of the Supreme Court of Canada,Registraire de la Cour suprême du Canada,,,,,
-2288,Royal Canadian Mounted Police,Gendarmerie royale du Canada,i1,,,RCMP,GRC
-2289,Royal Canadian Mounted Police External Review Committee,Comité externe d'examen de la Gendarmerie royale du Canada,i1,RCMP External Review Committee,Comité externe d'examen de la GRC,ERC,CEE
-2290,Civilian Review and Complaints Commission for the Royal Canadian Mounted Police,Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,i1,Civilian Review and Complaints Commission for the RCMP,Commission civile d'examen et de traitement des plaintes relatives à la GRC,CRCC,CCETP
-2291,National Security and Intelligence Review Agency Secretariat,Secrétariat de l'Office de surveillance des activités en matière de sécurité nationale et de renseignement,i1,,,,
-2292,Shared Services Canada,Services partagés Canada,i1,Shared Services Canada,Services partagés Canada,SSC,SPC
-2293,Statistics Canada,Statistique Canada,i1,Statistics Canada,Statistique Canada,StatCan,StatCan
-2294,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel),i1,,,VRAB,TACRA
-2295,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,i1,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,SNSICP,SCPSNR
-2296,Leaders' Debates Commission,Commission des débats des chefs,i1,,,,
-2297,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,i1,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,ATSSC,SCDATA
-2298,Pacific Economic Development Agency of Canada,Agence de développement économique du Pacifique Canada,i1,Pacific Economic Development Canada,Développement économique Canada pour le Pacifique,PacifiCan,PacifiCan
-2299,Federal Economic Development Agency for Northern Ontario,Agence fédérale de développement économique pour le Nord de l'Ontario,i1,Federal Economic Development Agency for Northern Ontario,Agence fédérale de développement économique pour le Nord de l'Ontario,FedNor,FedNor
-2300,Canada Border Services Agency,Agence des services frontaliers du Canada,4,Canada Border Services Agency,Agence des services frontaliers du Canada,CBSA,ASFC
-2301,Canada Emission Reduction Incentives Agency,Agence canadienne pour l'incitation à la réduction des émissions,4,,,,
-2302,Canada Employment Insurance Commission,Commission de l'assurance-emploi du Canada,2,Canada Employment Insurance Commission,Commission de l'assurance-emploi du Canada,CEIC,CAEC
-2303,Canada Revenue Agency,Agence du revenu du Canada,2,,,CRA,ARC
-2304,Canada School of Public Service,École de la fonction publique du Canada,4,,,CSPS,EFPC
-2305,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail,2,,,CCOHS,CCHST
-2306,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments,2,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments,CFIA,ACIA
-2307,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada,2,,,CIHR,IRSC
-2308,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire,2,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire,CNSC,CCSN
-2309,Canadian Transportation Accident Investigation and Safety Board,Bureau canadien d'enquête sur les accidents de transport et de la sécurité des transports,4,Transportation Safety Board of Canada,Bureau de la sécurité des transports du Canada,TSB,BST
-2310,Law Commission of Canada,Commission du droit du Canada,4,Law Commission of Canada,Commission du droit du Canada,,
-2311,The National Battlefields Commission,Commission des champs de bataille nationaux,2,The National Battlefields Commission,Commission des champs de bataille nationaux,NBC,CCBN
-2312,Canadian Energy Regulator,Régie canadienne de l'énergie,2,Canada Energy Regulator,Régie de l'énergie du Canada,CER,REC
-2313,National Research Council of Canada,Conseil national de recherches du Canada,2,National Research Council Canada,Conseil national de recherches Canada,NRC,CNRC
-2314,Natural Sciences and Engineering Research Council,Conseil de recherches en sciences naturelles et en génie,2,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,NSERC,CRSNG
-2315,Parks Canada Agency,Agence Parcs Canada,2,Parks Canada,Parcs Canada,PC,PC
-2316,Social Sciences and Humanities Research Council,Conseil de recherches en sciences humaines,2,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,SSHRC,CRSH
-2317,Invest in Canada Hub,Investir au Canada,2,,,,
-2318,Canadian High Arctic Research Station,Station canadienne de recherche dans l'Extrême-Arctique,2,Polar Knowledge Canada,Savoir polaire Canada,POLAR,POLAIRE
-2319,Canadian Accessibility Standards Development Organization,Organisation canadienne d'élaboration de normes d'accessibilité,4,Accessibility Standards Canada,Normes d'accessibilité Canada,ASC,NAC
-2396,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,i1,,,,
-3399,African Development Bank,Banque africaine de développement,,,,,
-3400,Asian Development Bank,Banque asiatique de développement,,,,,
-3401,Caribbean Development Bank,Banque de développement des Caraïbes,,,,,
-3402,European Bank for Reconstruction and Development,Banque européenne pour la reconstruction et le développement,,,,,
-3403,Inter-American Development Bank,Banque interaméricaine de développement,,,,,
-3404,International Bank for Reconstruction and Development,Banque internationale pour la reconstruction et le développement,,,,,
-3405,International Development Association,Association internationale de développement,,,,,
-3406,International Finance Corporation,Société financière internationale,,,,,
-3407,International Joint Commission (Canadian Section),Commission mixte internationale (section canadienne),4,,,,
-3408,International Lake Memphremagog Levels Board,Commission internationale du lac Memphrémagog,,,,,
-3409,International Lake of the Woods Control Board,Conseil international de contrôle du lac des Bois,,,,,
-3410,International Monetary Fund,Fonds monétaire international,,,,,
-3411,Multilateral Investment Guarantee Agency,Agence multilatérale de garantie des investissements,,,,,
-3412,Joint Public Advisory Committee (JPAC) of the Commission for Environmental Cooperation (CEC),Comité consultatif public mixte (CCPM) de la Commission de coopération environnementale (CCE),,,,,
-3413,World Anti-Doping Agency,Agence mondiale antidopage,,,,,
-3414,Asian Infrastructure Investment Bank,Banque asiatique d'investissement dans les infrastructures,,,,,
-3415,Lower Churchill Development Corporation Limited,Lower Churchill Development Corporation Limited,,,,,
-3416,North Portage Development Corporation (operating as The Forks North Portage Partnership),North Portage Development Corporation (exploitée sous le nom de The Forks North Portage Partnership),,,,,
-3417,Communication Canada,Communication Canada,4,,,,
-3418,Office of the Superintendent of Bankruptcy,Bureau du surintendant des faillites,4,,,,
-3419,Prairie Farm Rehabilitation Administration,Administration du rétablissement agricole des Prairies,4,,,,
-3420,Commissioner of Canada Election,Commissaire aux élections fédérales,,,,,
-3421,Canada Investment and Savings,Placements Épargne Canada,5,,,,
-3422,Director of Soldier Settlement,Directeur de l'établissement de soldats,4,,,,
-3423,"The Director, The Veterans' Land Act",Directeur des terres destinées aux anciens combattants,4,,,,
-3424,Energy Supplies Allocation Board,Office de répartition des approvisionnements d'énergie,4,,,,
-3425,"Staff of the Non-Public Funds, Canadian Forces","Personnel des fonds non publics, Forces canadiennes",5,,,,
-3426,Statistics Survey Operations,Opérations des enquêtes statistiques,,,,,
-3427,Federal Judges not part of any department,Juges fédéraux ne faisant pas partie d'un ministère,,,,,
-3428,House of Commons,Chambre des communes,,,,,
-3429,Library of Parliament,Bibliothèque du Parlement,,,,,
-3430,Office of the Conflict of Interest and Ethics Commissioner,Commissariat aux conflits d'intérêts et à l'éthique,,,,,
-3431,Senate Ethics Officer,Conseiller sénatorial en éthique,,,,,
-3432,Senate,Sénat,,,,,
-3433,Office of the Parliamentary Budget Officer,Bureau du directeur parlementaire du budget,,,,,
-3434,Parliamentary Protective Service,Service de protection parlementaire,,,,,
-3435,Aéroport de Québec Inc.,Aéroport de Québec Inc.,,,,,
-3436,Aéroports de Montréal,Aéroports de Montréal,,,,,
-3437,Asia-Pacific Foundation of Canada,Fondation Asie-Pacifique du Canada,,,,,
-3438,Association of Canada Lands Surveyors,Association des Arpenteurs des Terres du Canada,,,,,
-3439,Belledune Port Authority,Administration portuaire de Belledune,,,,,
-3440,Buffalo and Fort Erie Public Bridge Authority,Buffalo and Fort Erie Public Bridge Authority,,,,,
-3441,Calgary Airport Authority,Administration aéroportuaire de Calgary,,,,,
-3442,WinSport,WinSport,,,,,
-3443,Canada Foundation for Innovation,Fondation canadienne pour l'innovation,,,,,
-3444,Canada Foundation for Sustainable Development Technology,Fondation du Canada pour l'appui technologique au développement durable,,,,,
-3445,Canada Games Council,Conseil des Jeux du Canada,,,,,
-3446,Canada Health Infoway Inc.,Inforoute Santé du Canada Inc.,,,,,
-3447,Canada Media Fund,Fonds des médias du Canada,,,,,
-3448,Canada-Newfoundland and Labrador Offshore Petroleum Board,Office Canada-Terre-Neuve-et-Labrador des hydrocarbures extracôtiers,,,,,
-3449,Canada-Nova Scotia Offshore Petroleum Board,Office Canada-Nouvelle-Écosse des hydrocarbures extracôtiers,,,,,
-3450,Canadian Agency for Drugs and Technologies in Health (CADTH),Agence canadienne des médicaments et des technologies de la santé (ACMTS),,,,,
-3451,Canadian Centre on Substance Use and Addictions,Centre canadien sur les dépendances et l'usage de substances,,,,,
-3452,Canadian Energy Research Institute,Canadian Energy Research Institute,,,,,
-3453,Canadian Institute for Health Information (CIHI),Institut canadien d'information sur la santé (ICIS),,,,,
-3454,Canadian Livestock Records Corporation,Société canadienne d'enregistrement des animaux,,,,,
-3455,Canadian Partnership Against Cancer Corporation (CPAC),Partenariat canadien contre le cancer (PCC),,,,,
-3456,Canadian Patient Safety Institute (CPSI),Institut canadien pour la sécurité des patients (ICSP),,,,,
-3457,Canadian Sport Institute Ontario,Institut canadien du sport Ontario,,,,,
-3458,Charlottetown Airport Authority Inc.,Charlottetown Airport Authority Inc.,,,,,
-3459,Coaching Association of Canada,Association canadienne des entraîneurs,,,,,
-3461,Edmonton Regional Airports Authority,Edmonton Regional Airports Authority,,,,,
-3462,Fredericton International Airport Authority Inc.,Fredericton International Airport Authority Inc.,,,,,
-3463,Gander International Airport Authority Inc.,Gander International Airport Authority Inc.,,,,,
-3464,Greater London International Airport Authority,Greater London International Airport Authority,,,,,
-3465,Greater Moncton International Airport Authority Inc.,Greater Moncton International Airport Authority Inc.,,,,,
-3466,Greater Toronto Airports Authority,Autorité aéroportuaire du Grand Toronto,,,,,
-3467,Halifax International Airport Authority,Administration de l'aéroport international d'Halifax,,,,,
-3468,Halifax Port Authority,Administration portuaire d'Halifax,,,,,
-3469,Hamilton Port Authority,Administration portuaire de Hamilton,,,,,
-3470,Institut national du sport du Québec,Institut national du sport du Québec,,,,,
-3471,Internal Trade Secretariat Corporation,Corporation du Secrétariat du commerce intérieur,,,,,
-3472,International Fisheries Commissions Pension Society,Société de caisse de retraite de la Commission internationale des pêcheries,,,,,
-3473,Lake of the Woods Control Board,Commission de contrôle du lac des Bois,,,,,
-3474,Maritime Forestry Complex Corporation,Société du complexe forestier des Maritimes,,,,,
-3475,Mental Health Commission of Canada (MHCC),Commission de la santé mentale du Canada (CSMC),,,,,
-3476,Milit-Air Inc.,Milit-Air Inc.,,,,,
-3477,Montréal Port Authority,Administration portuaire de Montréal,,,,,
-3478,Nanaimo Port Authority,Administration portuaire de Nanaimo,,,,,
-3479,"Nature Trust of British Columbia, The","Nature Trust of British Columbia, The",,,,,
-3480,NAV CANADA,NAV CANADA,,,,,
-3481,Oshawa Port Authority,Administration portuaire d'Oshawa,,,,,
-3482,Ottawa International Airport Authority,Administration de l'aéroport international d'Ottawa,,,,,
-3483,Ouranos Consortium,Consortium Ouranos,,,,,
-3484,"Pierre Elliott Trudeau Foundation, The","Fondation Pierre Elliott Trudeau, La",,,,,
-3485,Porcupine Caribou Management Board,Porcupine Caribou Management Board,,,,,
-3486,Port Alberni Port Authority,Administration portuaire de Port Alberni,,,,,
-3488,Prince George Airport Authority Inc.,Prince George Airport Authority Inc.,,,,,
-3489,Prince Rupert Port Authority,Administration portuaire de Prince Rupert,,,,,
-3490,Québec Port Authority,Administration portuaire de Québec,,,,,
-3491,Regina Airport Authority Inc.,Regina Airport Authority Inc.,,,,,
-3492,Roosevelt Campobello International Park Commission,Commission du parc international Roosevelt de Campobello,,,,,
-3493,Saguenay Port Authority,Administration portuaire du Saguenay,,,,,
-3494,Saint John Airport Inc.,Saint John Airport Inc.,,,,,
-3495,Saint John Port Authority,Administration portuaire de Saint John,,,,,
-3496,Saskatoon Airport Authority,Saskatoon Airport Authority,,,,,
-3497,Sept-Îles Port Authority,Administration portuaire de Sept-Îles,,,,,
-3498,Sport Dispute Resolution Centre of Canada,Centre de règlement des différends sportifs du Canada,,,,,
-3499,St. John's International Airport Authority,St. John's International Airport Authority,,,,,
-3500,St. John's Port Authority,Administration portuaire de St. John's,,,,,
-3501,St. Lawrence Seaway Management Corporation,Corporation de gestion de la Voie maritime du Saint-Laurent,,,,,
-3502,Terry Fox Humanitarian Award Inc.,Prix humanitaire Terry Fox inc.,,,,,
-3503,Thunder Bay International Airports Authority Inc.,Thunder Bay International Airports Authority Inc.,,,,,
-3504,Thunder Bay Port Authority,Administration portuaire de Thunder Bay,,,,,
-3506,Toronto Port Authority,Administration portuaire de Toronto,,,,,
-3507,Trois-Rivières Port Authority,Administration portuaire de Trois-Rivières,,,,,
-3508,TV5 Québec Canada,TV5 Québec Canada,,,,,
-3509,Vancouver Fraser Port Authority,Administration portuaire de Vancouver Fraser,,,,,
-3510,Vancouver International Airport Authority,Administration de l'Aéroport de Vancouver,,,,,
-3511,Victoria Airport Authority,Autorité aéroportuaire de Victoria,,,,,
-3512,Waterfront Toronto,Waterfront Toronto,,,,,
-3513,Wildlife Habitat Canada,Habitat faunique Canada,,,,,
-3514,Windsor Port Authority,Administration portuaire de Windsor,,,,,
-3515,Winnipeg Airports Authority Inc.,Winnipeg Airports Authority Inc.,,,,,
-3516,Canadian Foundation for Healthcare Improvement (CFHI),Fondation canadienne pour l'amélioration des services de santé (FCASS),,,,,
-3517,Healthcare Excellence Canada (HEC),Excellence en santé Canada (ESC),,,,,
-3518,Aboriginal Healing Foundation,Fondation autochtone de guérison,,,,,
-3519,Canada Commonwealth Legacy Fund,Fonds du legs des Jeux du Commonwealth,,,,,
-3520,Canadian Foundation for Climate and Atmospheric Sciences,Fondation canadienne pour les sciences du climat et de l'atmosphère,,,,,
-3521,Canadian International Grains Institute,Institut international du Canada pour le grain,,,,,
-3522,"Canadian Wheat Board, The","Commission canadienne du blé, La",,,,,
-3523,Centre national multisport-Montréal,Centre national multisport – Montréal,,,,,
-3524,First Nations Financial Management Board,Conseil de gestion financière des premières nations,,,,,
-3525,First Nations Tax Commission,Commission de la fiscalité des premières nations,,,,,
-3526,Health Council of Canada,Conseil canadien de la santé,,,,,
-3527,International Centre for Human Rights and Democratic Development,Centre international des droits de la personne et du développement démocratique,,,,,
-3528,PrioNet Canada,PrioNet Canada,,,,,
-3531,Last Post Fund,Fonds du Souvenir,,,,,
-3532,"Vanier Institute of the Family, The",L'Institut Vanier de la famille,,,,,
-3533,Canadian Coast Guard,Garde côtière canadienne,,,,,
-3534,Canadian Conservation Institute,Institut canadien de conservation,,,,,
-3535,Canadian Forces Housing Agency,Agence de logement des Forces canadiennes,,,,,
-3536,Canadian Heritage Information Network,Réseau canadien d'information sur le patrimoine,,,,,
-3537,Canadian Intellectual Property Office,Office de la propriété intellectuelle du Canada,,,,,
-3538,Canadian Pari-Mutuel Agency,Agence canadienne du pari mutuel,,,,,
-3539,CORCAN,CORCAN,,,,,
-3540,Defence Research and Development Canada,Recherche et développement pour la défense Canada,,,,,
-3541,Indian Oil and Gas Canada,Pétrole et gaz des Indiens du Canada,5,,,,
-3542,Measurement Canada,Mesures Canada,,,,,
-3543,Physical Resources Bureau,Direction générale des biens,,,,,
-3544,Translation Bureau,Bureau de la traduction,,,,,
-3545,Consulting and Audit Canada Revolving Fund,Fonds renouvelable de Conseils et Vérification Canada,,,,,
-3546,Industrial Technologies Office,Office des technologies industrielles,,,,,
-3547,Passport Canada,Passeport Canada,,,,,
-3548,Payroll System General Ledger,Grand livre général du système de la paye,,,,,
-3549,Public Service Superannuation,Pension de retraite de la fonction publique,,,,,
-3552,Bank of Canada Museum,Musée de la Banque du Canada,,,,,
-3553,Canada Agriculture and Food Museum,Musée de l'agriculture et de l'alimentation du Canada,,,,,
-3554,Canada Aviation and Space Museum,Musée de l'aviation et de l'espace du Canada,,,,,
-3555,Canada Firearms Centre,Centre des armes à feu Canada,,,,,
-3556,Canada Research Chairs,Chaires de recherche du Canada,,,,,
-3557,Canadian Army,Armée canadienne,,,,,
-3558,Canadian Judicial Council,Conseil canadien de la magistrature,,,,,
-3559,Canadian Special Operations Forces Command,Commandement des Forces d'opérations spéciales du Canada,,,,,
-3560,Canadian Trade Commissioner Service,Service des délégués commerciaux du Canada,,,,,
-3561,Canadian War Museum,Musée canadien de la guerre,,,,,
-3562,Communications Research Centre Canada,Centre de recherches sur les communications Canada,,,,,
-3563,Competition Bureau Canada,Bureau de la concurrence Canada,,,,,
-3564,Competition Tribunal,Tribunal de la concurrence,,,,,
-3565,Court Martial Appeal Court of Canada,Cour d'appel de la cour martiale du Canada,,,,,
-3566,Democratic Institutions,Institutions démocratiques,,,,,
-3568,Environmental Protection Review Canada,Révision de la protection de l'environnement Canada,,,,,
-3569,Federal Court of Appeal,Cour d'appel fédérale,,,,,
-3570,Federal Court of Canada,Cour fédérale,,,,,
-3571,Office of the Federal Ombudsperson for Victims Of Crime,Bureau de l'ombudsman fédéral des victimes d'actes criminels,,,,,
-3572,Historic Sites and Monuments Board of Canada,Commission des lieux et monuments historiques du Canada,,,,,
-3573,Independent Review Panel for Defence Acquisition,Commission indépendante d'examen des acquisitions de la Défense,,,,,
-3574,Intergovernmental Affairs,Affaires intergouvernementales,,,,,
-3575,Judicial Compensation and Benefits Commission,Commission d'examen de la rémunération des juges,,,,,
-3577,Leader of the Government in the House of Commons,Leader du gouvernement à la Chambre des communes,,,,,
-3578,Management Advisory Board for the RCMP,Conseil consultatif de gestion pour la GRC,,,,,
-3579,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,,,,,
-3580,National Seniors Council,Conseil national des aînés,,,,,
-3581,Occupational Health and Safety Tribunal Canada,Tribunal de santé et sécurité au travail Canada,,,,,
-3582,Office of the Chief Military Judge,Le cabinet du juge militaire en chef,,,,,
-3583,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,Bureau de l'ombudsman de la Défense nationale et des Forces armées canadiennes,,,,,
-3584,Parliament of Canada,Parlement du Canada,,,,,
-3585,Office of the Procurement Ombudsman,Bureau de l'ombudsman de l'approvisionnement,,,,,
-3586,Prime Minister of Canada,Premier ministre du Canada,,,,,
-3587,Public Servants Disclosure Protection Tribunal Canada,Tribunal de la protection des fonctionnaires divulgateurs Canada,,,,,
-3588,Royal Canadian Air Force,Aviation royale canadienne,,,,,
-3589,Royal Canadian Navy,Marine royale canadienne,,,,,
-3590,Royal Military College of Canada,Collège militaire royal du Canada,,,,,
-3591,Service Canada,Service Canada,,,,,
-3592,Supreme Court of Canada,Cour suprême du Canada,,,,,
-3593,Tax Court of Canada,Cour canadienne de l'impôt,,,,,
-3594,Office of the Taxpayers' Ombudsperson,Bureau de l'ombudsman des contribuables,,,,,
-3595,Office of the Veterans' Ombudsman,Bureau de l'ombud des vétérans,,,,,
-3596,Virtual Museum of Canada,Musée virtuel du Canada,,,,,
-3599,Aboriginal Business Canada,Entreprise autochtone Canada,,,,,
-3600,"Appeal Board, Hazardous Materials Information Review Act","Commission d'appel, Loi sur le contrôle des renseignements relatifs aux matières dangereuses",,,,,
-3601,Canada Centre for Inland Waters,Centre canadien des eaux intérieures,,,,,
-3602,Canadian Museum of Contemporary Photography,Musée canadien de la photographie contemporaine,,,,,
-3603,Environmental Protection Tribunal of Canada,Tribunal de la protection de I'environnement du Canada,,,,,
-3604,Geographical Names Board of Canada,La Commission de toponymie du Canada,,,,,
-3605,Geological Survey of Canada,Commission géologique du Canada,,,,,
-3606,Geomatics Canada,Géomatique Canada,,,,,
-3607,Indian Residential Schools Resolution Canada,Résolution des questions des pensionnats indiens Canada,,,,,
-3608,National Advisory Council on Aging,Conseil consultatif national sur le troisième âge,,,,,
-3609,National Advisory Council on Poverty,Conseil national du Bien-être,,,,,
-3611,Office of the Chief Science Advisor of Canada,Bureau du conseiller scientifique en chef du Canada,,,,,
-3612,Policy Horizons Canada,Horizons de politiques Canada,,,,,
-3613,Ship-source Oil Pollution Fund,Caisse d'indemnisation des dommages dus à la pollution par les hydrocarbures causée par les navires,,,,,
-3614,Statute Revision Commission Canada,Commission de révision des lois Canada,,,,,
-3615,Canadian Dairy Commission,Commission canadienne du lait,4,,,,
-3616,Farm Credit Canada,Financement agricole Canada,3,,,,
-3618,Canada Council for the Arts,Conseil des Arts du Canada,,,,,
-3619,Canadian Broadcasting Corporation,Société Radio-Canada,,,,,
-3620,Canadian Museum for Human Rights,Musée canadien des droits de la personne,3,,,,
-3621,Canadian Museum of History,Musée canadien de l'histoire,3,,,,
-3622,Canadian Museum of Immigration at Pier 21,Musée canadien de l'immigration du Quai 21,3,,,,
-3623,Canadian Museum of Nature,Musée canadien de la nature,3,,,,
-3624,Canadian Race Relations Foundation,Fondation canadienne des relations raciales,,,,,
-3625,National Arts Centre Corporation,Société du Centre national des Arts,,,,,
-3626,National Gallery of Canada,Musée des beaux-arts du Canada,3,,,,
-3627,National Museum of Science and Technology,Musée national des sciences et de la technologie,3,,,,
-3629,Telefilm Canada,Téléfilm Canada,,,,,
-3630,Toronto Organizing Committee for the 2015 Pan American and Parapan American Games,Comité d'organisation des Jeux panaméricains et parapanaméricains de Toronto 2015,,,,,
-3631,Canada Mortgage and Housing Corporation,Société canadienne d'hypothèques et de logement,3,,,,
-3632,Social Security Tribunal,Tribunal de la sécurité sociale,,,,,
-3633,Bank of Canada,Banque du Canada,,,,,
-3634,Canada Deposit Insurance Corporation,Société d'assurance-dépôts du Canada,3,,,,
-3635,Canada Development Investment Corporation,La Corporation de développement des investissements du Canada,,,,,
-3636,Canada Pension Plan Investment Board,Office d'investissement du régime de pensions du Canada,,,,,
-3637,Royal Canadian Mint,Monnaie royale canadienne,,,,,
-3638,Freshwater Fish Marketing Corporation,Office de commercialisation du poisson d'eau douce,3,,,,
-3639,Canadian Commercial Corporation,Corporation commerciale canadienne,3,,,,
-3640,Export Development Canada,Exportation et développement Canada,3,,,,
-3641,International Development Research Centre,Centre de recherches pour le développement international,,,,,
-3642,Canada Infrastructure Bank,Banque de l'infrastructure du Canada,3,,,,
-3643,The Jacques-Cartier and Champlain Bridges Inc.,Les Ponts Jacques-Cartier et Champlain Inc.,3,,,,
-3644,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit,3,,,,
-3645,PPP Canada Inc.,PPP Canada Inc.,,,,,
-3646,Business Development Bank of Canada,Banque de développement du Canada,3,,,,
-3647,Canadian Tourism Commission,Commission canadienne du tourisme,3,,,,
-3648,Standards Council of Canada,Conseil canadien des normes,3,,,,
-3649,Atomic Energy of Canada Limited,Énergie atomique du Canada limitée,3,,,,
-3650,Canada Lands Company Limited,Société immobilière du Canada limitée,3,,,,
-3651,Canada Post Corporation,Société canadienne des postes,3,,,,
-3652,Defence Construction (1951) Limited,Construction de Défense (1951) Limitée,3,,,,
-3653,National Capital Commission,Commission de la capitale nationale,3,,,,
-3654,Atlantic Pilotage Authority,Administration de pilotage de l'Atlantique,3,,,,
-3655,Canadian Air Transport Security Authority,Administration canadienne de la sûreté du transport aérien,3,,,,
-3656,Great Lakes Pilotage Authority,Administration de pilotage des Grands Lacs,3,,,,
-3657,Laurentian Pilotage Authority,Administration de pilotage des Laurentides,3,,,,
-3658,Marine Atlantic Inc.,Marine Atlantique S.C.C.,3,,,,
-3659,Pacific Pilotage Authority,Administration de pilotage du Pacifique,3,,,,
-3660,Ridley Terminals Inc.,Ridley Terminals Inc.,,,,,
-3661,The Federal Bridge Corporation Limited,La Société des ponts fédéraux Limitée,3,,,,
-3662,VIA Rail Canada Inc.,VIA Rail Canada inc.,3,,,,
-3663,Public Sector Pension Investment Board,Office d'investissement des régimes de pensions du secteur public,,,,,
-3664,Assisted Human Reproduction Agency of Canada,Agence canadienne de contrôle de la procréation assistée,,,,,
-3665,Blue Water Bridge Authority,Administration du pont Blue Water,,,,,
-3666,Canada Employment Insurance Financing Board,Office de financement de l'assurance-emploi du Canada,,,,,
-3667,Corporation for the Mitigation of Mackenzie Gas Project Impacts,Société d'atténuation des répercussions du projet gazier Mackenzie,,,,,
-3668,Enterprise Cape Breton Corporation,Société d'expansion du Cap Breton,,,,,
-3669,First Nations Statistical Institute,Institut de la statistique des Premières nations,,,,,
-3670,Grain Appeal Tribunal,Tribunal d'appel pour les grains,,,,,
-3671,Hazardous Materials Information Review Commission,Conseil de contrôle des renseignements relatifs aux matières dangereuses,,,,,
-3672,Indian Residential Schools Truth and Reconciliation Commission,Commission de vérité et de réconciliation relative aux pensionnats indiens,,,,,
-3673,Inuvialuit Arbitration Board,Commission d'arbitrage des Inuvialuit,,,,,
-3674,Merchant Seamen Compensation Board,Commission d'indemnisation des marins marchands,,,,,
-3675,National Round Table on the Environment and the Economy,Table ronde nationale sur l'environnement et l'économie,,,,,
-3676,Public Appointments Commission Secretariat,Secrétariat de la Commission des nominations publiques,,,,,
-3679,Canada Agricultural Review Tribunal,Commission de révision agricole du Canada,,,,,
-3680,Canada Industrial Relations Board,Conseil canadien des relations industrielles,,,,,
-3681,Canadian Artists and Producers Professional Relations Tribunal,Tribunal canadien des relations professionnelles artistes-producteurs,,,,,
-3682,Canadian Cultural Property Export Review Board,Commission canadienne d'examen des exportations de biens culturels,,,,,
-3683,Canadian Human Rights Tribunal,Tribunal canadien des droits de la personne,,,,,
-3684,Canadian International Development Agency,Agence canadienne de développement international,,,,,
-3685,Canadian International Trade Tribunal,Tribunal canadien du commerce extérieur,,,,,
-3686,Employment Insurance Boards of Referees,Conseils arbitraux de l'assurance-emploi,,,,,
-3687,Office of the Commissioner of Review Tribunals,Bureau du Commissaire des tribunaux de révision,,,,,
-3688,Office of the Umpire,Bureau du juge-arbitre,,,,,
-3689,Old Port of Montreal Corporation Inc.,Société du Vieux-Port de Montréal Inc.,,,,,
-3690,Parc Downsview Park Inc.,Parc Downsview Park Inc,,,,,
-3691,Pension Appeals Board,Commission d'appel des pensions,,,,,
-3692,Public Service Labour Relations Board,Commission des relations de travail dans la fonction publique,,,,,
-3693,Public Service Staffing Tribunal,Tribunal de la dotation de la fonction publique,,,,,
-3694,Registry of the Competition Tribunal,Greffe du Tribunal de la concurrence,,,,,
-3695,Registry of the Public Servants Disclosure Protection Tribunal,Greffe du Tribunal de la protection des fonctionnaires divulgateurs d'actes répréhensibles,,,,,
-3696,Registry of the Specific Claims Tribunal,Greffe du Tribunal des revendications particulières,,,,,
-3697,Transportation Appeal Tribunal of Canada,Tribunal d'appel des transports du Canada,,,,,
-3698,Vancouver Organizing Committee for the 2010 Olympic and Paralympic Winter Games,Comité d'organisation des Jeux olympiques et paralympiques d'hiver de 2010 à Vancouver,,,,,
-3700,The Halifax 2011 Canada Games Host Society,Société d'accueil des Jeux de 2011 de Halifax,,,,,
-3701,Prince George 2015 Canada Winter Games Host Society,Société hôtesse des Jeux d'hiver du Canada Prince George 2015,,,,,
-3702,2010 Games Operating Trust Society,Société du legs des Jeux de 2010,,,,,
-3703,Canada Water Agency,Agence canadienne de l'eau,i1,,,,
-3704,Treasury Board,Conseil du Trésor,1,,,TB,CT
-nan,,,,,,SCC,CSC
-nan,,,,,,OPC,CPVP
-nan,,,,,,OIC,CI
-nan,,,,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,CRTC,CRTC
-nan,,,,Government of Canada,Gouvernement du Canada,GC,GC
+﻿GC OrgID,legal_title,appellation_légale,FAA_LGFP,preferred_name,nom_préféré,abbreviation,abreviation,status_statut,end_date_fin,harmonized_name,nom_harmonisé
+2222,Department of Agriculture and Agri-Food,Ministère de l'Agriculture et de l'Agroalimentaire,1,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,AAFC,AAC,a,,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada
+2223,Department of Canadian Heritage,Ministère du Patrimoine canadien,1,Canadian Heritage,Patrimoine canadien,PCH,PCH,a,,Canadian Heritage,Patrimoine canadien
+2224,Department of Citizenship and Immigration,Ministère de la Citoyenneté et de l'Immigration,1,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",IRCC,IRCC,a,,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada"
+2225,Department of Finance,Ministère des Finances,1,Department of Finance Canada,Ministère des Finances Canada,FIN,FIN,a,,Department of Finance Canada,Ministère des Finances Canada
+2226,Department of Fisheries and Oceans,Ministère des Pêches et des Océans,1,Fisheries and Oceans Canada,Pêches et Océans Canada,DFO,MPO,a,,Fisheries and Oceans Canada,Pêches et Océans Canada
+2227,"Department of Foreign Affairs, Trade and Development","Ministère des Affaires étrangères, du Commerce et du Développement",1,Global Affairs Canada,Affaires mondiales Canada,GAC,AMC,a,,Global Affairs Canada,Affaires mondiales Canada
+2228,Department of Health,Ministère de la Santé,1,Health Canada,Santé Canada,HC,SC,a,,Health Canada,Santé Canada
+2229,Department of Employment and Social Development,Ministère de l'Emploi et du Développement social,1,Employment and Social Development Canada,Emploi et Développement social Canada,ESDC,EDSC,a,,Employment and Social Development Canada,Emploi et Développement social Canada
+2230,Department of Crown-Indigenous Relations and Northern Affairs,Ministère des Relations Couronne-Autochtones et des Affaires du Nord,1,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada,CIRNAC,RCAANC,a,,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada
+2231,Department of Industry,Ministère de l'Industrie,1,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",ISED,ISDE,a,,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
+2232,Department of Justice,Ministère de la Justice,1,Department of Justice Canada,Ministère de la Justice Canada,JUS,JUS,a,,Department of Justice Canada,Ministère de la Justice Canada
+2233,Department of National Defence,Ministère de la Défense nationale,1,National Defence,Défense nationale,DND,MDN,a,,National Defence,Défense nationale
+2234,Department of Natural Resources,Ministère des Ressources naturelles,1,Natural Resources Canada,Ressources naturelles Canada,NRCan,RNCan,a,,Natural Resources Canada,Ressources naturelles Canada
+2235,Department of Public Safety and Emergency Preparedness,Ministère de la Sécurité publique et de la Protection civile,1,Public Safety Canada,Sécurité publique Canada,PS,SP,a,,Public Safety Canada,Sécurité publique Canada
+2236,Department of Public Works and Government Services,Ministère des Travaux publics et des Services gouvernementaux,1,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,PSPC,SPAC,a,,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
+2237,Department of the Environment,Ministère de l'Environnement,1,Environment and Climate Change Canada,Environnement et Changement climatique Canada,ECCC,ECCC,a,,Environment and Climate Change Canada,Environnement et Changement climatique Canada
+2238,Department of Transport,Ministère des Transports,1,Transport Canada,Transports Canada,TC,TC,a,,Transport Canada,Transports Canada
+2239,Department of Veterans Affairs,Ministère des Anciens Combattants,1,Veterans Affairs Canada,Anciens Combattants Canada,VAC,ACC,a,,Veterans Affairs Canada,Anciens Combattants Canada
+2240,Department of Western Economic Diversification,Ministère de la Diversification de l'économie de l'Ouest canadien,1,Prairies Economic Development Canada,Développement économique Canada pour les Prairies,PrairiesCan,PrairiesCan,a,,Prairies Economic Development Canada,Développement économique Canada pour les Prairies
+2241,Department for Women and Gender Equality,Ministère des Femmes et de l'Égalité des genres,1,Women and Gender Equality Canada,Femmes et Égalité des genres Canada,WAGE,FEGC,a,,Women and Gender Equality Canada,Femmes et Égalité des genres Canada
+2242,Treasury Board Secretariat,Secrétariat du Conseil du Trésor,,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada,TBS,SCT,a,,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada
+2243,Department of Indigenous Services,Ministère des Services aux Autochtones,1,Indigenous Services Canada,Services aux Autochtones Canada,ISC,SAC,a,,Indigenous Services Canada,Services aux Autochtones Canada
+2244,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,i1,,,ACOA,APECA,a,,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique
+2245,Impact Assessment Agency of Canada,Agence canadienne d'évaluation d'impact,i1,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada,IAAC,AEIC,a,,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada
+2246,Canadian Grain Commission,Commission canadienne des grains,i1,,,CGC,CCG,a,,Canadian Grain Commission,Commission canadienne des grains
+2247,Canadian Human Rights Commission,Commission canadienne des droits de la personne,i1,,,CHRC,CCDP,a,,Canadian Human Rights Commission,Commission canadienne des droits de la personne
+2248,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes,i1,,,CICS,SCIC,a,,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes
+2249,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,i1,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,CanNor,CanNor,a,,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord
+2250,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,i1,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,CSIS,SCRS,a,,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité
+2251,Canadian Space Agency,Agence spatiale canadienne,i1,Canadian Space Agency,Agence spatiale canadienne,CSA,ASC,a,,Canadian Space Agency,Agence spatiale canadienne
+2252,Canadian Transportation Agency,Office des transports du Canada,i1,Canadian Transportation Agency,Office des transports du Canada,CTA,OTC,a,,Canadian Transportation Agency,Office des transports du Canada
+2253,Communications Security Establishment,Centre de la sécurité des télécommunications,i1,Communications Security Establishment Canada,Centre de la sécurité des télécommunications Canada,CSE,CST,a,,Communications Security Establishment Canada,Centre de la sécurité des télécommunications Canada
+2254,Copyright Board,Commission du droit d'auteur,i1,Copyright Board Canada,Commission du droit d'auteur Canada,CB,CDA,a,,Copyright Board Canada,Commission du droit d'auteur Canada
+2255,Correctional Service of Canada,Service correctionnel du Canada,i1,Correctional Service Canada,Service correctionnel Canada,CSC,SCC,a,,Correctional Service Canada,Service correctionnel Canada
+2256,Courts Administration Service,Service administratif des tribunaux judiciaires,i1,Courts Administration Service,Service administratif des tribunaux judiciaires,CAS,SATJ,a,,Courts Administration Service,Service administratif des tribunaux judiciaires
+2257,Economic Development Agency of Canada for the Regions of Quebec,Agence de développement économique du Canada pour les régions du Québec,i1,Canada Economic Development for Quebec Regions,Développement économique Canada pour les régions du Québec,CED,DEC,a,,Canada Economic Development for Quebec Regions,Développement économique Canada pour les régions du Québec
+2258,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,i1,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,FedDev Ontario,FedDev Ontario,a,,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario
+2259,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,i1,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,FCAC,ACFC,a,,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada
+2260,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,i1,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,FINTRAC,CANAFE,a,,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada
+2261,Immigration and Refugee Board,Commission de l'immigration et du statut de réfugié,i1,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,IRB,CISR,a,,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada
+2262,Library and Archives of Canada,Bibliothèque et Archives du Canada,i1,Library and Archives Canada,Bibliothèque et Archives Canada,LAC,BAC,a,,Library and Archives Canada,Bibliothèque et Archives Canada
+2263,Military Grievances External Review Committee,Comité externe d'examen des griefs militaires,i1,Military Grievances External Review Committee,Comité externe d'examen des griefs militaires,MGERC,CEEGM,a,,Military Grievances External Review Committee,Comité externe d'examen des griefs militaires
+2264,Military Police Complaints Commission,Commission d'examen des plaintes concernant la police militaire,i1,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,MPCC,CPPM,a,,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada
+2265,National Farm Products Council,Conseil national des produits agricoles,i1,Farm Products Council of Canada,Conseil des produits agricoles du Canada,FPCC,CPAC,a,,Farm Products Council of Canada,Conseil des produits agricoles du Canada
+2266,National Film Board,Office national du film,i1,,,NFB,ONF,a,,National Film Board,Office national du film
+2267,Parole Board of Canada,Commission des libérations conditionnelles du Canada,i1,Parole Board of Canada,Commission des libérations conditionnelles du Canada,PBC,CLCC,a,,Parole Board of Canada,Commission des libérations conditionnelles du Canada
+2268,Northern Pipeline Agency,Administration du pipe-line du Nord,i1,Northern Pipeline Agency Canada,Administration du pipe-line du Nord Canada,NPA,APN,a,,Northern Pipeline Agency Canada,Administration du pipe-line du Nord Canada
+2269,"Department of Housing, Infrastructure and Communities","Ministère du Logement, de l'Infrastructure et des Collectivités",1,"Housing, Infrastructure and Communities Canada","Logement, Infrastructures et Collectivités Canada",HICC,LICC,a,,"Housing, Infrastructure and Communities Canada","Logement, Infrastructures et Collectivités Canada"
+2270,Office of the Auditor General,Bureau du vérificateur général,i1,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,OAG,BVG,a,,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada
+2271,Office of the Chief Electoral Officer,Bureau du directeur général des élections,i1,,,elections,elections,a,,Office of the Chief Electoral Officer,Bureau du directeur général des élections
+2272,Office of the Commissioner for Federal Judicial Affairs,Commissariat à la magistrature fédérale,i1,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada,FJA,CMF,a,,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada
+2273,Office of the Commissioner of Lobbying,Commissariat au lobbying,i1,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada,OCL,CAL,a,,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada
+2274,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,i1,,,OCOL,CLO,a,,Office of the Commissioner of Official Languages,Commissariat aux langues officielles
+2275,Office of the Intelligence Commissioner,Bureau du commissaire au renseignement,i1,,,,,a,,Office of the Intelligence Commissioner,Bureau du commissaire au renseignement
+2276,Office of the Correctional Investigator of Canada,Bureau de l'enquêteur correctionnel du Canada,i1,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada,OCI,BEC,a,,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada
+2277,Office of the Director of Public Prosecutions,Bureau du directeur des poursuites pénales,i1,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,PPSC,SPPC,a,,Public Prosecution Service of Canada,Service des poursuites pénales du Canada
+2278,Office of the Governor General's Secretary,Bureau du secrétaire du gouverneur général,i1,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général,OSGG,BSGG,a,,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général
+2279,Office of the Public Sector Integrity Commissioner,Commissariat à l'intégrité du secteur public,i1,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada,PSIC,ISPC,a,,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada
+2280,Office of the Superintendent of Financial Institutions,Bureau du surintendant des institutions financières,i1,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada,OSFI,BSIF,a,,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada
+2281,Office of the Information Commissioner,Commissariat à l'information au Canada,4,,,,,a,,Office of the Information Commissioner,Commissariat à l'information au Canada
+2282,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,4,,,,,a,,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada
+2283,Patented Medicine Prices Review Board,Conseil d'examen du prix des médicaments brevetés,i1,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada,PMPRB,CEPMB,a,,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada
+2284,Privy Council Office,Bureau du Conseil privé,i1,Privy Council Office,Bureau du Conseil privé,PCO,BCP,a,,Privy Council Office,Bureau du Conseil privé
+2285,Public Health Agency of Canada,Agence de la santé publique du Canada,i1,Public Health Agency of Canada,Agence de la santé publique du Canada,PHAC,ASPC,a,,Public Health Agency of Canada,Agence de la santé publique du Canada
+2286,Public Service Commission,Commission de la fonction publique,i1,Public Service Commission of Canada,Commission de la fonction publique du Canada,PSC,CFP,a,,Public Service Commission of Canada,Commission de la fonction publique du Canada
+2287,Registrar of the Supreme Court of Canada,Registraire de la Cour suprême du Canada,,,,,,a,,Registrar of the Supreme Court of Canada,Registraire de la Cour suprême du Canada
+2288,Royal Canadian Mounted Police,Gendarmerie royale du Canada,i1,,,RCMP,GRC,a,,Royal Canadian Mounted Police,Gendarmerie royale du Canada
+2289,Royal Canadian Mounted Police External Review Committee,Comité externe d'examen de la Gendarmerie royale du Canada,i1,RCMP External Review Committee,Comité externe d'examen de la GRC,ERC,CEE,a,,RCMP External Review Committee,Comité externe d'examen de la GRC
+2290,Civilian Review and Complaints Commission for the Royal Canadian Mounted Police,Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,i1,Civilian Review and Complaints Commission for the RCMP,Commission civile d'examen et de traitement des plaintes relatives à la GRC,CRCC,CCETP,a,,Civilian Review and Complaints Commission for the RCMP,Commission civile d'examen et de traitement des plaintes relatives à la GRC
+2291,National Security and Intelligence Review Agency Secretariat,Secrétariat de l'Office de surveillance des activités en matière de sécurité nationale et de renseignement,i1,,,,,a,,National Security and Intelligence Review Agency Secretariat,Secrétariat de l'Office de surveillance des activités en matière de sécurité nationale et de renseignement
+2292,Shared Services Canada,Services partagés Canada,i1,Shared Services Canada,Services partagés Canada,SSC,SPC,a,,Shared Services Canada,Services partagés Canada
+2293,Statistics Canada,Statistique Canada,i1,Statistics Canada,Statistique Canada,StatCan,StatCan,a,,Statistics Canada,Statistique Canada
+2294,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel),i1,,,VRAB,TACRA,a,,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel)
+2295,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,i1,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,SNSICP,SCPSNR,a,,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement
+2296,Leaders' Debates Commission,Commission des débats des chefs,i1,,,,,a,,Leaders' Debates Commission,Commission des débats des chefs
+2297,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,i1,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,ATSSC,SCDATA,a,,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs
+2298,Pacific Economic Development Agency of Canada,Agence de développement économique du Pacifique Canada,i1,Pacific Economic Development Canada,Développement économique Canada pour le Pacifique,PacifiCan,PacifiCan,a,,Pacific Economic Development Canada,Développement économique Canada pour le Pacifique
+2299,Federal Economic Development Agency for Northern Ontario,Agence fédérale de développement économique pour le Nord de l'Ontario,i1,Federal Economic Development Agency for Northern Ontario,Agence fédérale de développement économique pour le Nord de l'Ontario,FedNor,FedNor,a,,Federal Economic Development Agency for Northern Ontario,Agence fédérale de développement économique pour le Nord de l'Ontario
+2300,Canada Border Services Agency,Agence des services frontaliers du Canada,4,Canada Border Services Agency,Agence des services frontaliers du Canada,CBSA,ASFC,a,,Canada Border Services Agency,Agence des services frontaliers du Canada
+2301,Canada Emission Reduction Incentives Agency,Agence canadienne pour l'incitation à la réduction des émissions,4,,,,,a,,Canada Emission Reduction Incentives Agency,Agence canadienne pour l'incitation à la réduction des émissions
+2302,Canada Employment Insurance Commission,Commission de l'assurance-emploi du Canada,2,Canada Employment Insurance Commission,Commission de l'assurance-emploi du Canada,CEIC,CAEC,a,,Canada Employment Insurance Commission,Commission de l'assurance-emploi du Canada
+2303,Canada Revenue Agency,Agence du revenu du Canada,2,,,CRA,ARC,a,,Canada Revenue Agency,Agence du revenu du Canada
+2304,Canada School of Public Service,École de la fonction publique du Canada,4,,,CSPS,EFPC,a,,Canada School of Public Service,École de la fonction publique du Canada
+2305,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail,2,,,CCOHS,CCHST,a,,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail
+2306,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments,2,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments,CFIA,ACIA,a,,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments
+2307,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada,2,,,CIHR,IRSC,a,,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada
+2308,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire,2,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire,CNSC,CCSN,a,,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire
+2309,Canadian Transportation Accident Investigation and Safety Board,Bureau canadien d'enquête sur les accidents de transport et de la sécurité des transports,4,Transportation Safety Board of Canada,Bureau de la sécurité des transports du Canada,TSB,BST,a,,Transportation Safety Board of Canada,Bureau de la sécurité des transports du Canada
+2310,Law Commission of Canada,Commission du droit du Canada,4,Law Commission of Canada,Commission du droit du Canada,,,a,,Law Commission of Canada,Commission du droit du Canada
+2311,The National Battlefields Commission,Commission des champs de bataille nationaux,2,The National Battlefields Commission,Commission des champs de bataille nationaux,NBC,CCBN,a,,The National Battlefields Commission,Commission des champs de bataille nationaux
+2312,Canadian Energy Regulator,Régie canadienne de l'énergie,2,Canada Energy Regulator,Régie de l'énergie du Canada,CER,REC,a,,Canada Energy Regulator,Régie de l'énergie du Canada
+2313,National Research Council of Canada,Conseil national de recherches du Canada,2,National Research Council Canada,Conseil national de recherches Canada,NRC,CNRC,a,,National Research Council Canada,Conseil national de recherches Canada
+2314,Natural Sciences and Engineering Research Council,Conseil de recherches en sciences naturelles et en génie,2,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,NSERC,CRSNG,a,,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada
+2315,Parks Canada Agency,Agence Parcs Canada,2,Parks Canada,Parcs Canada,PC,PC,a,,Parks Canada,Parcs Canada
+2316,Social Sciences and Humanities Research Council,Conseil de recherches en sciences humaines,2,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,SSHRC,CRSH,a,,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada
+2317,Invest in Canada Hub,Investir au Canada,2,,,,,a,,Invest in Canada Hub,Investir au Canada
+2318,Canadian High Arctic Research Station,Station canadienne de recherche dans l'Extrême-Arctique,2,Polar Knowledge Canada,Savoir polaire Canada,POLAR,POLAIRE,a,,Polar Knowledge Canada,Savoir polaire Canada
+2319,Canadian Accessibility Standards Development Organization,Organisation canadienne d'élaboration de normes d'accessibilité,4,Accessibility Standards Canada,Normes d'accessibilité Canada,ASC,NAC,a,,Accessibility Standards Canada,Normes d'accessibilité Canada
+2396,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,i1,,,,,a,,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes
+3399,African Development Bank,Banque africaine de développement,,,,,,a,,African Development Bank,Banque africaine de développement
+3400,Asian Development Bank,Banque asiatique de développement,,,,,,a,,Asian Development Bank,Banque asiatique de développement
+3401,Caribbean Development Bank,Banque de développement des Caraïbes,,,,,,a,,Caribbean Development Bank,Banque de développement des Caraïbes
+3402,European Bank for Reconstruction and Development,Banque européenne pour la reconstruction et le développement,,,,,,a,,European Bank for Reconstruction and Development,Banque européenne pour la reconstruction et le développement
+3403,Inter-American Development Bank,Banque interaméricaine de développement,,,,,,a,,Inter-American Development Bank,Banque interaméricaine de développement
+3404,International Bank for Reconstruction and Development,Banque internationale pour la reconstruction et le développement,,,,,,a,,International Bank for Reconstruction and Development,Banque internationale pour la reconstruction et le développement
+3405,International Development Association,Association internationale de développement,,,,,,a,,International Development Association,Association internationale de développement
+3406,International Finance Corporation,Société financière internationale,,,,,,a,,International Finance Corporation,Société financière internationale
+3407,International Joint Commission (Canadian Section),Commission mixte internationale (section canadienne),4,,,,,a,,International Joint Commission (Canadian Section),Commission mixte internationale (section canadienne)
+3408,International Lake Memphremagog Levels Board,Commission internationale du lac Memphrémagog,,,,,,a,,International Lake Memphremagog Levels Board,Commission internationale du lac Memphrémagog
+3409,International Lake of the Woods Control Board,Conseil international de contrôle du lac des Bois,,,,,,a,,International Lake of the Woods Control Board,Conseil international de contrôle du lac des Bois
+3410,International Monetary Fund,Fonds monétaire international,,,,,,a,,International Monetary Fund,Fonds monétaire international
+3411,Multilateral Investment Guarantee Agency,Agence multilatérale de garantie des investissements,,,,,,a,,Multilateral Investment Guarantee Agency,Agence multilatérale de garantie des investissements
+3412,Joint Public Advisory Committee (JPAC) of the Commission for Environmental Cooperation (CEC),Comité consultatif public mixte (CCPM) de la Commission de coopération environnementale (CCE),,,,,,a,,Joint Public Advisory Committee (JPAC) of the Commission for Environmental Cooperation (CEC),Comité consultatif public mixte (CCPM) de la Commission de coopération environnementale (CCE)
+3413,World Anti-Doping Agency,Agence mondiale antidopage,,,,,,a,,World Anti-Doping Agency,Agence mondiale antidopage
+3414,Asian Infrastructure Investment Bank,Banque asiatique d'investissement dans les infrastructures,,,,,,a,,Asian Infrastructure Investment Bank,Banque asiatique d'investissement dans les infrastructures
+3415,Lower Churchill Development Corporation Limited,Lower Churchill Development Corporation Limited,,,,,,a,,Lower Churchill Development Corporation Limited,Lower Churchill Development Corporation Limited
+3416,North Portage Development Corporation (operating as The Forks North Portage Partnership),North Portage Development Corporation (exploitée sous le nom de The Forks North Portage Partnership),,,,,,a,,North Portage Development Corporation (operating as The Forks North Portage Partnership),North Portage Development Corporation (exploitée sous le nom de The Forks North Portage Partnership)
+3417,Communication Canada,Communication Canada,4,,,,,a,,Communication Canada,Communication Canada
+3418,Office of the Superintendent of Bankruptcy,Bureau du surintendant des faillites,4,,,,,a,,Office of the Superintendent of Bankruptcy,Bureau du surintendant des faillites
+3419,Prairie Farm Rehabilitation Administration,Administration du rétablissement agricole des Prairies,4,,,,,a,,Prairie Farm Rehabilitation Administration,Administration du rétablissement agricole des Prairies
+3420,Commissioner of Canada Election,Commissaire aux élections fédérales,,,,,,a,,Commissioner of Canada Election,Commissaire aux élections fédérales
+3421,Canada Investment and Savings,Placements Épargne Canada,5,,,,,a,,Canada Investment and Savings,Placements Épargne Canada
+3422,Director of Soldier Settlement,Directeur de l'établissement de soldats,4,,,,,a,,Director of Soldier Settlement,Directeur de l'établissement de soldats
+3423,"The Director, The Veterans' Land Act",Directeur des terres destinées aux anciens combattants,4,,,,,a,,"The Director, The Veterans' Land Act",Directeur des terres destinées aux anciens combattants
+3424,Energy Supplies Allocation Board,Office de répartition des approvisionnements d'énergie,4,,,,,a,,Energy Supplies Allocation Board,Office de répartition des approvisionnements d'énergie
+3425,"Staff of the Non-Public Funds, Canadian Forces","Personnel des fonds non publics, Forces canadiennes",5,,,,,a,,"Staff of the Non-Public Funds, Canadian Forces","Personnel des fonds non publics, Forces canadiennes"
+3426,Statistics Survey Operations,Opérations des enquêtes statistiques,,,,,,a,,Statistics Survey Operations,Opérations des enquêtes statistiques
+3427,Federal Judges not part of any department,Juges fédéraux ne faisant pas partie d'un ministère,,,,,,a,,Federal Judges not part of any department,Juges fédéraux ne faisant pas partie d'un ministère
+3428,House of Commons,Chambre des communes,,,,,,a,,House of Commons,Chambre des communes
+3429,Library of Parliament,Bibliothèque du Parlement,,,,,,a,,Library of Parliament,Bibliothèque du Parlement
+3430,Office of the Conflict of Interest and Ethics Commissioner,Commissariat aux conflits d'intérêts et à l'éthique,,,,,,a,,Office of the Conflict of Interest and Ethics Commissioner,Commissariat aux conflits d'intérêts et à l'éthique
+3431,Senate Ethics Officer,Conseiller sénatorial en éthique,,,,,,a,,Senate Ethics Officer,Conseiller sénatorial en éthique
+3432,Senate,Sénat,,,,,,a,,Senate,Sénat
+3433,Office of the Parliamentary Budget Officer,Bureau du directeur parlementaire du budget,,,,,,a,,Office of the Parliamentary Budget Officer,Bureau du directeur parlementaire du budget
+3434,Parliamentary Protective Service,Service de protection parlementaire,,,,,,a,,Parliamentary Protective Service,Service de protection parlementaire
+3435,Aéroport de Québec Inc.,Aéroport de Québec Inc.,,,,,,a,,Aéroport de Québec Inc.,Aéroport de Québec Inc.
+3436,Aéroports de Montréal,Aéroports de Montréal,,,,,,a,,Aéroports de Montréal,Aéroports de Montréal
+3437,Asia-Pacific Foundation of Canada,Fondation Asie-Pacifique du Canada,,,,,,a,,Asia-Pacific Foundation of Canada,Fondation Asie-Pacifique du Canada
+3438,Association of Canada Lands Surveyors,Association des Arpenteurs des Terres du Canada,,,,,,a,,Association of Canada Lands Surveyors,Association des Arpenteurs des Terres du Canada
+3439,Belledune Port Authority,Administration portuaire de Belledune,,,,,,a,,Belledune Port Authority,Administration portuaire de Belledune
+3440,Buffalo and Fort Erie Public Bridge Authority,Buffalo and Fort Erie Public Bridge Authority,,,,,,a,,Buffalo and Fort Erie Public Bridge Authority,Buffalo and Fort Erie Public Bridge Authority
+3441,Calgary Airport Authority,Administration aéroportuaire de Calgary,,,,,,a,,Calgary Airport Authority,Administration aéroportuaire de Calgary
+3442,WinSport,WinSport,,,,,,a,,WinSport,WinSport
+3443,Canada Foundation for Innovation,Fondation canadienne pour l'innovation,,,,,,a,,Canada Foundation for Innovation,Fondation canadienne pour l'innovation
+3444,Canada Foundation for Sustainable Development Technology,Fondation du Canada pour l'appui technologique au développement durable,,,,,,a,,Canada Foundation for Sustainable Development Technology,Fondation du Canada pour l'appui technologique au développement durable
+3445,Canada Games Council,Conseil des Jeux du Canada,,,,,,a,,Canada Games Council,Conseil des Jeux du Canada
+3446,Canada Health Infoway Inc.,Inforoute Santé du Canada Inc.,,,,,,a,,Canada Health Infoway Inc.,Inforoute Santé du Canada Inc.
+3447,Canada Media Fund,Fonds des médias du Canada,,,,,,a,,Canada Media Fund,Fonds des médias du Canada
+3448,Canada-Newfoundland and Labrador Offshore Petroleum Board,Office Canada-Terre-Neuve-et-Labrador des hydrocarbures extracôtiers,,,,,,a,,Canada-Newfoundland and Labrador Offshore Petroleum Board,Office Canada-Terre-Neuve-et-Labrador des hydrocarbures extracôtiers
+3449,Canada-Nova Scotia Offshore Petroleum Board,Office Canada-Nouvelle-Écosse des hydrocarbures extracôtiers,,,,,,a,,Canada-Nova Scotia Offshore Petroleum Board,Office Canada-Nouvelle-Écosse des hydrocarbures extracôtiers
+3450,Canadian Agency for Drugs and Technologies in Health (CADTH),Agence canadienne des médicaments et des technologies de la santé (ACMTS),,,,,,a,,Canadian Agency for Drugs and Technologies in Health (CADTH),Agence canadienne des médicaments et des technologies de la santé (ACMTS)
+3451,Canadian Centre on Substance Use and Addictions,Centre canadien sur les dépendances et l'usage de substances,,,,,,a,,Canadian Centre on Substance Use and Addictions,Centre canadien sur les dépendances et l'usage de substances
+3452,Canadian Energy Research Institute,Canadian Energy Research Institute,,,,,,d,2020,Canadian Energy Research Institute,Canadian Energy Research Institute
+3453,Canadian Institute for Health Information (CIHI),Institut canadien d'information sur la santé (ICIS),,,,,,a,,Canadian Institute for Health Information (CIHI),Institut canadien d'information sur la santé (ICIS)
+3454,Canadian Livestock Records Corporation,Société canadienne d'enregistrement des animaux,,,,,,a,,Canadian Livestock Records Corporation,Société canadienne d'enregistrement des animaux
+3455,Canadian Partnership Against Cancer Corporation (CPAC),Partenariat canadien contre le cancer (PCC),,,,,,a,,Canadian Partnership Against Cancer Corporation (CPAC),Partenariat canadien contre le cancer (PCC)
+3456,Canadian Patient Safety Institute (CPSI),Institut canadien pour la sécurité des patients (ICSP),,,,,,d,2020,Canadian Patient Safety Institute (CPSI),Institut canadien pour la sécurité des patients (ICSP)
+3457,Canadian Sport Institute Ontario,Institut canadien du sport Ontario,,,,,,a,,Canadian Sport Institute Ontario,Institut canadien du sport Ontario
+3458,Charlottetown Airport Authority Inc.,Charlottetown Airport Authority Inc.,,,,,,a,,Charlottetown Airport Authority Inc.,Charlottetown Airport Authority Inc.
+3459,Coaching Association of Canada,Association canadienne des entraîneurs,,,,,,a,,Coaching Association of Canada,Association canadienne des entraîneurs
+3461,Edmonton Regional Airports Authority,Edmonton Regional Airports Authority,,,,,,a,,Edmonton Regional Airports Authority,Edmonton Regional Airports Authority
+3462,Fredericton International Airport Authority Inc.,Fredericton International Airport Authority Inc.,,,,,,a,,Fredericton International Airport Authority Inc.,Fredericton International Airport Authority Inc.
+3463,Gander International Airport Authority Inc.,Gander International Airport Authority Inc.,,,,,,a,,Gander International Airport Authority Inc.,Gander International Airport Authority Inc.
+3464,Greater London International Airport Authority,Greater London International Airport Authority,,,,,,a,,Greater London International Airport Authority,Greater London International Airport Authority
+3465,Greater Moncton International Airport Authority Inc.,Greater Moncton International Airport Authority Inc.,,,,,,a,,Greater Moncton International Airport Authority Inc.,Greater Moncton International Airport Authority Inc.
+3466,Greater Toronto Airports Authority,Autorité aéroportuaire du Grand Toronto,,,,,,a,,Greater Toronto Airports Authority,Autorité aéroportuaire du Grand Toronto
+3467,Halifax International Airport Authority,Administration de l'aéroport international d'Halifax,,,,,,a,,Halifax International Airport Authority,Administration de l'aéroport international d'Halifax
+3468,Halifax Port Authority,Administration portuaire d'Halifax,,,,,,a,,Halifax Port Authority,Administration portuaire d'Halifax
+3469,Hamilton Port Authority,Administration portuaire de Hamilton,,,,,,a,,Hamilton Port Authority,Administration portuaire de Hamilton
+3470,Institut national du sport du Québec,Institut national du sport du Québec,,,,,,a,,Institut national du sport du Québec,Institut national du sport du Québec
+3471,Internal Trade Secretariat Corporation,Corporation du Secrétariat du commerce intérieur,,,,,,a,,Internal Trade Secretariat Corporation,Corporation du Secrétariat du commerce intérieur
+3472,International Fisheries Commissions Pension Society,Société de caisse de retraite de la Commission internationale des pêcheries,,,,,,a,,International Fisheries Commissions Pension Society,Société de caisse de retraite de la Commission internationale des pêcheries
+3473,Lake of the Woods Control Board,Commission de contrôle du lac des Bois,,,,,,a,,Lake of the Woods Control Board,Commission de contrôle du lac des Bois
+3474,Maritime Forestry Complex Corporation,Société du complexe forestier des Maritimes,,,,,,a,,Maritime Forestry Complex Corporation,Société du complexe forestier des Maritimes
+3475,Mental Health Commission of Canada (MHCC),Commission de la santé mentale du Canada (CSMC),,,,,,a,,Mental Health Commission of Canada (MHCC),Commission de la santé mentale du Canada (CSMC)
+3476,Milit-Air Inc.,Milit-Air Inc.,,,,,,a,,Milit-Air Inc.,Milit-Air Inc.
+3477,Montréal Port Authority,Administration portuaire de Montréal,,,,,,a,,Montréal Port Authority,Administration portuaire de Montréal
+3478,Nanaimo Port Authority,Administration portuaire de Nanaimo,,,,,,a,,Nanaimo Port Authority,Administration portuaire de Nanaimo
+3479,"Nature Trust of British Columbia, The","Nature Trust of British Columbia, The",,,,,,a,,"Nature Trust of British Columbia, The","Nature Trust of British Columbia, The"
+3480,NAV CANADA,NAV CANADA,,,,,,a,,NAV CANADA,NAV CANADA
+3481,Oshawa Port Authority,Administration portuaire d'Oshawa,,,,,,a,,Oshawa Port Authority,Administration portuaire d'Oshawa
+3482,Ottawa International Airport Authority,Administration de l'aéroport international d'Ottawa,,,,,,a,,Ottawa International Airport Authority,Administration de l'aéroport international d'Ottawa
+3483,Ouranos Consortium,Consortium Ouranos,,,,,,a,,Ouranos Consortium,Consortium Ouranos
+3484,"Pierre Elliott Trudeau Foundation, The","Fondation Pierre Elliott Trudeau, La",,,,,,a,,"Pierre Elliott Trudeau Foundation, The","Fondation Pierre Elliott Trudeau, La"
+3485,Porcupine Caribou Management Board,Porcupine Caribou Management Board,,,,,,a,,Porcupine Caribou Management Board,Porcupine Caribou Management Board
+3486,Port Alberni Port Authority,Administration portuaire de Port Alberni,,,,,,a,,Port Alberni Port Authority,Administration portuaire de Port Alberni
+3488,Prince George Airport Authority Inc.,Prince George Airport Authority Inc.,,,,,,a,,Prince George Airport Authority Inc.,Prince George Airport Authority Inc.
+3489,Prince Rupert Port Authority,Administration portuaire de Prince Rupert,,,,,,a,,Prince Rupert Port Authority,Administration portuaire de Prince Rupert
+3490,Québec Port Authority,Administration portuaire de Québec,,,,,,a,,Québec Port Authority,Administration portuaire de Québec
+3491,Regina Airport Authority Inc.,Regina Airport Authority Inc.,,,,,,a,,Regina Airport Authority Inc.,Regina Airport Authority Inc.
+3492,Roosevelt Campobello International Park Commission,Commission du parc international Roosevelt de Campobello,,,,,,a,,Roosevelt Campobello International Park Commission,Commission du parc international Roosevelt de Campobello
+3493,Saguenay Port Authority,Administration portuaire du Saguenay,,,,,,a,,Saguenay Port Authority,Administration portuaire du Saguenay
+3494,Saint John Airport Inc.,Saint John Airport Inc.,,,,,,a,,Saint John Airport Inc.,Saint John Airport Inc.
+3495,Saint John Port Authority,Administration portuaire de Saint John,,,,,,a,,Saint John Port Authority,Administration portuaire de Saint John
+3496,Saskatoon Airport Authority,Saskatoon Airport Authority,,,,,,a,,Saskatoon Airport Authority,Saskatoon Airport Authority
+3497,Sept-Îles Port Authority,Administration portuaire de Sept-Îles,,,,,,a,,Sept-Îles Port Authority,Administration portuaire de Sept-Îles
+3498,Sport Dispute Resolution Centre of Canada,Centre de règlement des différends sportifs du Canada,,,,,,a,,Sport Dispute Resolution Centre of Canada,Centre de règlement des différends sportifs du Canada
+3499,St. John's International Airport Authority,St. John's International Airport Authority,,,,,,a,,St. John's International Airport Authority,St. John's International Airport Authority
+3500,St. John's Port Authority,Administration portuaire de St. John's,,,,,,a,,St. John's Port Authority,Administration portuaire de St. John's
+3501,St. Lawrence Seaway Management Corporation,Corporation de gestion de la Voie maritime du Saint-Laurent,,,,,,a,,St. Lawrence Seaway Management Corporation,Corporation de gestion de la Voie maritime du Saint-Laurent
+3502,Terry Fox Humanitarian Award Inc.,Prix humanitaire Terry Fox inc.,,,,,,a,,Terry Fox Humanitarian Award Inc.,Prix humanitaire Terry Fox inc.
+3503,Thunder Bay International Airports Authority Inc.,Thunder Bay International Airports Authority Inc.,,,,,,a,,Thunder Bay International Airports Authority Inc.,Thunder Bay International Airports Authority Inc.
+3504,Thunder Bay Port Authority,Administration portuaire de Thunder Bay,,,,,,a,,Thunder Bay Port Authority,Administration portuaire de Thunder Bay
+3506,Toronto Port Authority,Administration portuaire de Toronto,,,,,,a,,Toronto Port Authority,Administration portuaire de Toronto
+3507,Trois-Rivières Port Authority,Administration portuaire de Trois-Rivières,,,,,,a,,Trois-Rivières Port Authority,Administration portuaire de Trois-Rivières
+3508,TV5 Québec Canada,TV5 Québec Canada,,,,,,a,,TV5 Québec Canada,TV5 Québec Canada
+3509,Vancouver Fraser Port Authority,Administration portuaire de Vancouver Fraser,,,,,,a,,Vancouver Fraser Port Authority,Administration portuaire de Vancouver Fraser
+3510,Vancouver International Airport Authority,Administration de l'Aéroport de Vancouver,,,,,,a,,Vancouver International Airport Authority,Administration de l'Aéroport de Vancouver
+3511,Victoria Airport Authority,Autorité aéroportuaire de Victoria,,,,,,a,,Victoria Airport Authority,Autorité aéroportuaire de Victoria
+3512,Waterfront Toronto,Waterfront Toronto,,,,,,a,,Waterfront Toronto,Waterfront Toronto
+3513,Wildlife Habitat Canada,Habitat faunique Canada,,,,,,a,,Wildlife Habitat Canada,Habitat faunique Canada
+3514,Windsor Port Authority,Administration portuaire de Windsor,,,,,,a,,Windsor Port Authority,Administration portuaire de Windsor
+3515,Winnipeg Airports Authority Inc.,Winnipeg Airports Authority Inc.,,,,,,a,,Winnipeg Airports Authority Inc.,Winnipeg Airports Authority Inc.
+3516,Canadian Foundation for Healthcare Improvement (CFHI),Fondation canadienne pour l'amélioration des services de santé (FCASS),,,,,,d,2020,Canadian Foundation for Healthcare Improvement (CFHI),Fondation canadienne pour l'amélioration des services de santé (FCASS)
+3517,Healthcare Excellence Canada (HEC),Excellence en santé Canada (ESC),,,,,,a,,Healthcare Excellence Canada (HEC),Excellence en santé Canada (ESC)
+3518,Aboriginal Healing Foundation,Fondation autochtone de guérison,,,,,,d,2013,Aboriginal Healing Foundation,Fondation autochtone de guérison
+3519,Canada Commonwealth Legacy Fund,Fonds du legs des Jeux du Commonwealth,,,,,,d,2014,Canada Commonwealth Legacy Fund,Fonds du legs des Jeux du Commonwealth
+3520,Canadian Foundation for Climate and Atmospheric Sciences,Fondation canadienne pour les sciences du climat et de l'atmosphère,,,,,,d,2013,Canadian Foundation for Climate and Atmospheric Sciences,Fondation canadienne pour les sciences du climat et de l'atmosphère
+3521,Canadian International Grains Institute,Institut international du Canada pour le grain,,,,,,d,2013,Canadian International Grains Institute,Institut international du Canada pour le grain
+3522,"Canadian Wheat Board, The","Commission canadienne du blé, La",,,,,,d,2014,"Canadian Wheat Board, The","Commission canadienne du blé, La"
+3523,Centre national multisport-Montréal,Centre national multisport – Montréal,,,,,,d,2012,Centre national multisport-Montréal,Centre national multisport – Montréal
+3524,First Nations Financial Management Board,Conseil de gestion financière des premières nations,,,,,,d,2013,First Nations Financial Management Board,Conseil de gestion financière des premières nations
+3525,First Nations Tax Commission,Commission de la fiscalité des premières nations,,,,,,d,2013,First Nations Tax Commission,Commission de la fiscalité des premières nations
+3526,Health Council of Canada,Conseil canadien de la santé,,,,,,d,2013,Health Council of Canada,Conseil canadien de la santé
+3527,International Centre for Human Rights and Democratic Development,Centre international des droits de la personne et du développement démocratique,,,,,,d,2012,International Centre for Human Rights and Democratic Development,Centre international des droits de la personne et du développement démocratique
+3528,PrioNet Canada,PrioNet Canada,,,,,,d,2013,PrioNet Canada,PrioNet Canada
+3531,Last Post Fund,Fonds du Souvenir,,,,,,t,2018,Last Post Fund,Fonds du Souvenir
+3532,"Vanier Institute of the Family, The",L'Institut Vanier de la famille,,,,,,t,2012,"Vanier Institute of the Family, The",L'Institut Vanier de la famille
+3533,Canadian Coast Guard,Garde côtière canadienne,,,,,,a,,Canadian Coast Guard,Garde côtière canadienne
+3534,Canadian Conservation Institute,Institut canadien de conservation,,,,,,a,,Canadian Conservation Institute,Institut canadien de conservation
+3535,Canadian Forces Housing Agency,Agence de logement des Forces canadiennes,,,,,,a,,Canadian Forces Housing Agency,Agence de logement des Forces canadiennes
+3536,Canadian Heritage Information Network,Réseau canadien d'information sur le patrimoine,,,,,,a,,Canadian Heritage Information Network,Réseau canadien d'information sur le patrimoine
+3537,Canadian Intellectual Property Office,Office de la propriété intellectuelle du Canada,,,,,,a,,Canadian Intellectual Property Office,Office de la propriété intellectuelle du Canada
+3538,Canadian Pari-Mutuel Agency,Agence canadienne du pari mutuel,,,,,,a,,Canadian Pari-Mutuel Agency,Agence canadienne du pari mutuel
+3539,CORCAN,CORCAN,,,,,,a,,CORCAN,CORCAN
+3540,Defence Research and Development Canada,Recherche et développement pour la défense Canada,,,,,,a,,Defence Research and Development Canada,Recherche et développement pour la défense Canada
+3541,Indian Oil and Gas Canada,Pétrole et gaz des Indiens du Canada,5,,,,,a,,Indian Oil and Gas Canada,Pétrole et gaz des Indiens du Canada
+3542,Measurement Canada,Mesures Canada,,,,,,a,,Measurement Canada,Mesures Canada
+3543,Physical Resources Bureau,Direction générale des biens,,,,,,a,,Physical Resources Bureau,Direction générale des biens
+3544,Translation Bureau,Bureau de la traduction,,,,,,a,,Translation Bureau,Bureau de la traduction
+3545,Consulting and Audit Canada Revolving Fund,Fonds renouvelable de Conseils et Vérification Canada,,,,,,d,2013,Consulting and Audit Canada Revolving Fund,Fonds renouvelable de Conseils et Vérification Canada
+3546,Industrial Technologies Office,Office des technologies industrielles,,,,,,t,2017,Industrial Technologies Office,Office des technologies industrielles
+3547,Passport Canada,Passeport Canada,,,,,,t,2013,Passport Canada,Passeport Canada
+3548,Payroll System General Ledger,Grand livre général du système de la paye,,,,,,a,,Payroll System General Ledger,Grand livre général du système de la paye
+3549,Public Service Superannuation,Pension de retraite de la fonction publique,,,,,,a,,Public Service Superannuation,Pension de retraite de la fonction publique
+3552,Bank of Canada Museum,Musée de la Banque du Canada,,,,,,a,,Bank of Canada Museum,Musée de la Banque du Canada
+3553,Canada Agriculture and Food Museum,Musée de l'agriculture et de l'alimentation du Canada,,,,,,a,,Canada Agriculture and Food Museum,Musée de l'agriculture et de l'alimentation du Canada
+3554,Canada Aviation and Space Museum,Musée de l'aviation et de l'espace du Canada,,,,,,a,,Canada Aviation and Space Museum,Musée de l'aviation et de l'espace du Canada
+3555,Canada Firearms Centre,Centre des armes à feu Canada,,,,,,a,,Canada Firearms Centre,Centre des armes à feu Canada
+3556,Canada Research Chairs,Chaires de recherche du Canada,,,,,,a,,Canada Research Chairs,Chaires de recherche du Canada
+3557,Canadian Army,Armée canadienne,,,,,,a,,Canadian Army,Armée canadienne
+3558,Canadian Judicial Council,Conseil canadien de la magistrature,,,,,,a,,Canadian Judicial Council,Conseil canadien de la magistrature
+3559,Canadian Special Operations Forces Command,Commandement des Forces d'opérations spéciales du Canada,,,,,,a,,Canadian Special Operations Forces Command,Commandement des Forces d'opérations spéciales du Canada
+3560,Canadian Trade Commissioner Service,Service des délégués commerciaux du Canada,,,,,,a,,Canadian Trade Commissioner Service,Service des délégués commerciaux du Canada
+3561,Canadian War Museum,Musée canadien de la guerre,,,,,,a,,Canadian War Museum,Musée canadien de la guerre
+3562,Communications Research Centre Canada,Centre de recherches sur les communications Canada,,,,,,a,,Communications Research Centre Canada,Centre de recherches sur les communications Canada
+3563,Competition Bureau Canada,Bureau de la concurrence Canada,,,,,,a,,Competition Bureau Canada,Bureau de la concurrence Canada
+3564,Competition Tribunal,Tribunal de la concurrence,,,,,,a,,Competition Tribunal,Tribunal de la concurrence
+3565,Court Martial Appeal Court of Canada,Cour d'appel de la cour martiale du Canada,,,,,,a,,Court Martial Appeal Court of Canada,Cour d'appel de la cour martiale du Canada
+3566,Democratic Institutions,Institutions démocratiques,,,,,,a,,Democratic Institutions,Institutions démocratiques
+3568,Environmental Protection Review Canada,Révision de la protection de l'environnement Canada,,,,,,a,,Environmental Protection Review Canada,Révision de la protection de l'environnement Canada
+3569,Federal Court of Appeal,Cour d'appel fédérale,,,,,,a,,Federal Court of Appeal,Cour d'appel fédérale
+3570,Federal Court of Canada,Cour fédérale,,,,,,a,,Federal Court of Canada,Cour fédérale
+3571,Office of the Federal Ombudsperson for Victims Of Crime,Bureau de l'ombudsman fédéral des victimes d'actes criminels,,,,,,a,,Office of the Federal Ombudsperson for Victims Of Crime,Bureau de l'ombudsman fédéral des victimes d'actes criminels
+3572,Historic Sites and Monuments Board of Canada,Commission des lieux et monuments historiques du Canada,,,,,,a,,Historic Sites and Monuments Board of Canada,Commission des lieux et monuments historiques du Canada
+3573,Independent Review Panel for Defence Acquisition,Commission indépendante d'examen des acquisitions de la Défense,,,,,,a,,Independent Review Panel for Defence Acquisition,Commission indépendante d'examen des acquisitions de la Défense
+3574,Intergovernmental Affairs,Affaires intergouvernementales,,,,,,a,,Intergovernmental Affairs,Affaires intergouvernementales
+3575,Judicial Compensation and Benefits Commission,Commission d'examen de la rémunération des juges,,,,,,a,,Judicial Compensation and Benefits Commission,Commission d'examen de la rémunération des juges
+3577,Leader of the Government in the House of Commons,Leader du gouvernement à la Chambre des communes,,,,,,a,,Leader of the Government in the House of Commons,Leader du gouvernement à la Chambre des communes
+3578,Management Advisory Board for the RCMP,Conseil consultatif de gestion pour la GRC,,,,,,a,,Management Advisory Board for the RCMP,Conseil consultatif de gestion pour la GRC
+3579,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,,,,,,a,,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement
+3580,National Seniors Council,Conseil national des aînés,,,,,,a,,National Seniors Council,Conseil national des aînés
+3581,Occupational Health and Safety Tribunal Canada,Tribunal de santé et sécurité au travail Canada,,,,,,a,,Occupational Health and Safety Tribunal Canada,Tribunal de santé et sécurité au travail Canada
+3582,Office of the Chief Military Judge,Le cabinet du juge militaire en chef,,,,,,a,,Office of the Chief Military Judge,Le cabinet du juge militaire en chef
+3583,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,Bureau de l'ombudsman de la Défense nationale et des Forces armées canadiennes,,,,,,a,,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,Bureau de l'ombudsman de la Défense nationale et des Forces armées canadiennes
+3584,Parliament of Canada,Parlement du Canada,,,,,,a,,Parliament of Canada,Parlement du Canada
+3585,Office of the Procurement Ombudsman,Bureau de l'ombudsman de l'approvisionnement,,,,,,a,,Office of the Procurement Ombudsman,Bureau de l'ombudsman de l'approvisionnement
+3586,Prime Minister of Canada,Premier ministre du Canada,,,,,,a,,Prime Minister of Canada,Premier ministre du Canada
+3587,Public Servants Disclosure Protection Tribunal Canada,Tribunal de la protection des fonctionnaires divulgateurs Canada,,,,,,a,,Public Servants Disclosure Protection Tribunal Canada,Tribunal de la protection des fonctionnaires divulgateurs Canada
+3588,Royal Canadian Air Force,Aviation royale canadienne,,,,,,a,,Royal Canadian Air Force,Aviation royale canadienne
+3589,Royal Canadian Navy,Marine royale canadienne,,,,,,a,,Royal Canadian Navy,Marine royale canadienne
+3590,Royal Military College of Canada,Collège militaire royal du Canada,,,,,,a,,Royal Military College of Canada,Collège militaire royal du Canada
+3591,Service Canada,Service Canada,,,,,,a,,Service Canada,Service Canada
+3592,Supreme Court of Canada,Cour suprême du Canada,,,,,,a,,Supreme Court of Canada,Cour suprême du Canada
+3593,Tax Court of Canada,Cour canadienne de l'impôt,,,,,,a,,Tax Court of Canada,Cour canadienne de l'impôt
+3594,Office of the Taxpayers' Ombudsperson,Bureau de l'ombudsman des contribuables,,,,,,a,,Office of the Taxpayers' Ombudsperson,Bureau de l'ombudsman des contribuables
+3595,Office of the Veterans' Ombudsman,Bureau de l'ombud des vétérans,,,,,,a,,Office of the Veterans' Ombudsman,Bureau de l'ombud des vétérans
+3596,Virtual Museum of Canada,Musée virtuel du Canada,,,,,,a,,Virtual Museum of Canada,Musée virtuel du Canada
+3599,Aboriginal Business Canada,Entreprise autochtone Canada,,,,,,a,,Aboriginal Business Canada,Entreprise autochtone Canada
+3600,"Appeal Board, Hazardous Materials Information Review Act","Commission d'appel, Loi sur le contrôle des renseignements relatifs aux matières dangereuses",,,,,,a,,"Appeal Board, Hazardous Materials Information Review Act","Commission d'appel, Loi sur le contrôle des renseignements relatifs aux matières dangereuses"
+3601,Canada Centre for Inland Waters,Centre canadien des eaux intérieures,,,,,,a,,Canada Centre for Inland Waters,Centre canadien des eaux intérieures
+3602,Canadian Museum of Contemporary Photography,Musée canadien de la photographie contemporaine,,,,,,a,,Canadian Museum of Contemporary Photography,Musée canadien de la photographie contemporaine
+3603,Environmental Protection Tribunal of Canada,Tribunal de la protection de I'environnement du Canada,,,,,,a,,Environmental Protection Tribunal of Canada,Tribunal de la protection de I'environnement du Canada
+3604,Geographical Names Board of Canada,La Commission de toponymie du Canada,,,,,,a,,Geographical Names Board of Canada,La Commission de toponymie du Canada
+3605,Geological Survey of Canada,Commission géologique du Canada,,,,,,a,,Geological Survey of Canada,Commission géologique du Canada
+3606,Geomatics Canada,Géomatique Canada,,,,,,a,,Geomatics Canada,Géomatique Canada
+3607,Indian Residential Schools Resolution Canada,Résolution des questions des pensionnats indiens Canada,,,,,,a,,Indian Residential Schools Resolution Canada,Résolution des questions des pensionnats indiens Canada
+3608,National Advisory Council on Aging,Conseil consultatif national sur le troisième âge,,,,,,a,,National Advisory Council on Aging,Conseil consultatif national sur le troisième âge
+3609,National Advisory Council on Poverty,Conseil national du Bien-être,,,,,,a,,National Advisory Council on Poverty,Conseil national du Bien-être
+3611,Office of the Chief Science Advisor of Canada,Bureau du conseiller scientifique en chef du Canada,,,,,,a,,Office of the Chief Science Advisor of Canada,Bureau du conseiller scientifique en chef du Canada
+3612,Policy Horizons Canada,Horizons de politiques Canada,,,,,,a,,Policy Horizons Canada,Horizons de politiques Canada
+3613,Ship-source Oil Pollution Fund,Caisse d'indemnisation des dommages dus à la pollution par les hydrocarbures causée par les navires,,,,,,a,,Ship-source Oil Pollution Fund,Caisse d'indemnisation des dommages dus à la pollution par les hydrocarbures causée par les navires
+3614,Statute Revision Commission Canada,Commission de révision des lois Canada,,,,,,a,,Statute Revision Commission Canada,Commission de révision des lois Canada
+3615,Canadian Dairy Commission,Commission canadienne du lait,4,,,,,a,,Canadian Dairy Commission,Commission canadienne du lait
+3616,Farm Credit Canada,Financement agricole Canada,3,,,,,a,,Farm Credit Canada,Financement agricole Canada
+3618,Canada Council for the Arts,Conseil des Arts du Canada,,,,,,a,,Canada Council for the Arts,Conseil des Arts du Canada
+3619,Canadian Broadcasting Corporation,Société Radio-Canada,,,,,,a,,Canadian Broadcasting Corporation,Société Radio-Canada
+3620,Canadian Museum for Human Rights,Musée canadien des droits de la personne,3,,,,,a,,Canadian Museum for Human Rights,Musée canadien des droits de la personne
+3621,Canadian Museum of History,Musée canadien de l'histoire,3,,,,,a,,Canadian Museum of History,Musée canadien de l'histoire
+3622,Canadian Museum of Immigration at Pier 21,Musée canadien de l'immigration du Quai 21,3,,,,,a,,Canadian Museum of Immigration at Pier 21,Musée canadien de l'immigration du Quai 21
+3623,Canadian Museum of Nature,Musée canadien de la nature,3,,,,,a,,Canadian Museum of Nature,Musée canadien de la nature
+3624,Canadian Race Relations Foundation,Fondation canadienne des relations raciales,,,,,,a,,Canadian Race Relations Foundation,Fondation canadienne des relations raciales
+3625,National Arts Centre Corporation,Société du Centre national des Arts,,,,,,a,,National Arts Centre Corporation,Société du Centre national des Arts
+3626,National Gallery of Canada,Musée des beaux-arts du Canada,3,,,,,a,,National Gallery of Canada,Musée des beaux-arts du Canada
+3627,National Museum of Science and Technology,Musée national des sciences et de la technologie,3,,,,,a,,National Museum of Science and Technology,Musée national des sciences et de la technologie
+3629,Telefilm Canada,Téléfilm Canada,,,,,,a,,Telefilm Canada,Téléfilm Canada
+3630,Toronto Organizing Committee for the 2015 Pan American and Parapan American Games,Comité d'organisation des Jeux panaméricains et parapanaméricains de Toronto 2015,,,,,,a,,Toronto Organizing Committee for the 2015 Pan American and Parapan American Games,Comité d'organisation des Jeux panaméricains et parapanaméricains de Toronto 2015
+3631,Canada Mortgage and Housing Corporation,Société canadienne d'hypothèques et de logement,3,,,,,a,,Canada Mortgage and Housing Corporation,Société canadienne d'hypothèques et de logement
+3632,Social Security Tribunal,Tribunal de la sécurité sociale,,,,,,t,2013,Social Security Tribunal,Tribunal de la sécurité sociale
+3633,Bank of Canada,Banque du Canada,,,,,,a,,Bank of Canada,Banque du Canada
+3634,Canada Deposit Insurance Corporation,Société d'assurance-dépôts du Canada,3,,,,,a,,Canada Deposit Insurance Corporation,Société d'assurance-dépôts du Canada
+3635,Canada Development Investment Corporation,La Corporation de développement des investissements du Canada,,,,,,a,,Canada Development Investment Corporation,La Corporation de développement des investissements du Canada
+3636,Canada Pension Plan Investment Board,Office d'investissement du régime de pensions du Canada,,,,,,a,,Canada Pension Plan Investment Board,Office d'investissement du régime de pensions du Canada
+3637,Royal Canadian Mint,Monnaie royale canadienne,,,,,,a,,Royal Canadian Mint,Monnaie royale canadienne
+3638,Freshwater Fish Marketing Corporation,Office de commercialisation du poisson d'eau douce,3,,,,,a,,Freshwater Fish Marketing Corporation,Office de commercialisation du poisson d'eau douce
+3639,Canadian Commercial Corporation,Corporation commerciale canadienne,3,,,,,a,,Canadian Commercial Corporation,Corporation commerciale canadienne
+3640,Export Development Canada,Exportation et développement Canada,3,,,,,a,,Export Development Canada,Exportation et développement Canada
+3641,International Development Research Centre,Centre de recherches pour le développement international,,,,,,a,,International Development Research Centre,Centre de recherches pour le développement international
+3642,Canada Infrastructure Bank,Banque de l'infrastructure du Canada,3,,,,,a,,Canada Infrastructure Bank,Banque de l'infrastructure du Canada
+3643,The Jacques-Cartier and Champlain Bridges Inc.,Les Ponts Jacques-Cartier et Champlain Inc.,3,,,,,a,,The Jacques-Cartier and Champlain Bridges Inc.,Les Ponts Jacques-Cartier et Champlain Inc.
+3644,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit,3,,,,,a,,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit
+3645,PPP Canada Inc.,PPP Canada Inc.,,,,,,d,2017,PPP Canada Inc.,PPP Canada Inc.
+3646,Business Development Bank of Canada,Banque de développement du Canada,3,,,,,a,,Business Development Bank of Canada,Banque de développement du Canada
+3647,Canadian Tourism Commission,Commission canadienne du tourisme,3,,,,,a,,Canadian Tourism Commission,Commission canadienne du tourisme
+3648,Standards Council of Canada,Conseil canadien des normes,3,,,,,a,,Standards Council of Canada,Conseil canadien des normes
+3649,Atomic Energy of Canada Limited,Énergie atomique du Canada limitée,3,,,,,a,,Atomic Energy of Canada Limited,Énergie atomique du Canada limitée
+3650,Canada Lands Company Limited,Société immobilière du Canada limitée,3,,,,,a,,Canada Lands Company Limited,Société immobilière du Canada limitée
+3651,Canada Post Corporation,Société canadienne des postes,3,,,,,a,,Canada Post Corporation,Société canadienne des postes
+3652,Defence Construction (1951) Limited,Construction de Défense (1951) Limitée,3,,,,,a,,Defence Construction (1951) Limited,Construction de Défense (1951) Limitée
+3653,National Capital Commission,Commission de la capitale nationale,3,,,,,a,,National Capital Commission,Commission de la capitale nationale
+3654,Atlantic Pilotage Authority,Administration de pilotage de l'Atlantique,3,,,,,a,,Atlantic Pilotage Authority,Administration de pilotage de l'Atlantique
+3655,Canadian Air Transport Security Authority,Administration canadienne de la sûreté du transport aérien,3,,,,,a,,Canadian Air Transport Security Authority,Administration canadienne de la sûreté du transport aérien
+3656,Great Lakes Pilotage Authority,Administration de pilotage des Grands Lacs,3,,,,,a,,Great Lakes Pilotage Authority,Administration de pilotage des Grands Lacs
+3657,Laurentian Pilotage Authority,Administration de pilotage des Laurentides,3,,,,,a,,Laurentian Pilotage Authority,Administration de pilotage des Laurentides
+3658,Marine Atlantic Inc.,Marine Atlantique S.C.C.,3,,,,,a,,Marine Atlantic Inc.,Marine Atlantique S.C.C.
+3659,Pacific Pilotage Authority,Administration de pilotage du Pacifique,3,,,,,a,,Pacific Pilotage Authority,Administration de pilotage du Pacifique
+3660,Ridley Terminals Inc.,Ridley Terminals Inc.,,,,,,t,2019,Ridley Terminals Inc.,Ridley Terminals Inc.
+3661,The Federal Bridge Corporation Limited,La Société des ponts fédéraux Limitée,3,,,,,a,,The Federal Bridge Corporation Limited,La Société des ponts fédéraux Limitée
+3662,VIA Rail Canada Inc.,VIA Rail Canada inc.,3,,,,,a,,VIA Rail Canada Inc.,VIA Rail Canada inc.
+3663,Public Sector Pension Investment Board,Office d'investissement des régimes de pensions du secteur public,,,,,,a,,Public Sector Pension Investment Board,Office d'investissement des régimes de pensions du secteur public
+3664,Assisted Human Reproduction Agency of Canada,Agence canadienne de contrôle de la procréation assistée,,,,,,d,2012,Assisted Human Reproduction Agency of Canada,Agence canadienne de contrôle de la procréation assistée
+3665,Blue Water Bridge Authority,Administration du pont Blue Water,,,,,,d,2015,Blue Water Bridge Authority,Administration du pont Blue Water
+3666,Canada Employment Insurance Financing Board,Office de financement de l'assurance-emploi du Canada,,,,,,d,2013,Canada Employment Insurance Financing Board,Office de financement de l'assurance-emploi du Canada
+3667,Corporation for the Mitigation of Mackenzie Gas Project Impacts,Société d'atténuation des répercussions du projet gazier Mackenzie,,,,,,d,2014,Corporation for the Mitigation of Mackenzie Gas Project Impacts,Société d'atténuation des répercussions du projet gazier Mackenzie
+3668,Enterprise Cape Breton Corporation,Société d'expansion du Cap Breton,,,,,,d,2014,Enterprise Cape Breton Corporation,Société d'expansion du Cap Breton
+3669,First Nations Statistical Institute,Institut de la statistique des Premières nations,,,,,,d,2013,First Nations Statistical Institute,Institut de la statistique des Premières nations
+3670,Grain Appeal Tribunal,Tribunal d'appel pour les grains,,,,,,d,2013,Grain Appeal Tribunal,Tribunal d'appel pour les grains
+3671,Hazardous Materials Information Review Commission,Conseil de contrôle des renseignements relatifs aux matières dangereuses,,,,,,d,2012,Hazardous Materials Information Review Commission,Conseil de contrôle des renseignements relatifs aux matières dangereuses
+3672,Indian Residential Schools Truth and Reconciliation Commission,Commission de vérité et de réconciliation relative aux pensionnats indiens,,,,,,d,2015,Indian Residential Schools Truth and Reconciliation Commission,Commission de vérité et de réconciliation relative aux pensionnats indiens
+3673,Inuvialuit Arbitration Board,Commission d'arbitrage des Inuvialuit,,,,,,d,2013,Inuvialuit Arbitration Board,Commission d'arbitrage des Inuvialuit
+3674,Merchant Seamen Compensation Board,Commission d'indemnisation des marins marchands,,,,,,d,2013,Merchant Seamen Compensation Board,Commission d'indemnisation des marins marchands
+3675,National Round Table on the Environment and the Economy,Table ronde nationale sur l'environnement et l'économie,,,,,,d,2012,National Round Table on the Environment and the Economy,Table ronde nationale sur l'environnement et l'économie
+3676,Public Appointments Commission Secretariat,Secrétariat de la Commission des nominations publiques,,,,,,d,2012,Public Appointments Commission Secretariat,Secrétariat de la Commission des nominations publiques
+3679,Canada Agricultural Review Tribunal,Commission de révision agricole du Canada,,,,,,t,2013,Canada Agricultural Review Tribunal,Commission de révision agricole du Canada
+3680,Canada Industrial Relations Board,Conseil canadien des relations industrielles,,,,,,t,2014,Canada Industrial Relations Board,Conseil canadien des relations industrielles
+3681,Canadian Artists and Producers Professional Relations Tribunal,Tribunal canadien des relations professionnelles artistes-producteurs,,,,,,t,2012,Canadian Artists and Producers Professional Relations Tribunal,Tribunal canadien des relations professionnelles artistes-producteurs
+3682,Canadian Cultural Property Export Review Board,Commission canadienne d'examen des exportations de biens culturels,,,,,,t,2013,Canadian Cultural Property Export Review Board,Commission canadienne d'examen des exportations de biens culturels
+3683,Canadian Human Rights Tribunal,Tribunal canadien des droits de la personne,,,,,,t,2014,Canadian Human Rights Tribunal,Tribunal canadien des droits de la personne
+3684,Canadian International Development Agency,Agence canadienne de développement international,,,,,,t,2013,Canadian International Development Agency,Agence canadienne de développement international
+3685,Canadian International Trade Tribunal,Tribunal canadien du commerce extérieur,,,,,,t,2014,Canadian International Trade Tribunal,Tribunal canadien du commerce extérieur
+3686,Employment Insurance Boards of Referees,Conseils arbitraux de l'assurance-emploi,,,,,,t,2013,Employment Insurance Boards of Referees,Conseils arbitraux de l'assurance-emploi
+3687,Office of the Commissioner of Review Tribunals,Bureau du Commissaire des tribunaux de révision,,,,,,t,2013,Office of the Commissioner of Review Tribunals,Bureau du Commissaire des tribunaux de révision
+3688,Office of the Umpire,Bureau du juge-arbitre,,,,,,t,2013,Office of the Umpire,Bureau du juge-arbitre
+3689,Old Port of Montreal Corporation Inc.,Société du Vieux-Port de Montréal Inc.,,,,,,t,2012,Old Port of Montreal Corporation Inc.,Société du Vieux-Port de Montréal Inc.
+3690,Parc Downsview Park Inc.,Parc Downsview Park Inc,,,,,,t,2012,Parc Downsview Park Inc.,Parc Downsview Park Inc
+3691,Pension Appeals Board,Commission d'appel des pensions,,,,,,t,2013,Pension Appeals Board,Commission d'appel des pensions
+3692,Public Service Labour Relations Board,Commission des relations de travail dans la fonction publique,,,,,,t,2014,Public Service Labour Relations Board,Commission des relations de travail dans la fonction publique
+3693,Public Service Staffing Tribunal,Tribunal de la dotation de la fonction publique,,,,,,t,2014,Public Service Staffing Tribunal,Tribunal de la dotation de la fonction publique
+3694,Registry of the Competition Tribunal,Greffe du Tribunal de la concurrence,,,,,,t,2014,Registry of the Competition Tribunal,Greffe du Tribunal de la concurrence
+3695,Registry of the Public Servants Disclosure Protection Tribunal,Greffe du Tribunal de la protection des fonctionnaires divulgateurs d'actes répréhensibles,,,,,,t,2014,Registry of the Public Servants Disclosure Protection Tribunal,Greffe du Tribunal de la protection des fonctionnaires divulgateurs d'actes répréhensibles
+3696,Registry of the Specific Claims Tribunal,Greffe du Tribunal des revendications particulières,,,,,,t,2014,Registry of the Specific Claims Tribunal,Greffe du Tribunal des revendications particulières
+3697,Transportation Appeal Tribunal of Canada,Tribunal d'appel des transports du Canada,,,,,,t,2014,Transportation Appeal Tribunal of Canada,Tribunal d'appel des transports du Canada
+3698,Vancouver Organizing Committee for the 2010 Olympic and Paralympic Winter Games,Comité d'organisation des Jeux olympiques et paralympiques d'hiver de 2010 à Vancouver,,,,,,d,2012,Vancouver Organizing Committee for the 2010 Olympic and Paralympic Winter Games,Comité d'organisation des Jeux olympiques et paralympiques d'hiver de 2010 à Vancouver
+3700,The Halifax 2011 Canada Games Host Society,Société d'accueil des Jeux de 2011 de Halifax,,,,,,d,2012,The Halifax 2011 Canada Games Host Society,Société d'accueil des Jeux de 2011 de Halifax
+3701,Prince George 2015 Canada Winter Games Host Society,Société hôtesse des Jeux d'hiver du Canada Prince George 2015,,,,,,a,,Prince George 2015 Canada Winter Games Host Society,Société hôtesse des Jeux d'hiver du Canada Prince George 2015
+3702,2010 Games Operating Trust Society,Société du legs des Jeux de 2010,,,,,,a,,2010 Games Operating Trust Society,Société du legs des Jeux de 2010
+3703,Canada Water Agency,Agence canadienne de l'eau,i1,,,,,a,,Canada Water Agency,Agence canadienne de l'eau
+3704,Treasury Board,Conseil du Trésor,1,,,TB,CT,a,,Treasury Board,Conseil du Trésor

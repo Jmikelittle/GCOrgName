@@ -27,6 +27,12 @@ if response.status_code == 200:
     else:
         print("Error: 'Number' column not found in the DataFrame.")
 
+    # Rename the 'Name' column to 'RGOriginalName'
+    if 'Name' in df.columns:
+        df = df.rename(columns={'Name': 'RGOriginalName'})
+    else:
+        print("Error: 'Name' column not found in the DataFrame.")
+
     # Save the DataFrame to a CSV file with UTF-8-SIG encoding
     df.to_csv(output_file, index=False, encoding='utf-8-sig')
 

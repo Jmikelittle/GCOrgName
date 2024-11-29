@@ -1,11 +1,8 @@
 import os
 import requests
 
-# Path to the folder where the script will save the files
-resources_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Resources')
-
-# Ensure the Resources folder exists
-os.makedirs(resources_folder, exist_ok=True)
+# Path to the folder where the script is located
+script_folder = os.path.dirname(os.path.abspath(__file__))
 
 def download_and_fix_csv(url, filename):
     response = requests.get(url)
@@ -19,7 +16,7 @@ def download_and_fix_csv(url, filename):
         fixed_content = fixed_content.replace('\u2018', "'").replace('\u2019', "'")
         print("Fixed content snippet:", fixed_content[:100])  # Print the first 100 characters of the fixed content
         # Save the fixed content to a file with UTF-8 encoding
-        file_path = os.path.join(resources_folder, filename)
+        file_path = os.path.join(script_folder, filename)
         with open(file_path, 'w', encoding='utf-8-sig') as file:
             file.write(fixed_content)
         print(f'{filename} downloaded and fixed successfully!')

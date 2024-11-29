@@ -9,12 +9,14 @@ manual_org_file = os.path.join(script_folder, 'Manual org ID link.csv')
 combined_faa_file = os.path.join(script_folder, 'Scraping', 'combined_FAA_names.csv')
 applied_en_file = os.path.join(script_folder, 'applied_en.csv')
 infobase_en_file = os.path.join(script_folder, 'infobase_en.csv')
+infobase_fr_file = os.path.join(script_folder, 'infobase_fr.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)
 combined_faa_df = pd.read_csv(combined_faa_file)
 applied_en_df = pd.read_csv(applied_en_file)
 infobase_en_df = pd.read_csv(infobase_en_file)
+infobase_fr_df = pd.read_csv(infobase_fr_file)
 
 # Remove the 'Unnamed: 0' field if it exists
 if 'Unnamed: 0' in combined_faa_df.columns:
@@ -29,6 +31,7 @@ manual_org_df = standardize_text(manual_org_df)
 combined_faa_df = standardize_text(combined_faa_df)
 applied_en_df = standardize_text(applied_en_df)
 infobase_en_df = standardize_text(infobase_en_df)
+infobase_fr_df = standardize_text(infobase_fr_df)
 
 # Preserve the original 'English Name' column
 combined_faa_df['Original English Name'] = combined_faa_df['English Name']
@@ -51,10 +54,13 @@ unmatched_values = joined_df[joined_df['Names Match'] == 1]
 joined_df = joined_df[joined_df['Names Match'] == 0]
 
 # Join with applied_en_df on 'Legal title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(joined_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='left')
+final_joined_df = pd.merge(joined_df, applied_en_df[['Legal title', 'Applied title', "Titre d'usage"]], left_on='Organization Legal Name English', right_on='Legal title', how='left')
 
 # Join with infobase_en_df on 'Legal Title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(final_joined_df, infobase_en_df[['Legal Title', 'OrgID', 'Status', 'End date']], left_on='Organization Legal Name English', right_on='Legal Title', how='left')
+final_joined_df = pd.merge(final_joined_df, infobase_en_df[['Legal Title', 'OrgID', 'Website']], left_on='Organization Legal Name English', right_on='Legal Title', how='left')
+
+# Join with infobase_fr_df on 'Appellation legale' and 'appellation_légale'
+final_joined_df = pd.merge(final_joined_df, infobase_fr_df[['Appellation legale', 'Site Web']], left_on='Organization Legal Name French', right_on='Appellation legale', how='left')
 
 # Create the 'harmonized_name' field
 final_joined_df['harmonized_name'] = final_joined_df['Applied title']
@@ -70,49 +76,27 @@ final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split(
 # Rename 'GC OrgID' to 'gc_orgID'
 final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID'})
 
-# Rename 'Status' to 'status_statut' and set value to 'a' if empty
-final_joined_df = final_joined_df.rename(columns={'Status': 'status_statut'})
-final_joined_df['status_statut'] = final_joined_df['status_statut'].fillna('a')
-
-# Rename 'End date' to 'end_date_fin' and set value to empty if it is '.'
-final_joined_df = final_joined_df.rename(columns={'End date': 'end_date_fin'})
-final_joined_df['end_date_fin'] = final_joined_df['end_date_fin'].replace('.', '')
-
-# Rename 'OrgID' to 'infobaseID'
+# Rename 'OrgID' to 'infobaseID' and set as whole number
 final_joined_df = final_joined_df.rename(columns={'OrgID': 'infobaseID'})
+final_joined_df['infobaseID'] = final_joined_df['infobaseID'].fillna(0).astype(int)
+
+# Rename 'Website' to 'website'
+final_joined_df = final_joined_df.rename(columns={'Website': 'website'})
+
+# Rename 'Site Web' to 'site_web'
+final_joined_df = final_joined_df.rename(columns={'Site Web': 'site_web'})
 
 # Remove rows where 'gc_orgID' is NaN
 final_joined_df = final_joined_df.dropna(subset=['gc_orgID'])
 
-# Rename fields as specified
-final_joined_df = final_joined_df.rename(columns={
-    'Organization Legal Name English': 'legal_title',
-    'Organization Legal Name French': 'appellation_légale',
-    'FAA': 'FAA_LGFP',
-    'Applied title': 'preferred_name',
-    "Titre d'usage": 'nom_préféré',
-    'Abbreviation': 'abbreviation',
-    'Abreviation': 'abreviation'
-})
-
-# Remove specified fields from the final output
-fields_to_remove = [
-    'French Name', 
-    'Original English Name', 
-    'Names Match', 
-    'FAA/LGFP', 
-    'Legal title', 
-    'Appellation legale', 
-    'Footnote', 
-    'Note de bas de page',
-    'Legal Title'
-]
-final_joined_df = final_joined_df.drop(columns=fields_to_remove, errors='ignore')
+# Check if 'abbreviation' and 'abreviation' columns exist, if not, create them with empty values
+if 'abbreviation' not in final_joined_df.columns:
+    final_joined_df['abbreviation'] = ''
+if 'abreviation' not in final_joined_df.columns:
+    final_joined_df['abreviation'] = ''
 
 # Reorder the fields
-ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'legal_title', 'appellation_légale', 
-                  'preferred_name', 'nom_préféré', 'abbreviation', 'abreviation', 'FAA_LGFP', 
-                  'status_statut', 'end_date_fin', 'infobaseID']
+ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'abbreviation', 'abreviation', 'infobaseID', 'website', 'site_web']
 final_joined_df = final_joined_df[ordered_fields]
 
 # Sort the final joined DataFrame by gc_orgID from lowest to highest

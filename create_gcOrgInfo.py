@@ -52,7 +52,7 @@ unmatched_values = joined_df[joined_df['Names Match'] == 1]
 joined_df = joined_df[joined_df['Names Match'] == 0]
 
 # Join with applied_en_df on 'Legal title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(joined_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='left')
+final_joined_df = pd.merge(joined_df, applied_en_df[['Legal title', 'Applied title', "Titre d'usage"]], left_on='Organization Legal Name English', right_on='Legal title', how='left')
 
 # Join with infobase_en_df on 'Legal Title' and 'Organization Legal Name English'
 final_joined_df = pd.merge(final_joined_df, infobase_en_df[['Legal Title', 'Status', 'End date']], left_on='Organization Legal Name English', right_on='Legal Title', how='left')
@@ -79,37 +79,24 @@ final_joined_df['status_statut'] = final_joined_df['status_statut'].fillna('a')
 final_joined_df = final_joined_df.rename(columns={'End date': 'end_date_fin'})
 final_joined_df['end_date_fin'] = final_joined_df['end_date_fin'].replace('.', '')
 
-# Remove rows where 'gc_orgID' is NaN
-final_joined_df = final_joined_df.dropna(subset=['gc_orgID'])
-
 # Rename fields as specified
 final_joined_df = final_joined_df.rename(columns={
     'Organization Legal Name English': 'legal_title',
     'Organization Legal Name French': 'appellation_légale',
     'FAA': 'FAA_LGFP',
     'Applied title': 'preferred_name',
-    "Titre d'usage": 'nom_préféré',
-    'Abbreviation': 'abbreviation',
-    'Abreviation': 'abreviation'
+    "Titre d'usage": 'nom_préféré'
 })
 
 # Add the new columns after 'nom_préféré'
 final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 1, 'ministerial_portfolio', '')
 final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 2, 'portefeuilles_ministériels', '')
 
-# Remove specified fields from the final output
-fields_to_remove = [
-    'French Name', 
-    'Original English Name', 
-    'Names Match', 
-    'FAA/LGFP', 
-    'Legal title', 
-    'Appellation legale', 
-    'Footnote', 
-    'Note de bas de page',
-    'Legal Title'
-]
-final_joined_df = final_joined_df.drop(columns=fields_to_remove, errors='ignore')
+# Check if 'abbreviation' and 'abreviation' columns exist, if not, create them with empty values
+if 'abbreviation' not in final_joined_df.columns:
+    final_joined_df['abbreviation'] = ''
+if 'abreviation' not in final_joined_df.columns:
+    final_joined_df['abreviation'] = ''
 
 # Reorder the fields
 ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'legal_title', 'appellation_légale', 

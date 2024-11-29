@@ -92,6 +92,10 @@ final_joined_df = final_joined_df.rename(columns={
     'Abreviation': 'abreviation'
 })
 
+# Add the new columns after 'nom_préféré'
+final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 1, 'ministerial_portfolio', '')
+final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 2, 'portefeuilles_ministériels', '')
+
 # Remove specified fields from the final output
 fields_to_remove = [
     'French Name', 
@@ -108,8 +112,8 @@ final_joined_df = final_joined_df.drop(columns=fields_to_remove, errors='ignore'
 
 # Reorder the fields
 ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'legal_title', 'appellation_légale', 
-                  'preferred_name', 'nom_préféré', 'abbreviation', 'abreviation', 'FAA_LGFP', 
-                  'status_statut', 'end_date_fin']
+                  'preferred_name', 'nom_préféré', 'ministerial_portfolio', 'portefeuilles_ministériels', 
+                  'abbreviation', 'abreviation', 'FAA_LGFP', 'status_statut', 'end_date_fin']
 final_joined_df = final_joined_df[ordered_fields]
 
 # Sort the final joined DataFrame by gc_orgID from lowest to highest

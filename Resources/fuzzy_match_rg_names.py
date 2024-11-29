@@ -6,7 +6,7 @@ from fuzzywuzzy import process
 script_folder = os.path.dirname(os.path.abspath(__file__))
 receiver_general_file = os.path.join(script_folder, 'receiver_general.csv')
 manual_org_file = os.path.join(script_folder, 'Manual org ID link.csv')
-output_file = os.path.join(script_folder, 'matched_org_names.csv')
+output_file = os.path.join(script_folder, 'matched_RG_names.csv')
 
 # Read the CSV files
 receiver_general_df = pd.read_csv(receiver_general_file)

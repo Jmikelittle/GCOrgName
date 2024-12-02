@@ -1,6 +1,13 @@
 import os
 import pandas as pd
 
+# Function to standardize hyphens and apostrophes
+def standardize_text(text):
+    if pd.isna(text):
+        return text
+    text = text.replace('–', '-').replace('—', '-').replace('’', "'").replace('‘', "'")
+    return text
+
 # Get the directory of the current script
 script_folder = os.path.dirname(os.path.abspath(__file__))
 
@@ -13,6 +20,12 @@ matched_df = pd.read_csv(matched_file)
 
 # Load the Fixed_RG_names.csv file
 fixed_df = pd.read_csv(fixed_file)
+
+# Standardize hyphens and apostrophes in the relevant columns
+matched_df['RGOriginalName'] = matched_df['RGOriginalName'].apply(standardize_text)
+matched_df['Organization Legal Name English'] = matched_df['Organization Legal Name English'].apply(standardize_text)
+fixed_df['RGOriginalName'] = fixed_df['RGOriginalName'].apply(standardize_text)
+fixed_df['Organization Legal Name English'] = fixed_df['Organization Legal Name English'].apply(standardize_text)
 
 # Replace values in 'Organization Legal Name English' and 'GC OrgID' when MatchScore is less than 95
 for index, row in matched_df.iterrows():

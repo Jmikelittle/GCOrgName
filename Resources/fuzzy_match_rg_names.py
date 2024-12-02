@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from fuzzywuzzy import process
+from rapidfuzz import process
 
 # Paths to the CSV files
 script_folder = os.path.dirname(os.path.abspath(__file__))
@@ -31,6 +31,7 @@ matches = rg_names.apply(lambda x: fuzzy_match(x, manual_org_names))
 # Create a DataFrame with the matching results
 match_df = pd.DataFrame({
     'RGOriginalName': rg_names,
+    'rgnumber': receiver_general_df['Number'],
     'MatchedName': matches.apply(lambda x: x[0]),
     'MatchScore': matches.apply(lambda x: x[1])
 })
@@ -38,6 +39,9 @@ match_df = pd.DataFrame({
 # Merge the matched names with the manual organization names to get GC OrgID
 final_df = match_df.merge(manual_org_df[['Organization Legal Name English', 'GC OrgID']], 
                           left_on='MatchedName', right_on='Organization Legal Name English', how='left')
+
+# Reorder columns to ensure 'rgnumber' is the second field
+final_df = final_df[['RGOriginalName', 'rgnumber', 'MatchedName', 'MatchScore', 'GC OrgID']]
 
 # Save the result to a new CSV file
 final_df.to_csv(output_file, index=False, encoding='utf-8-sig')

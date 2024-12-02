@@ -9,11 +9,21 @@ def standardize_text(text):
     return text
 
 # Get the directory of the current script
-script_folder = os.path.dirname(os.path.abspath(__file__))
+script_folder = os.getcwd()
+
+# Print the current working directory and script folder
+print(f"Current working directory: {os.getcwd()}")
+print(f"Script folder: {script_folder}")
 
 # Paths to the CSV files
 matched_file = os.path.join(script_folder, 'matched_RG_names.csv')
 fixed_file = os.path.join(script_folder, 'Fixed_RG_names.csv')
+
+# Check if the files exist
+if not os.path.exists(matched_file):
+    print(f"File not found: {matched_file}")
+if not os.path.exists(fixed_file):
+    print(f"File not found: {fixed_file}")
 
 # Load the matched_RG_names.csv file
 matched_df = pd.read_csv(matched_file)
@@ -35,8 +45,17 @@ for index, row in matched_df.iterrows():
             matched_df.at[index, 'Organization Legal Name English'] = fixed_row['Organization Legal Name English'].values[0]
             matched_df.at[index, 'GC OrgID'] = fixed_row['GC OrgID'].values[0]
 
+# Identify new entries in 'Fixed_RG_names.csv' based on 'GC OrgID'
+new_entries = fixed_df[~fixed_df['GC OrgID'].isin(matched_df['GC OrgID'])]
+
+# Append these new entries to the matched DataFrame
+final_df = pd.concat([matched_df, new_entries], ignore_index=True)
+
+# Set GC OrgID to whole numbers
+final_df['GC OrgID'] = final_df['GC OrgID'].astype(int)
+
 # Save the updated DataFrame to a new CSV file
 updated_output_file = os.path.join(script_folder, 'final_RG_match.csv')
-matched_df.to_csv(updated_output_file, index=False, encoding='utf-8-sig')
+final_df.to_csv(updated_output_file, index=False, encoding='utf-8-sig')
 
 print(f"The updated matched names have been saved to {updated_output_file}")

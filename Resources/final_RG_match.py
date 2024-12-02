@@ -9,11 +9,11 @@ def standardize_text(text):
     return text
 
 # Get the directory of the current script
-script_folder = os.path.dirname(os.path.abspath(__file__))
+script_folder = os.getcwd()
 
 # Paths to the CSV files
-matched_file = os.path.join(script_folder, 'matched_RG_names.csv')
-fixed_file = os.path.join(script_folder, 'Fixed_RG_names.csv')
+matched_file = os.path.join(script_folder, 'Resources', 'matched_RG_names.csv')
+fixed_file = os.path.join(script_folder, 'Resources', 'Fixed_RG_names.csv')
 
 # Load the matched_RG_names.csv file
 matched_df = pd.read_csv(matched_file)
@@ -52,6 +52,20 @@ final_df['GC OrgID'] = pd.to_numeric(final_df['GC OrgID'], errors='coerce').fill
 if 'rgnumber' in fixed_df.columns:
     final_df = final_df.merge(fixed_df[['RGOriginalName', 'rgnumber']], on='RGOriginalName', how='left')
 
+# Debugging: Print columns and data types before removing duplicates and rounding numbers
+print("Columns before removing duplicates and rounding numbers:")
+print(final_df.columns)
+print("Data types before removing duplicates and rounding numbers:")
+print(final_df.dtypes)
+
+# Remove any duplicate columns resulting from the merge (e.g., rgnumber_y)
+if 'rgnumber_y' in final_df.columns:
+    final_df = final_df.drop(columns=['rgnumber_y'])
+
+# Debugging: Print columns after removing duplicates
+print("Columns after removing duplicates:")
+print(final_df.columns)
+
 # Reorder columns to ensure 'rgnumber' is the second field if it exists
 if 'rgnumber' in final_df.columns:
     columns_order = ['RGOriginalName', 'rgnumber'] + [col for col in final_df.columns if col not in ['RGOriginalName', 'rgnumber']]
@@ -60,6 +74,16 @@ if 'rgnumber' in final_df.columns:
 # Set rgnumber to whole numbers, handling non-finite values
 if 'rgnumber' in final_df.columns:
     final_df['rgnumber'] = pd.to_numeric(final_df['rgnumber'], errors='coerce').fillna(0).astype(int)
+
+# Round all numeric fields to whole numbers
+for col in final_df.select_dtypes(include=['float64', 'int64']).columns:
+    final_df[col] = final_df[col].round(0).astype(int)
+
+# Debugging: Print columns and data types after rounding numbers
+print("Columns after rounding numbers:")
+print(final_df.columns)
+print("Data types after rounding numbers:")
+print(final_df.dtypes)
 
 # Save the updated DataFrame to a new CSV file
 updated_output_file = os.path.join(script_folder, 'final_RG_match.csv')

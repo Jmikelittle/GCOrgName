@@ -58,12 +58,16 @@ print(final_df.columns)
 print("Data types before removing duplicates and rounding numbers:")
 print(final_df.dtypes)
 
-# Remove any duplicate columns resulting from the merge (e.g., rgnumber_y)
+# Remove any duplicate columns resulting from the merge (e.g., rgnumber_x, rgnumber_y)
 if 'rgnumber_y' in final_df.columns:
     final_df = final_df.drop(columns=['rgnumber_y'])
 
-# Debugging: Print columns after removing duplicates
-print("Columns after removing duplicates:")
+# Rename rgnumber_x to rgnumber if it exists
+if 'rgnumber_x' in final_df.columns:
+    final_df = final_df.rename(columns={'rgnumber_x': 'rgnumber'})
+
+# Debugging: Print columns after removing duplicates and renaming
+print("Columns after removing duplicates and renaming:")
 print(final_df.columns)
 
 # Reorder columns to ensure 'rgnumber' is the second field if it exists
@@ -75,9 +79,9 @@ if 'rgnumber' in final_df.columns:
 if 'rgnumber' in final_df.columns:
     final_df['rgnumber'] = pd.to_numeric(final_df['rgnumber'], errors='coerce').fillna(0).astype(int)
 
-# Round all numeric fields to whole numbers
+# Round all numeric fields to whole numbers, handling non-finite values before conversion
 for col in final_df.select_dtypes(include=['float64', 'int64']).columns:
-    final_df[col] = final_df[col].round(0).astype(int)
+    final_df[col] = pd.to_numeric(final_df[col], errors='coerce').fillna(0).round(0).astype(int)
 
 # Debugging: Print columns and data types after rounding numbers
 print("Columns after rounding numbers:")
@@ -85,8 +89,8 @@ print(final_df.columns)
 print("Data types after rounding numbers:")
 print(final_df.dtypes)
 
-# Save the updated DataFrame to a new CSV file
-updated_output_file = os.path.join(script_folder, 'final_RG_match.csv')
+# Save the updated DataFrame to a new CSV file in the Resources folder
+updated_output_file = os.path.join(script_folder, 'Resources', 'final_RG_match.csv')
 final_df.to_csv(updated_output_file, index=False, encoding='utf-8-sig')
 
 print(f"The updated matched names have been saved to {updated_output_file}")

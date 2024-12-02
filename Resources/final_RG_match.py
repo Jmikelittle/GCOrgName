@@ -48,18 +48,18 @@ final_df = pd.concat([matched_df, new_entries], ignore_index=True)
 # Set GC OrgID to whole numbers, handling non-finite values
 final_df['GC OrgID'] = pd.to_numeric(final_df['GC OrgID'], errors='coerce').fillna(0).astype(int)
 
-# Add the 'rgnumber' field from 'matched_RG_names.csv' to 'final_RG_match.csv'
-if 'rgnumber' in matched_df.columns:
-    final_df = final_df.merge(matched_df[['RGOriginalName', 'rgnumber']], on='RGOriginalName', how='left')
+# Add the 'rgnumber' field from 'Fixed_RG_names.csv' to 'final_RG_match.csv'
+if 'rgnumber' in fixed_df.columns:
+    final_df = final_df.merge(fixed_df[['RGOriginalName', 'rgnumber']], on='RGOriginalName', how='left')
 
 # Reorder columns to ensure 'rgnumber' is the second field if it exists
 if 'rgnumber' in final_df.columns:
     columns_order = ['RGOriginalName', 'rgnumber'] + [col for col in final_df.columns if col not in ['RGOriginalName', 'rgnumber']]
     final_df = final_df[columns_order]
 
-# Set rgnumber_x to whole numbers, handling non-finite values
-if 'rgnumber_x' in final_df.columns:
-    final_df['rgnumber_x'] = pd.to_numeric(final_df['rgnumber_x'], errors='coerce').fillna(0).astype(int)
+# Set rgnumber to whole numbers, handling non-finite values
+if 'rgnumber' in final_df.columns:
+    final_df['rgnumber'] = pd.to_numeric(final_df['rgnumber'], errors='coerce').fillna(0).astype(int)
 
 # Save the updated DataFrame to a new CSV file
 updated_output_file = os.path.join(script_folder, 'final_RG_match.csv')

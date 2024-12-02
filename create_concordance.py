@@ -12,6 +12,7 @@ combined_faa_file = os.path.join(scraping_folder, 'combined_FAA_names.csv')
 applied_en_file = os.path.join(resources_folder, 'applied_en.csv')
 infobase_en_file = os.path.join(resources_folder, 'infobase_en.csv')
 infobase_fr_file = os.path.join(resources_folder, 'infobase_fr.csv')
+fixed_rg_file = os.path.join(resources_folder, 'Fixed_RG_names.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)
@@ -19,6 +20,7 @@ combined_faa_df = pd.read_csv(combined_faa_file)
 applied_en_df = pd.read_csv(applied_en_file)
 infobase_en_df = pd.read_csv(infobase_en_file)
 infobase_fr_df = pd.read_csv(infobase_fr_file)
+fixed_rg_df = pd.read_csv(fixed_rg_file)
 
 # Remove the 'Unnamed: 0' field if it exists
 if 'Unnamed: 0' in combined_faa_df.columns:
@@ -34,6 +36,7 @@ combined_faa_df = standardize_text(combined_faa_df)
 applied_en_df = standardize_text(applied_en_df)
 infobase_en_df = standardize_text(infobase_en_df)
 infobase_fr_df = standardize_text(infobase_fr_df)
+fixed_rg_df = standardize_text(fixed_rg_df)
 
 # Preserve the original 'English Name' column
 combined_faa_df['Original English Name'] = combined_faa_df['English Name']
@@ -97,19 +100,32 @@ if 'abbreviation' not in final_joined_df.columns:
 if 'abreviation' not in final_joined_df.columns:
     final_joined_df['abreviation'] = ''
 
-# Reorder the fields
-ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'abbreviation', 'abreviation', 'infobaseID', 'website', 'site_web']
+# Convert gc_orgID to string type for merging
+final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str)
+fixed_rg_df['GC OrgID'] = fixed_rg_df['GC OrgID'].astype(str)
+
+# Join with fixed_rg_df on 'GC OrgID' and 'gc_orgID'
+final_joined_df = pd.merge(final_joined_df, fixed_rg_df[['GC OrgID', 'rgnumber']], left_on='gc_orgID', right_on='GC OrgID', how='left')
+
+# Drop the redundant 'GC OrgID' column from the final DataFrame
+final_joined_df = final_joined_df.drop(columns=['GC OrgID'])
+
+# Rename the new field to 'rg'
+final_joined_df = final_joined_df.rename(columns={'rgnumber': 'rg'})
+
+# Reorder the fields to include 'rg'
+ordered_fields = ['gc_orgID', 'rg', 'harmonized_name', 'nom_harmonisé', 'abbreviation', 'abreviation', 'infobaseID', 'website', 'site_web']
 final_joined_df = final_joined_df[ordered_fields]
 
 # Sort the final joined DataFrame by gc_orgID from lowest to highest
 final_joined_df = final_joined_df.sort_values(by='gc_orgID')
 
-# Save the final joined DataFrame to a new CSV file with UTF-8 encoding
-output_file = os.path.join(resources_folder, 'gc_concordance.csv')
+# Save the final joined DataFrame to a new CSV file with UTF-8 encoding in the main folder
+output_file = os.path.join(script_folder, 'gc_concordance.csv')
 final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
-# Save the unmatched values to a separate CSV file with UTF-8 encoding
-unmatched_output_file = os.path.join(resources_folder, 'unmatched_org_IDs.csv')
+# Save the unmatched values to a separate CSV file with UTF-8 encoding in the main folder
+unmatched_output_file = os.path.join(script_folder, 'unmatched_org_IDs.csv')
 unmatched_values.to_csv(unmatched_output_file, index=False, encoding='utf-8-sig')
 
 print(f"The final joined DataFrame has been saved to {output_file}")

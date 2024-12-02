@@ -35,14 +35,9 @@ match_df = pd.DataFrame({
     'MatchScore': matches.apply(lambda x: x[1])
 })
 
-# Add a column for manual matching
-match_df['ManualMatch'] = ''
-
-# Add a column for the final matched value (manual if available, otherwise fuzzy match)
-match_df['FinalMatch'] = match_df.apply(lambda row: row['ManualMatch'] if row['ManualMatch'] else row['MatchedName'], axis=1)
-
-# Merge the matched names with the manual organization names
-final_df = match_df.merge(manual_org_df, left_on='MatchedName', right_on='Organization Legal Name English', how='left')
+# Merge the matched names with the manual organization names to get GC OrgID
+final_df = match_df.merge(manual_org_df[['Organization Legal Name English', 'GC OrgID']], 
+                          left_on='MatchedName', right_on='Organization Legal Name English', how='left')
 
 # Save the result to a new CSV file
 final_df.to_csv(output_file, index=False, encoding='utf-8-sig')

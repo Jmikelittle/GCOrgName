@@ -9,21 +9,11 @@ def standardize_text(text):
     return text
 
 # Get the directory of the current script
-script_folder = os.getcwd()
-
-# Print the current working directory and script folder
-print(f"Current working directory: {os.getcwd()}")
-print(f"Script folder: {script_folder}")
+script_folder = os.path.dirname(os.path.abspath(__file__))
 
 # Paths to the CSV files
 matched_file = os.path.join(script_folder, 'matched_RG_names.csv')
 fixed_file = os.path.join(script_folder, 'Fixed_RG_names.csv')
-
-# Check if the files exist
-if not os.path.exists(matched_file):
-    print(f"File not found: {matched_file}")
-if not os.path.exists(fixed_file):
-    print(f"File not found: {fixed_file}")
 
 # Load the matched_RG_names.csv file
 matched_df = pd.read_csv(matched_file)
@@ -51,8 +41,8 @@ new_entries = fixed_df[~fixed_df['GC OrgID'].isin(matched_df['GC OrgID'])]
 # Append these new entries to the matched DataFrame
 final_df = pd.concat([matched_df, new_entries], ignore_index=True)
 
-# Set GC OrgID to whole numbers
-final_df['GC OrgID'] = final_df['GC OrgID'].astype(int)
+# Set GC OrgID to whole numbers, handling non-finite values
+final_df['GC OrgID'] = pd.to_numeric(final_df['GC OrgID'], errors='coerce').fillna(0).astype(int)
 
 # Save the updated DataFrame to a new CSV file
 updated_output_file = os.path.join(script_folder, 'final_RG_match.csv')

@@ -3,13 +3,13 @@ import pandas as pd
 
 # Path to the folder where the script is located
 script_folder = os.path.dirname(os.path.abspath(__file__))
-resources_folder = os.path.join(script_folder, 'Resources')
+output_folder = os.path.join(script_folder, '..', 'GC Org Info.csv')
 
 # Paths to the CSV files
-manual_org_file = os.path.join(resources_folder, 'Manual org ID link.csv')
+manual_org_file = os.path.join(script_folder, 'Resources', 'Manual org ID link.csv')
 combined_faa_file = os.path.join(script_folder, 'Scraping', 'combined_FAA_names.csv')
-applied_en_file = os.path.join(resources_folder, 'applied_en.csv')
-infobase_en_file = os.path.join(resources_folder, 'infobase_en.csv')
+applied_en_file = os.path.join(script_folder, 'Resources', 'applied_en.csv')
+infobase_en_file = os.path.join(script_folder, 'Resources', 'infobase_en.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)
@@ -108,11 +108,12 @@ final_joined_df = final_joined_df[ordered_fields]
 final_joined_df = final_joined_df.sort_values(by='gc_orgID')
 
 # Save the final joined DataFrame to a new CSV file with UTF-8 encoding
-output_file = os.path.join(resources_folder, 'GC Org Info.csv')
+output_file = os.path.join(output_folder, 'GC Org Info.csv')
+os.makedirs(os.path.dirname(output_file), exist_ok=True)
 final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
 # Save the unmatched values to a separate CSV file with UTF-8 encoding
-unmatched_output_file = os.path.join(resources_folder, 'unmatched_org_IDs.csv')
+unmatched_output_file = os.path.join(output_folder, 'unmatched_org_IDs.csv')
 unmatched_values.to_csv(unmatched_output_file, index=False, encoding='utf-8-sig')
 
 print(f"The final joined DataFrame has been saved to {output_file}")

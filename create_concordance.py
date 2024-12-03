@@ -59,13 +59,31 @@ unmatched_values = joined_df[joined_df['Names Match'] == 1]
 joined_df = joined_df[joined_df['Names Match'] == 0]
 
 # Join with applied_en_df on 'Legal title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(joined_df, applied_en_df[['Legal title', 'Applied title', "Titre d'usage"]], left_on='Organization Legal Name English', right_on='Legal title', how='left')
+final_joined_df = pd.merge(
+    joined_df, 
+    applied_en_df[['Legal title', 'Applied title', "Titre d'usage", 'Abbreviation', 'Abreviation']], 
+    left_on='Organization Legal Name English', 
+    right_on='Legal title', 
+    how='left'
+)
 
 # Join with infobase_en_df on 'Legal Title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(final_joined_df, infobase_en_df[['Legal Title', 'OrgID', 'Website']], left_on='Organization Legal Name English', right_on='Legal Title', how='left')
+final_joined_df = pd.merge(
+    final_joined_df, 
+    infobase_en_df[['Legal Title', 'OrgID', 'Website']], 
+    left_on='Organization Legal Name English', 
+    right_on='Legal Title', 
+    how='left'
+)
 
 # Join with infobase_fr_df on 'Appellation legale' and 'appellation_légale'
-final_joined_df = pd.merge(final_joined_df, infobase_fr_df[['Appellation legale', 'Site Web']], left_on='Organization Legal Name French', right_on='Appellation legale', how='left')
+final_joined_df = pd.merge(
+    final_joined_df, 
+    infobase_fr_df[['Appellation legale', 'Site Web']], 
+    left_on='Organization Legal Name French', 
+    right_on='Appellation legale', 
+    how='left'
+)
 
 # Create the 'harmonized_name' field
 final_joined_df['harmonized_name'] = final_joined_df['Applied title']
@@ -94,12 +112,6 @@ final_joined_df = final_joined_df.rename(columns={'Site Web': 'site_web'})
 # Remove rows where 'gc_orgID' is NaN
 final_joined_df = final_joined_df.dropna(subset=['gc_orgID'])
 
-# Check if 'abbreviation' and 'abreviation' columns exist, if not, create them with empty values
-if 'abbreviation' not in final_joined_df.columns:
-    final_joined_df['abbreviation'] = ''
-if 'abreviation' not in final_joined_df.columns:
-    final_joined_df['abreviation'] = ''
-
 # Convert gc_orgID to string type for merging
 final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str)
 fixed_rg_df['GC OrgID'] = fixed_rg_df['GC OrgID'].astype(str)
@@ -114,7 +126,7 @@ final_joined_df = final_joined_df.drop(columns=['GC OrgID'])
 final_joined_df = final_joined_df.rename(columns={'rgnumber': 'rg'})
 
 # Reorder the fields to include 'rg'
-ordered_fields = ['gc_orgID', 'rg', 'harmonized_name', 'nom_harmonisé', 'abbreviation', 'abreviation', 'infobaseID', 'website', 'site_web']
+ordered_fields = ['gc_orgID', 'rg', 'harmonized_name', 'nom_harmonisé', 'Abbreviation', 'Abreviation', 'infobaseID', 'website', 'site_web']
 final_joined_df = final_joined_df[ordered_fields]
 
 # Sort the final joined DataFrame by gc_orgID from lowest to highest

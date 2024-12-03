@@ -1,396 +1,396 @@
-﻿gc_orgID,rg,harmonized_name,nom_harmonisé,Abbreviation,Abreviation,infobaseID,website,site_web
-2222,1,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,AAFC,AAC,1,www.agr.gc.ca,www.agr.gc.ca
-2223,135,Canadian Heritage,Patrimoine canadien,PCH,PCH,122,https://www.canada.ca/en/canadian-heritage.html,https://www.canada.ca/fr/patrimoine-canadien.html
-2224,50,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",IRCC,IRCC,123,www.cic.gc.ca,www.cic.gc.ca
-2225,6,Department of Finance Canada,Ministère des Finances Canada,FIN,FIN,124,https://www.canada.ca/en/department-finance.html,https://www.canada.ca/fr/ministere-finances.html
-2226,86,Fisheries and Oceans Canada,Pêches et Océans Canada,DFO,MPO,125,www.dfo-mpo.gc.ca,www.dfo-mpo.gc.ca
-2227,5,Global Affairs Canada,Affaires mondiales Canada,GAC,AMC,126,www.international.gc.ca,www.international.gc.ca
-2228,22,Health Canada,Santé Canada,HC,SC,127,www.canada.ca/en/health-canada.html,www.canada.ca/fr/sante-canada.html
-2229,14,Employment and Social Development Canada,Emploi et Développement social Canada,ESDC,EDSC,128,www.canada.ca/en/employment-social-development.html,www.canada.ca/fr/emploi-developpement-social.html
-2230,42,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada,CIRNAC,RCAANC,129,https://www.canada.ca/en/crown-indigenous-relations-northern-affairs.html,https://www.canada.ca/fr/relations-couronne-autochtones-affaires-nord.html
-2231,33,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",ISED,ISDE,130,www.ic.gc.ca,www.ic.gc.ca
-2232,13,Department of Justice Canada,Ministère de la Justice Canada,JUS,JUS,132,www.justice.gc.ca,www.justice.gc.ca
-2233,18,National Defence,Défense nationale,DND,MDN,133,www.forces.gc.ca,www.forces.gc.ca
-2234,41,Natural Resources Canada,Ressources naturelles Canada,NRCan,RNCan,134,www.nrcan-rncan.gc.ca,www.nrcan-rncan.gc.ca
-2235,88,Public Safety Canada,Sécurité publique Canada,PS,SP,135,www.publicsafety.gc.ca,www.securitepublique.gc.ca
-2236,127,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,PSPC,SPAC,136,www.tpsgc-pwgsc.gc.ca,www.tpsgc-pwgsc.gc.ca
-2237,7,Environment and Climate Change Canada,Environnement et Changement climatique Canada,ECCC,ECCC,137,www.canada.ca/en/environment-climate-change.html,www.canada.ca/fr/environnement-changement-climatique.html
-2238,34,Transport Canada,Transports Canada,TC,TC,138,www.tc.gc.ca,www.tc.gc.ca
-2239,21,Veterans Affairs Canada,Anciens Combattants Canada,VAC,ACC,139,www.veterans.gc.ca,www.veterans.gc.ca
-2240,44,Prairies Economic Development Canada,Développement économique Canada pour les Prairies,PrairiesCan,PrairiesCan,140,https://www.canada.ca/en/prairies-economic-development.html,https://www.canada.ca/fr/developpement-economique-prairies.html
-2241,190,Women and Gender Equality Canada,Femmes et Égalité des genres Canada,WAGE,FEGC,246,www.swc-cfc.gc.ca,www.cfc-swc.gc.ca
-2242,56,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada,TBS,SCT,326,www.canada.ca/en/treasury-board-secretariat/index.html,www.canada.ca/fr/secretariat-conseil-tresor/index.html
-2243,191,Indigenous Services Canada,Services aux Autochtones Canada,ISC,SAC,348,www.canada.ca/en/indigenous-services-canada.html,www.canada.ca/fr/services-autochtones-canada.html
-2244,23,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,ACOA,APECA,12,www.acoa-apeca.gc.ca,www.acoa-apeca.gc.ca
-2245,,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada,IAAC,AEIC,63,https://www.canada.ca/en/impact-assessment-agency.html,https://www.canada.ca/fr/agence-evaluation-impact.html
-2246,133,Canadian Grain Commission,Commission canadienne des grains,CGC,CCG,69,www.grainscanada.gc.ca,www.grainscanada.gc.ca
-2247,75,Canadian Human Rights Commission,Commission canadienne des droits de la personne,CHRC,CCDP,71,www.chrc-ccdp.gc.ca,www.ccdp-chrc.gc.ca
-2248,43,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes,CICS,SCIC,76,www.scics.ca,www.scics.ca
-2249,78,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,CanNor,CanNor,86,www.CanNor.gc.ca,www.CanNor.gc.ca
-2250,95,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,CSIS,SCRS,94,https://www.canada.ca/en/security-intelligence-service.html,https://www.canada.ca/fr/service-renseignement-securite.html
-2251,119,Canadian Space Agency,Agence spatiale canadienne,CSA,ASC,95,www.asc-csa.gc.ca,www.asc-csa.gc.ca
-2252,40,Canadian Transportation Agency,Office des transports du Canada,CTA,OTC,99,https://www.otc-cta.gc.ca/eng,https://www.otc-cta.gc.ca/fra
-2253,165,Communications Security Establishment Canada,Centre de la sécurité des télécommunications Canada,CSE,CST,110,www.cse-cst.gc.ca,www.cse-cst.gc.ca
-2254,116,Copyright Board Canada,Commission du droit d'auteur Canada,CB,CDA,114,https://cb-cda.gc.ca/en,https://cb-cda.gc.ca/fr
-2255,53,Correctional Service Canada,Service correctionnel Canada,CSC,SCC,117,www.canada.ca/correctional-service,www.canada.ca/service-correctionnel
-2256,144,Courts Administration Service,Service administratif des tribunaux judiciaires,CAS,SATJ,118,www.cas-satj.gc.ca,www.cas-satj.gc.ca
-2257,12,Canada Economic Development for Quebec Regions,Développement économique Canada pour les régions du Québec,CED,DEC,141,www.dec-ced.gc.ca,www.dec-ced.gc.ca
-2258,62,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,FedDev Ontario,FedDev Ontario,150,www.feddevontario.gc.ca,www.feddevontario.gc.ca
-2259,141,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,FCAC,ACFC,151,www.fcac.gc.ca,www.acfc.gc.ca
-2260,139,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,FINTRAC,CANAFE,152,www.fintrac-canafe.gc.ca,www.canafe-fintrac.gc.ca
-2261,32,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,IRB,CISR,174,www.irb-cisr.gc.ca,www.cisr-irb.gc.ca
-2262,145,Library and Archives Canada,Bibliothèque et Archives Canada,LAC,BAC,199,library-archives.canada.ca,bibliotheque-archives.canada.ca
-2263,138,Military Grievances External Review Committee,Comité externe d'examen des griefs militaires,MGERC,CEEGM,209,www.canada.ca/en/military-grievances-external-review.html,www.canada.ca/fr/externe-examen-griefs-militaires.html
-2264,137,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,MPCC,CPPM,210,www.mpcc-cppm.gc.ca,www.mpcc-cppm.gc.ca
-2265,,Farm Products Council of Canada,Conseil des produits agricoles du Canada,FPCC,CPAC,222,www.fpcc-cpac.gc.ca,www.fpcc-cpac.gc.ca
-2266,39,National Film Board,Office national du film,NFB,ONF,223,www.onf-nfb.gc.ca,www.onf-nfb.gc.ca
-2267,57,Parole Board of Canada,Commission des libérations conditionnelles du Canada,PBC,CLCC,227,www.canada.ca/en/parole-board.html,www.canada.ca/fr/commission-liberations-conditionnelles.html
-2268,66,Northern Pipeline Agency Canada,Administration du pipe-line du Nord Canada,NPA,APN,235,https://northern-pipeline.canada.ca/home,https://pipe-line-nord.canada.ca/accueil
-2269,142,"Housing, Infrastructure and Communities Canada","Logement, Infrastructures et Collectivités Canada",HICC,LICC,0,,
-2270,2,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,OAG,BVG,238,www.oag-bvg.gc.ca,www.oag-bvg.gc.ca
-2271,15,Office of the Chief Electoral Officer,Bureau du directeur général des élections,elections,elections,239,www.elections.ca,www.elections.ca
-2272,51,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada,FJA,CMF,240,www.fja-cmf.gc.ca,www.fja-cmf.gc.ca
-2273,154,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada,OCL,CAL,241,https://lobbycanada.gc.ca/en,https://lobbycanada.gc.ca/fr
-2274,76,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,OCOL,CLO,242,www.officiallanguages.gc.ca/en,www.officiallanguages.gc.ca/fr
-2275,197,Office of the Intelligence Commissioner,Bureau du commissaire au renseignement,,,244,https://www.canada.ca/en/intelligence-commissioner.html,https://www.canada.ca/fr/commissaire-renseignement.html
-2276,,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada,OCI,BEC,247,www.oci-bec.gc.ca,www.oci-bec.gc.ca
-2277,19,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,PPSC,SPPC,248,www.ppsc-sppc.gc.ca/,www.ppsc-sppc.gc.ca
-2278,8,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général,OSGG,BSGG,249,www.gg.ca,www.gg.ca
-2279,46,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada,PSIC,ISPC,250,www.psic-ispc.gc.ca,www.psic-ispc.gc.ca
-2280,11,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada,OSFI,BSIF,253,https://www.osfi-bsif.gc.ca/en,https://www.osfi-bsif.gc.ca/fr
-2281,96,Office of the Information Commissioner,Commissariat à l'information au Canada,,,0,,
-2281,96,Office of the Information Commissioner,Commissariat à l'information au Canada,,,0,,
-2281,96,Office of the Information Commissioner,Commissariat à l'information au Canada,,,0,,
-2282,96,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,,,0,,
-2282,96,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,,,0,,
-2282,96,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,,,0,,
-2283,109,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada,PMPRB,CEPMB,266,www.pmprb-cepmb.gc.ca,www.pmprb-cepmb.gc.ca
-2284,25,Privy Council Office,Bureau du Conseil privé,PCO,BCP,278,www.pco-bcp.gc.ca,www.pco-bcp.gc.ca
-2285,148,Public Health Agency of Canada,Agence de la santé publique du Canada,PHAC,ASPC,280,www.phac-aspc.gc.ca,www.phac-aspc.gc.ca
-2286,4,Public Service Commission of Canada,Commission de la fonction publique du Canada,PSC,CFP,282,https://www.canada.ca/en/public-service-commission.html,https://www.canada.ca/fr/commission-fonction-publique.html
-2287,80,Registrar of the Supreme Court of Canada,Registraire de la Cour suprême du Canada,,,288,www.scc-csc.ca,www.scc-csc.ca
-2288,30,Royal Canadian Mounted Police,Gendarmerie royale du Canada,RCMP,GRC,295,www.rcmp-grc.gc.ca,www.rcmp-grc.gc.ca
-2289,,RCMP External Review Committee,Comité externe d'examen de la GRC,ERC,CEE,296,www.erc-cee.gc.ca,www.erc-cee.gc.ca
-2290,,Civilian Review and Complaints Commission for the RCMP,Commission civile d'examen et de traitement des plaintes relatives à la GRC,CRCC,CCETP,297,www.crcc-ccetp.gc.ca/,www.crcc-ccetp.gc.ca/fr
-2291,196,National Security and Intelligence Review Agency Secretariat,Secrétariat de l'Office de surveillance des activités en matière de sécurité nationale et de renseignement,,,302,https://nsira-ossnr.gc.ca/,https://nsira-ossnr.gc.ca/fr/
-2292,163,Shared Services Canada,Services partagés Canada,SSC,SPC,305,https://www.canada.ca/en/shared-services.html,https://www.canada.ca/fr/services-partages.html
-2293,54,Statistics Canada,Statistique Canada,StatCan,StatCan,313,www.statcan.gc.ca,www.statcan.gc.ca
-2294,,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel),VRAB,TACRA,333,www.vrab-tacra.gc.ca,www.vrab-tacra.gc.ca
-2295,192,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,SNSICP,SCPSNR,345,https://www.nsicop-cpsnr.ca/index-en.html,https://www.nsicop-cpsnr.ca/index-fr.html
-2296,193,Leaders' Debates Commission,Commission des débats des chefs,,,350,,
-2297,170,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,ATSSC,SCDATA,539,www.canada.ca/en/administrative-tribunals-support-service.html,www.canada.ca/fr/service-canadien-appui-tribunaux-administratifs.html
-2298,,Pacific Economic Development Canada,Développement économique Canada pour le Pacifique,PacifiCan,PacifiCan,560,https://www.canada.ca/en/pacific-economic-development.html,https://www.canada.ca/fr/developpement-economique-pacifique.html
-2299,200,Federal Economic Development Agency for Northern Ontario,Agence fédérale de développement économique pour le Nord de l'Ontario,FedNor,FedNor,561,http://fednor.gc.ca/eic/site/fednor-fednor.nsf/eng/home,http://fednor.gc.ca/eic/site/fednor-fednor.nsf/fra/accueil
-2300,38,Canada Border Services Agency,Agence des services frontaliers du Canada,CBSA,ASFC,26,www.cbsa.gc.ca,www.asfc.gc.ca
-2300,85,Canada Border Services Agency,Agence des services frontaliers du Canada,CBSA,ASFC,26,www.cbsa.gc.ca,www.asfc.gc.ca
-2301,,Canada Emission Reduction Incentives Agency,Agence canadienne pour l'incitation à la réduction des émissions,,,32,,
-2302,,Canada Employment Insurance Commission,Commission de l'assurance-emploi du Canada,CEIC,CAEC,33,www.esdc.gc.ca/eng/jobs/ei/commission/index.shtml,www.edsc.gc.ca/fra/emplois/ae/commission/index.shtml
-2303,130,Canada Revenue Agency,Agence du revenu du Canada,CRA,ARC,46,www.canada.ca/en/revenue-agency.html,www.canada.ca/fr/agence-revenu.html
-2303,122,Canada Revenue Agency,Agence du revenu du Canada,CRA,ARC,46,www.canada.ca/en/revenue-agency.html,www.canada.ca/fr/agence-revenu.html
-2304,52,Canada School of Public Service,École de la fonction publique du Canada,CSPS,EFPC,47,www.csps-efpc.gc.ca,www.csps-efpc.gc.ca
-2305,100,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail,CCOHS,CCHST,55,www.ccohs.ca,www.cchst.ca
-2306,136,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments,CFIA,ACIA,65,www.inspection.gc.ca,www.inspection.gc.ca
-2307,61,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada,CIHR,IRSC,74,www.cihr-irsc.gc.ca,www.irsc-cihr.gc.ca
-2308,47,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire,CNSC,CCSN,87,https://www.cnsc-ccsn.gc.ca/eng/,https://www.cnsc-ccsn.gc.ca/fra/
-2309,101,Transportation Safety Board of Canada,Bureau de la sécurité des transports du Canada,TSB,BST,98,www.tsb-bst.gc.ca,www.bst-tsb.gc.ca
-2310,131,Law Commission of Canada,Commission du droit du Canada,,,198,,
-2311,102,The National Battlefields Commission,Commission des champs de bataille nationaux,NBC,CCBN,218,www.ccbn-nbc.gc.ca,www.ccbn-nbc.gc.ca
-2312,195,Canada Energy Regulator,Régie de l'énergie du Canada,CER,REC,221,https://www.cer-rec.gc.ca/index-eng.html,https://www.cer-rec.gc.ca/index-fra.html
-2313,35,National Research Council Canada,Conseil national de recherches Canada,NRC,CNRC,228,https://nrc.canada.ca/en,https://nrc.canada.ca/fr
-2314,27,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,NSERC,CRSNG,230,www.nserc-crsng.gc.ca,www.nserc-crsng.gc.ca
-2315,124,Parks Canada,Parcs Canada,PC,PC,263,www.pc.gc.ca,www.pc.gc.ca
-2316,63,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,SSHRC,CRSH,306,www.sshrc-crsh.gc.ca,www.sshrc-crsh.gc.ca
-2317,180,Invest in Canada Hub,Investir au Canada,,,347,,
-2318,171,Polar Knowledge Canada,Savoir polaire Canada,POLAR,POLAIRE,552,www.canada.ca/en/polar-knowledge.html,www.canada.ca/fr/savoir-polaire.html
-2319,199,Accessibility Standards Canada,Normes d'accessibilité Canada,ASC,NAC,558,https://accessible.canada.ca/,https://accessibilite.canada.ca/
-2396,16,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,,,93,www.crtc.gc.ca,www.crtc.gc.ca
-3399,,African Development Bank,Banque africaine de développement,,,7,www.afdb.org,www.afdb.org
-3400,,Asian Development Bank,Banque asiatique de développement,,,8,www.adb.org,www.adb.org
-3401,,Caribbean Development Bank,Banque de développement des Caraïbes,,,103,www.caribank.org,www.caribank.org
-3402,,European Bank for Reconstruction and Development,Banque européenne pour la reconstruction et le développement,,,145,www.ebrd.com,www.ebrd.com
-3403,,Inter-American Development Bank,Banque interaméricaine de développement,,,181,www.iadb.org,www.iadb.org
-3404,,International Bank for Reconstruction and Development,Banque internationale pour la reconstruction et le développement,,,183,www.worldbank.org,www.banquemondiale.org
-3405,,International Development Association,Association internationale de développement,,,185,www.worldbank.org,www.banquemondiale.org
-3406,,International Finance Corporation,Société financière internationale,,,187,www.ifc.org,www.ifc.org
-3407,24,International Joint Commission (Canadian Section),Commission mixte internationale (section canadienne),,,189,www.ijc.org,www.ijc.org
-3408,,International Lake Memphremagog Levels Board,Commission internationale du lac Memphrémagog,,,190,,
-3409,,International Lake of the Woods Control Board,Conseil international de contrôle du lac des Bois,,,191,www.lwcb.ca,www.lwcb.ca
-3410,,International Monetary Fund,Fonds monétaire international,,,192,www.imf.org,www.imf.org
-3411,,Multilateral Investment Guarantee Agency,Agence multilatérale de garantie des investissements,,,213,www.miga.org,www.miga.org
-3412,,Joint Public Advisory Committee (JPAC) of the Commission for Environmental Cooperation (CEC),Comité consultatif public mixte (CCPM) de la Commission de coopération environnementale (CCE),,,233,www.cec.org,www.cec.org
-3413,,World Anti-Doping Agency,Agence mondiale antidopage,,,341,www.wada-ama.org/en,www.wada-ama.org/fr
-3414,,Asian Infrastructure Investment Bank,Banque asiatique d'investissement dans les infrastructures,,,351,www.aiib.org,www.aiib.org
-3415,,Lower Churchill Development Corporation Limited,Lower Churchill Development Corporation Limited,,,201,,
-3416,,North Portage Development Corporation (operating as The Forks North Portage Partnership),North Portage Development Corporation (exploitée sous le nom de The Forks North Portage Partnership),,,234,https://www.theforks.com/about/partnership,https://www.theforks.com/about/partnership
-3417,,Communication Canada,Communication Canada,,,108,,
-3418,,Office of the Superintendent of Bankruptcy,Bureau du surintendant des faillites,,,252,,
-3419,,Prairie Farm Rehabilitation Administration,Administration du rétablissement agricole des Prairies,,,273,,
-3420,,Commissioner of Canada Election,Commissaire aux élections fédérales,,,342,,
-3421,,Canada Investment and Savings,Placements Épargne Canada,,,538,,
-3422,,Director of Soldier Settlement,Directeur de l'établissement de soldats,,,541,,
-3423,,"The Director, The Veterans' Land Act",Directeur des terres destinées aux anciens combattants,,,542,,
-3424,,Energy Supplies Allocation Board,Office de répartition des approvisionnements d'énergie,,,543,,
-3425,,"Staff of the Non-Public Funds, Canadian Forces","Personnel des fonds non publics, Forces canadiennes",,,545,,
-3426,,Statistics Survey Operations,Opérations des enquêtes statistiques,,,553,,
-3427,,Federal Judges not part of any department,Juges fédéraux ne faisant pas partie d'un ministère,,,555,,
-3428,67,House of Commons,Chambre des communes,,,2,www.parl.gc.ca,www.parl.gc.ca
-3429,17,Library of Parliament,Bibliothèque du Parlement,,,200,www.parl.gc.ca/About/Library/VirtualLibrary,www.parl.gc.ca/About/Library/VirtualLibrary
-3430,147,Office of the Conflict of Interest and Ethics Commissioner,Commissariat aux conflits d'intérêts et à l'éthique,,,245,ciec-ccie.parl.gc.ca/EN/Pages/default.aspx,ciec-ccie.parl.gc.ca/FR/Pages/default.aspx
-3431,,Senate Ethics Officer,Conseiller sénatorial en éthique,,,251,sen.parl.gc.ca/seo-cse/eng/Home-e.html,sen.parl.gc.ca/seo-cse/fr/Home-f.html
-3432,9,Senate,Sénat,,,303,www.parl.gc.ca,www.parl.gc.ca
-3433,183,Office of the Parliamentary Budget Officer,Bureau du directeur parlementaire du budget,,,346,www.pbo-dpb.gc.ca/en/,www.pbo-dpb.gc.ca/fr/
-3434,176,Parliamentary Protective Service,Service de protection parlementaire,,,554,,
-3435,,Aéroport de Québec Inc.,Aéroport de Québec Inc.,,,5,www.aeroportdequebec.com,www.aeroportdequebec.com
-3436,,Aéroports de Montréal,Aéroports de Montréal,,,6,www.admtl.com,www.admtl.com
-3437,,Asia-Pacific Foundation of Canada,Fondation Asie-Pacifique du Canada,,,9,www.asiapacific.ca,www.asiapacific.ca
-3438,,Association of Canada Lands Surveyors,Association des Arpenteurs des Terres du Canada,,,11,www.acls-aatc.ca,www.acls-aatc.ca
-3439,,Belledune Port Authority,Administration portuaire de Belledune,,,16,www.portofbelledune.ca,www.portofbelledune.ca
-3440,,Buffalo and Fort Erie Public Bridge Authority,Buffalo and Fort Erie Public Bridge Authority,,,19,www.peacebridge.com,www.peacebridge.com
-3441,,Calgary Airport Authority,Administration aéroportuaire de Calgary,,,21,www.yyc.com,www.yyc.com
-3442,,WinSport,WinSport,,,22,www.winsport.ca,www.winsport.ca
-3443,,Canada Foundation for Innovation,Fondation canadienne pour l'innovation,,,35,www.innovation.ca,www.innovation.ca
-3444,,Canada Foundation for Sustainable Development Technology,Fondation du Canada pour l'appui technologique au développement durable,,,36,www.sdtc.ca,www.sdtc.ca
-3445,,Canada Games Council,Conseil des Jeux du Canada,,,37,www.canadagames.ca,www.canadagames.ca
-3446,,Canada Health Infoway Inc.,Inforoute Santé du Canada Inc.,,,38,www.infoway-inforoute.ca,www.infoway-inforoute.ca
-3447,,Canada Media Fund,Fonds des médias du Canada,,,41,www.cmf-fmc.ca,www.cmf-fmc.ca
-3448,,Canada-Newfoundland and Labrador Offshore Petroleum Board,Office Canada-Terre-Neuve-et-Labrador des hydrocarbures extracôtiers,,,48,www.cnlopb.ca,www.ctnlohe.ca
-3449,,Canada-Nova Scotia Offshore Petroleum Board,Office Canada-Nouvelle-Écosse des hydrocarbures extracôtiers,,,49,www.cnsopb.ns.ca,www.ocnehe.ca
-3450,,Canadian Agency for Drugs and Technologies in Health (CADTH),Agence canadienne des médicaments et des technologies de la santé (ACMTS),,,50,www.cadth.ca,www.cadth.ca/fr
-3451,,Canadian Centre on Substance Use and Addictions,Centre canadien sur les dépendances et l'usage de substances,,,56,www.ccsa.ca,www.ccsa.ca
-3452,,Canadian Energy Research Institute,Canadian Energy Research Institute,,,62,www.ceri.ca,www.ceri.ca
-3453,,Canadian Institute for Health Information (CIHI),Institut canadien d'information sur la santé (ICIS),,,73,www.cihi.ca,www.icis.ca
-3454,,Canadian Livestock Records Corporation,Société canadienne d'enregistrement des animaux,,,80,www.clrc.ca,www.clrc.ca
-3455,,Canadian Partnership Against Cancer Corporation (CPAC),Partenariat canadien contre le cancer (PCC),,,89,www.partnershipagainstcancer.ca,www.partenariatcontrelecancer.ca/fr
-3456,,Canadian Patient Safety Institute (CPSI),Institut canadien pour la sécurité des patients (ICSP),,,90,www.patientsafetyinstitute.ca/English/Pages/default.aspx,www.patientsafetyinstitute.ca/french/pages/default.aspx
-3457,,Canadian Sport Institute Ontario,Institut canadien du sport Ontario,,,96,www.csiontario.ca/home,www.csiontario.ca/home/fr
-3458,,Charlottetown Airport Authority Inc.,Charlottetown Airport Authority Inc.,,,105,www.flypei.com,www.flypei.com
-3459,,Coaching Association of Canada,Association canadienne des entraîneurs,,,107,www.coach.ca,www.coach.ca
-3461,,Edmonton Regional Airports Authority,Edmonton Regional Airports Authority,,,142,www.flyeia.com,www.flyeia.com
-3462,,Fredericton International Airport Authority Inc.,Fredericton International Airport Authority Inc.,,,156,www.frederictonairport.ca,www.frederictonairport.ca
-3463,,Gander International Airport Authority Inc.,Gander International Airport Authority Inc.,,,158,www.ganderairport.com,www.ganderairport.com
-3464,,Greater London International Airport Authority,Greater London International Airport Authority,,,164,www.flylondon.ca,www.flylondon.ca
-3465,,Greater Moncton International Airport Authority Inc.,Greater Moncton International Airport Authority Inc.,,,165,www.cyqm.ca,www.cyqm.ca
-3466,,Greater Toronto Airports Authority,Autorité aéroportuaire du Grand Toronto,,,166,www.torontopearson.com,www.torontopearson.com
-3467,,Halifax International Airport Authority,Administration de l'aéroport international d'Halifax,,,167,www.hiaa.ca,www.hiaa.ca
-3468,,Halifax Port Authority,Administration portuaire d'Halifax,,,168,www.portofhalifax.ca,www.portofhalifax.ca
-3469,,Hamilton Port Authority,Administration portuaire de Hamilton,,,169,www.hamiltonport.ca,www.hamiltonport.ca
-3470,,Institut national du sport du Québec,Institut national du sport du Québec,,,180,www.insquebec.org,www.insquebec.org
-3471,,Internal Trade Secretariat Corporation,Corporation du Secrétariat du commerce intérieur,,,182,www.cfta-alec.ca,www.cfta-alec.ca
-3472,,International Fisheries Commissions Pension Society,Société de caisse de retraite de la Commission internationale des pêcheries,,,188,,
-3473,,Lake of the Woods Control Board,Commission de contrôle du lac des Bois,,,195,www.lwcb.ca,www.lwcb.ca
-3474,,Maritime Forestry Complex Corporation,Société du complexe forestier des Maritimes,,,203,www.gnb.ca/4532/index-e.asp,www.gnb.ca/4532/index-f.asp
-3475,,Mental Health Commission of Canada (MHCC),Commission de la santé mentale du Canada (CSMC),,,206,www.mentalhealthcommission.ca,www.commissionsantementale.ca
-3476,,Milit-Air Inc.,Milit-Air Inc.,,,208,,
-3477,,Montréal Port Authority,Administration portuaire de Montréal,,,212,www.port-montreal.com,www.port-montreal.com
-3478,,Nanaimo Port Authority,Administration portuaire de Nanaimo,,,214,www.npa.ca,www.npa.ca
-3479,,"Nature Trust of British Columbia, The","Nature Trust of British Columbia, The",,,231,www.naturetrust.bc.ca,www.naturetrust.bc.ca
-3480,,NAV CANADA,NAV CANADA,,,232,www.navcanada.ca,www.navcanada.ca
-3481,,Oshawa Port Authority,Administration portuaire d'Oshawa,,,258,www.portofoshawa.ca,www.portofoshawa.ca
-3482,,Ottawa International Airport Authority,Administration de l'aéroport international d'Ottawa,,,259,www.yow.ca,www.yow.ca
-3483,,Ouranos Consortium,Consortium Ouranos,,,260,www.ouranos.ca,www.ouranos.ca
-3484,,"Pierre Elliott Trudeau Foundation, The","Fondation Pierre Elliott Trudeau, La",,,269,www.trudeaufoundation.ca,www.fondationtrudeau.ca
-3485,,Porcupine Caribou Management Board,Porcupine Caribou Management Board,,,270,www.pcmb.ca,www.pcmb.ca
-3486,,Port Alberni Port Authority,Administration portuaire de Port Alberni,,,271,www.portalberniportauthority.ca,www.portalberniportauthority.ca
-3488,,Prince George Airport Authority Inc.,Prince George Airport Authority Inc.,,,275,www.pgairport.ca,www.pgairport.ca
-3489,,Prince Rupert Port Authority,Administration portuaire de Prince Rupert,,,276,www.rupertport.com,www.rupertport.com
-3490,,Québec Port Authority,Administration portuaire de Québec,,,286,www.portquebec.ca,www.portquebec.ca
-3491,,Regina Airport Authority Inc.,Regina Airport Authority Inc.,,,287,www.yqr.ca,www.yqr.ca
-3492,,Roosevelt Campobello International Park Commission,Commission du parc international Roosevelt de Campobello,,,293,www.fdr.net,www.fdr.net
-3493,,Saguenay Port Authority,Administration portuaire du Saguenay,,,298,www.portsaguenay.ca,www.portsaguenay.ca
-3494,,Saint John Airport Inc.,Saint John Airport Inc.,,,299,www.saintjohnairport.com,www.saintjohnairport.com
-3495,,Saint John Port Authority,Administration portuaire de Saint John,,,300,www.sjport.com,www.sjport.com
-3496,,Saskatoon Airport Authority,Saskatoon Airport Authority,,,301,www.yxe.ca,www.yxe.ca
-3497,,Sept-Îles Port Authority,Administration portuaire de Sept-Îles,,,304,www.portsi.com,www.portsi.com
-3498,,Sport Dispute Resolution Centre of Canada,Centre de règlement des différends sportifs du Canada,,,308,www.crdsc-sdrcc.ca,www.crdsc-sdrcc.ca
-3499,,St. John's International Airport Authority,St. John's International Airport Authority,,,309,www.stjohnsairport.com,www.stjohnsairport.com
-3500,,St. John's Port Authority,Administration portuaire de St. John's,,,310,www.sjpa.com,www.sjpa.com
-3501,,St. Lawrence Seaway Management Corporation,Corporation de gestion de la Voie maritime du Saint-Laurent,,,311,www.greatlakes-seaway.com,www.greatlakes-seaway.com
-3502,,Terry Fox Humanitarian Award Inc.,Prix humanitaire Terry Fox inc.,,,316,www.terryfoxawards.ca,www.terryfoxawards.ca
-3503,,Thunder Bay International Airports Authority Inc.,Thunder Bay International Airports Authority Inc.,,,318,www.tbairport.on.ca,www.tbairport.on.ca
-3504,,Thunder Bay Port Authority,Administration portuaire de Thunder Bay,,,319,www.portofthunderbay.com,www.portofthunderbay.com
-3506,,Toronto Port Authority,Administration portuaire de Toronto,,,321,www.portstoronto.com,www.portstoronto.com
-3507,,Trois-Rivières Port Authority,Administration portuaire de Trois-Rivières,,,327,www.porttr.com,www.porttr.com
-3508,,TV5 Québec Canada,TV5 Québec Canada,,,328,www.tv5.ca,www.tv5.ca
-3509,,Vancouver Fraser Port Authority,Administration portuaire de Vancouver Fraser,,,329,www.portmetrovancouver.com,www.portmetrovancouver.com
-3510,,Vancouver International Airport Authority,Administration de l'Aéroport de Vancouver,,,330,www.yvr.ca,www.yvr.ca
-3511,,Victoria Airport Authority,Autorité aéroportuaire de Victoria,,,335,www.victoriaairport.com,www.victoriaairport.com
-3512,,Waterfront Toronto,Waterfront Toronto,,,336,www.waterfrontoronto.ca,www.waterfrontoronto.ca
-3513,,Wildlife Habitat Canada,Habitat faunique Canada,,,337,www.whc.org,www.whc.org/fr
-3514,,Windsor Port Authority,Administration portuaire de Windsor,,,338,www.portwindsor.com,www.portwindsor.com
-3515,,Winnipeg Airports Authority Inc.,Winnipeg Airports Authority Inc.,,,340,www.waa.ca,www.waa.ca
-3516,,Canadian Foundation for Healthcare Improvement (CFHI),Fondation canadienne pour l'amélioration des services de santé (FCASS),,,547,www.cfhi-fcass.ca,www.fcass-cfhi.ca
-3517,,Healthcare Excellence Canada (HEC),Excellence en santé Canada (ESC),,,559,https://www.healthcareexcellence.ca/en/,https://www.healthcareexcellence.ca/fr/
-3518,,Aboriginal Healing Foundation,Fondation autochtone de guérison,,,4,,
-3519,,Canada Commonwealth Legacy Fund,Fonds du legs des Jeux du Commonwealth,,,28,,
-3520,,Canadian Foundation for Climate and Atmospheric Sciences,Fondation canadienne pour les sciences du climat et de l'atmosphère,,,68,,
-3521,,Canadian International Grains Institute,Institut international du Canada pour le grain,,,78,,
-3522,,"Canadian Wheat Board, The","Commission canadienne du blé, La",,,100,,
-3523,,Centre national multisport-Montréal,Centre national multisport – Montréal,,,104,,
-3524,,First Nations Financial Management Board,Conseil de gestion financière des premières nations,,,153,,
-3525,,First Nations Tax Commission,Commission de la fiscalité des premières nations,,,155,,
-3526,,Health Council of Canada,Conseil canadien de la santé,,,171,,
-3527,,International Centre for Human Rights and Democratic Development,Centre international des droits de la personne et du développement démocratique,,,184,,
-3528,,PrioNet Canada,PrioNet Canada,,,277,,
-3531,,Last Post Fund,Fonds du Souvenir,,,196,,
-3532,,"Vanier Institute of the Family, The",L'Institut Vanier de la famille,,,332,,
-3533,,Canadian Coast Guard,Garde côtière canadienne,,,57,https://www.ccg-gcc.gc.ca/index-eng.html,https://www.ccg-gcc.gc.ca/index-fra.html
-3534,,Canadian Conservation Institute,Institut canadien de conservation,,,59,https://www.canada.ca/en/conservation-institute.html,https://www.canada.ca/fr/institut-conservation.html
-3535,,Canadian Forces Housing Agency,Agence de logement des Forces canadiennes,,,67,www.canada.ca/en/government/publicservice/benefitsmilitary/military-housing.html,www.canada.ca/fr/gouvernement/fonctionpublique/avantagesmilitaires/logements-militaires.html
-3536,,Canadian Heritage Information Network,Réseau canadien d'information sur le patrimoine,,,70,https://www.canada.ca/en/heritage-information-network.html,https://www.canada.ca/fr/reseau-information-patrimoine.html
-3537,,Canadian Intellectual Property Office,Office de la propriété intellectuelle du Canada,,,75,www.cipo.gc.ca,www.opic.gc.ca
-3538,,Canadian Pari-Mutuel Agency,Agence canadienne du pari mutuel,,,88,www.cpma-acpm.agr.gc.ca,www.cpma-acpm.agr.gc.ca
-3539,,CORCAN,CORCAN,,,115,,
-3540,,Defence Research and Development Canada,Recherche et développement pour la défense Canada,,,120,www.drdc-rddc.gc.ca/en/,www.drdc-rddc.gc.ca/fr/
-3541,,Indian Oil and Gas Canada,Pétrole et gaz des Indiens du Canada,,,175,www.pgic-iogc.gc.ca/eng/1100110010002,www.pgic-iogc.gc.ca/fra/1100110010002/1100110010005
-3542,,Measurement Canada,Mesures Canada,,,204,www.ic.gc.ca/eic/site/mc-mc.nsf/eng/home,www.ic.gc.ca/eic/site/mc-mc.nsf/fra/accueil
-3543,,Physical Resources Bureau,Direction générale des biens,,,268,www.international.gc.ca/international/index.aspx?lang=eng&view=d,www.international.gc.ca/international/index.aspx?lang=fra&view=d
-3544,,Translation Bureau,Bureau de la traduction,,,323,www.tpsgc-pwgsc.gc.ca/bt-tb/index-eng.html,www.tpsgc-pwgsc.gc.ca/bt-tb/index-fra.html
-3545,,Consulting and Audit Canada Revolving Fund,Fonds renouvelable de Conseils et Vérification Canada,,,112,,
-3546,,Industrial Technologies Office,Office des technologies industrielles,,,179,,
-3547,,Passport Canada,Passeport Canada,,,264,,
-3548,79,Payroll System General Ledger,Grand livre général du système de la paye,,,0,,
-3549,87,Public Service Superannuation,Pension de retraite de la fonction publique,,,0,,
-3552,,Bank of Canada Museum,Musée de la Banque du Canada,,,0,,
-3553,,Canada Agriculture and Food Museum,Musée de l'agriculture et de l'alimentation du Canada,,,0,,
-3554,,Canada Aviation and Space Museum,Musée de l'aviation et de l'espace du Canada,,,0,,
-3555,,Canada Firearms Centre,Centre des armes à feu Canada,,,0,,
-3556,,Canada Research Chairs,Chaires de recherche du Canada,,,0,,
-3557,,Canadian Army,Armée canadienne,,,0,,
-3558,,Canadian Judicial Council,Conseil canadien de la magistrature,,,0,,
-3559,,Canadian Special Operations Forces Command,Commandement des Forces d'opérations spéciales du Canada,,,0,,
-3560,,Canadian Trade Commissioner Service,Service des délégués commerciaux du Canada,,,0,,
-3561,,Canadian War Museum,Musée canadien de la guerre,,,0,,
-3562,,Communications Research Centre Canada,Centre de recherches sur les communications Canada,,,0,,
-3563,,Competition Bureau Canada,Bureau de la concurrence Canada,,,0,,
-3564,,Competition Tribunal,Tribunal de la concurrence,,,0,,
-3565,,Court Martial Appeal Court of Canada,Cour d'appel de la cour martiale du Canada,,,0,,
-3566,,Democratic Institutions,Institutions démocratiques,,,0,,
-3568,,Environmental Protection Review Canada,Révision de la protection de l'environnement Canada,,,0,,
-3569,,Federal Court of Appeal,Cour d'appel fédérale,,,0,,
-3570,,Federal Court of Canada,Cour fédérale,,,0,,
-3571,,Office of the Federal Ombudsperson for Victims Of Crime,Bureau de l'ombudsman fédéral des victimes d'actes criminels,,,0,,
-3572,,Historic Sites and Monuments Board of Canada,Commission des lieux et monuments historiques du Canada,,,0,,
-3573,,Independent Review Panel for Defence Acquisition,Commission indépendante d'examen des acquisitions de la Défense,,,0,,
-3574,,Intergovernmental Affairs,Affaires intergouvernementales,,,0,,
-3575,,Judicial Compensation and Benefits Commission,Commission d'examen de la rémunération des juges,,,0,,
-3577,,Leader of the Government in the House of Commons,Leader du gouvernement à la Chambre des communes,,,0,,
-3578,,Management Advisory Board for the RCMP,Conseil consultatif de gestion pour la GRC,,,0,,
-3579,,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,,,0,,
-3580,,National Seniors Council,Conseil national des aînés,,,0,,
-3581,,Occupational Health and Safety Tribunal Canada,Tribunal de santé et sécurité au travail Canada,,,0,,
-3582,,Office of the Chief Military Judge,Le cabinet du juge militaire en chef,,,0,,
-3583,,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,Bureau de l'ombudsman de la Défense nationale et des Forces armées canadiennes,,,0,,
-3584,,Parliament of Canada,Parlement du Canada,,,0,,
-3585,,Office of the Procurement Ombudsman,Bureau de l'ombudsman de l'approvisionnement,,,0,,
-3586,,Prime Minister of Canada,Premier ministre du Canada,,,0,,
-3587,,Public Servants Disclosure Protection Tribunal Canada,Tribunal de la protection des fonctionnaires divulgateurs Canada,,,0,,
-3588,,Royal Canadian Air Force,Aviation royale canadienne,,,0,,
-3589,,Royal Canadian Navy,Marine royale canadienne,,,0,,
-3590,,Royal Military College of Canada,Collège militaire royal du Canada,,,0,,
-3591,,Service Canada,Service Canada,,,0,,
-3592,,Supreme Court of Canada,Cour suprême du Canada,,,0,,
-3593,,Tax Court of Canada,Cour canadienne de l'impôt,,,0,,
-3594,,Office of the Taxpayers' Ombudsperson,Bureau de l'ombudsman des contribuables,,,0,,
-3595,,Office of the Veterans' Ombudsman,Bureau de l'ombud des vétérans,,,0,,
-3596,,Virtual Museum of Canada,Musée virtuel du Canada,,,0,,
-3599,,Aboriginal Business Canada,Entreprise autochtone Canada,,,0,,
-3600,,"Appeal Board, Hazardous Materials Information Review Act","Commission d'appel, Loi sur le contrôle des renseignements relatifs aux matières dangereuses",,,0,,
-3601,,Canada Centre for Inland Waters,Centre canadien des eaux intérieures,,,0,,
-3602,,Canadian Museum of Contemporary Photography,Musée canadien de la photographie contemporaine,,,0,,
-3603,,Environmental Protection Tribunal of Canada,Tribunal de la protection de I'environnement du Canada,,,0,,
-3604,,Geographical Names Board of Canada,La Commission de toponymie du Canada,,,0,,
-3605,,Geological Survey of Canada,Commission géologique du Canada,,,0,,
-3606,,Geomatics Canada,Géomatique Canada,,,0,,
-3607,,Indian Residential Schools Resolution Canada,Résolution des questions des pensionnats indiens Canada,,,0,,
-3608,,National Advisory Council on Aging,Conseil consultatif national sur le troisième âge,,,0,,
-3609,,National Advisory Council on Poverty,Conseil national du Bien-être,,,0,,
-3611,,Office of the Chief Science Advisor of Canada,Bureau du conseiller scientifique en chef du Canada,,,0,,
-3612,,Policy Horizons Canada,Horizons de politiques Canada,,,0,,
-3613,,Ship-source Oil Pollution Fund,Caisse d'indemnisation des dommages dus à la pollution par les hydrocarbures causée par les navires,,,0,,
-3614,,Statute Revision Commission Canada,Commission de révision des lois Canada,,,0,,
-3615,134,Canadian Dairy Commission,Commission canadienne du lait,,,61,www.cdc-ccl.gc.ca,www.cdc-ccl.gc.ca
-3616,,Farm Credit Canada,Financement agricole Canada,,,147,www.fcc-fac.ca,www.fcc-fac.ca
-3618,,Canada Council for the Arts,Conseil des Arts du Canada,,,29,www.canadacouncil.ca,www.conseildesarts.ca
-3619,,Canadian Broadcasting Corporation,Société Radio-Canada,,,53,www.cbc.radio-canada.ca,www.cbc.radio-canada.ca
-3620,,Canadian Museum for Human Rights,Musée canadien des droits de la personne,,,81,www.humanrights.ca,www.droitsdelapersonne.ca
-3621,,Canadian Museum of History,Musée canadien de l'histoire,,,82,www.historymuseum.ca,www.museedelhistoire.ca
-3622,,Canadian Museum of Immigration at Pier 21,Musée canadien de l'immigration du Quai 21,,,84,www.pier21.ca,www.quai21.ca
-3623,,Canadian Museum of Nature,Musée canadien de la nature,,,85,www.nature.ca,www.nature.ca
-3624,,Canadian Race Relations Foundation,Fondation canadienne des relations raciales,,,92,www.crr.ca,www.crrf-fcrr.ca/fr
-3625,,National Arts Centre Corporation,Société du Centre national des Arts,,,217,www.nac-cna.ca,www.cna-nac.ca
-3626,,National Gallery of Canada,Musée des beaux-arts du Canada,,,224,www.gallery.ca,www.beaux-arts.ca
-3627,,National Museum of Science and Technology,Musée national des sciences et de la technologie,,,226,www.techno-science.ca,www.techno-science.ca
-3629,37,Telefilm Canada,Téléfilm Canada,,,315,www.telefilm.ca,www.telefilm.ca
-3630,,Toronto Organizing Committee for the 2015 Pan American and Parapan American Games,Comité d'organisation des Jeux panaméricains et parapanaméricains de Toronto 2015,,,320,,
-3631,91,Canada Mortgage and Housing Corporation,Société canadienne d'hypothèques et de logement,,,42,www.cmhc.ca,www.schl.ca
-3632,,Social Security Tribunal,Tribunal de la sécurité sociale,,,307,,
-3633,,Bank of Canada,Banque du Canada,,,15,www.bankofcanada.ca,www.bank-banque-canada.ca
-3634,,Canada Deposit Insurance Corporation,Société d'assurance-dépôts du Canada,,,30,www.cdic.ca,www.sadc.ca
-3635,,Canada Development Investment Corporation,La Corporation de développement des investissements du Canada,,,31,www.cdev.gc.ca,www.cdev.gc.ca
-3636,,Canada Pension Plan Investment Board,Office d'investissement du régime de pensions du Canada,,,43,www.cppib.com,www.cppib.com/fr/
-3637,,Royal Canadian Mint,Monnaie royale canadienne,,,294,www.mint.ca,www.monnaie.ca
-3638,,Freshwater Fish Marketing Corporation,Office de commercialisation du poisson d'eau douce,,,157,www.freshwaterfish.com/,www.freshwaterfish.com/fr
-3639,,Canadian Commercial Corporation,Corporation commerciale canadienne,,,58,www.ccc.ca,www.ccc.ca
-3640,123,Export Development Canada,Exportation et développement Canada,,,146,www.edc.ca,www.edc.ca
-3641,,International Development Research Centre,Centre de recherches pour le développement international,,,186,www.idrc.ca,www.crdi.ca
-3642,,Canada Infrastructure Bank,Banque de l'infrastructure du Canada,,,344,www.infrastructure.gc.ca/CIB-BIC/index-eng.html,www.infrastructure.gc.ca/CIB-BIC/index-fra.html
-3643,,The Jacques-Cartier and Champlain Bridges Inc.,Les Ponts Jacques-Cartier et Champlain Inc.,,,194,www.jacquescartierchamplain.ca,www.jacquescartierchamplain.ca
-3644,,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit,,,339,https://www.gordiehoweinternationalbridge.com/en,https://www.gordiehoweinternationalbridge.com/fr
-3645,,PPP Canada Inc.,PPP Canada Inc.,,,272,www.p3canada.ca,www.p3canada.ca
-3646,,Business Development Bank of Canada,Banque de développement du Canada,,,20,www.bdc.ca,www.bdc.ca
-3647,,Canadian Tourism Commission,Commission canadienne du tourisme,,,97,en-corporate.canada.travel,fr-corporate.canada.travel
-3648,,Standards Council of Canada,Conseil canadien des normes,,,312,www.scc.ca,www.ccn.ca
-3649,,Atomic Energy of Canada Limited,Énergie atomique du Canada limitée,,,14,www.aecl.ca,www.aecl.ca
-3650,,Canada Lands Company Limited,Société immobilière du Canada limitée,,,40,www.clc.ca,www.clc.ca
-3651,,Canada Post Corporation,Société canadienne des postes,,,44,www.canadapost.ca,www.postescanada.ca
-3652,,Defence Construction (1951) Limited,Construction de Défense (1951) Limitée,,,119,https://www.dcc-cdc.gc.ca/,https://www.cdc-dcc.gc.ca/
-3653,,National Capital Commission,Commission de la capitale nationale,,,219,www.ncc-ccn.gc.ca,www.ccn-ncc.gc.ca
-3654,,Atlantic Pilotage Authority,Administration de pilotage de l'Atlantique,,,13,www.atlanticpilotage.com,www.atlanticpilotage.com
-3655,,Canadian Air Transport Security Authority,Administration canadienne de la sûreté du transport aérien,,,51,www.catsa.gc.ca,www.acsta.gc.ca
-3656,,Great Lakes Pilotage Authority,Administration de pilotage des Grands Lacs,,,163,www.glpa-apgl.com,www.glpa-apgl.com
-3657,,Laurentian Pilotage Authority,Administration de pilotage des Laurentides,,,197,www.pilotagestlaurent.gc.ca,www.pilotagestlaurent.gc.ca
-3658,,Marine Atlantic Inc.,Marine Atlantique S.C.C.,,,202,www.marine-atlantic.ca,www.marine-atlantic.ca
-3659,,Pacific Pilotage Authority,Administration de pilotage du Pacifique,,,261,www.ppa.gc.ca,www.ppa.gc.ca
-3660,,Ridley Terminals Inc.,Ridley Terminals Inc.,,,292,www.rti.ca,www.rti.ca
-3661,,The Federal Bridge Corporation Limited,La Société des ponts fédéraux Limitée,,,148,www.federalbridge.ca,www.federalbridge.ca
-3662,,VIA Rail Canada Inc.,VIA Rail Canada inc.,,,334,www.viarail.ca/en,www.viarail.ca/fr
-3663,,Public Sector Pension Investment Board,Office d'investissement des régimes de pensions du secteur public,,,281,www.investpsp.ca,www.investpsp.ca
-3664,,Assisted Human Reproduction Agency of Canada,Agence canadienne de contrôle de la procréation assistée,,,10,,
-3665,,Blue Water Bridge Authority,Administration du pont Blue Water,,,17,,
-3666,,Canada Employment Insurance Financing Board,Office de financement de l'assurance-emploi du Canada,,,34,,
-3667,,Corporation for the Mitigation of Mackenzie Gas Project Impacts,Société d'atténuation des répercussions du projet gazier Mackenzie,,,116,,
-3668,,Enterprise Cape Breton Corporation,Société d'expansion du Cap Breton,,,143,,
-3669,,First Nations Statistical Institute,Institut de la statistique des Premières nations,,,154,,
-3670,,Grain Appeal Tribunal,Tribunal d'appel pour les grains,,,162,,
-3671,,Hazardous Materials Information Review Commission,Conseil de contrôle des renseignements relatifs aux matières dangereuses,,,170,,
-3672,,Indian Residential Schools Truth and Reconciliation Commission,Commission de vérité et de réconciliation relative aux pensionnats indiens,,,177,,
-3673,,Inuvialuit Arbitration Board,Commission d'arbitrage des Inuvialuit,,,193,,
-3674,,Merchant Seamen Compensation Board,Commission d'indemnisation des marins marchands,,,207,,
-3675,,National Round Table on the Environment and the Economy,Table ronde nationale sur l'environnement et l'économie,,,229,,
-3676,,Public Appointments Commission Secretariat,Secrétariat de la Commission des nominations publiques,,,279,,
-3679,,Canada Agricultural Review Tribunal,Commission de révision agricole du Canada,,,24,,
-3680,,Canada Industrial Relations Board,Conseil canadien des relations industrielles,,,39,,
-3681,,Canadian Artists and Producers Professional Relations Tribunal,Tribunal canadien des relations professionnelles artistes-producteurs,,,52,,
-3682,,Canadian Cultural Property Export Review Board,Commission canadienne d'examen des exportations de biens culturels,,,60,,
-3683,,Canadian Human Rights Tribunal,Tribunal canadien des droits de la personne,,,72,,
-3684,,Canadian International Development Agency,Agence canadienne de développement international,,,77,,
-3685,,Canadian International Trade Tribunal,Tribunal canadien du commerce extérieur,,,79,,
-3686,,Employment Insurance Boards of Referees,Conseils arbitraux de l'assurance-emploi,,,18,,
-3687,,Office of the Commissioner of Review Tribunals,Bureau du Commissaire des tribunaux de révision,,,243,,
-3688,,Office of the Umpire,Bureau du juge-arbitre,,,254,,
-3689,,Old Port of Montreal Corporation Inc.,Société du Vieux-Port de Montréal Inc.,,,257,,
-3690,,Parc Downsview Park Inc.,Parc Downsview Park Inc,,,262,,
-3691,,Pension Appeals Board,Commission d'appel des pensions,,,267,,
-3692,,Public Service Labour Relations Board,Commission des relations de travail dans la fonction publique,,,284,,
-3693,,Public Service Staffing Tribunal,Tribunal de la dotation de la fonction publique,,,285,,
-3694,,Registry of the Competition Tribunal,Greffe du Tribunal de la concurrence,,,289,,
-3695,,Registry of the Public Servants Disclosure Protection Tribunal,Greffe du Tribunal de la protection des fonctionnaires divulgateurs d'actes répréhensibles,,,290,,
-3696,,Registry of the Specific Claims Tribunal,Greffe du Tribunal des revendications particulières,,,291,,
-3697,,Transportation Appeal Tribunal of Canada,Tribunal d'appel des transports du Canada,,,324,,
-3698,,Vancouver Organizing Committee for the 2010 Olympic and Paralympic Winter Games,Comité d'organisation des Jeux olympiques et paralympiques d'hiver de 2010 à Vancouver,,,331,,
-3700,,The Halifax 2011 Canada Games Host Society,Société d'accueil des Jeux de 2011 de Halifax,,,317,,
-3701,,Prince George 2015 Canada Winter Games Host Society,Société hôtesse des Jeux d'hiver du Canada Prince George 2015,,,274,www.canadagames2015.ca,www.canadagames2015.ca/fr
-3702,,2010 Games Operating Trust Society,Société du legs des Jeux de 2010,,,121,,
-3703,,Canada Water Agency,Agence de l'eau du Canada,CWA,AEC,0,,
-3704,,Treasury Board,Conseil du Trésor,TB,CT,0,,
-3705,,Federal Public Sector Labour Relations and Employment Board,Commission des relations de travail et de l'emploi dans le secteur public fédéral,,,0,,
+﻿gc_orgID,rg,harmonized_name,nom_harmonisé,Abbreviation,Abreviation,infobaseID,website,site_web,open_gov_ouvert,ati,pop,phoenix
+2222,1,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,AAFC,AAC,1,www.agr.gc.ca,www.agr.gc.ca,aafc-aac,Agriculture and Agri-Food Canada,AGR,AGR00
+2223,135,Canadian Heritage,Patrimoine canadien,PCH,PCH,122,https://www.canada.ca/en/canadian-heritage.html,https://www.canada.ca/fr/patrimoine-canadien.html,pch,Canadian Heritage,PCH,PCH00
+2224,50,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",IRCC,IRCC,123,www.cic.gc.ca,www.cic.gc.ca,cic,Immigration Refugees and Citizenship Canada,IMC,IMC00
+2225,6,Department of Finance Canada,Ministère des Finances Canada,FIN,FIN,124,https://www.canada.ca/en/department-finance.html,https://www.canada.ca/fr/ministere-finances.html,fin,Department of Finance Canada,FIN,FIN00
+2226,86,Fisheries and Oceans Canada,Pêches et Océans Canada,DFO,MPO,125,www.dfo-mpo.gc.ca,www.dfo-mpo.gc.ca,dfo-mpo,Fisheries and Oceans Canada,DFO,DFO00
+2227,5,Global Affairs Canada,Affaires mondiales Canada,GAC,AMC,126,www.international.gc.ca,www.international.gc.ca,dfatd-maecd,Global Affairs Canada,EXT,EXT00
+2228,22,Health Canada,Santé Canada,HC,SC,127,www.canada.ca/en/health-canada.html,www.canada.ca/fr/sante-canada.html,hc-sc,Health Canada,SHC,NHW00
+2229,14,Employment and Social Development Canada,Emploi et Développement social Canada,ESDC,EDSC,128,www.canada.ca/en/employment-social-development.html,www.canada.ca/fr/emploi-developpement-social.html,esdc-edsc,Employment and Social Development Canada,CSD,CSD00
+2230,42,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada,CIRNAC,RCAANC,129,https://www.canada.ca/en/crown-indigenous-relations-northern-affairs.html,https://www.canada.ca/fr/relations-couronne-autochtones-affaires-nord.html,aandc-aadnc,Crown-Indigenous Relations and Northern Affairs Canada,IAN,IAN00
+2231,33,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",ISED,ISDE,130,www.ic.gc.ca,www.ic.gc.ca,ic,Innovation Science and Economic Development Canada,DUS,DUS00
+2232,13,Department of Justice Canada,Ministère de la Justice Canada,JUS,JUS,132,www.justice.gc.ca,www.justice.gc.ca,jus,Department of Justice Canada,JUS,JUS00
+2233,18,National Defence,Défense nationale,DND,MDN,133,www.forces.gc.ca,www.forces.gc.ca,dnd-mdn,National Defence,DND,DND00
+2234,41,Natural Resources Canada,Ressources naturelles Canada,NRCan,RNCan,134,www.nrcan-rncan.gc.ca,www.nrcan-rncan.gc.ca,nrcan-rncan,Natural Resources Canada,RSN,RSN00
+2235,88,Public Safety Canada,Sécurité publique Canada,PS,SP,135,www.publicsafety.gc.ca,www.securitepublique.gc.ca,ps-sp,Public Safety Canada,PSP,PSP00
+2236,127,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,PSPC,SPAC,136,www.tpsgc-pwgsc.gc.ca,www.tpsgc-pwgsc.gc.ca,pwgsc-tpsgc,Public Services and Procurement Canada,SVC,SVC00
+2237,7,Environment and Climate Change Canada,Environnement et Changement climatique Canada,ECCC,ECCC,137,www.canada.ca/en/environment-climate-change.html,www.canada.ca/fr/environnement-changement-climatique.html,ec,Environment and Climate Change Canada,DOE,DOE00
+2238,34,Transport Canada,Transports Canada,TC,TC,138,www.tc.gc.ca,www.tc.gc.ca,tc,Transport Canada,MOT,MOT00
+2239,21,Veterans Affairs Canada,Anciens Combattants Canada,VAC,ACC,139,www.veterans.gc.ca,www.veterans.gc.ca,vac-acc,Veterans Affairs Canada,DVA,DVA00
+2240,44,Prairies Economic Development Canada,Développement économique Canada pour les Prairies,PrairiesCan,PrairiesCan,140,https://www.canada.ca/en/prairies-economic-development.html,https://www.canada.ca/fr/developpement-economique-prairies.html,prairiescan,Prairies Economic Development Canada (PrairiesCan),WCO,WCO00
+2241,190,Women and Gender Equality Canada,Femmes et Égalité des genres Canada,WAGE,FEGC,246,www.swc-cfc.gc.ca,www.cfc-swc.gc.ca,wage,Women and Gender Equality Canada,CSW,CSW00
+2242,56,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada,TBS,SCT,326,www.canada.ca/en/treasury-board-secretariat/index.html,www.canada.ca/fr/secretariat-conseil-tresor/index.html,tbs-sct,Treasury Board of Canada Secretariat,TBD,TBD00
+2243,191,Indigenous Services Canada,Services aux Autochtones Canada,ISC,SAC,348,www.canada.ca/en/indigenous-services-canada.html,www.canada.ca/fr/services-autochtones-canada.html,isc-sac,Indigenous Services Canada,DIS,DIS00
+2244,23,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,ACOA,APECA,12,www.acoa-apeca.gc.ca,www.acoa-apeca.gc.ca,acoa-apeca,Atlantic Canada Opportunities Agency,ACO,ACO00
+2245,,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada,IAAC,AEIC,63,https://www.canada.ca/en/impact-assessment-agency.html,https://www.canada.ca/fr/agence-evaluation-impact.html,iaac-aeic,Impact Assessment Agency of Canada,IAA,DOE01
+2246,133,Canadian Grain Commission,Commission canadienne des grains,CGC,CCG,69,www.grainscanada.gc.ca,www.grainscanada.gc.ca,cgc-ccg,Canadian Grain Commission,CGC,CGC00
+2247,75,Canadian Human Rights Commission,Commission canadienne des droits de la personne,CHRC,CCDP,71,www.chrc-ccdp.gc.ca,www.ccdp-chrc.gc.ca,chrc-ccdp,Canadian Human Rights Commission,HRC,HRC00
+2248,43,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes,CICS,SCIC,76,www.scics.ca,www.scics.ca,cics-scic,Not Found,CIC,CIC00
+2249,78,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,CanNor,CanNor,86,www.CanNor.gc.ca,www.CanNor.gc.ca,cannor,Canadian Northern Economic Development Agency,NED,NED00
+2250,95,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,CSIS,SCRS,94,https://www.canada.ca/en/security-intelligence-service.html,https://www.canada.ca/fr/service-renseignement-securite.html,csis-scrs,Canadian Security Intelligence Service,CSI,PAY00
+2251,119,Canadian Space Agency,Agence spatiale canadienne,CSA,ASC,95,www.asc-csa.gc.ca,www.asc-csa.gc.ca,csa-asc,Canadian Space Agency,CSA,CSA00
+2252,40,Canadian Transportation Agency,Office des transports du Canada,CTA,OTC,99,https://www.otc-cta.gc.ca/eng,https://www.otc-cta.gc.ca/fra,cta-otc,Canadian Transportation Agency,ATN,ATN00
+2253,165,Communications Security Establishment Canada,Centre de la sécurité des télécommunications Canada,CSE,CST,110,www.cse-cst.gc.ca,www.cse-cst.gc.ca,csec-cstc,Communication Security Establishment,CSE,CSE00
+2254,116,Copyright Board Canada,Commission du droit d'auteur Canada,CB,CDA,114,https://cb-cda.gc.ca/en,https://cb-cda.gc.ca/fr,cb-cda,Copyright Board Canada,COP,COP00
+2255,53,Correctional Service Canada,Service correctionnel Canada,CSC,SCC,117,www.canada.ca/correctional-service,www.canada.ca/service-correctionnel,csc-scc,Correctional Service of Canada,PEN,PEN00
+2256,144,Courts Administration Service,Service administratif des tribunaux judiciaires,CAS,SATJ,118,www.cas-satj.gc.ca,www.cas-satj.gc.ca,cas-satj,Not Found,CAJ,CAJ00
+2257,12,Canada Economic Development for Quebec Regions,Développement économique Canada pour les régions du Québec,CED,DEC,141,www.dec-ced.gc.ca,www.dec-ced.gc.ca,ced-dec,Economic Development Agency of Canada for the Regions of Quebec,FRD,FRD00
+2258,62,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,FedDev Ontario,FedDev Ontario,150,www.feddevontario.gc.ca,www.feddevontario.gc.ca,feddevontario,Federal Economic Development Agency for Southern Ontario,ESO,ESO00
+2259,141,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,FCAC,ACFC,151,www.fcac.gc.ca,www.acfc.gc.ca,fcac-acfc,Financial Consumer Agency of Canada,FNA,FNA00
+2260,139,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,FINTRAC,CANAFE,152,www.fintrac-canafe.gc.ca,www.canafe-fintrac.gc.ca,fintrac-canafe,Financial Transactions and Reports Analysis Centre of Canada,CFC,CFC00
+2261,32,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,IRB,CISR,174,www.irb-cisr.gc.ca,www.cisr-irb.gc.ca,irb-cisr,Immigration and Refugee Board,IRB,IRB00
+2262,145,Library and Archives Canada,Bibliothèque et Archives Canada,LAC,BAC,199,library-archives.canada.ca,bibliotheque-archives.canada.ca,lac-bac,Library and Archives of Canada,BAL,BAL00
+2263,138,Military Grievances External Review Committee,Comité externe d'examen des griefs militaires,MGERC,CEEGM,209,www.canada.ca/en/military-grievances-external-review.html,www.canada.ca/fr/externe-examen-griefs-militaires.html,mgerc-ceegm,Military Grievances External Review Committee,FCG,FCG00
+2264,137,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,MPCC,CPPM,210,www.mpcc-cppm.gc.ca,www.mpcc-cppm.gc.ca,mpcc-cppm,Military Police Complaints Commission,CPM,CPM00
+2265,,Farm Products Council of Canada,Conseil des produits agricoles du Canada,FPCC,CPAC,222,www.fpcc-cpac.gc.ca,www.fpcc-cpac.gc.ca,fpcc-cpac,Farm Products Council of Canada,FPN,
+2266,39,National Film Board,Office national du film,NFB,ONF,223,www.onf-nfb.gc.ca,www.onf-nfb.gc.ca,nfb-onf,National Film Board of Canada,NFB,NFB00
+2267,57,Parole Board of Canada,Commission des libérations conditionnelles du Canada,PBC,CLCC,227,www.canada.ca/en/parole-board.html,www.canada.ca/fr/commission-liberations-conditionnelles.html,pbc-clcc,Parole Board of Canada,NPB,NPB00
+2268,66,Northern Pipeline Agency Canada,Administration du pipe-line du Nord Canada,NPA,APN,235,https://northern-pipeline.canada.ca/home,https://pipe-line-nord.canada.ca/accueil,npa-apn,Northern Pipeline Agency Canada,NPA,
+2269,142,"Housing, Infrastructure and Communities Canada","Logement, Infrastructures et Collectivités Canada",HICC,LICC,0,,,infc,Office of Infrastructure of Canada,INF,INF00
+2270,2,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,OAG,BVG,238,www.oag-bvg.gc.ca,www.oag-bvg.gc.ca,oag-bvg,Office of the Auditor General of Canada,AUD,AUD00
+2271,15,Office of the Chief Electoral Officer,Bureau du directeur général des élections,elections,elections,239,www.elections.ca,www.elections.ca,elections,Office of the Chief Electoral Officer,CEO,CEO00
+2272,51,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada,FJA,CMF,240,www.fja-cmf.gc.ca,www.fja-cmf.gc.ca,fja-cmf,Not Found,FJA,FJA00
+2273,154,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada,OCL,CAL,241,https://lobbycanada.gc.ca/en,https://lobbycanada.gc.ca/fr,ocl-cal,Office of the Commissioner of Lobbying,LOB,LOB00
+2274,76,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,OCOL,CLO,242,www.officiallanguages.gc.ca/en,www.officiallanguages.gc.ca/fr,ocol-clo,Office of the Commissioner of Official Languages,COL,COL00
+2275,197,Office of the Intelligence Commissioner,Bureau du commissaire au renseignement,,,244,https://www.canada.ca/en/intelligence-commissioner.html,https://www.canada.ca/fr/commissaire-renseignement.html,ocsec-bccst,Office of the Intelligence Commissioner of Canada,OLC,OLC00
+2276,,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada,OCI,BEC,247,www.oci-bec.gc.ca,www.oci-bec.gc.ca,oci-bec,Office of the Correctional Investigator of Canada,OCI,
+2277,19,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,PPSC,SPPC,248,www.ppsc-sppc.gc.ca/,www.ppsc-sppc.gc.ca,ppsc-sppc,Public Prosecution Service of Canada,PPD,PPD00
+2278,8,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général,OSGG,BSGG,249,www.gg.ca,www.gg.ca,osgg-bsgg,Not Found,GGS,GGS00
+2279,46,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada,PSIC,ISPC,250,www.psic-ispc.gc.ca,www.psic-ispc.gc.ca,psic-ispc,Office of the Public Sector Integrity Commissioner of Canada,INT,INT00
+2280,11,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada,OSFI,BSIF,253,https://www.osfi-bsif.gc.ca/en,https://www.osfi-bsif.gc.ca/fr,osfi-bsif,Office of the Superintendent of Financial Institutions Canada,SIF,SIF00
+2281,96,Office of the Information Commissioner,Commissariat à l'information au Canada,,,0,,,oic-ci,Office of the Information Commissioner of Canada,IPC,IPC00
+2281,96,Office of the Information Commissioner,Commissariat à l'information au Canada,,,0,,,oic-ci,Office of the Information Commissioner of Canada,IPC,IPC00
+2281,96,Office of the Information Commissioner,Commissariat à l'information au Canada,,,0,,,oic-ci,Office of the Information Commissioner of Canada,IPC,IPC00
+2282,96,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,,,0,,,opc-cpvp,Office of the Privacy Commissioner of Canada,OPC,IPC00
+2282,96,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,,,0,,,opc-cpvp,Office of the Privacy Commissioner of Canada,OPC,IPC00
+2282,96,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,,,0,,,opc-cpvp,Office of the Privacy Commissioner of Canada,OPC,IPC00
+2283,109,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada,PMPRB,CEPMB,266,www.pmprb-cepmb.gc.ca,www.pmprb-cepmb.gc.ca,pmprb-cepmb,Patented Medicine Prices Review Board,PXR,PXR00
+2284,25,Privy Council Office,Bureau du Conseil privé,PCO,BCP,278,www.pco-bcp.gc.ca,www.pco-bcp.gc.ca,pco-bcp,Privy Council Office,PCO,PCO00
+2285,148,Public Health Agency of Canada,Agence de la santé publique du Canada,PHAC,ASPC,280,www.phac-aspc.gc.ca,www.phac-aspc.gc.ca,phac-aspc,Public Health Agency of Canada,AHS,AHS00
+2286,4,Public Service Commission of Canada,Commission de la fonction publique du Canada,PSC,CFP,282,https://www.canada.ca/en/public-service-commission.html,https://www.canada.ca/fr/commission-fonction-publique.html,psc-cfp,Public Service Commission of Canada,PSC,PSC00
+2287,80,Registrar of the Supreme Court of Canada,Registraire de la Cour suprême du Canada,,,288,www.scc-csc.ca,www.scc-csc.ca,,Not Found,SUC,
+2288,30,Royal Canadian Mounted Police,Gendarmerie royale du Canada,RCMP,GRC,295,www.rcmp-grc.gc.ca,www.rcmp-grc.gc.ca,rcmp-grc,Royal Canadian Mounted Police,RCM,RCM00
+2289,,RCMP External Review Committee,Comité externe d'examen de la GRC,ERC,CEE,296,www.erc-cee.gc.ca,www.erc-cee.gc.ca,erc-cee,Royal Canadian Mounted Police External Review Committee,REC,
+2290,,Civilian Review and Complaints Commission for the RCMP,Commission civile d'examen et de traitement des plaintes relatives à la GRC,CRCC,CCETP,297,www.crcc-ccetp.gc.ca/,www.crcc-ccetp.gc.ca/fr,cpc-cpp,Civilian Review and Complaints Commission for the Royal Canadian Mounted Police,RPP,
+2291,196,National Security and Intelligence Review Agency Secretariat,Secrétariat de l'Office de surveillance des activités en matière de sécurité nationale et de renseignement,,,302,https://nsira-ossnr.gc.ca/,https://nsira-ossnr.gc.ca/fr/,,Not Found,NRA,NRA00
+2292,163,Shared Services Canada,Services partagés Canada,SSC,SPC,305,https://www.canada.ca/en/shared-services.html,https://www.canada.ca/fr/services-partages.html,ssc-spc,Shared Services Canada,GSS,GSS00
+2293,54,Statistics Canada,Statistique Canada,StatCan,StatCan,313,www.statcan.gc.ca,www.statcan.gc.ca,statcan,Statistics Canada,STC,STC00
+2294,,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel),VRAB,TACRA,333,www.vrab-tacra.gc.ca,www.vrab-tacra.gc.ca,vrab-tacra,Veterans Review and Appeal Board,AVC,AVC00
+2295,192,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,SNSICP,SCPSNR,345,https://www.nsicop-cpsnr.ca/index-en.html,https://www.nsicop-cpsnr.ca/index-fr.html,snsicp-scpssnr,Secretariat of the National Security and Intelligence Committee of Parliamentarians,NSI,NSI00
+2296,193,Leaders' Debates Commission,Commission des débats des chefs,,,350,,,,Not Found,LDC,LDC00
+2297,170,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,ATSSC,SCDATA,539,www.canada.ca/en/administrative-tribunals-support-service.html,www.canada.ca/fr/service-canadien-appui-tribunaux-administratifs.html,atssc-scdata,Administrative Tribunals Support Service of Canada,ATS,ATS00
+2298,,Pacific Economic Development Canada,Développement économique Canada pour le Pacifique,PacifiCan,PacifiCan,560,https://www.canada.ca/en/pacific-economic-development.html,https://www.canada.ca/fr/developpement-economique-pacifique.html,pacifican,Pacific Economic Development Canada (PacifiCan),PED,
+2299,200,Federal Economic Development Agency for Northern Ontario,Agence fédérale de développement économique pour le Nord de l'Ontario,FedNor,FedNor,561,http://fednor.gc.ca/eic/site/fednor-fednor.nsf/eng/home,http://fednor.gc.ca/eic/site/fednor-fednor.nsf/fra/accueil,fednor,Federal Economic Development Agency for Northern Ontario,NOR,
+2300,38,Canada Border Services Agency,Agence des services frontaliers du Canada,CBSA,ASFC,26,www.cbsa.gc.ca,www.asfc.gc.ca,cbsa-asfc,Canada Border Services Agency,BSF,BSF00
+2300,85,Canada Border Services Agency,Agence des services frontaliers du Canada,CBSA,ASFC,26,www.cbsa.gc.ca,www.asfc.gc.ca,cbsa-asfc,Canada Border Services Agency,BSF,BSF00
+2301,,Canada Emission Reduction Incentives Agency,Agence canadienne pour l'incitation à la réduction des émissions,,,32,,,ceria-acire,Not Found,RED,
+2302,,Canada Employment Insurance Commission,Commission de l'assurance-emploi du Canada,CEIC,CAEC,33,www.esdc.gc.ca/eng/jobs/ei/commission/index.shtml,www.edsc.gc.ca/fra/emplois/ae/commission/index.shtml,ceic-caec,Not Found,CEI,
+2303,130,Canada Revenue Agency,Agence du revenu du Canada,CRA,ARC,46,www.canada.ca/en/revenue-agency.html,www.canada.ca/fr/agence-revenu.html,cra-arc,Canada Revenue Agency,NAR,NAR00
+2303,122,Canada Revenue Agency,Agence du revenu du Canada,CRA,ARC,46,www.canada.ca/en/revenue-agency.html,www.canada.ca/fr/agence-revenu.html,cra-arc,Canada Revenue Agency,NAR,NAR00
+2304,52,Canada School of Public Service,École de la fonction publique du Canada,CSPS,EFPC,47,www.csps-efpc.gc.ca,www.csps-efpc.gc.ca,csps-efpc,Canada School of Public Service,CES,CES00
+2305,100,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail,CCOHS,CCHST,55,www.ccohs.ca,www.cchst.ca,ccohs-cchst,Canadian Centre for Occupational Health and Safety,OCC,OCC00
+2306,136,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments,CFIA,ACIA,65,www.inspection.gc.ca,www.inspection.gc.ca,cfia-acia,Canadian Food Inspection Agency,ICA,ICA00
+2307,61,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada,CIHR,IRSC,74,www.cihr-irsc.gc.ca,www.irsc-cihr.gc.ca,cihr-irsc,Canadian Institutes of Health Research,CRI,CRI00
+2308,47,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire,CNSC,CCSN,87,https://www.cnsc-ccsn.gc.ca/eng/,https://www.cnsc-ccsn.gc.ca/fra/,cnsc-ccsn,Canadian Nuclear Safety Commission,CSN,CSN00
+2309,101,Transportation Safety Board of Canada,Bureau de la sécurité des transports du Canada,TSB,BST,98,www.tsb-bst.gc.ca,www.bst-tsb.gc.ca,tsb-bst,Transportation Safety Board of Canada,TSB,TSB00
+2310,131,Law Commission of Canada,Commission du droit du Canada,,,198,,,org231,Not Found,CLD,CLD00
+2311,102,The National Battlefields Commission,Commission des champs de bataille nationaux,NBC,CCBN,218,www.ccbn-nbc.gc.ca,www.ccbn-nbc.gc.ca,nbc-ccbn,The National Battlefields Commission,NBC,NBC00
+2312,195,Canada Energy Regulator,Régie de l'énergie du Canada,CER,REC,221,https://www.cer-rec.gc.ca/index-eng.html,https://www.cer-rec.gc.ca/index-fra.html,cer-rec,National Energy Board,ERG,ENR00
+2313,35,National Research Council Canada,Conseil national de recherches Canada,NRC,CNRC,228,https://nrc.canada.ca/en,https://nrc.canada.ca/fr,nrc-cnrc,National Research Council of Canada,NRC,NRC00
+2314,27,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,NSERC,CRSNG,230,www.nserc-crsng.gc.ca,www.nserc-crsng.gc.ca,nserc-crsng,Natural Sciences and Engineering Research Council of Canada,NSE,NSE00
+2315,124,Parks Canada,Parcs Canada,PC,PC,263,www.pc.gc.ca,www.pc.gc.ca,pc,Parks Canada Agency,CAP,CAP00
+2316,63,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,SSHRC,CRSH,306,www.sshrc-crsh.gc.ca,www.sshrc-crsh.gc.ca,sshrc-crsh,Social Sciences and Humanities Research Council,SSH,SSH00
+2317,180,Invest in Canada Hub,Investir au Canada,,,347,,,iic-iac,Invest in Canada,ICH,
+2318,171,Polar Knowledge Canada,Savoir polaire Canada,POLAR,POLAIRE,552,www.canada.ca/en/polar-knowledge.html,www.canada.ca/fr/savoir-polaire.html,polar-polaire,Polar Knowledge Canada,CHR,CHR00
+2319,199,Accessibility Standards Canada,Normes d'accessibilité Canada,ASC,NAC,558,https://accessible.canada.ca/,https://accessibilite.canada.ca/,casdo-ocena,Canadian Accessibility Standards Development Organization,CAQ,CAQ00
+2396,16,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,,,93,www.crtc.gc.ca,www.crtc.gc.ca,crtc,Canadian Radio-television and Telecommunications Commission,RTC,RTC00
+3399,,African Development Bank,Banque africaine de développement,,,7,www.afdb.org,www.afdb.org,,Not Found,,
+3400,,Asian Development Bank,Banque asiatique de développement,,,8,www.adb.org,www.adb.org,,Not Found,,
+3401,,Caribbean Development Bank,Banque de développement des Caraïbes,,,103,www.caribank.org,www.caribank.org,,Not Found,,
+3402,,European Bank for Reconstruction and Development,Banque européenne pour la reconstruction et le développement,,,145,www.ebrd.com,www.ebrd.com,,Not Found,,
+3403,,Inter-American Development Bank,Banque interaméricaine de développement,,,181,www.iadb.org,www.iadb.org,,Not Found,,
+3404,,International Bank for Reconstruction and Development,Banque internationale pour la reconstruction et le développement,,,183,www.worldbank.org,www.banquemondiale.org,,Not Found,,
+3405,,International Development Association,Association internationale de développement,,,185,www.worldbank.org,www.banquemondiale.org,,Not Found,,
+3406,,International Finance Corporation,Société financière internationale,,,187,www.ifc.org,www.ifc.org,,Not Found,,
+3407,24,International Joint Commission (Canadian Section),Commission mixte internationale (section canadienne),,,189,www.ijc.org,www.ijc.org,,Not Found,IJC,
+3408,,International Lake Memphremagog Levels Board,Commission internationale du lac Memphrémagog,,,190,,,,Not Found,,
+3409,,International Lake of the Woods Control Board,Conseil international de contrôle du lac des Bois,,,191,www.lwcb.ca,www.lwcb.ca,,Not Found,,
+3410,,International Monetary Fund,Fonds monétaire international,,,192,www.imf.org,www.imf.org,,Not Found,,
+3411,,Multilateral Investment Guarantee Agency,Agence multilatérale de garantie des investissements,,,213,www.miga.org,www.miga.org,,Not Found,,
+3412,,Joint Public Advisory Committee (JPAC) of the Commission for Environmental Cooperation (CEC),Comité consultatif public mixte (CCPM) de la Commission de coopération environnementale (CCE),,,233,www.cec.org,www.cec.org,,Not Found,,
+3413,,World Anti-Doping Agency,Agence mondiale antidopage,,,341,www.wada-ama.org/en,www.wada-ama.org/fr,,Not Found,,
+3414,,Asian Infrastructure Investment Bank,Banque asiatique d'investissement dans les infrastructures,,,351,www.aiib.org,www.aiib.org,,Not Found,,
+3415,,Lower Churchill Development Corporation Limited,Lower Churchill Development Corporation Limited,,,201,,,,Not Found,,
+3416,,North Portage Development Corporation (operating as The Forks North Portage Partnership),North Portage Development Corporation (exploitée sous le nom de The Forks North Portage Partnership),,,234,https://www.theforks.com/about/partnership,https://www.theforks.com/about/partnership,,Not Found,,
+3417,,Communication Canada,Communication Canada,,,108,,,,Not Found,CIO,
+3418,,Office of the Superintendent of Bankruptcy,Bureau du surintendant des faillites,,,252,,,,Not Found,OSB,
+3419,,Prairie Farm Rehabilitation Administration,Administration du rétablissement agricole des Prairies,,,273,,,,Not Found,REA,
+3420,,Commissioner of Canada Election,Commissaire aux élections fédérales,,,342,,,occe-bcef,Not Found,OCE,
+3421,,Canada Investment and Savings,Placements Épargne Canada,,,538,,,,Not Found,,
+3422,,Director of Soldier Settlement,Directeur de l'établissement de soldats,,,541,,,,Not Found,SST,
+3423,,"The Director, The Veterans' Land Act",Directeur des terres destinées aux anciens combattants,,,542,,,,Not Found,DVL,
+3424,,Energy Supplies Allocation Board,Office de répartition des approvisionnements d'énergie,,,543,,,esab-orad,Not Found,ESR,
+3425,,"Staff of the Non-Public Funds, Canadian Forces","Personnel des fonds non publics, Forces canadiennes",,,545,,,,Not Found,FPF,
+3426,,Statistics Survey Operations,Opérations des enquêtes statistiques,,,553,,,,Not Found,SYT,
+3427,,Federal Judges not part of any department,Juges fédéraux ne faisant pas partie d'un ministère,,,555,,,,Not Found,,
+3428,67,House of Commons,Chambre des communes,,,2,www.parl.gc.ca,www.parl.gc.ca,hoc-cdc,Not Found,HOC,
+3429,17,Library of Parliament,Bibliothèque du Parlement,,,200,www.parl.gc.ca/About/Library/VirtualLibrary,www.parl.gc.ca/About/Library/VirtualLibrary,lp-bp,Not Found,LIB,
+3430,147,Office of the Conflict of Interest and Ethics Commissioner,Commissariat aux conflits d'intérêts et à l'éthique,,,245,ciec-ccie.parl.gc.ca/EN/Pages/default.aspx,ciec-ccie.parl.gc.ca/FR/Pages/default.aspx,,Not Found,CIE,
+3431,,Senate Ethics Officer,Conseiller sénatorial en éthique,,,251,sen.parl.gc.ca/seo-cse/eng/Home-e.html,sen.parl.gc.ca/seo-cse/fr/Home-f.html,,Not Found,ESN,
+3432,9,Senate,Sénat,,,303,www.parl.gc.ca,www.parl.gc.ca,,Not Found,SEN,
+3433,183,Office of the Parliamentary Budget Officer,Bureau du directeur parlementaire du budget,,,346,www.pbo-dpb.gc.ca/en/,www.pbo-dpb.gc.ca/fr/,,Not Found,PBO,
+3434,176,Parliamentary Protective Service,Service de protection parlementaire,,,554,,,,Not Found,PPS,
+3435,,Aéroport de Québec Inc.,Aéroport de Québec Inc.,,,5,www.aeroportdequebec.com,www.aeroportdequebec.com,,Not Found,,
+3436,,Aéroports de Montréal,Aéroports de Montréal,,,6,www.admtl.com,www.admtl.com,,Not Found,,
+3437,,Asia-Pacific Foundation of Canada,Fondation Asie-Pacifique du Canada,,,9,www.asiapacific.ca,www.asiapacific.ca,apfc-fapc,Asia Pacific Foundation of Canada,,
+3438,,Association of Canada Lands Surveyors,Association des Arpenteurs des Terres du Canada,,,11,www.acls-aatc.ca,www.acls-aatc.ca,,Not Found,,
+3439,,Belledune Port Authority,Administration portuaire de Belledune,,,16,www.portofbelledune.ca,www.portofbelledune.ca,pb,Belledune Port Authority,,
+3440,,Buffalo and Fort Erie Public Bridge Authority,Buffalo and Fort Erie Public Bridge Authority,,,19,www.peacebridge.com,www.peacebridge.com,,Not Found,,
+3441,,Calgary Airport Authority,Administration aéroportuaire de Calgary,,,21,www.yyc.com,www.yyc.com,,Not Found,,
+3442,,WinSport,WinSport,,,22,www.winsport.ca,www.winsport.ca,,Not Found,,
+3443,,Canada Foundation for Innovation,Fondation canadienne pour l'innovation,,,35,www.innovation.ca,www.innovation.ca,innovation,Canada Foundation for Innovation,,
+3444,,Canada Foundation for Sustainable Development Technology,Fondation du Canada pour l'appui technologique au développement durable,,,36,www.sdtc.ca,www.sdtc.ca,,Sustainable Development Technology Canada,,
+3445,,Canada Games Council,Conseil des Jeux du Canada,,,37,www.canadagames.ca,www.canadagames.ca,,Not Found,,
+3446,,Canada Health Infoway Inc.,Inforoute Santé du Canada Inc.,,,38,www.infoway-inforoute.ca,www.infoway-inforoute.ca,,Not Found,,
+3447,,Canada Media Fund,Fonds des médias du Canada,,,41,www.cmf-fmc.ca,www.cmf-fmc.ca,,Not Found,,
+3448,,Canada-Newfoundland and Labrador Offshore Petroleum Board,Office Canada-Terre-Neuve-et-Labrador des hydrocarbures extracôtiers,,,48,www.cnlopb.ca,www.ctnlohe.ca,cnlopb,Canada-Newfoundland and Labrador Offshore Petroleum Board,CFO,
+3449,,Canada-Nova Scotia Offshore Petroleum Board,Office Canada-Nouvelle-Écosse des hydrocarbures extracôtiers,,,49,www.cnsopb.ns.ca,www.ocnehe.ca,,Canada-Nova-Scotia Offshore Petroleum Board,CNO,
+3450,,Canadian Agency for Drugs and Technologies in Health (CADTH),Agence canadienne des médicaments et des technologies de la santé (ACMTS),,,50,www.cadth.ca,www.cadth.ca/fr,,Not Found,,
+3451,,Canadian Centre on Substance Use and Addictions,Centre canadien sur les dépendances et l'usage de substances,,,56,www.ccsa.ca,www.ccsa.ca,,Not Found,,
+3452,,Canadian Energy Research Institute,Canadian Energy Research Institute,,,62,www.ceri.ca,www.ceri.ca,,Not Found,,
+3453,,Canadian Institute for Health Information (CIHI),Institut canadien d'information sur la santé (ICIS),,,73,www.cihi.ca,www.icis.ca,,Not Found,,
+3454,,Canadian Livestock Records Corporation,Société canadienne d'enregistrement des animaux,,,80,www.clrc.ca,www.clrc.ca,,Not Found,,
+3455,,Canadian Partnership Against Cancer Corporation (CPAC),Partenariat canadien contre le cancer (PCC),,,89,www.partnershipagainstcancer.ca,www.partenariatcontrelecancer.ca/fr,,Not Found,,
+3456,,Canadian Patient Safety Institute (CPSI),Institut canadien pour la sécurité des patients (ICSP),,,90,www.patientsafetyinstitute.ca/English/Pages/default.aspx,www.patientsafetyinstitute.ca/french/pages/default.aspx,,Not Found,,
+3457,,Canadian Sport Institute Ontario,Institut canadien du sport Ontario,,,96,www.csiontario.ca/home,www.csiontario.ca/home/fr,,Not Found,,
+3458,,Charlottetown Airport Authority Inc.,Charlottetown Airport Authority Inc.,,,105,www.flypei.com,www.flypei.com,,Not Found,,
+3459,,Coaching Association of Canada,Association canadienne des entraîneurs,,,107,www.coach.ca,www.coach.ca,,Not Found,,
+3461,,Edmonton Regional Airports Authority,Edmonton Regional Airports Authority,,,142,www.flyeia.com,www.flyeia.com,,Not Found,,
+3462,,Fredericton International Airport Authority Inc.,Fredericton International Airport Authority Inc.,,,156,www.frederictonairport.ca,www.frederictonairport.ca,,Not Found,,
+3463,,Gander International Airport Authority Inc.,Gander International Airport Authority Inc.,,,158,www.ganderairport.com,www.ganderairport.com,,Not Found,,
+3464,,Greater London International Airport Authority,Greater London International Airport Authority,,,164,www.flylondon.ca,www.flylondon.ca,,Not Found,,
+3465,,Greater Moncton International Airport Authority Inc.,Greater Moncton International Airport Authority Inc.,,,165,www.cyqm.ca,www.cyqm.ca,,Not Found,,
+3466,,Greater Toronto Airports Authority,Autorité aéroportuaire du Grand Toronto,,,166,www.torontopearson.com,www.torontopearson.com,,Not Found,,
+3467,,Halifax International Airport Authority,Administration de l'aéroport international d'Halifax,,,167,www.hiaa.ca,www.hiaa.ca,,Not Found,,
+3468,,Halifax Port Authority,Administration portuaire d'Halifax,,,168,www.portofhalifax.ca,www.portofhalifax.ca,halpa-aphal,Halifax Port Authority,,
+3469,,Hamilton Port Authority,Administration portuaire de Hamilton,,,169,www.hamiltonport.ca,www.hamiltonport.ca,hampa-apham,Hamilton-Oshawa Port Authority,,
+3470,,Institut national du sport du Québec,Institut national du sport du Québec,,,180,www.insquebec.org,www.insquebec.org,,Not Found,,
+3471,,Internal Trade Secretariat Corporation,Corporation du Secrétariat du commerce intérieur,,,182,www.cfta-alec.ca,www.cfta-alec.ca,,Not Found,,
+3472,,International Fisheries Commissions Pension Society,Société de caisse de retraite de la Commission internationale des pêcheries,,,188,,,,Not Found,,
+3473,,Lake of the Woods Control Board,Commission de contrôle du lac des Bois,,,195,www.lwcb.ca,www.lwcb.ca,,Not Found,,
+3474,,Maritime Forestry Complex Corporation,Société du complexe forestier des Maritimes,,,203,www.gnb.ca/4532/index-e.asp,www.gnb.ca/4532/index-f.asp,,Not Found,,
+3475,,Mental Health Commission of Canada (MHCC),Commission de la santé mentale du Canada (CSMC),,,206,www.mentalhealthcommission.ca,www.commissionsantementale.ca,,Not Found,,
+3476,,Milit-Air Inc.,Milit-Air Inc.,,,208,,,,Not Found,,
+3477,,Montréal Port Authority,Administration portuaire de Montréal,,,212,www.port-montreal.com,www.port-montreal.com,mpa-apm,Montreal Port Authority,,
+3478,,Nanaimo Port Authority,Administration portuaire de Nanaimo,,,214,www.npa.ca,www.npa.ca,nnpa-apn,Nanaimo Port Authority,,
+3479,,"Nature Trust of British Columbia, The","Nature Trust of British Columbia, The",,,231,www.naturetrust.bc.ca,www.naturetrust.bc.ca,,Not Found,,
+3480,,NAV CANADA,NAV CANADA,,,232,www.navcanada.ca,www.navcanada.ca,,Not Found,,
+3481,,Oshawa Port Authority,Administration portuaire d'Oshawa,,,258,www.portofoshawa.ca,www.portofoshawa.ca,opa-apd,Not Found,,
+3482,,Ottawa International Airport Authority,Administration de l'aéroport international d'Ottawa,,,259,www.yow.ca,www.yow.ca,,Not Found,,
+3483,,Ouranos Consortium,Consortium Ouranos,,,260,www.ouranos.ca,www.ouranos.ca,,Not Found,,
+3484,,"Pierre Elliott Trudeau Foundation, The","Fondation Pierre Elliott Trudeau, La",,,269,www.trudeaufoundation.ca,www.fondationtrudeau.ca,petf-fpet,Pierre Eliott Trudeau Foundation,,
+3485,,Porcupine Caribou Management Board,Porcupine Caribou Management Board,,,270,www.pcmb.ca,www.pcmb.ca,,Not Found,,
+3486,,Port Alberni Port Authority,Administration portuaire de Port Alberni,,,271,www.portalberniportauthority.ca,www.portalberniportauthority.ca,papa-appa,Port Alberni Port Authority,,
+3488,,Prince George Airport Authority Inc.,Prince George Airport Authority Inc.,,,275,www.pgairport.ca,www.pgairport.ca,,Not Found,,
+3489,,Prince Rupert Port Authority,Administration portuaire de Prince Rupert,,,276,www.rupertport.com,www.rupertport.com,prpa-appr,Prince Rupert Port Authority,,
+3490,,Québec Port Authority,Administration portuaire de Québec,,,286,www.portquebec.ca,www.portquebec.ca,qpa-apq,Quebec Port Authority,,
+3491,,Regina Airport Authority Inc.,Regina Airport Authority Inc.,,,287,www.yqr.ca,www.yqr.ca,,Not Found,,
+3492,,Roosevelt Campobello International Park Commission,Commission du parc international Roosevelt de Campobello,,,293,www.fdr.net,www.fdr.net,,Not Found,,
+3493,,Saguenay Port Authority,Administration portuaire du Saguenay,,,298,www.portsaguenay.ca,www.portsaguenay.ca,spa-aps,Saguenay Port Authority,,
+3494,,Saint John Airport Inc.,Saint John Airport Inc.,,,299,www.saintjohnairport.com,www.saintjohnairport.com,,Not Found,,
+3495,,Saint John Port Authority,Administration portuaire de Saint John,,,300,www.sjport.com,www.sjport.com,stjpa-apstj,Saint John Port Authority,,
+3496,,Saskatoon Airport Authority,Saskatoon Airport Authority,,,301,www.yxe.ca,www.yxe.ca,,Not Found,,
+3497,,Sept-Îles Port Authority,Administration portuaire de Sept-Îles,,,304,www.portsi.com,www.portsi.com,psi,Sept-Îles Port Authority,,
+3498,,Sport Dispute Resolution Centre of Canada,Centre de règlement des différends sportifs du Canada,,,308,www.crdsc-sdrcc.ca,www.crdsc-sdrcc.ca,,Not Found,,
+3499,,St. John's International Airport Authority,St. John's International Airport Authority,,,309,www.stjohnsairport.com,www.stjohnsairport.com,,Not Found,,
+3500,,St. John's Port Authority,Administration portuaire de St. John's,,,310,www.sjpa.com,www.sjpa.com,,St. John's Port Authority,,
+3501,,St. Lawrence Seaway Management Corporation,Corporation de gestion de la Voie maritime du Saint-Laurent,,,311,www.greatlakes-seaway.com,www.greatlakes-seaway.com,,Not Found,,
+3502,,Terry Fox Humanitarian Award Inc.,Prix humanitaire Terry Fox inc.,,,316,www.terryfoxawards.ca,www.terryfoxawards.ca,,Not Found,,
+3503,,Thunder Bay International Airports Authority Inc.,Thunder Bay International Airports Authority Inc.,,,318,www.tbairport.on.ca,www.tbairport.on.ca,,Not Found,,
+3504,,Thunder Bay Port Authority,Administration portuaire de Thunder Bay,,,319,www.portofthunderbay.com,www.portofthunderbay.com,tbpa-aptb,Thunder Bay Port Authority,,
+3506,,Toronto Port Authority,Administration portuaire de Toronto,,,321,www.portstoronto.com,www.portstoronto.com,tpa-apt,Toronto Port Authority,,
+3507,,Trois-Rivières Port Authority,Administration portuaire de Trois-Rivières,,,327,www.porttr.com,www.porttr.com,ptr,Trois-Rivières Port Authority,,
+3508,,TV5 Québec Canada,TV5 Québec Canada,,,328,www.tv5.ca,www.tv5.ca,,Not Found,,
+3509,,Vancouver Fraser Port Authority,Administration portuaire de Vancouver Fraser,,,329,www.portmetrovancouver.com,www.portmetrovancouver.com,vfpa-apvf,Vancouver Fraser Port Authority,,
+3510,,Vancouver International Airport Authority,Administration de l'Aéroport de Vancouver,,,330,www.yvr.ca,www.yvr.ca,,Not Found,,
+3511,,Victoria Airport Authority,Autorité aéroportuaire de Victoria,,,335,www.victoriaairport.com,www.victoriaairport.com,,Not Found,,
+3512,,Waterfront Toronto,Waterfront Toronto,,,336,www.waterfrontoronto.ca,www.waterfrontoronto.ca,,Not Found,,
+3513,,Wildlife Habitat Canada,Habitat faunique Canada,,,337,www.whc.org,www.whc.org/fr,,Not Found,,
+3514,,Windsor Port Authority,Administration portuaire de Windsor,,,338,www.portwindsor.com,www.portwindsor.com,wpa-apw,Windsor Port Authority,,
+3515,,Winnipeg Airports Authority Inc.,Winnipeg Airports Authority Inc.,,,340,www.waa.ca,www.waa.ca,,Not Found,,
+3516,,Canadian Foundation for Healthcare Improvement (CFHI),Fondation canadienne pour l'amélioration des services de santé (FCASS),,,547,www.cfhi-fcass.ca,www.fcass-cfhi.ca,,Not Found,,
+3517,,Healthcare Excellence Canada (HEC),Excellence en santé Canada (ESC),,,559,https://www.healthcareexcellence.ca/en/,https://www.healthcareexcellence.ca/fr/,,Not Found,,
+3518,,Aboriginal Healing Foundation,Fondation autochtone de guérison,,,4,,,,Not Found,,
+3519,,Canada Commonwealth Legacy Fund,Fonds du legs des Jeux du Commonwealth,,,28,,,,Not Found,,
+3520,,Canadian Foundation for Climate and Atmospheric Sciences,Fondation canadienne pour les sciences du climat et de l'atmosphère,,,68,,,,Not Found,,
+3521,,Canadian International Grains Institute,Institut international du Canada pour le grain,,,78,,,,Not Found,,
+3522,,"Canadian Wheat Board, The","Commission canadienne du blé, La",,,100,,,,Not Found,,
+3523,,Centre national multisport-Montréal,Centre national multisport – Montréal,,,104,,,,Not Found,,
+3524,,First Nations Financial Management Board,Conseil de gestion financière des premières nations,,,153,,,fnfmb-cgfpn,First Nations Financial Management Board,,
+3525,,First Nations Tax Commission,Commission de la fiscalité des premières nations,,,155,,,fntc-cfpn,First Nations Tax Commission,,
+3526,,Health Council of Canada,Conseil canadien de la santé,,,171,,,,Not Found,,
+3527,,International Centre for Human Rights and Democratic Development,Centre international des droits de la personne et du développement démocratique,,,184,,,,Not Found,,
+3528,,PrioNet Canada,PrioNet Canada,,,277,,,,Not Found,,
+3531,,Last Post Fund,Fonds du Souvenir,,,196,,,,Not Found,,
+3532,,"Vanier Institute of the Family, The",L'Institut Vanier de la famille,,,332,,,,Not Found,,
+3533,,Canadian Coast Guard,Garde côtière canadienne,,,57,https://www.ccg-gcc.gc.ca/index-eng.html,https://www.ccg-gcc.gc.ca/index-fra.html,,Not Found,,
+3534,,Canadian Conservation Institute,Institut canadien de conservation,,,59,https://www.canada.ca/en/conservation-institute.html,https://www.canada.ca/fr/institut-conservation.html,,Not Found,,
+3535,,Canadian Forces Housing Agency,Agence de logement des Forces canadiennes,,,67,www.canada.ca/en/government/publicservice/benefitsmilitary/military-housing.html,www.canada.ca/fr/gouvernement/fonctionpublique/avantagesmilitaires/logements-militaires.html,,Not Found,,
+3536,,Canadian Heritage Information Network,Réseau canadien d'information sur le patrimoine,,,70,https://www.canada.ca/en/heritage-information-network.html,https://www.canada.ca/fr/reseau-information-patrimoine.html,,Not Found,,
+3537,,Canadian Intellectual Property Office,Office de la propriété intellectuelle du Canada,,,75,www.cipo.gc.ca,www.opic.gc.ca,,Not Found,,
+3538,,Canadian Pari-Mutuel Agency,Agence canadienne du pari mutuel,,,88,www.cpma-acpm.agr.gc.ca,www.cpma-acpm.agr.gc.ca,,Not Found,,
+3539,,CORCAN,CORCAN,,,115,,,,Not Found,,
+3540,,Defence Research and Development Canada,Recherche et développement pour la défense Canada,,,120,www.drdc-rddc.gc.ca/en/,www.drdc-rddc.gc.ca/fr/,drdc-rddc,Not Found,,
+3541,,Indian Oil and Gas Canada,Pétrole et gaz des Indiens du Canada,,,175,www.pgic-iogc.gc.ca/eng/1100110010002,www.pgic-iogc.gc.ca/fra/1100110010002/1100110010005,,Not Found,IOG,
+3542,,Measurement Canada,Mesures Canada,,,204,www.ic.gc.ca/eic/site/mc-mc.nsf/eng/home,www.ic.gc.ca/eic/site/mc-mc.nsf/fra/accueil,,Not Found,,
+3543,,Physical Resources Bureau,Direction générale des biens,,,268,www.international.gc.ca/international/index.aspx?lang=eng&view=d,www.international.gc.ca/international/index.aspx?lang=fra&view=d,,Not Found,,
+3544,,Translation Bureau,Bureau de la traduction,,,323,www.tpsgc-pwgsc.gc.ca/bt-tb/index-eng.html,www.tpsgc-pwgsc.gc.ca/bt-tb/index-fra.html,,Not Found,,
+3545,,Consulting and Audit Canada Revolving Fund,Fonds renouvelable de Conseils et Vérification Canada,,,112,,,,Not Found,,
+3546,,Industrial Technologies Office,Office des technologies industrielles,,,179,,,,Not Found,,
+3547,,Passport Canada,Passeport Canada,,,264,,,pptc,Not Found,,
+3548,79,Payroll System General Ledger,Grand livre général du système de la paye,,,0,,,,Not Found,,
+3549,87,Public Service Superannuation,Pension de retraite de la fonction publique,,,0,,,,Not Found,,
+3552,,Bank of Canada Museum,Musée de la Banque du Canada,,,0,,,,Not Found,,
+3553,,Canada Agriculture and Food Museum,Musée de l'agriculture et de l'alimentation du Canada,,,0,,,,Not Found,,
+3554,,Canada Aviation and Space Museum,Musée de l'aviation et de l'espace du Canada,,,0,,,,Not Found,,
+3555,,Canada Firearms Centre,Centre des armes à feu Canada,,,0,,,,Not Found,,
+3556,,Canada Research Chairs,Chaires de recherche du Canada,,,0,,,,Not Found,,
+3557,,Canadian Army,Armée canadienne,,,0,,,,Not Found,,
+3558,,Canadian Judicial Council,Conseil canadien de la magistrature,,,0,,,,Not Found,,
+3559,,Canadian Special Operations Forces Command,Commandement des Forces d'opérations spéciales du Canada,,,0,,,,Not Found,,
+3560,,Canadian Trade Commissioner Service,Service des délégués commerciaux du Canada,,,0,,,,Not Found,,
+3561,,Canadian War Museum,Musée canadien de la guerre,,,0,,,,Canadian Museum of History and the Canadian War Museum,,
+3562,,Communications Research Centre Canada,Centre de recherches sur les communications Canada,,,0,,,,Not Found,,
+3563,,Competition Bureau Canada,Bureau de la concurrence Canada,,,0,,,,Not Found,,
+3564,,Competition Tribunal,Tribunal de la concurrence,,,0,,,ct-tc,Not Found,,
+3565,,Court Martial Appeal Court of Canada,Cour d'appel de la cour martiale du Canada,,,0,,,,Not Found,,
+3566,,Democratic Institutions,Institutions démocratiques,,,0,,,,Not Found,,
+3568,,Environmental Protection Review Canada,Révision de la protection de l'environnement Canada,,,0,,,,Not Found,,
+3569,,Federal Court of Appeal,Cour d'appel fédérale,,,0,,,,Not Found,,
+3570,,Federal Court of Canada,Cour fédérale,,,0,,,,Not Found,,
+3571,,Office of the Federal Ombudsperson for Victims Of Crime,Bureau de l'ombudsman fédéral des victimes d'actes criminels,,,0,,,,Not Found,,
+3572,,Historic Sites and Monuments Board of Canada,Commission des lieux et monuments historiques du Canada,,,0,,,hsmbc-clmhc,Historic Sites and Monuments Board of Canada,,
+3573,,Independent Review Panel for Defence Acquisition,Commission indépendante d'examen des acquisitions de la Défense,,,0,,,,Not Found,,
+3574,,Intergovernmental Affairs,Affaires intergouvernementales,,,0,,,iga-aig,Not Found,,
+3575,,Judicial Compensation and Benefits Commission,Commission d'examen de la rémunération des juges,,,0,,,,Not Found,,
+3577,,Leader of the Government in the House of Commons,Leader du gouvernement à la Chambre des communes,,,0,,,,Not Found,,
+3578,,Management Advisory Board for the RCMP,Conseil consultatif de gestion pour la GRC,,,0,,,,Not Found,,
+3579,,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,,,0,,,nsira-ossnr,National Security and Intelligence Review Agency,,
+3580,,National Seniors Council,Conseil national des aînés,,,0,,,,Not Found,,
+3581,,Occupational Health and Safety Tribunal Canada,Tribunal de santé et sécurité au travail Canada,,,0,,,,Not Found,,
+3582,,Office of the Chief Military Judge,Le cabinet du juge militaire en chef,,,0,,,,Not Found,,
+3583,,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,Bureau de l'ombudsman de la Défense nationale et des Forces armées canadiennes,,,0,,,ndcfo-odnfc,Office of the Ombudsman for the Department of National Defence and the Canadian Forces,,
+3584,,Parliament of Canada,Parlement du Canada,,,0,,,,Not Found,,
+3585,,Office of the Procurement Ombudsman,Bureau de l'ombudsman de l'approvisionnement,,,0,,,,Not Found,,
+3586,,Prime Minister of Canada,Premier ministre du Canada,,,0,,,,Not Found,,
+3587,,Public Servants Disclosure Protection Tribunal Canada,Tribunal de la protection des fonctionnaires divulgateurs Canada,,,0,,,psdpt-tpfd,Not Found,,
+3588,,Royal Canadian Air Force,Aviation royale canadienne,,,0,,,,Not Found,,
+3589,,Royal Canadian Navy,Marine royale canadienne,,,0,,,,Not Found,,
+3590,,Royal Military College of Canada,Collège militaire royal du Canada,,,0,,,,Not Found,,
+3591,,Service Canada,Service Canada,,,0,,,,Not Found,,
+3592,,Supreme Court of Canada,Cour suprême du Canada,,,0,,,,Not Found,,
+3593,,Tax Court of Canada,Cour canadienne de l'impôt,,,0,,,,Not Found,,
+3594,,Office of the Taxpayers' Ombudsperson,Bureau de l'ombudsman des contribuables,,,0,,,oto-boc,Not Found,,
+3595,,Office of the Veterans' Ombudsman,Bureau de l'ombud des vétérans,,,0,,,ovo-bov,Not Found,,
+3596,,Virtual Museum of Canada,Musée virtuel du Canada,,,0,,,,Not Found,,
+3599,,Aboriginal Business Canada,Entreprise autochtone Canada,,,0,,,,Not Found,,
+3600,,"Appeal Board, Hazardous Materials Information Review Act","Commission d'appel, Loi sur le contrôle des renseignements relatifs aux matières dangereuses",,,0,,,,Not Found,,
+3601,,Canada Centre for Inland Waters,Centre canadien des eaux intérieures,,,0,,,,Not Found,,
+3602,,Canadian Museum of Contemporary Photography,Musée canadien de la photographie contemporaine,,,0,,,,Not Found,,
+3603,,Environmental Protection Tribunal of Canada,Tribunal de la protection de I'environnement du Canada,,,0,,,,Not Found,,
+3604,,Geographical Names Board of Canada,La Commission de toponymie du Canada,,,0,,,,Not Found,,
+3605,,Geological Survey of Canada,Commission géologique du Canada,,,0,,,,Not Found,,
+3606,,Geomatics Canada,Géomatique Canada,,,0,,,,Not Found,,
+3607,,Indian Residential Schools Resolution Canada,Résolution des questions des pensionnats indiens Canada,,,0,,,,Not Found,,
+3608,,National Advisory Council on Aging,Conseil consultatif national sur le troisième âge,,,0,,,,Not Found,,
+3609,,National Advisory Council on Poverty,Conseil national du Bien-être,,,0,,,,Not Found,,
+3611,,Office of the Chief Science Advisor of Canada,Bureau du conseiller scientifique en chef du Canada,,,0,,,ocsa-bcsc,Not Found,,
+3612,,Policy Horizons Canada,Horizons de politiques Canada,,,0,,,,Not Found,,
+3613,,Ship-source Oil Pollution Fund,Caisse d'indemnisation des dommages dus à la pollution par les hydrocarbures causée par les navires,,,0,,,sopf-cidp,Not Found,,
+3614,,Statute Revision Commission Canada,Commission de révision des lois Canada,,,0,,,,Not Found,,
+3615,134,Canadian Dairy Commission,Commission canadienne du lait,,,61,www.cdc-ccl.gc.ca,www.cdc-ccl.gc.ca,,Canadian Dairy Commission,,
+3616,,Farm Credit Canada,Financement agricole Canada,,,147,www.fcc-fac.ca,www.fcc-fac.ca,,Farm Credit Canada,,
+3618,,Canada Council for the Arts,Conseil des Arts du Canada,,,29,www.canadacouncil.ca,www.conseildesarts.ca,,Canada Council for the Arts,,
+3619,,Canadian Broadcasting Corporation,Société Radio-Canada,,,53,www.cbc.radio-canada.ca,www.cbc.radio-canada.ca,,Canadian Broadcasting Corporation,,
+3620,,Canadian Museum for Human Rights,Musée canadien des droits de la personne,,,81,www.humanrights.ca,www.droitsdelapersonne.ca,,Canadian Museum for Human Rights,,
+3621,,Canadian Museum of History,Musée canadien de l'histoire,,,82,www.historymuseum.ca,www.museedelhistoire.ca,,Not Found,,
+3622,,Canadian Museum of Immigration at Pier 21,Musée canadien de l'immigration du Quai 21,,,84,www.pier21.ca,www.quai21.ca,,Canadian Museum of Immigration at Pier 21,,
+3623,,Canadian Museum of Nature,Musée canadien de la nature,,,85,www.nature.ca,www.nature.ca,,Canadian Museum of Nature,,
+3624,,Canadian Race Relations Foundation,Fondation canadienne des relations raciales,,,92,www.crr.ca,www.crrf-fcrr.ca/fr,,Canadian Race Relations Foundation,,
+3625,,National Arts Centre Corporation,Société du Centre national des Arts,,,217,www.nac-cna.ca,www.cna-nac.ca,,National Arts Centre,,
+3626,,National Gallery of Canada,Musée des beaux-arts du Canada,,,224,www.gallery.ca,www.beaux-arts.ca,,National Gallery of Canada,,
+3627,,National Museum of Science and Technology,Musée national des sciences et de la technologie,,,226,www.techno-science.ca,www.techno-science.ca,,Ingenium   Canada's Museums of Science and Innovation,,
+3629,37,Telefilm Canada,Téléfilm Canada,,,315,www.telefilm.ca,www.telefilm.ca,,Telefilm Canada,,
+3630,,Toronto Organizing Committee for the 2015 Pan American and Parapan American Games,Comité d'organisation des Jeux panaméricains et parapanaméricains de Toronto 2015,,,320,,,,Not Found,,
+3631,91,Canada Mortgage and Housing Corporation,Société canadienne d'hypothèques et de logement,,,42,www.cmhc.ca,www.schl.ca,,Canada Mortgage and Housing Corporation,,
+3632,,Social Security Tribunal,Tribunal de la sécurité sociale,,,307,,,,Not Found,,
+3633,,Bank of Canada,Banque du Canada,,,15,www.bankofcanada.ca,www.bank-banque-canada.ca,,Bank of Canada,,
+3634,,Canada Deposit Insurance Corporation,Société d'assurance-dépôts du Canada,,,30,www.cdic.ca,www.sadc.ca,,Canada Deposit Insurance Corporation,,
+3635,,Canada Development Investment Corporation,La Corporation de développement des investissements du Canada,,,31,www.cdev.gc.ca,www.cdev.gc.ca,,Canada Development Investment Corporation,,
+3636,,Canada Pension Plan Investment Board,Office d'investissement du régime de pensions du Canada,,,43,www.cppib.com,www.cppib.com/fr/,,Not Found,,
+3637,,Royal Canadian Mint,Monnaie royale canadienne,,,294,www.mint.ca,www.monnaie.ca,,RCMH-MRCF Inc. (Royal Canadian Mint),,
+3638,,Freshwater Fish Marketing Corporation,Office de commercialisation du poisson d'eau douce,,,157,www.freshwaterfish.com/,www.freshwaterfish.com/fr,,Freshwater Fish Marketing Corporation,,
+3639,,Canadian Commercial Corporation,Corporation commerciale canadienne,,,58,www.ccc.ca,www.ccc.ca,,Canadian Commercial Corporation,,
+3640,123,Export Development Canada,Exportation et développement Canada,,,146,www.edc.ca,www.edc.ca,,Export Development Canada,,
+3641,,International Development Research Centre,Centre de recherches pour le développement international,,,186,www.idrc.ca,www.crdi.ca,,International Development Research Centre,,
+3642,,Canada Infrastructure Bank,Banque de l'infrastructure du Canada,,,344,www.infrastructure.gc.ca/CIB-BIC/index-eng.html,www.infrastructure.gc.ca/CIB-BIC/index-fra.html,,Canada Infrastructure Bank,,
+3643,,The Jacques-Cartier and Champlain Bridges Inc.,Les Ponts Jacques-Cartier et Champlain Inc.,,,194,www.jacquescartierchamplain.ca,www.jacquescartierchamplain.ca,,Jacques Cartier and Champlain Bridges Incorporated,,
+3644,,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit,,,339,https://www.gordiehoweinternationalbridge.com/en,https://www.gordiehoweinternationalbridge.com/fr,,Windsor-Detroit Bridge Authority,,
+3645,,PPP Canada Inc.,PPP Canada Inc.,,,272,www.p3canada.ca,www.p3canada.ca,,Not Found,,
+3646,,Business Development Bank of Canada,Banque de développement du Canada,,,20,www.bdc.ca,www.bdc.ca,,Business Development Bank of Canada,,
+3647,,Canadian Tourism Commission,Commission canadienne du tourisme,,,97,en-corporate.canada.travel,fr-corporate.canada.travel,,Destination Canada,,
+3648,,Standards Council of Canada,Conseil canadien des normes,,,312,www.scc.ca,www.ccn.ca,,Standards Council of Canada,,
+3649,,Atomic Energy of Canada Limited,Énergie atomique du Canada limitée,,,14,www.aecl.ca,www.aecl.ca,,Atomic Energy of Canada Limited,,
+3650,,Canada Lands Company Limited,Société immobilière du Canada limitée,,,40,www.clc.ca,www.clc.ca,,Canada Lands Company Limited,,
+3651,,Canada Post Corporation,Société canadienne des postes,,,44,www.canadapost.ca,www.postescanada.ca,,Canada Post Corporation,,
+3652,,Defence Construction (1951) Limited,Construction de Défense (1951) Limitée,,,119,https://www.dcc-cdc.gc.ca/,https://www.cdc-dcc.gc.ca/,,Defence Construction Canada,,
+3653,,National Capital Commission,Commission de la capitale nationale,,,219,www.ncc-ccn.gc.ca,www.ccn-ncc.gc.ca,,National Capital Commission,,
+3654,,Atlantic Pilotage Authority,Administration de pilotage de l'Atlantique,,,13,www.atlanticpilotage.com,www.atlanticpilotage.com,,Atlantic Pilotage Authority Canada,,
+3655,,Canadian Air Transport Security Authority,Administration canadienne de la sûreté du transport aérien,,,51,www.catsa.gc.ca,www.acsta.gc.ca,,Canadian Air Transport Security Authority,,
+3656,,Great Lakes Pilotage Authority,Administration de pilotage des Grands Lacs,,,163,www.glpa-apgl.com,www.glpa-apgl.com,,Great Lakes Pilotage Authority,,
+3657,,Laurentian Pilotage Authority,Administration de pilotage des Laurentides,,,197,www.pilotagestlaurent.gc.ca,www.pilotagestlaurent.gc.ca,,Laurentian Pilotage Authority Canada,,
+3658,,Marine Atlantic Inc.,Marine Atlantique S.C.C.,,,202,www.marine-atlantic.ca,www.marine-atlantic.ca,,Marine Atlantic Inc,,
+3659,,Pacific Pilotage Authority,Administration de pilotage du Pacifique,,,261,www.ppa.gc.ca,www.ppa.gc.ca,,Pacific Pilotage Authority Canada,,
+3660,,Ridley Terminals Inc.,Ridley Terminals Inc.,,,292,www.rti.ca,www.rti.ca,,Not Found,,
+3661,,The Federal Bridge Corporation Limited,La Société des ponts fédéraux Limitée,,,148,www.federalbridge.ca,www.federalbridge.ca,,Federal Bridge Corporation Limited,,
+3662,,VIA Rail Canada Inc.,VIA Rail Canada inc.,,,334,www.viarail.ca/en,www.viarail.ca/fr,,VIA Rail Canada,,
+3663,,Public Sector Pension Investment Board,Office d'investissement des régimes de pensions du secteur public,,,281,www.investpsp.ca,www.investpsp.ca,,Public Sector Pension Investment Board,,
+3664,,Assisted Human Reproduction Agency of Canada,Agence canadienne de contrôle de la procréation assistée,,,10,,,,Not Found,,
+3665,,Blue Water Bridge Authority,Administration du pont Blue Water,,,17,,,,Not Found,,
+3666,,Canada Employment Insurance Financing Board,Office de financement de l'assurance-emploi du Canada,,,34,,,,Not Found,,
+3667,,Corporation for the Mitigation of Mackenzie Gas Project Impacts,Société d'atténuation des répercussions du projet gazier Mackenzie,,,116,,,,Not Found,,
+3668,,Enterprise Cape Breton Corporation,Société d'expansion du Cap Breton,,,143,,,,Not Found,,
+3669,,First Nations Statistical Institute,Institut de la statistique des Premières nations,,,154,,,,Not Found,,
+3670,,Grain Appeal Tribunal,Tribunal d'appel pour les grains,,,162,,,,Not Found,,
+3671,,Hazardous Materials Information Review Commission,Conseil de contrôle des renseignements relatifs aux matières dangereuses,,,170,,,,Not Found,,
+3672,,Indian Residential Schools Truth and Reconciliation Commission,Commission de vérité et de réconciliation relative aux pensionnats indiens,,,177,,,,Not Found,,
+3673,,Inuvialuit Arbitration Board,Commission d'arbitrage des Inuvialuit,,,193,,,,Not Found,,
+3674,,Merchant Seamen Compensation Board,Commission d'indemnisation des marins marchands,,,207,,,,Not Found,,
+3675,,National Round Table on the Environment and the Economy,Table ronde nationale sur l'environnement et l'économie,,,229,,,,Not Found,,
+3676,,Public Appointments Commission Secretariat,Secrétariat de la Commission des nominations publiques,,,279,,,,Not Found,,
+3679,,Canada Agricultural Review Tribunal,Commission de révision agricole du Canada,,,24,,,,Not Found,,
+3680,,Canada Industrial Relations Board,Conseil canadien des relations industrielles,,,39,,,,Not Found,,
+3681,,Canadian Artists and Producers Professional Relations Tribunal,Tribunal canadien des relations professionnelles artistes-producteurs,,,52,,,,Not Found,,
+3682,,Canadian Cultural Property Export Review Board,Commission canadienne d'examen des exportations de biens culturels,,,60,,,,Not Found,,
+3683,,Canadian Human Rights Tribunal,Tribunal canadien des droits de la personne,,,72,,,,Not Found,,
+3684,,Canadian International Development Agency,Agence canadienne de développement international,,,77,,,,Not Found,,
+3685,,Canadian International Trade Tribunal,Tribunal canadien du commerce extérieur,,,79,,,,Not Found,,
+3686,,Employment Insurance Boards of Referees,Conseils arbitraux de l'assurance-emploi,,,18,,,,Not Found,,
+3687,,Office of the Commissioner of Review Tribunals,Bureau du Commissaire des tribunaux de révision,,,243,,,,Not Found,,
+3688,,Office of the Umpire,Bureau du juge-arbitre,,,254,,,,Not Found,,
+3689,,Old Port of Montreal Corporation Inc.,Société du Vieux-Port de Montréal Inc.,,,257,,,,Old Port of Montreal,,
+3690,,Parc Downsview Park Inc.,Parc Downsview Park Inc,,,262,,,,Parc Downsview Park Inc.,,
+3691,,Pension Appeals Board,Commission d'appel des pensions,,,267,,,,Not Found,,
+3692,,Public Service Labour Relations Board,Commission des relations de travail dans la fonction publique,,,284,,,,Not Found,,
+3693,,Public Service Staffing Tribunal,Tribunal de la dotation de la fonction publique,,,285,,,,Not Found,,
+3694,,Registry of the Competition Tribunal,Greffe du Tribunal de la concurrence,,,289,,,,Not Found,,
+3695,,Registry of the Public Servants Disclosure Protection Tribunal,Greffe du Tribunal de la protection des fonctionnaires divulgateurs d'actes répréhensibles,,,290,,,,Not Found,,
+3696,,Registry of the Specific Claims Tribunal,Greffe du Tribunal des revendications particulières,,,291,,,,Not Found,,
+3697,,Transportation Appeal Tribunal of Canada,Tribunal d'appel des transports du Canada,,,324,,,,Not Found,,
+3698,,Vancouver Organizing Committee for the 2010 Olympic and Paralympic Winter Games,Comité d'organisation des Jeux olympiques et paralympiques d'hiver de 2010 à Vancouver,,,331,,,,Not Found,,
+3700,,The Halifax 2011 Canada Games Host Society,Société d'accueil des Jeux de 2011 de Halifax,,,317,,,,Not Found,,
+3701,,Prince George 2015 Canada Winter Games Host Society,Société hôtesse des Jeux d'hiver du Canada Prince George 2015,,,274,www.canadagames2015.ca,www.canadagames2015.ca/fr,,Not Found,,
+3702,,2010 Games Operating Trust Society,Société du legs des Jeux de 2010,,,121,,,,Not Found,,
+3703,,Canada Water Agency,Agence de l'eau du Canada,CWA,AEC,0,,,,,,
+3704,,Treasury Board,Conseil du Trésor,TB,CT,0,,,,,,
+3705,,Federal Public Sector Labour Relations and Employment Board,Commission des relations de travail et de l'emploi dans le secteur public fédéral,,,0,,,,,,

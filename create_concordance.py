@@ -80,9 +80,12 @@ final_joined_df['rg'] = final_joined_df['rg'].apply(lambda x: '' if x == 0 else 
 # Join with manual_pop_phoenix_df on 'gc_orgID'
 final_joined_df = final_joined_df.merge(dfs['manual_pop_phoenix_df'], on='gc_orgID', how='left')
 
+# Drop duplicate 'gc_orgID' columns if any exist
+final_joined_df = final_joined_df.loc[:,~final_joined_df.columns.duplicated()]
+
 # Reorder the fields to include 'rg'
 ordered_fields = ['gc_orgID', 'rg', 'harmonized_name', 'nom_harmonisé', 'Abbreviation', 'Abreviation', 'infobaseID', 'website', 'site_web']
-manual_pop_phoenix_columns = dfs['manual_pop_phoenix_df'].columns.difference(final_joined_df.columns, sort=False).tolist()
+manual_pop_phoenix_columns = dfs['manual_pop_phoenix_df'].columns.difference(ordered_fields, sort=False).tolist()
 final_joined_df = final_joined_df[ordered_fields + manual_pop_phoenix_columns]
 
 # Sort by gc_orgID and save the results

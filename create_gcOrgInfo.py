@@ -3,7 +3,7 @@ import pandas as pd
 
 # Path to the folder where the script is located
 script_folder = os.path.dirname(os.path.abspath(__file__))
-output_folder = os.path.join(script_folder, '..', 'GC Org Info.csv')
+output_folder = 'c:\\Users\\JMike\\OneDrive\\Documents\\GitHub\\GCOrgName\\GCOrgName'
 
 # Paths to the CSV files
 manual_org_file = os.path.join(script_folder, 'Resources', 'Manual org ID link.csv')
@@ -52,10 +52,22 @@ unmatched_values = joined_df[joined_df['Names Match'] == 1]
 joined_df = joined_df[joined_df['Names Match'] == 0]
 
 # Join with applied_en_df on 'Legal title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(joined_df, applied_en_df[['Legal title', 'Applied title', "Titre d'usage"]], left_on='Organization Legal Name English', right_on='Legal title', how='left')
+final_joined_df = pd.merge(
+    joined_df, 
+    applied_en_df[['Legal title', 'Applied title', "Titre d'usage", 'Abbreviation', 'Abreviation']], 
+    left_on='Organization Legal Name English', 
+    right_on='Legal title', 
+    how='left'
+)
 
 # Join with infobase_en_df on 'Legal Title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(final_joined_df, infobase_en_df[['Legal Title', 'Status', 'End date']], left_on='Organization Legal Name English', right_on='Legal Title', how='left')
+final_joined_df = pd.merge(
+    final_joined_df, 
+    infobase_en_df[['Legal Title', 'Status', 'End date']], 
+    left_on='Organization Legal Name English', 
+    right_on='Legal Title', 
+    how='left'
+)
 
 # Create the 'harmonized_name' field
 final_joined_df['harmonized_name'] = final_joined_df['Applied title']
@@ -85,18 +97,14 @@ final_joined_df = final_joined_df.rename(columns={
     'Organization Legal Name French': 'appellation_légale',
     'FAA': 'FAA_LGFP',
     'Applied title': 'preferred_name',
-    "Titre d'usage": 'nom_préféré'
+    "Titre d'usage": 'nom_préféré',
+    'Abbreviation': 'abbreviation',
+    'Abreviation': 'abreviation'
 })
 
 # Add the new columns after 'nom_préféré'
 final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 1, 'ministerial_portfolio', '')
 final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 2, 'portefeuilles_ministériels', '')
-
-# Check if 'abbreviation' and 'abreviation' columns exist, if not, create them with empty values
-if 'abbreviation' not in final_joined_df.columns:
-    final_joined_df['abbreviation'] = ''
-if 'abreviation' not in final_joined_df.columns:
-    final_joined_df['abreviation'] = ''
 
 # Reorder the fields
 ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'legal_title', 'appellation_légale', 

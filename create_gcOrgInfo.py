@@ -3,7 +3,7 @@ import pandas as pd
 
 # Path to the folder where the script is located
 script_folder = os.path.dirname(os.path.abspath(__file__))
-output_folder = 'c:\\Users\\JMike\\OneDrive\\Documents\\GitHub\\GCOrgName\\GCOrgName'
+output_folder = os.path.join(script_folder, '..', '..', 'GitHub', 'GCOrgName', 'GCOrgName')
 
 # Paths to the CSV files
 manual_org_file = os.path.join(script_folder, 'Resources', 'Manual org ID link.csv')
@@ -87,9 +87,12 @@ final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID'})
 final_joined_df = final_joined_df.rename(columns={'Status': 'status_statut'})
 final_joined_df['status_statut'] = final_joined_df['status_statut'].fillna('a')
 
-# Rename 'End date' to 'end_date_fin' and set value to empty if it is '.'
-final_joined_df = final_joined_df.rename(columns={'End date': 'end_date_fin'})
-final_joined_df['end_date_fin'] = final_joined_df['end_date_fin'].replace('.', '')
+# Check if 'End date' exists, then rename to 'end_date_fin' and set value to empty if it is '.'
+if 'End date' in final_joined_df.columns:
+    final_joined_df = final_joined_df.rename(columns={'End date': 'end_date_fin'})
+    final_joined_df['end_date_fin'] = final_joined_df['end_date_fin'].replace('.', '')
+else:
+    final_joined_df['end_date_fin'] = ''
 
 # Rename fields as specified
 final_joined_df = final_joined_df.rename(columns={

@@ -3,13 +3,13 @@ import pandas as pd
 
 # Path to the folder where the script is located
 script_folder = os.path.dirname(os.path.abspath(__file__))
-resources_folder = os.path.join(script_folder, 'Resources')
+output_folder = os.path.join(script_folder, '..', '..', 'GitHub', 'GCOrgName', 'GCOrgName')
 
 # Paths to the CSV files
-manual_org_file = os.path.join(resources_folder, 'Manual org ID link.csv')
+manual_org_file = os.path.join(script_folder, 'Resources', 'Manual org ID link.csv')
 combined_faa_file = os.path.join(script_folder, 'Scraping', 'combined_FAA_names.csv')
-applied_en_file = os.path.join(resources_folder, 'applied_en.csv')
-infobase_en_file = os.path.join(resources_folder, 'infobase_en.csv')
+applied_en_file = os.path.join(script_folder, 'Resources', 'applied_en.csv')
+infobase_en_file = os.path.join(script_folder, 'Resources', 'infobase_en.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)
@@ -52,10 +52,22 @@ unmatched_values = joined_df[joined_df['Names Match'] == 1]
 joined_df = joined_df[joined_df['Names Match'] == 0]
 
 # Join with applied_en_df on 'Legal title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(joined_df, applied_en_df[['Legal title', 'Applied title', "Titre d'usage"]], left_on='Organization Legal Name English', right_on='Legal title', how='left')
+final_joined_df = pd.merge(
+    joined_df, 
+    applied_en_df[['Legal title', 'Applied title', "Titre d'usage", 'Abbreviation', 'Abreviation']], 
+    left_on='Organization Legal Name English', 
+    right_on='Legal title', 
+    how='left'
+)
 
 # Join with infobase_en_df on 'Legal Title' and 'Organization Legal Name English'
-final_joined_df = pd.merge(final_joined_df, infobase_en_df[['Legal Title', 'Status', 'End date']], left_on='Organization Legal Name English', right_on='Legal Title', how='left')
+final_joined_df = pd.merge(
+    final_joined_df, 
+    infobase_en_df[['Legal Title', 'Status', 'End date']], 
+    left_on='Organization Legal Name English', 
+    right_on='Legal Title', 
+    how='left'
+)
 
 # Create the 'harmonized_name' field
 final_joined_df['harmonized_name'] = final_joined_df['Applied title']
@@ -75,9 +87,12 @@ final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID'})
 final_joined_df = final_joined_df.rename(columns={'Status': 'status_statut'})
 final_joined_df['status_statut'] = final_joined_df['status_statut'].fillna('a')
 
-# Rename 'End date' to 'end_date_fin' and set value to empty if it is '.'
-final_joined_df = final_joined_df.rename(columns={'End date': 'end_date_fin'})
-final_joined_df['end_date_fin'] = final_joined_df['end_date_fin'].replace('.', '')
+# Check if 'End date' exists, then rename to 'end_date_fin' and set value to empty if it is '.'
+if 'End date' in final_joined_df.columns:
+    final_joined_df = final_joined_df.rename(columns={'End date': 'end_date_fin'})
+    final_joined_df['end_date_fin'] = final_joined_df['end_date_fin'].replace('.', '')
+else:
+    final_joined_df['end_date_fin'] = ''
 
 # Rename fields as specified
 final_joined_df = final_joined_df.rename(columns={
@@ -85,18 +100,14 @@ final_joined_df = final_joined_df.rename(columns={
     'Organization Legal Name French': 'appellation_légale',
     'FAA': 'FAA_LGFP',
     'Applied title': 'preferred_name',
-    "Titre d'usage": 'nom_préféré'
+    "Titre d'usage": 'nom_préféré',
+    'Abbreviation': 'abbreviation',
+    'Abreviation': 'abreviation'
 })
 
 # Add the new columns after 'nom_préféré'
 final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 1, 'ministerial_portfolio', '')
 final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 2, 'portefeuilles_ministériels', '')
-
-# Check if 'abbreviation' and 'abreviation' columns exist, if not, create them with empty values
-if 'abbreviation' not in final_joined_df.columns:
-    final_joined_df['abbreviation'] = ''
-if 'abreviation' not in final_joined_df.columns:
-    final_joined_df['abreviation'] = ''
 
 # Reorder the fields
 ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'legal_title', 'appellation_légale', 
@@ -108,11 +119,12 @@ final_joined_df = final_joined_df[ordered_fields]
 final_joined_df = final_joined_df.sort_values(by='gc_orgID')
 
 # Save the final joined DataFrame to a new CSV file with UTF-8 encoding
-output_file = os.path.join(resources_folder, 'GC Org Info.csv')
+output_file = os.path.join(output_folder, 'GC Org Info.csv')
+os.makedirs(os.path.dirname(output_file), exist_ok=True)
 final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
 # Save the unmatched values to a separate CSV file with UTF-8 encoding
-unmatched_output_file = os.path.join(resources_folder, 'unmatched_org_IDs.csv')
+unmatched_output_file = os.path.join(output_folder, 'unmatched_org_IDs.csv')
 unmatched_values.to_csv(unmatched_output_file, index=False, encoding='utf-8-sig')
 
 print(f"The final joined DataFrame has been saved to {output_file}")

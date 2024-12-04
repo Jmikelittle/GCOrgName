@@ -3,10 +3,11 @@ import pandas as pd
 
 # Path to the folder where the script is located
 script_folder = os.path.dirname(os.path.abspath(__file__))
+resources_folder = os.path.join(script_folder, 'Resources')
 
 # Paths to the CSV files
-manual_org_file = os.path.join(script_folder, 'Manual org ID link.csv')
-applied_en_file = os.path.join(script_folder, 'applied_en.csv')
+manual_org_file = os.path.join(resources_folder, 'Manual org ID link.csv')
+applied_en_file = os.path.join(resources_folder, 'applied_en.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)

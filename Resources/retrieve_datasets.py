@@ -30,3 +30,6 @@ download_and_fix_csv('https://open.canada.ca/data/en/datastore/dump/45069fe9-abe
 # Applied Titles
 download_and_fix_csv('https://open.canada.ca/data/en/datastore/dump/f0ca63e0-c15e-45b5-9656-77abe1564b1c?bom=True', 'applied_en.csv')
 download_and_fix_csv('https://ouvert.canada.ca/data/fr/datastore/dump/f0ca63e0-c15e-45b5-9656-77abe1564b1c?bom=True', 'applied_fr.csv')
+
+# Open Portal List Download
+download_and_fix_csv('https://open.canada.ca/data/en/datastore/dump/04cbec5c-5a3d-4d34-927d-e41c9e6e3736?bom=True', 'ogp.csv')

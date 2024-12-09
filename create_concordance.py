@@ -67,9 +67,25 @@ if 'gc_orgID_y' in final_joined_df.columns:
     final_joined_df = final_joined_df.drop(columns=['gc_orgID_y'])
 final_joined_df = final_joined_df.rename(columns={'gc_orgID_x': 'gc_orgID'})
 
+# Remove duplicates based on gc_orgID
+final_joined_df = final_joined_df.drop_duplicates(subset=['gc_orgID'])
+
+# Rename fields
+final_joined_df = final_joined_df.rename(columns={'Abbreviation': 'abbreviation', 'Abreviation': 'abreviation'})
+
+# Manual changes
+manual_changes = {
+    "2281": {"abbreviation": "OIC", "abreviation": "CI"},
+    "2282": {"abbreviation": "OPC", "abreviation": "CPVP"}
+}
+
+for gc_orgID, changes in manual_changes.items():
+    for field, value in changes.items():
+        final_joined_df.loc[final_joined_df['gc_orgID'] == gc_orgID, field] = value
+
 # Reorder and sort
 final_field_order = [
-    'gc_orgID', 'harmonized_name', 'nom_harmonisé', 'Abbreviation', 'Abreviation', 'infobaseID', 'rg', 
+    'gc_orgID', 'harmonized_name', 'nom_harmonisé', 'abbreviation', 'abreviation', 'infobaseID', 'rg',
     'ati', 'open_gov_ouvert', 'pop', 'phoenix', 'website', 'site_web'
 ]
 final_joined_df = final_joined_df[final_field_order].sort_values(by='gc_orgID')

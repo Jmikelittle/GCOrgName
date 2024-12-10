@@ -41,8 +41,7 @@ final_joined_df = final_joined_df[final_joined_df['Names Match'] == 0]
 
 merge_columns = [
     ('applied_en_df', 'Legal title', ['Legal title', 'Applied title', "Titre d'usage", 'Abbreviation', 'Abreviation']),
-    ('infobase_en_df', 'Legal Title', ['Legal Title', 'OrgID', 'Website']),
-    ('infobase_fr_df', 'Appellation legale', ['Appellation legale', 'Site Web'])
+    ('infobase_en_df', 'Legal Title', ['Legal Title', 'OrgID', 'Website'])
 ]
 for df_name, on_col, columns in merge_columns:
     final_joined_df = final_joined_df.merge(dfs[df_name][columns], left_on='Organization Legal Name English', right_on=on_col, how='left')
@@ -53,11 +52,20 @@ final_joined_df['nom_harmonisé'] = final_joined_df["Titre d'usage"].fillna(fina
 
 # Standardize columns
 final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]
-final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID', 'OrgID': 'infobaseID', 'Website': 'website', 'Site Web': 'site_web'})
+final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID', 'OrgID': 'infobaseID', 'Website': 'website'})
 final_joined_df['infobaseID'] = final_joined_df['infobaseID'].fillna(0).astype(int)
 final_joined_df = final_joined_df.merge(dfs['final_rg_match_df'][['GC OrgID', 'rgnumber']], left_on='gc_orgID', right_on='GC OrgID', how='left').drop(columns=['GC OrgID'])
 final_joined_df = final_joined_df.rename(columns={'rgnumber': 'rg'})
 final_joined_df['rg'] = final_joined_df['rg'].apply(lambda x: '' if x == 0 else int(x) if pd.notna(x) else '')
+
+# Convert 'OrgID' in infobase_fr_df to int for merging
+dfs['infobase_fr_df']['OrgID'] = dfs['infobase_fr_df']['OrgID'].astype(int)
+
+# Merge with infobase_fr_df on infobaseID
+final_joined_df = final_joined_df.merge(dfs['infobase_fr_df'][['OrgID', 'Appellation legale', 'Site Web']], left_on='infobaseID', right_on='OrgID', how='left')
+
+# Rename 'Site Web' to 'site_web'
+final_joined_df = final_joined_df.rename(columns={'Site Web': 'site_web'})
 
 # Merge with manual_pop_phoenix_df
 final_joined_df = final_joined_df.merge(dfs['manual_pop_phoenix_df'], on='gc_orgID', how='left')
@@ -82,6 +90,10 @@ manual_changes = {
 for gc_orgID, changes in manual_changes.items():
     for field, value in changes.items():
         final_joined_df.loc[final_joined_df['gc_orgID'] == gc_orgID, field] = value
+
+# Ensure 'site_web' column exists
+if 'site_web' not in final_joined_df.columns:
+    final_joined_df['site_web'] = None
 
 # Reorder and sort
 final_field_order = [

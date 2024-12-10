@@ -84,7 +84,8 @@ final_joined_df = final_joined_df.rename(columns={'Abbreviation': 'abbreviation'
 # Manual changes
 manual_changes = {
     "2281": {"abbreviation": "OIC", "abreviation": "CI"},
-    "2282": {"abbreviation": "OPC", "abreviation": "CPVP"}
+    "2282": {"abbreviation": "OPC", "abreviation": "CPVP"},
+    "2269": {"infobaseID": 237}
 }
 
 for gc_orgID, changes in manual_changes.items():

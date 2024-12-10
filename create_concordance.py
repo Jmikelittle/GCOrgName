@@ -12,7 +12,7 @@ files = {
     'combined_faa_df': os.path.join(scraping_folder, 'combined_FAA_names.csv'),
     'applied_en_df': os.path.join(resources_folder, 'applied_en.csv'),
     'infobase_en_df': os.path.join(resources_folder, 'infobase_en.csv'),
-    'infobase_fr_df': os.path.join(resources_folder, 'infobase_fr.csv'),  # Added infobase_fr.csv
+    'infobase_fr_df': os.path.join(resources_folder, 'infobase_fr.csv'),
     'final_rg_match_df': os.path.join(resources_folder, 'final_RG_match.csv'),
     'manual_pop_phoenix_df': os.path.join(resources_folder, 'manual pop phoenix.csv')
 }
@@ -61,23 +61,11 @@ final_joined_df['rg'] = final_joined_df['rg'].apply(lambda x: '' if x == 0 else 
 # Convert 'OrgID' in infobase_fr_df to int for merging
 dfs['infobase_fr_df']['OrgID'] = dfs['infobase_fr_df']['OrgID'].astype(int)
 
-# Debugging: Check the content of infobase_fr_df before merging
-print("infobase_fr_df before merging:")
-print(dfs['infobase_fr_df'][['OrgID', 'Appellation legale', 'Site Web']].head())
-
 # Merge with infobase_fr_df on infobaseID
 final_joined_df = final_joined_df.merge(dfs['infobase_fr_df'][['OrgID', 'Appellation legale', 'Site Web']], left_on='infobaseID', right_on='OrgID', how='left')
 
-# Debugging: Check the content of final_joined_df after merging
-print("final_joined_df after merging with infobase_fr_df:")
-print(final_joined_df[['infobaseID', 'OrgID', 'Appellation legale', 'Site Web']].head())
-
 # Rename 'Site Web' to 'site_web'
 final_joined_df = final_joined_df.rename(columns={'Site Web': 'site_web'})
-
-# Debugging: Check the content of final_joined_df after renaming
-print("final_joined_df after renaming 'Site Web' to 'site_web':")
-print(final_joined_df[['infobaseID', 'site_web']].head())
 
 # Merge with manual_pop_phoenix_df
 final_joined_df = final_joined_df.merge(dfs['manual_pop_phoenix_df'], on='gc_orgID', how='left')

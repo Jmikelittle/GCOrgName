@@ -85,12 +85,15 @@ final_joined_df = final_joined_df.rename(columns={'Abbreviation': 'abbreviation'
 manual_changes = {
     "2281": {"abbreviation": "OIC", "abreviation": "CI"},
     "2282": {"abbreviation": "OPC", "abreviation": "CPVP"},
-    "2269": {"infobaseID": 237}
+    "2269": {"infobaseID": 237}  # Ensure the value is an integer
 }
 
 for gc_orgID, changes in manual_changes.items():
     for field, value in changes.items():
         final_joined_df.loc[final_joined_df['gc_orgID'] == gc_orgID, field] = value
+
+# Replace zero values in 'infobaseID' with blank strings
+final_joined_df['infobaseID'] = final_joined_df['infobaseID'].replace(0, '')
 
 # Ensure 'site_web' column exists
 if 'site_web' not in final_joined_df.columns:

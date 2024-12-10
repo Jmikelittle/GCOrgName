@@ -52,17 +52,32 @@ final_joined_df['nom_harmonisé'] = final_joined_df["Titre d'usage"].fillna(fina
 
 # Standardize columns
 final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]
-final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID', 'OrgID': 'infobaseID', 'Website': 'website', 'Site Web': 'site_web'})
+final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID', 'OrgID': 'infobaseID', 'Website': 'website'})
 final_joined_df['infobaseID'] = final_joined_df['infobaseID'].fillna(0).astype(int)
 final_joined_df = final_joined_df.merge(dfs['final_rg_match_df'][['GC OrgID', 'rgnumber']], left_on='gc_orgID', right_on='GC OrgID', how='left').drop(columns=['GC OrgID'])
 final_joined_df = final_joined_df.rename(columns={'rgnumber': 'rg'})
 final_joined_df['rg'] = final_joined_df['rg'].apply(lambda x: '' if x == 0 else int(x) if pd.notna(x) else '')
 
-# Convert 'OrgID' in infobase_fr_df to string for merging
-dfs['infobase_fr_df']['OrgID'] = dfs['infobase_fr_df']['OrgID'].astype(str)
+# Convert 'OrgID' in infobase_fr_df to int for merging
+dfs['infobase_fr_df']['OrgID'] = dfs['infobase_fr_df']['OrgID'].astype(int)
 
-# Merge with infobase_fr_df on gc_orgID
-final_joined_df = final_joined_df.merge(dfs['infobase_fr_df'][['OrgID', 'Appellation legale', 'Site Web']], left_on='gc_orgID', right_on='OrgID', how='left')
+# Debugging: Check the content of infobase_fr_df before merging
+print("infobase_fr_df before merging:")
+print(dfs['infobase_fr_df'][['OrgID', 'Appellation legale', 'Site Web']].head())
+
+# Merge with infobase_fr_df on infobaseID
+final_joined_df = final_joined_df.merge(dfs['infobase_fr_df'][['OrgID', 'Appellation legale', 'Site Web']], left_on='infobaseID', right_on='OrgID', how='left')
+
+# Debugging: Check the content of final_joined_df after merging
+print("final_joined_df after merging with infobase_fr_df:")
+print(final_joined_df[['infobaseID', 'OrgID', 'Appellation legale', 'Site Web']].head())
+
+# Rename 'Site Web' to 'site_web'
+final_joined_df = final_joined_df.rename(columns={'Site Web': 'site_web'})
+
+# Debugging: Check the content of final_joined_df after renaming
+print("final_joined_df after renaming 'Site Web' to 'site_web':")
+print(final_joined_df[['infobaseID', 'site_web']].head())
 
 # Merge with manual_pop_phoenix_df
 final_joined_df = final_joined_df.merge(dfs['manual_pop_phoenix_df'], on='gc_orgID', how='left')

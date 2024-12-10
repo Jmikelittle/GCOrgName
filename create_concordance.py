@@ -14,7 +14,8 @@ files = {
     'infobase_en_df': os.path.join(resources_folder, 'infobase_en.csv'),
     'infobase_fr_df': os.path.join(resources_folder, 'infobase_fr.csv'),
     'final_rg_match_df': os.path.join(resources_folder, 'final_RG_match.csv'),
-    'manual_pop_phoenix_df': os.path.join(resources_folder, 'manual pop phoenix.csv')
+    'manual_pop_phoenix_df': os.path.join(resources_folder, 'manual pop phoenix.csv'),
+    'ogp_df': os.path.join(resources_folder, 'ogp.csv')
 }
 dfs = {name: pd.read_csv(path) for name, path in files.items()}
 
@@ -47,6 +48,10 @@ merge_columns = [
 for df_name, on_col, columns in merge_columns:
     final_joined_df = final_joined_df.merge(dfs[df_name][columns], left_on='Organization Legal Name English', right_on=on_col, how='left')
 
+# Merge with ogp_df on 'Legal title' and 'title_en'
+final_joined_df = final_joined_df.merge(dfs['ogp_df'][['title_en', 'open_canada_id']], left_on='Legal title', right_on='title_en', how='left')
+final_joined_df = final_joined_df.rename(columns={'open_canada_id': 'open_gov_ouvert'})
+
 # Create harmonized fields
 final_joined_df['harmonized_name'] = final_joined_df['Applied title'].fillna(final_joined_df['Organization Legal Name English'])
 final_joined_df['nom_harmonisé'] = final_joined_df["Titre d'usage"].fillna(final_joined_df['Organization Legal Name French'])
@@ -59,8 +64,9 @@ final_joined_df = final_joined_df.merge(dfs['final_rg_match_df'][['GC OrgID', 'r
 final_joined_df = final_joined_df.rename(columns={'rgnumber': 'rg'})
 final_joined_df['rg'] = final_joined_df['rg'].apply(lambda x: '' if x == 0 else int(x) if pd.notna(x) else '')
 
-# Merge with manual_pop_phoenix_df
-final_joined_df = final_joined_df.merge(dfs['manual_pop_phoenix_df'], on='gc_orgID', how='left')
+# Merge with manual_pop_phoenix_df excluding 'open_gov_ouvert'
+manual_pop_phoenix_columns = dfs['manual_pop_phoenix_df'].drop(columns=['open_gov_ouvert'])
+final_joined_df = final_joined_df.merge(manual_pop_phoenix_columns, on='gc_orgID', how='left')
 
 # Drop the 'gc_orgID' from manual_pop_phoenix_df after merge
 if 'gc_orgID_y' in final_joined_df.columns:

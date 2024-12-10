@@ -12,10 +12,9 @@ files = {
     'combined_faa_df': os.path.join(scraping_folder, 'combined_FAA_names.csv'),
     'applied_en_df': os.path.join(resources_folder, 'applied_en.csv'),
     'infobase_en_df': os.path.join(resources_folder, 'infobase_en.csv'),
-    'infobase_fr_df': os.path.join(resources_folder, 'infobase_fr.csv'),
+    'infobase_fr_df': os.path.join(resources_folder, 'infobase_fr.csv'),  # Added infobase_fr.csv
     'final_rg_match_df': os.path.join(resources_folder, 'final_RG_match.csv'),
-    'manual_pop_phoenix_df': os.path.join(resources_folder, 'manual pop phoenix.csv'),
-    'ogp_df': os.path.join(resources_folder, 'ogp.csv')
+    'manual_pop_phoenix_df': os.path.join(resources_folder, 'manual pop phoenix.csv')
 }
 dfs = {name: pd.read_csv(path) for name, path in files.items()}
 
@@ -42,15 +41,10 @@ final_joined_df = final_joined_df[final_joined_df['Names Match'] == 0]
 
 merge_columns = [
     ('applied_en_df', 'Legal title', ['Legal title', 'Applied title', "Titre d'usage", 'Abbreviation', 'Abreviation']),
-    ('infobase_en_df', 'Legal Title', ['Legal Title', 'OrgID', 'Website']),
-    ('infobase_fr_df', 'Appellation legale', ['Appellation legale', 'Site Web'])
+    ('infobase_en_df', 'Legal Title', ['Legal Title', 'OrgID', 'Website'])
 ]
 for df_name, on_col, columns in merge_columns:
     final_joined_df = final_joined_df.merge(dfs[df_name][columns], left_on='Organization Legal Name English', right_on=on_col, how='left')
-
-# Merge with ogp_df on 'Legal title' and 'title_en'
-final_joined_df = final_joined_df.merge(dfs['ogp_df'][['title_en', 'open_canada_id']], left_on='Legal title', right_on='title_en', how='left')
-final_joined_df = final_joined_df.rename(columns={'open_canada_id': 'open_gov_ouvert'})
 
 # Create harmonized fields
 final_joined_df['harmonized_name'] = final_joined_df['Applied title'].fillna(final_joined_df['Organization Legal Name English'])
@@ -64,9 +58,14 @@ final_joined_df = final_joined_df.merge(dfs['final_rg_match_df'][['GC OrgID', 'r
 final_joined_df = final_joined_df.rename(columns={'rgnumber': 'rg'})
 final_joined_df['rg'] = final_joined_df['rg'].apply(lambda x: '' if x == 0 else int(x) if pd.notna(x) else '')
 
-# Merge with manual_pop_phoenix_df excluding 'open_gov_ouvert'
-manual_pop_phoenix_columns = dfs['manual_pop_phoenix_df'].drop(columns=['open_gov_ouvert'])
-final_joined_df = final_joined_df.merge(manual_pop_phoenix_columns, on='gc_orgID', how='left')
+# Convert 'OrgID' in infobase_fr_df to string for merging
+dfs['infobase_fr_df']['OrgID'] = dfs['infobase_fr_df']['OrgID'].astype(str)
+
+# Merge with infobase_fr_df on gc_orgID
+final_joined_df = final_joined_df.merge(dfs['infobase_fr_df'][['OrgID', 'Appellation legale', 'Site Web']], left_on='gc_orgID', right_on='OrgID', how='left')
+
+# Merge with manual_pop_phoenix_df
+final_joined_df = final_joined_df.merge(dfs['manual_pop_phoenix_df'], on='gc_orgID', how='left')
 
 # Drop the 'gc_orgID' from manual_pop_phoenix_df after merge
 if 'gc_orgID_y' in final_joined_df.columns:
@@ -88,6 +87,10 @@ manual_changes = {
 for gc_orgID, changes in manual_changes.items():
     for field, value in changes.items():
         final_joined_df.loc[final_joined_df['gc_orgID'] == gc_orgID, field] = value
+
+# Ensure 'site_web' column exists
+if 'site_web' not in final_joined_df.columns:
+    final_joined_df['site_web'] = None
 
 # Reorder and sort
 final_field_order = [

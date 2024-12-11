@@ -3,19 +3,20 @@ import pandas as pd
 
 # Path to the folder where the script is located
 script_folder = os.path.dirname(os.path.abspath(__file__))
-output_folder = os.path.join(script_folder, '..', '..', 'GitHub', 'GCOrgName', 'GCOrgName')
 
 # Paths to the CSV files
 manual_org_file = os.path.join(script_folder, 'Resources', 'Manual org ID link.csv')
 combined_faa_file = os.path.join(script_folder, 'Scraping', 'combined_FAA_names.csv')
 applied_en_file = os.path.join(script_folder, 'Resources', 'applied_en.csv')
 infobase_en_file = os.path.join(script_folder, 'Resources', 'infobase_en.csv')
+harmonized_names_file = os.path.join(script_folder, 'create_harmonized_name.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)
 combined_faa_df = pd.read_csv(combined_faa_file)
 applied_en_df = pd.read_csv(applied_en_file)
 infobase_en_df = pd.read_csv(infobase_en_file)
+harmonized_names_df = pd.read_csv(harmonized_names_file)
 
 # Remove the 'Unnamed: 0' field if it exists
 if 'Unnamed: 0' in combined_faa_df.columns:
@@ -30,6 +31,7 @@ manual_org_df = standardize_text(manual_org_df)
 combined_faa_df = standardize_text(combined_faa_df)
 applied_en_df = standardize_text(applied_en_df)
 infobase_en_df = standardize_text(infobase_en_df)
+harmonized_names_df = standardize_text(harmonized_names_df)
 
 # Preserve the original 'English Name' column
 combined_faa_df['Original English Name'] = combined_faa_df['English Name']
@@ -69,13 +71,9 @@ final_joined_df = pd.merge(
     how='left'
 )
 
-# Create the 'harmonized_name' field
-final_joined_df['harmonized_name'] = final_joined_df['Applied title']
-final_joined_df.loc[final_joined_df['harmonized_name'].isna(), 'harmonized_name'] = final_joined_df['Organization Legal Name English']
-
-# Create the 'nom_harmonisé' field
-final_joined_df['nom_harmonisé'] = final_joined_df["Titre d'usage"]
-final_joined_df.loc[final_joined_df['nom_harmonisé'].isna(), 'nom_harmonisé'] = final_joined_df['Organization Legal Name French']
+# Pull in new values for harmonized_name and nom_harmonisé from create_harmonized_name.csv
+harmonized_names_df = harmonized_names_df[['GC OrgID', 'harmonized_name', 'nom_harmonisé']]
+final_joined_df = final_joined_df.merge(harmonized_names_df, on='GC OrgID', how='left')
 
 # Set the field 'GC OrgID' so that there are no decimals
 final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]
@@ -119,12 +117,11 @@ final_joined_df = final_joined_df[ordered_fields]
 final_joined_df = final_joined_df.sort_values(by='gc_orgID')
 
 # Save the final joined DataFrame to a new CSV file with UTF-8 encoding
-output_file = os.path.join(output_folder, 'GC Org Info.csv')
-os.makedirs(os.path.dirname(output_file), exist_ok=True)
+output_file = os.path.join(script_folder, 'GC Org Info.csv')
 final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
 # Save the unmatched values to a separate CSV file with UTF-8 encoding
-unmatched_output_file = os.path.join(output_folder, 'unmatched_org_IDs.csv')
+unmatched_output_file = os.path.join(script_folder, 'unmatched_org_IDs.csv')
 unmatched_values.to_csv(unmatched_output_file, index=False, encoding='utf-8-sig')
 
 print(f"The final joined DataFrame has been saved to {output_file}")

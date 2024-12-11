@@ -14,7 +14,8 @@ files = {
     'infobase_en_df': os.path.join(resources_folder, 'infobase_en.csv'),
     'infobase_fr_df': os.path.join(resources_folder, 'infobase_fr.csv'),
     'final_rg_match_df': os.path.join(resources_folder, 'final_RG_match.csv'),
-    'manual_pop_phoenix_df': os.path.join(resources_folder, 'manual pop phoenix.csv')
+    'manual_pop_phoenix_df': os.path.join(resources_folder, 'manual pop phoenix.csv'),
+    'harmonized_names_df': os.path.join(script_folder, 'create_harmonized_name.csv')
 }
 dfs = {name: pd.read_csv(path) for name, path in files.items()}
 
@@ -46,9 +47,9 @@ merge_columns = [
 for df_name, on_col, columns in merge_columns:
     final_joined_df = final_joined_df.merge(dfs[df_name][columns], left_on='Organization Legal Name English', right_on=on_col, how='left')
 
-# Create harmonized fields
-final_joined_df['harmonized_name'] = final_joined_df['Applied title'].fillna(final_joined_df['Organization Legal Name English'])
-final_joined_df['nom_harmonisé'] = final_joined_df["Titre d'usage"].fillna(final_joined_df['Organization Legal Name French'])
+# Pull in new values for harmonized_name and nom_harmonisé from create_harmonized_name.csv
+harmonized_names_df = dfs['harmonized_names_df'][['GC OrgID', 'harmonized_name', 'nom_harmonisé']]
+final_joined_df = final_joined_df.merge(harmonized_names_df, on='GC OrgID', how='left')
 
 # Standardize columns
 final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]

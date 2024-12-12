@@ -17,7 +17,7 @@ applied_en_df = pd.read_csv(applied_en_file)
 infobase_en_df = pd.read_csv(infobase_en_file)
 infobase_fr_df = pd.read_csv(infobase_fr_file)
 
-# Function to replace typographic apostrophes and non-breaking hyphens with standard ones
+# Standardize text
 def standardize_text(df):
     return df.apply(lambda x: x.str.replace('’', "'").str.replace('\u2011', '-').str.strip() if x.dtype == "object" else x)
 

@@ -104,8 +104,8 @@ final_joined_df = final_joined_df.rename(columns={
 })
 
 # Add the new columns after 'nom_préféré'
-final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 1, 'ministerial_portfolio', '')
-final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 2, 'portefeuilles_ministériels', '')
+final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 1, 'lead_department', '')
+final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 2, 'ministère_responsable', '')
 
 # Reorder the fields
 ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'legal_title', 'appellation_légale', 

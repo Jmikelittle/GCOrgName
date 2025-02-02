@@ -1,0 +1,382 @@
+[
+    {
+        "Precedence":1,
+        "Honorific Title":"Right Hon.",
+        "First Name":"Justin",
+        "Last Name":"Trudeau",
+        "Title":"Prime Minister",
+        "Province \/ Territory":null,
+        "Start Date":"2015-11-04 10:45:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":2,
+        "Honorific Title":"Hon.",
+        "First Name":"Lawrence",
+        "Last Name":"MacAulay",
+        "Title":"Minister of Agriculture and Agri-Food",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":3,
+        "Honorific Title":"Hon.",
+        "First Name":"Dominic",
+        "Last Name":"LeBlanc",
+        "Title":"Minister of Intergovernmental Affairs",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":4,
+        "Honorific Title":"Hon.",
+        "First Name":"Jean-Yves",
+        "Last Name":"Duclos",
+        "Title":"Minister of Public Services and Procurement",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":5,
+        "Honorific Title":"Hon.",
+        "First Name":"Mélanie",
+        "Last Name":"Joly",
+        "Title":"Minister of Foreign Affairs",
+        "Province \/ Territory":null,
+        "Start Date":"2021-10-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":6,
+        "Honorific Title":"Hon.",
+        "First Name":"Diane",
+        "Last Name":"Lebouthillier",
+        "Title":"Minister of Fisheries, Oceans and the Canadian Coast Guard",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":7,
+        "Honorific Title":"Hon.",
+        "First Name":"Harjit S.",
+        "Last Name":"Sajjan",
+        "Title":"President of the King’s Privy Council for Canada",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":8,
+        "Honorific Title":"Hon.",
+        "First Name":"Patty",
+        "Last Name":"Hajdu",
+        "Title":"Minister of Indigenous Services",
+        "Province \/ Territory":null,
+        "Start Date":"2021-10-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":9,
+        "Honorific Title":"Hon.",
+        "First Name":"François-Philippe",
+        "Last Name":"Champagne",
+        "Title":"Minister of Innovation, Science and Industry",
+        "Province \/ Territory":null,
+        "Start Date":"2021-01-12 12:00:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":11,
+        "Honorific Title":"Hon.",
+        "First Name":"Ahmed",
+        "Last Name":"Hussen",
+        "Title":"Minister of International Development",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":12,
+        "Honorific Title":"Hon.",
+        "First Name":"Ginette",
+        "Last Name":"Petitpas Taylor",
+        "Title":"President of the Treasury Board",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":13,
+        "Honorific Title":"Hon.",
+        "First Name":"Bill",
+        "Last Name":"Blair",
+        "Title":"Minister of National Defence",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":14,
+        "Honorific Title":"Hon.",
+        "First Name":"Mary",
+        "Last Name":"Ng",
+        "Title":"Minister of Export Promotion, International Trade and Economic Development",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":15,
+        "Honorific Title":"Hon.",
+        "First Name":"Jonathan",
+        "Last Name":"Wilkinson",
+        "Title":"Minister of Energy and Natural Resources",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":16,
+        "Honorific Title":"Hon.",
+        "First Name":"Anita",
+        "Last Name":"Anand",
+        "Title":"Minister of Transport and Internal Trade",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":17,
+        "Honorific Title":"Hon.",
+        "First Name":"Steven",
+        "Last Name":"Guilbeault",
+        "Title":"Minister of Environment and Climate Change",
+        "Province \/ Territory":null,
+        "Start Date":"2021-10-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":18,
+        "Honorific Title":"Hon.",
+        "First Name":"Marc",
+        "Last Name":"Miller",
+        "Title":"Minister of Immigration, Refugees and Citizenship",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":19,
+        "Honorific Title":"Hon.",
+        "First Name":"Mark",
+        "Last Name":"Holland",
+        "Title":"Minister of Health",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":20,
+        "Honorific Title":"Hon.",
+        "First Name":"Gudie",
+        "Last Name":"Hutchings",
+        "Title":"Minister responsible for the Atlantic Canada Opportunities Agency",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":21,
+        "Honorific Title":"Hon.",
+        "First Name":"Marci",
+        "Last Name":"Ien",
+        "Title":"Minister for Women and Gender Equality and Youth",
+        "Province \/ Territory":null,
+        "Start Date":"2021-10-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":22,
+        "Honorific Title":"Hon.",
+        "First Name":"Kamal",
+        "Last Name":"Khera",
+        "Title":"Minister of Diversity, Inclusion and Persons with Disabilities",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":23,
+        "Honorific Title":"Hon.",
+        "First Name":"Pascale",
+        "Last Name":"St-Onge",
+        "Title":"Minister of Canadian Heritage",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":24,
+        "Honorific Title":"Hon.",
+        "First Name":"Steven",
+        "Last Name":"MacKinnon",
+        "Title":"Leader of the Government in the House of Commons",
+        "Province \/ Territory":null,
+        "Start Date":"2025-01-24 12:00:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":25,
+        "Honorific Title":"Hon.",
+        "First Name":"Gary",
+        "Last Name":"Anandasangaree",
+        "Title":"Minister of Crown-Indigenous Relations and Northern Affairs",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":26,
+        "Honorific Title":"Hon.",
+        "First Name":"Terry",
+        "Last Name":"Beech",
+        "Title":"Minister of Citizens’ Services",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":27,
+        "Honorific Title":"Hon.",
+        "First Name":"Soraya",
+        "Last Name":"Martinez Ferrada",
+        "Title":"Minister of Tourism",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":28,
+        "Honorific Title":"Hon.",
+        "First Name":"Ya'ara",
+        "Last Name":"Saks",
+        "Title":"Associate Minister of Health",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":29,
+        "Honorific Title":"Hon.",
+        "First Name":"Jenna",
+        "Last Name":"Sudds",
+        "Title":"Minister of Families, Children and Social Development",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":30,
+        "Honorific Title":"Hon.",
+        "First Name":"Rechie",
+        "Last Name":"Valdez",
+        "Title":"Minister of Small Business",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":31,
+        "Honorific Title":"Hon.",
+        "First Name":"Arif",
+        "Last Name":"Virani",
+        "Title":"Minister of Justice",
+        "Province \/ Territory":null,
+        "Start Date":"2023-07-26 10:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":32,
+        "Honorific Title":"Hon.",
+        "First Name":"David",
+        "Last Name":"McGuinty",
+        "Title":"Minister of Public Safety",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":33,
+        "Honorific Title":"Hon.",
+        "First Name":"Ruby",
+        "Last Name":"Sahota",
+        "Title":"Minister of Democratic Institutions",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":34,
+        "Honorific Title":"Hon.",
+        "First Name":"Rachel",
+        "Last Name":"Bendayan",
+        "Title":"Minister of Official Languages",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":35,
+        "Honorific Title":"Hon.",
+        "First Name":"Élisabeth",
+        "Last Name":"Brière",
+        "Title":"Minister of National Revenue",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":36,
+        "Honorific Title":"Hon.",
+        "First Name":"Terry",
+        "Last Name":"Duguid",
+        "Title":"Minister of Sport",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":37,
+        "Honorific Title":"Hon.",
+        "First Name":"Nathaniel",
+        "Last Name":"Erskine-Smith",
+        "Title":"Minister of Housing, Infrastructure and Communities",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":38,
+        "Honorific Title":"Hon.",
+        "First Name":"Darren",
+        "Last Name":"Fisher",
+        "Title":"Minister of Veterans Affairs",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    },
+    {
+        "Precedence":39,
+        "Honorific Title":"Hon.",
+        "First Name":"Joanne",
+        "Last Name":"Thompson",
+        "Title":"Minister of Seniors",
+        "Province \/ Territory":null,
+        "Start Date":"2024-12-20 11:30:00 a.m.",
+        "End Date":null
+    }
+]

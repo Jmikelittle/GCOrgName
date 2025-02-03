@@ -1,6 +1,7 @@
 [
     {
         "Title":"Prime Minister",
+        "Titre":"Premier ministre",
         "Precedence":1,
         "Honorific Title":"Right Hon.",
         "First Name":"Justin",
@@ -13,6 +14,7 @@
     },
     {
         "Title":"Minister of Agriculture and Agri-Food",
+        "Titre":"Ministre de l’Agriculture et de l’Agroalimentaire",
         "Precedence":2,
         "Honorific Title":"Hon.",
         "First Name":"Lawrence",
@@ -25,6 +27,7 @@
     },
     {
         "Title":"Minister of Intergovernmental Affairs",
+        "Titre":"Ministère des Affaires intergouvernementales",
         "Precedence":3,
         "Honorific Title":"Hon.",
         "First Name":"Dominic",
@@ -37,6 +40,7 @@
     },
     {
         "Title":"Minister of Public Services and Procurement",
+        "Titre":"Ministre des Services publics et de l’Approvisionnement",
         "Precedence":4,
         "Honorific Title":"Hon.",
         "First Name":"Jean-Yves",
@@ -49,6 +53,7 @@
     },
     {
         "Title":"Minister of Foreign Affairs",
+        "Titre":"Ministre des Affaires étrangères",
         "Precedence":5,
         "Honorific Title":"Hon.",
         "First Name":"Mélanie",
@@ -61,6 +66,7 @@
     },
     {
         "Title":"Minister of Fisheries, Oceans and the Canadian Coast Guard",
+        "Titre":"Ministre des Pêches, des Océans et de la Garde côtière canadienne",
         "Precedence":6,
         "Honorific Title":"Hon.",
         "First Name":"Diane",
@@ -73,6 +79,7 @@
     },
     {
         "Title":"President of the King’s Privy Council for Canada",
+        "Titre":"Président du Conseil privé du Roi pour le Canada",
         "Precedence":7,
         "Honorific Title":"Hon.",
         "First Name":"Harjit S.",
@@ -85,6 +92,7 @@
     },
     {
         "Title":"Minister of Indigenous Services",
+        "Titre":"Ministre des Services aux Autochtones",
         "Precedence":8,
         "Honorific Title":"Hon.",
         "First Name":"Patty",
@@ -97,6 +105,7 @@
     },
     {
         "Title":"Minister of Innovation, Science and Industry",
+        "Titre":"Ministre de l’Innovation, des Sciences et de l’Industrie",
         "Precedence":9,
         "Honorific Title":"Hon.",
         "First Name":"François-Philippe",
@@ -109,6 +118,7 @@
     },
     {
         "Title":"Minister of International Development",
+        "Titre":"Ministre du Développement international",
         "Precedence":11,
         "Honorific Title":"Hon.",
         "First Name":"Ahmed",
@@ -121,6 +131,7 @@
     },
     {
         "Title":"President of the Treasury Board",
+        "Titre":"Présidente du Conseil du Trésor",
         "Precedence":12,
         "Honorific Title":"Hon.",
         "First Name":"Ginette",
@@ -133,6 +144,7 @@
     },
     {
         "Title":"Minister of National Defence",
+        "Titre":"Ministre de la Défense nationale",
         "Precedence":13,
         "Honorific Title":"Hon.",
         "First Name":"Bill",
@@ -145,6 +157,7 @@
     },
     {
         "Title":"Minister of Export Promotion, International Trade and Economic Development",
+        "Titre":"Ministre de la Promotion des exportations, du Commerce international et du Développement économique",
         "Precedence":14,
         "Honorific Title":"Hon.",
         "First Name":"Mary",
@@ -157,6 +170,7 @@
     },
     {
         "Title":"Minister of Energy and Natural Resources",
+        "Titre":"Ministre de l’Énergie et des Ressources naturelles",
         "Precedence":15,
         "Honorific Title":"Hon.",
         "First Name":"Jonathan",
@@ -169,6 +183,7 @@
     },
     {
         "Title":"Minister of Transport and Internal Trade",
+        "Titre":"Ministre des Transports et du Commerce intérieur",
         "Precedence":16,
         "Honorific Title":"Hon.",
         "First Name":"Anita",
@@ -181,6 +196,7 @@
     },
     {
         "Title":"Minister of Environment and Climate Change",
+        "Titre":"Ministre de l’Environnement et du Changement climatique",
         "Precedence":17,
         "Honorific Title":"Hon.",
         "First Name":"Steven",
@@ -193,6 +209,7 @@
     },
     {
         "Title":"Minister of Immigration, Refugees and Citizenship",
+        "Titre":"Ministre de l’Immigration, des Réfugiés et de la Citoyenneté",
         "Precedence":18,
         "Honorific Title":"Hon.",
         "First Name":"Marc",
@@ -205,6 +222,7 @@
     },
     {
         "Title":"Minister of Health",
+        "Titre":"Ministre de la Santé",
         "Precedence":19,
         "Honorific Title":"Hon.",
         "First Name":"Mark",
@@ -217,6 +235,7 @@
     },
     {
         "Title":"Minister responsible for the Atlantic Canada Opportunities Agency",
+        "Titre":"Ministre responsable de l’Agence de promotion économique du Canada atlantique",
         "Precedence":20,
         "Honorific Title":"Hon.",
         "First Name":"Gudie",
@@ -229,6 +248,7 @@
     },
     {
         "Title":"Minister for Women and Gender Equality and Youth",
+        "Titre":"Ministre des Femmes et de l’Égalité des genres et de la Jeunesse",
         "Precedence":21,
         "Honorific Title":"Hon.",
         "First Name":"Marci",
@@ -241,6 +261,7 @@
     },
     {
         "Title":"Minister of Diversity, Inclusion and Persons with Disabilities",
+        "Titre":"Ministre de la Diversité, de l’Inclusion et des Personnes en situation de handicap",
         "Precedence":22,
         "Honorific Title":"Hon.",
         "First Name":"Kamal",
@@ -253,6 +274,7 @@
     },
     {
         "Title":"Minister of Canadian Heritage",
+        "Titre":"Ministre du Patrimoine canadien",
         "Precedence":23,
         "Honorific Title":"Hon.",
         "First Name":"Pascale",
@@ -265,6 +287,7 @@
     },
     {
         "Title":"Leader of the Government in the House of Commons",
+        "Titre":"Leader du gouvernement à la Chambre des communes",
         "Precedence":24,
         "Honorific Title":"Hon.",
         "First Name":"Steven",
@@ -277,6 +300,7 @@
     },
     {
         "Title":"Minister of Crown-Indigenous Relations and Northern Affairs",
+        "Titre":"Ministre des Relations Couronne-Autochtones et des Affaires du Nord",
         "Precedence":25,
         "Honorific Title":"Hon.",
         "First Name":"Gary",
@@ -289,6 +313,7 @@
     },
     {
         "Title":"Minister of Citizens’ Services",
+        "Titre":"Ministre des Services aux citoyens",
         "Precedence":26,
         "Honorific Title":"Hon.",
         "First Name":"Terry",
@@ -301,6 +326,7 @@
     },
     {
         "Title":"Minister of Tourism",
+        "Titre":"Ministre du Tourisme",
         "Precedence":27,
         "Honorific Title":"Hon.",
         "First Name":"Soraya",
@@ -313,6 +339,7 @@
     },
     {
         "Title":"Associate Minister of Health",
+        "Titre":"Ministre associée de la Santé",
         "Precedence":28,
         "Honorific Title":"Hon.",
         "First Name":"Ya'ara",
@@ -325,6 +352,7 @@
     },
     {
         "Title":"Minister of Families, Children and Social Development",
+        "Titre":"Ministre de la Famille, des Enfants et du Développement social",
         "Precedence":29,
         "Honorific Title":"Hon.",
         "First Name":"Jenna",
@@ -337,6 +365,7 @@
     },
     {
         "Title":"Minister of Small Business",
+        "Titre":"Ministre de la Petite Entreprise",
         "Precedence":30,
         "Honorific Title":"Hon.",
         "First Name":"Rechie",
@@ -349,6 +378,7 @@
     },
     {
         "Title":"Minister of Justice",
+        "Titre":"Ministre de la Justice",
         "Precedence":31,
         "Honorific Title":"Hon.",
         "First Name":"Arif",
@@ -361,6 +391,7 @@
     },
     {
         "Title":"Minister of Public Safety",
+        "Titre":"Ministre de la Sécurité publique",
         "Precedence":32,
         "Honorific Title":"Hon.",
         "First Name":"David",
@@ -373,6 +404,7 @@
     },
     {
         "Title":"Minister of Democratic Institutions",
+        "Titre":"Ministre des Institutions démocratiques",
         "Precedence":33,
         "Honorific Title":"Hon.",
         "First Name":"Ruby",
@@ -385,6 +417,7 @@
     },
     {
         "Title":"Minister of Official Languages",
+        "Titre":"Ministre des Langues officielles",
         "Precedence":34,
         "Honorific Title":"Hon.",
         "First Name":"Rachel",
@@ -397,6 +430,7 @@
     },
     {
         "Title":"Minister of National Revenue",
+        "Titre":"Ministre du Revenu national",
         "Precedence":35,
         "Honorific Title":"Hon.",
         "First Name":"Élisabeth",
@@ -409,6 +443,7 @@
     },
     {
         "Title":"Minister of Sport",
+        "Titre":"Ministre des Sports",
         "Precedence":36,
         "Honorific Title":"Hon.",
         "First Name":"Terry",
@@ -421,6 +456,7 @@
     },
     {
         "Title":"Minister of Housing, Infrastructure and Communities",
+        "Titre":"Ministre du Logement, de l’Infrastructure et des Collectivités",
         "Precedence":37,
         "Honorific Title":"Hon.",
         "First Name":"Nathaniel",
@@ -433,6 +469,7 @@
     },
     {
         "Title":"Minister of Veterans Affairs",
+        "Titre":"Ministre des Anciens Combattants",
         "Precedence":38,
         "Honorific Title":"Hon.",
         "First Name":"Darren",
@@ -445,6 +482,7 @@
     },
     {
         "Title":"Minister of Seniors",
+        "Titre":"Ministre des Aînés",
         "Precedence":39,
         "Honorific Title":"Hon.",
         "First Name":"Joanne",

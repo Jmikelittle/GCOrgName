@@ -10,7 +10,7 @@ combined_faa_file = os.path.join(script_folder, 'Scraping', 'combined_FAA_names.
 applied_en_file = os.path.join(script_folder, 'Resources', 'applied_en.csv')
 infobase_en_file = os.path.join(script_folder, 'Resources', 'infobase_en.csv')
 harmonized_names_file = os.path.join(script_folder, 'create_harmonized_name.csv')
-manual_lead_department_file = os.path.join(script_folder, 'Resources', 'manual_leadDepartmentPortfolio.csv')
+manual_lead_department_file = os.path.join(script_folder, 'Resources', 'Manual_leadDepartmentPortfolio.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)
@@ -84,6 +84,10 @@ final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split(
 # Rename 'GC OrgID' to 'gc_orgID'
 final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID'})
 
+# Convert gc_orgID to string to match the data type of GC OrgID in manual_lead_department_df
+final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str)
+manual_lead_department_df['GC OrgID'] = manual_lead_department_df['GC OrgID'].astype(str)
+
 # Rename 'Status' to 'status_statut' and set value to 'a' if empty
 final_joined_df = final_joined_df.rename(columns={'Status': 'status_statut'})
 final_joined_df['status_statut'] = final_joined_df['status_statut'].fillna('a')
@@ -106,29 +110,23 @@ final_joined_df = final_joined_df.rename(columns={
     'Abreviation': 'abreviation'
 })
 
-# Add the new columns after 'nom_préféré'
-final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 1, 'lead_department', '')
-final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 2, 'ministère_responsable', '')
+# Perform a simple merge to update lead_department and ministère_responsable
+final_joined_df = pd.merge(
+    final_joined_df, 
+    manual_lead_department_df[['GC OrgID', 'Parent GC OrgID', 'lead department', 'ministère responsable']], 
+    left_on='gc_orgID', 
+    right_on='GC OrgID', 
+    how='left'
+)
 
-# Function to update lead_department and ministère_responsable
-def update_lead_ministere(row):
-    try:
-        parent_gc_orgID = row['gc_orgID']
-        print(f"Processing gc_orgID: {parent_gc_orgID}")
-        lead_dept = manual_lead_department_df[manual_lead_department_df['Parent GC OrgID'] == parent_gc_orgID]['Part GC Org ID'].values[0]
-        print(f"Found lead_dept: {lead_dept}")
-        lead_department = harmonized_names_df[harmonized_names_df['GC OrgID'] == lead_dept]['harmonized_name'].values[0]
-        ministere_responsable = harmonized_names_df[harmonized_names_df['GC OrgID'] == lead_dept]['nom_harmonisé'].values[0]
-        row['lead_department'] = lead_department
-        row['ministère_responsable'] = ministere_responsable
-        print(f"Updated row for gc_orgID {parent_gc_orgID}: lead_department = {lead_department}, ministère_responsable = {ministere_responsable}")
-    except (IndexError, KeyError) as e:
-        print(f"Failed to update row for gc_orgID {parent_gc_orgID}: {e}")
-        pass  # Ignore errors and continue
-    return row
+# Rename the columns to match the desired output
+final_joined_df = final_joined_df.rename(columns={
+    'lead department': 'lead_department',
+    'ministère responsable': 'ministère_responsable'
+})
 
-# Apply the function to each row
-final_joined_df = final_joined_df.apply(update_lead_ministere, axis=1)
+# Remove duplicate columns, keeping the first occurrence
+final_joined_df = final_joined_df.loc[:, ~final_joined_df.columns.duplicated()]
 
 # Reorder the fields
 ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'legal_title', 'appellation_légale', 

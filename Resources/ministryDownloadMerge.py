@@ -15,12 +15,15 @@ with open(csv_path, 'wb') as file:
     file.write(response.content)
 print("The CSV file has been downloaded and saved as 'Resources/ministries.csv' with utf-8-sig encoding.")
 
-# Load the downloaded CSV into a DataFrame (first entry)
-new_data = pd.read_csv(csv_path, encoding='utf-8-sig').head(1)
+# Load the downloaded CSV into a DataFrame
+new_data = pd.read_csv(csv_path, encoding='utf-8-sig')
 print("New data loaded:\n", new_data)
 
-# Load the manually edited CSV into a DataFrame (first entry)
-manual_data = pd.read_csv(manual_csv_path).head(1)
+# Load the manually edited CSV into a DataFrame
+manual_data = pd.read_csv(manual_csv_path)
+
+# Remove BOM character if present
+manual_data.columns = manual_data.columns.str.replace('\ufeff', '')
 print("Manual data loaded:\n", manual_data)
 
 # Add a marker for new titles in new_data
@@ -42,7 +45,13 @@ for column in columns:
 # Update fields and track changes
 def update_fields(row):
     print("\nProcessing row before update:", row.to_dict())
+    
+    title_manual = row.get('Title')
+    title_new = row.get('Title')
+    print(f"Comparing Titles: Manual: '{title_manual}', New: '{title_new}'")
+    
     if pd.isna(row.get('Precedence_manual')) and not pd.isna(row.get('Precedence_new')):  # New entry
+        print("New entry detected.")
         row['Precedence'] = row.get('Precedence_new')
         row['Honorific Title'] = row.get('Honorific Title_new')
         row['First Name'] = row.get('First Name_new')
@@ -51,23 +60,21 @@ def update_fields(row):
         row['Start Date'] = row.get('Start Date_new')
         row['End Date'] = row.get('End Date_new')
         row['minID'] = 'New Title'
-    elif pd.isna(row.get('Precedence_new')):  # Title removed or changed
+    elif pd.isna(row.get('Precedence_new')) and not pd.isna(row.get('Precedence_manual')):  # Title removed or changed
+        print("Title removed or changed.")
         row['notes'] = 'Title changed/deleted'
     else:  # Title exists, update fields if necessary
-        if row.get('Precedence_manual') != row.get('Precedence_new'):
-            row['Precedence'] = row['Precedence_new']
-        if row.get('Honorific Title_manual') != row.get('Honorific Title_new'):
-            row['Honorific Title'] = row['Honorific Title_new']
-        if row.get('First Name_manual') != row.get('First Name_new'):
-            row['First Name'] = row['First Name_new']
-        if row.get('Last Name_manual') != row.get('Last Name_new'):
-            row['Last Name'] = row['Last Name_new']
-        if row.get('Province / Territory_manual') != row.get('Province / Territory_new'):
-            row['Province / Territory'] = row['Province / Territory_new']
-        if row.get('Start Date_manual') != row.get('Start Date_new'):
-            row['Start Date'] = row['Start Date_new']
-        if row.get('End Date_manual') != row.get('End Date_new'):
-            row['End Date'] = row['End Date_new']
+        print("Updating existing entry.")
+        row['Precedence'] = row.get('Precedence_new')
+        row['Honorific Title'] = row.get('Honorific Title_new')
+        row['First Name'] = row.get('First Name_new')
+        row['Last Name'] = row.get('Last Name_new')
+        row['Province / Territory'] = row.get('Province / Territory_new')
+        row['Start Date'] = row.get('Start Date_new')
+        row['End Date'] = row.get('End Date_new')
+        row['minID'] = row.get('minID_manual')
+        row['notes'] = row.get('notes_manual')
+    
     print("Processing row after update:", row.to_dict())
     return row
 

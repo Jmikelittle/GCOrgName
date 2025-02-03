@@ -28,7 +28,7 @@
 2230,2230,Crown-Indigenous Relations and Northern Affairs Canada,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada
 2318,2230,Polar Knowledge Canada,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada
 3541,2230,Indian Oil and Gas Canada,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada
-2298,2298,Pacific Economic Development Canada,Pacific Economic Development Canada,Développement économique Canada pour le Pacifique
+2298,m0007,Pacific Economic Development Canada,President of the King’s Privy Council for Canada,Président du Conseil privé du Roi pour le Canada
 2229,2229,Employment and Social Development Canada,Employment and Social Development Canada,Emploi et Développement social Canada
 2302,2229,Canada Employment Insurance Commission,Employment and Social Development Canada,Emploi et Développement social Canada
 3632,2229,Social Security Tribunal of Canada,Employment and Social Development Canada,Emploi et Développement social Canada
@@ -37,7 +37,7 @@
 2245,2237,Impact Assessment Agency of Canada,Environment and Climate Change Canada,Environnement et Changement climatique Canada
 2301,2237,Canada Emission Reduction Incentives Agency,Environment and Climate Change Canada,Environnement et Changement climatique Canada
 2315,2237,Parks Canada,Environment and Climate Change Canada,Environnement et Changement climatique Canada
-2258,2231,Federal Economic Development Agency for Southern Ontario,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
+2258,m0032,Federal Economic Development Agency for Southern Ontario,Minister of Democratic Institutions,Ministre des Institutions démocratiques
 2225,2225,Department of Finance Canada,Department of Finance Canada,Ministère des Finances Canada
 2259,2225,Financial Consumer Agency of Canada,Department of Finance Canada,Ministère des Finances Canada
 2260,2225,Financial Transactions and Reports Analysis Centre of Canada,Department of Finance Canada,Ministère des Finances Canada
@@ -70,7 +70,7 @@
 2224,2224,"Immigration, Refugees and Citizenship Canada","Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada"
 2261,2224,Immigration and Refugee Board of Canada,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada"
 2243,2243,Indigenous Services Canada,Indigenous Services Canada,Services aux Autochtones Canada
-2299,2243,Federal Economic Development Agency for Northern Ontario,Indigenous Services Canada,Services aux Autochtones Canada
+2299,m0008,Federal Economic Development Agency for Northern Ontario,Minister of Indigenous Services,Ministre des Services aux Autochtones
 2251,2231,Canadian Space Agency,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
 2254,2231,Copyright Board Canada,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
 2293,2231,Statistics Canada,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
@@ -113,8 +113,8 @@
 2312,2234,Canada Energy Regulator,Natural Resources Canada,Ressources naturelles Canada
 3424,2234,Energy Supplies Allocation Board,Natural Resources Canada,Ressources naturelles Canada
 3649,2234,Atomic Energy of Canada Limited,Natural Resources Canada,Ressources naturelles Canada
-2240,2240,Prairies Economic Development Canada,Prairies Economic Development Canada,Développement économique Canada pour les Prairies
-2249,2230,Canadian Northern Economic Development Agency,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada
+2240,m0035,Prairies Economic Development Canada,Minister of Sport,Ministre des Sports
+2249,m0024,Canadian Northern Economic Development Agency,Minister of Crown-Indigenous Relations and Northern Affairs,Ministre des Relations Couronne-Autochtones et des Affaires du Nord
 3587,2284,Public Servants Disclosure Protection Tribunal Canada,Privy Council Office,Bureau du Conseil privé
 2275,2284,Office of the Intelligence Commissioner,Privy Council Office,Bureau du Conseil privé
 2278,2284,Office of the Secretary to the Governor General,Privy Council Office,Bureau du Conseil privé
@@ -145,8 +145,8 @@
 3651,2236,Canada Post,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
 3652,2236,Defence Construction Canada,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
 3653,2236,National Capital Commission,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
-2244,m0019,Atlantic Canada Opportunities Agency,Minister responsible for the Atlantic Canada Opportunities Agency,
-2257,2231,Canada Economic Development for Quebec Regions,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
+2244,m0019,Atlantic Canada Opportunities Agency,Minister responsible for the Atlantic Canada Opportunities Agency,Ministre responsable de l’Agence de promotion économique du Canada atlantique
+2257,m0026,Canada Economic Development for Quebec Regions,Minister of Tourism,Ministre du Tourisme
 2238,2238,Transport Canada,Transport Canada,Transports Canada
 2252,2238,Canadian Transportation Agency,Transport Canada,Transports Canada
 3654,2238,Atlantic Pilotage Authority Canada,Transport Canada,Transports Canada

@@ -1,4 +1,4 @@
-﻿gc_orgID,harmonized_name,nom_harmonisé,legal_title,appellation_légale,preferred_name,nom_préféré,ministerial_portfolio,portefeuilles_ministériels,abbreviation,abreviation,FAA_LGFP,status_statut,end_date_fin
+﻿gc_orgID,harmonized_name,nom_harmonisé,legal_title,appellation_légale,preferred_name,nom_préféré,lead_department,ministère_responsable,abbreviation,abreviation,FAA_LGFP,status_statut,end_date_fin
 2222,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,Department of Agriculture and Agri-Food,Ministère de l'Agriculture et de l'Agroalimentaire,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,,,AAFC,AAC,1,a,
 2223,Canadian Heritage,Patrimoine canadien,Department of Canadian Heritage,Ministère du Patrimoine canadien,Canadian Heritage,Patrimoine canadien,,,PCH,PCH,1,a,
 2224,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",Department of Citizenship and Immigration,Ministère de la Citoyenneté et de l'Immigration,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",,,IRCC,IRCC,1,a,

@@ -10,6 +10,7 @@ combined_faa_file = os.path.join(script_folder, 'Scraping', 'combined_FAA_names.
 applied_en_file = os.path.join(script_folder, 'Resources', 'applied_en.csv')
 infobase_en_file = os.path.join(script_folder, 'Resources', 'infobase_en.csv')
 harmonized_names_file = os.path.join(script_folder, 'create_harmonized_name.csv')
+manual_lead_department_file = os.path.join(script_folder, 'Resources', 'manual_leadDepartmentPortfolio.csv')
 
 # Read the CSV files
 manual_org_df = pd.read_csv(manual_org_file)
@@ -17,6 +18,7 @@ combined_faa_df = pd.read_csv(combined_faa_file)
 applied_en_df = pd.read_csv(applied_en_file)
 infobase_en_df = pd.read_csv(infobase_en_file)
 harmonized_names_df = pd.read_csv(harmonized_names_file)
+manual_lead_department_df = pd.read_csv(manual_lead_department_file)
 
 # Remove the 'Unnamed: 0' field if it exists
 if 'Unnamed: 0' in combined_faa_df.columns:
@@ -32,6 +34,7 @@ combined_faa_df = standardize_text(combined_faa_df)
 applied_en_df = standardize_text(applied_en_df)
 infobase_en_df = standardize_text(infobase_en_df)
 harmonized_names_df = standardize_text(harmonized_names_df)
+manual_lead_department_df = standardize_text(manual_lead_department_df)
 
 # Preserve the original 'English Name' column
 combined_faa_df['Original English Name'] = combined_faa_df['English Name']
@@ -107,9 +110,29 @@ final_joined_df = final_joined_df.rename(columns={
 final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 1, 'lead_department', '')
 final_joined_df.insert(final_joined_df.columns.get_loc('nom_préféré') + 2, 'ministère_responsable', '')
 
+# Function to update lead_department and ministère_responsable
+def update_lead_ministere(row):
+    try:
+        parent_gc_orgID = row['gc_orgID']
+        print(f"Processing gc_orgID: {parent_gc_orgID}")
+        lead_dept = manual_lead_department_df[manual_lead_department_df['Parent GC OrgID'] == parent_gc_orgID]['Part GC Org ID'].values[0]
+        print(f"Found lead_dept: {lead_dept}")
+        lead_department = harmonized_names_df[harmonized_names_df['GC OrgID'] == lead_dept]['harmonized_name'].values[0]
+        ministere_responsable = harmonized_names_df[harmonized_names_df['GC OrgID'] == lead_dept]['nom_harmonisé'].values[0]
+        row['lead_department'] = lead_department
+        row['ministère_responsable'] = ministere_responsable
+        print(f"Updated row for gc_orgID {parent_gc_orgID}: lead_department = {lead_department}, ministère_responsable = {ministere_responsable}")
+    except (IndexError, KeyError) as e:
+        print(f"Failed to update row for gc_orgID {parent_gc_orgID}: {e}")
+        pass  # Ignore errors and continue
+    return row
+
+# Apply the function to each row
+final_joined_df = final_joined_df.apply(update_lead_ministere, axis=1)
+
 # Reorder the fields
 ordered_fields = ['gc_orgID', 'harmonized_name', 'nom_harmonisé', 'legal_title', 'appellation_légale', 
-                  'preferred_name', 'nom_préféré', 'ministerial_portfolio', 'portefeuilles_ministériels', 
+                  'preferred_name', 'nom_préféré', 'lead_department', 'ministère_responsable',
                   'abbreviation', 'abreviation', 'FAA_LGFP', 'status_statut', 'end_date_fin']
 final_joined_df = final_joined_df[ordered_fields]
 

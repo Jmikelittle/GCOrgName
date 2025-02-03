@@ -12,14 +12,36 @@ harmonized_names_df = pd.read_csv(harmonized_names_file)
 manual_lead_department_df = pd.read_csv(manual_lead_department_file)
 manual_ministries_df = pd.read_csv(manual_ministries_file)
 
+# Ensure the 'Parent GC OrgID' and 'GC OrgID' columns are treated as strings without decimals
+manual_lead_department_df['Parent GC OrgID'] = manual_lead_department_df['Parent GC OrgID'].astype(str).str.split('.').str[0]
+harmonized_names_df['GC OrgID'] = harmonized_names_df['GC OrgID'].astype(str)
+
+# Debugging: Print the first few rows of the dataframes to check the data types and values
+print("Manual Lead Department DataFrame:")
+print(manual_lead_department_df.head())
+
+print("\nHarmonized Names DataFrame:")
+print(harmonized_names_df.head())
+
+print("\nManual Ministries DataFrame:")
+print(manual_ministries_df.head())
+
 # Merge the dataframes on 'GC OrgID' from create_harmonized_name.csv and 'Parent GC OrgID' from Manual_leadDepartmentPortfolio.csv
 merged_df = pd.merge(manual_lead_department_df, harmonized_names_df[['GC OrgID', 'harmonized_name', 'nom_harmonisé']], left_on='Parent GC OrgID', right_on='GC OrgID', how='left')
 
-# Replace values in 'lead department' with 'harmonized_name'
-merged_df['lead department'] = merged_df['harmonized_name']
+# Debugging: Print the first few rows of the merged dataframe to check the merge result
+print("\nMerged DataFrame:")
+print(merged_df.head())
 
-# Replace values in 'ministère responsable' with 'nom_harmonisé'
-merged_df['ministère responsable'] = merged_df['nom_harmonisé']
+# Replace values in 'lead department' with 'harmonized_name' only if not already filled
+merged_df['lead department'] = merged_df.apply(
+    lambda row: row['harmonized_name'] if pd.isna(row['lead department']) else row['lead department'], axis=1
+)
+
+# Replace values in 'ministère responsable' with 'nom_harmonisé' only if not already filled
+merged_df['ministère responsable'] = merged_df.apply(
+    lambda row: row['nom_harmonisé'] if pd.isna(row['ministère responsable']) else row['ministère responsable'], axis=1
+)
 
 # Fill lead department with values from manualMinistries.csv if Parent GC OrgID starts with 'm'
 for index, row in merged_df.iterrows():

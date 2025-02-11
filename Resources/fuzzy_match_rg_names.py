@@ -6,15 +6,18 @@ from rapidfuzz import process
 script_folder = os.path.dirname(os.path.abspath(__file__))
 receiver_general_file = os.path.join(script_folder, 'receiver_general.csv')
 manual_org_file = os.path.join(script_folder, 'Manual org ID link.csv')
+rg_duplicates_file = os.path.join(script_folder, 'RGDuplicates.csv')
 output_file = os.path.join(script_folder, 'matched_RG_names.csv')
 
 # Read the CSV files
 receiver_general_df = pd.read_csv(receiver_general_file)
 manual_org_df = pd.read_csv(manual_org_file)
+rg_duplicates_df = pd.read_csv(rg_duplicates_file)
 
 # Extract the relevant columns for matching
 rg_names = receiver_general_df['RGOriginalName']
 manual_org_names = manual_org_df['Organization Legal Name English']
+rg_duplicates_names = rg_duplicates_df['Department']
 
 # Function to perform fuzzy matching and return best match and score
 def fuzzy_match(name, choices, threshold=80):
@@ -25,7 +28,7 @@ def fuzzy_match(name, choices, threshold=80):
             return match, score
     return None, 0
 
-# Perform fuzzy matching
+# Perform fuzzy matching for receiver_general_df
 matches = rg_names.apply(lambda x: fuzzy_match(x, manual_org_names))
 
 # Create a DataFrame with the matching results
@@ -36,9 +39,37 @@ match_df = pd.DataFrame({
     'MatchScore': matches.apply(lambda x: x[1])
 })
 
+# Perform fuzzy matching for rg_duplicates_df
+rg_duplicates_matches = rg_duplicates_names.apply(lambda x: fuzzy_match(x, manual_org_names))
+
+# Create a DataFrame with the matching results for rg_duplicates_df
+rg_duplicates_match_df = pd.DataFrame({
+    'RG DeptNo': rg_duplicates_df['RG DeptNo'],
+    'RGOriginalName': rg_duplicates_names,  # Place 'Department' values into 'RGOriginalName'
+    'MatchedName': rg_duplicates_matches.apply(lambda x: x[0]),
+    'MatchScore': rg_duplicates_matches.apply(lambda x: x[1])
+})
+
 # Merge the matched names with the manual organization names to get GC OrgID
 final_df = match_df.merge(manual_org_df[['Organization Legal Name English', 'GC OrgID']], 
                           left_on='MatchedName', right_on='Organization Legal Name English', how='left')
+
+# Merge the rg_duplicates_match_df with the manual organization names to get GC OrgID
+rg_duplicates_final_df = rg_duplicates_match_df.merge(manual_org_df[['Organization Legal Name English', 'GC OrgID']], 
+                                                      left_on='MatchedName', right_on='Organization Legal Name English', how='left')
+
+# Ensure 'rgnumber' values do not have decimals
+final_df['rgnumber'] = pd.to_numeric(final_df['rgnumber'], errors='coerce').fillna(0).astype(int)
+rg_duplicates_final_df['RG DeptNo'] = pd.to_numeric(rg_duplicates_final_df['RG DeptNo'], errors='coerce').fillna(0).astype(int)
+
+# Concatenate the two DataFrames
+final_df = pd.concat([final_df, rg_duplicates_final_df], ignore_index=True)
+
+# Remove duplicates based on 'MatchedName'
+final_df = final_df.drop_duplicates(subset=['MatchedName'])
+
+# Ensure 'rgnumber' values do not have decimals and fill missing 'rgnumber' with 'RG DeptNo'
+final_df['rgnumber'] = final_df['rgnumber'].fillna(final_df['RG DeptNo']).astype(int)
 
 # Reorder columns to ensure 'rgnumber' is the second field
 final_df = final_df[['RGOriginalName', 'rgnumber', 'MatchedName', 'MatchScore', 'GC OrgID']]

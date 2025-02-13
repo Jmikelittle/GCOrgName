@@ -7,12 +7,14 @@ script_folder = os.path.dirname(os.path.abspath(__file__))
 receiver_general_file = os.path.join(script_folder, 'receiver_general.csv')
 manual_org_file = os.path.join(script_folder, 'Manual org ID link.csv')
 rg_duplicates_file = os.path.join(script_folder, 'RGDuplicates.csv')
-output_file = os.path.join(script_folder, 'matched_RG_names.csv')
+matched_file = os.path.join(script_folder, 'matched_RG_names.csv')
+fixed_file = os.path.join(script_folder, 'Fixed_RG_names.csv')
 
 # Read the CSV files
 receiver_general_df = pd.read_csv(receiver_general_file)
 manual_org_df = pd.read_csv(manual_org_file)
 rg_duplicates_df = pd.read_csv(rg_duplicates_file)
+fixed_df = pd.read_csv(fixed_file)
 
 # Extract the relevant columns for matching
 rg_names = receiver_general_df['RGOriginalName']
@@ -75,6 +77,17 @@ final_df['rgnumber'] = final_df['rgnumber'].fillna(final_df['RG DeptNo']).astype
 final_df = final_df[['RGOriginalName', 'rgnumber', 'MatchedName', 'MatchScore', 'GC OrgID']]
 
 # Save the result to a new CSV file
-final_df.to_csv(output_file, index=False, encoding='utf-8-sig')
+final_df.to_csv(matched_file, index=False, encoding='utf-8-sig')
 
-print(f"The matched names have been saved to {output_file}")
+print(f"The matched names have been saved to {matched_file}")
+
+# Update Fixed_RG_names.csv with new entries from matched_RG_names.csv
+new_entries = final_df[~final_df['RGOriginalName'].isin(fixed_df['RGOriginalName'])]
+
+# Append new entries to the fixed DataFrame
+updated_fixed_df = pd.concat([fixed_df, new_entries], ignore_index=True)
+
+# Save the updated fixed DataFrame to the CSV file
+updated_fixed_df.to_csv(fixed_file, index=False, encoding='utf-8-sig')
+
+print(f"Fixed_RG_names.csv has been updated with new entries from matched_RG_names.csv")

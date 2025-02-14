@@ -7,6 +7,7 @@ data = pd.read_csv('/workspaces/GCOrgName/GC Org Info.csv')
 # Fill NaN values with an empty string
 data['harmonized_name'] = data['harmonized_name'].fillna('')
 data['lead_department'] = data['lead_department'].fillna('')
+data['gc_orgID'] = data['gc_orgID'].fillna('')
 
 # Filter out rows with empty lead_department
 data = data[data['lead_department'] != '']
@@ -41,8 +42,8 @@ class PDF(FPDF):
 
     def chapter_body(self, departments):
         self.set_font('Arial', '', 12)
-        for department in departments:
-            self.cell(0, 10, department, 0, 1)
+        for index, row in departments.iterrows():
+            self.cell(0, 10, f"{row['harmonized_name']} - GC Org ID: {row['gc_orgID']}", 0, 1)
         self.ln()
 
     def special_page(self, data):
@@ -57,7 +58,7 @@ class PDF(FPDF):
         self.set_font('Arial', '', 7)  # Reduce font size by 40%
         for index, row in data.iterrows():
             self.cell(95, 10, row['lead_department'], 1)
-            self.cell(95, 10, row['harmonized_name'], 1)
+            self.cell(95, 10, f"{row['harmonized_name']} - GC Org ID: {row['gc_orgID']}", 1)
             self.ln()
 
 # Create a PDF object
@@ -68,7 +69,7 @@ for lead_department, group in grouped:
     if lead_department not in special_lead_departments:
         pdf.add_page()
         pdf.chapter_title(lead_department)
-        pdf.chapter_body(group['harmonized_name'].tolist())
+        pdf.chapter_body(group)
 
 # Add the special page at the end
 pdf.special_page(special_data)

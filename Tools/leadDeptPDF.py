@@ -14,20 +14,25 @@ data = data[data['lead_department'] != '']
 # Group data by lead_department
 grouped = data.groupby('lead_department')
 
-# Print the first 5 lead departments with associated harmonized names
-for i, (lead_department, group) in enumerate(grouped):
-    if i < 5:
-        print(f"Lead Department: {lead_department}")
-        print("Departments:")
-        for department in group['harmonized_name'].tolist():
-            print(f" - {department}")
-        print("\n")
+# List of lead departments for the special page
+special_lead_departments = [
+    'Minister of Crown-Indigenous Relations and Northern Affairs',
+    'Minister of Democratic Institutions',
+    'Minister of Indigenous Services',
+    'Minister of Sport',
+    'Minister of Tourism',
+    'Minister responsible for the Atlantic Canada Opportunities Agency',
+    'President of the King\'s Privy Council for Canada'
+]
+
+# Filter data for the special page
+special_data = data[data['lead_department'].isin(special_lead_departments)]
 
 # Create a PDF class
 class PDF(FPDF):
     def header(self):
         self.set_font('Arial', 'B', 12)
-        self.cell(0, 10, 'Government Departments and Their Lead Departments', 0, 1, 'C')
+        self.cell(0, 10, 'Lead Departments and their Associated Organizations', 0, 1, 'C')
 
     def chapter_title(self, lead_department):
         self.set_font('Arial', 'B', 12)
@@ -40,14 +45,33 @@ class PDF(FPDF):
             self.cell(0, 10, department, 0, 1)
         self.ln()
 
+    def special_page(self, data):
+        self.add_page()
+        self.set_font('Arial', 'B', 20)
+        self.cell(0, 10, 'Regional Development Agencies', 0, 1, 'C')
+        self.ln(10)
+        self.set_font('Arial', 'B', 7)  # Reduce font size by 40%
+        self.cell(95, 10, 'Responsible Minister', 1)
+        self.cell(95, 10, 'Agency', 1)
+        self.ln()
+        self.set_font('Arial', '', 7)  # Reduce font size by 40%
+        for index, row in data.iterrows():
+            self.cell(95, 10, row['lead_department'], 1)
+            self.cell(95, 10, row['harmonized_name'], 1)
+            self.ln()
+
 # Create a PDF object
 pdf = PDF()
 
-# Add a page for each lead department
+# Add a page for each lead department excluding the special ones
 for lead_department, group in grouped:
-    pdf.add_page()
-    pdf.chapter_title(lead_department)
-    pdf.chapter_body(group['harmonized_name'].tolist())
+    if lead_department not in special_lead_departments:
+        pdf.add_page()
+        pdf.chapter_title(lead_department)
+        pdf.chapter_body(group['harmonized_name'].tolist())
+
+# Add the special page at the end
+pdf.special_page(special_data)
 
 # Save the PDF in the Tools folder
 pdf.output('/workspaces/GCOrgName/Tools/lead_department.pdf')

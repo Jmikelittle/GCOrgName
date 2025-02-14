@@ -32,18 +32,27 @@ special_data = data[data['lead_department'].isin(special_lead_departments)]
 # Create a PDF class
 class PDF(FPDF):
     def header(self):
+        self.set_fill_color(0, 77, 113)  # Set fill color to #004D71
+        self.rect(0, 0, 210, 30, 'F')  # Draw a filled rectangle
+        self.set_y(10)
         self.set_font('Arial', 'B', 12)
+        self.set_text_color(255, 255, 255)  # Set text color to white
         self.cell(0, 10, 'Lead Departments and their Associated Organizations', 0, 1, 'C')
 
     def chapter_title(self, lead_department):
+        self.set_y(33)  # Move the chapter title down to start at the 31st pixel
         self.set_font('Arial', 'B', 12)
-        self.cell(0, 10, lead_department, 0, 1, 'L')
-        self.ln(10)
+        self.set_text_color(0, 0, 0)  # Set text color to black
+        self.cell(0, 10, lead_department, 1, 1, 'L')  # Add a black outline box around the text
+        self.ln(6)
 
     def chapter_body(self, departments):
         self.set_font('Arial', '', 12)
+        self.set_draw_color(89, 89, 89)  # Set draw color to grey (#595959)
         for index, row in departments.iterrows():
-            self.cell(0, 10, f"{row['harmonized_name']} - GC Org ID: {row['gc_orgID']}", 0, 1)
+            self.set_x(30)  # Move the body text to the right by 30 pixels
+            self.cell(0, 8, f"{row['harmonized_name']} - GC Org ID: {row['gc_orgID']}", 1, 1)  # Add a grey outline box around the text with reduced height
+            self.ln(2)  # Add 6 pixels of space beneath each line
         self.ln()
 
     def special_page(self, data):

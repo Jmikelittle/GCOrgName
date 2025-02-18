@@ -1,8 +1,13 @@
+import os
 import pandas as pd
 from fpdf import FPDF
 
+# Get the directory of the current script
+script_folder = os.path.dirname(os.path.abspath(__file__))
+
 # Read the CSV data
-data = pd.read_csv('/workspaces/GCOrgName/GC Org Info.csv')
+data_file = os.path.join(script_folder, '..', 'GC Org Info.csv')
+data = pd.read_csv(data_file)
 
 # Fill NaN values with an empty string
 data['harmonized_name'] = data['harmonized_name'].fillna('')
@@ -33,6 +38,8 @@ class PDF(FPDF):
     def __init__(self, orientation='P', unit='mm', format='A4'):
         super().__init__(orientation, unit, format)
         self.disable_footer = False
+        self.set_title('Lead Departments and their Associated Organizations')
+        self.set_author('OCIO - TBS')
 
     def header(self):
         self.set_fill_color(0, 77, 113)  # Set fill color to #004D71
@@ -70,6 +77,9 @@ class PDF(FPDF):
         if not self.disable_footer:
             self.set_draw_color(89, 89, 89)    # Set draw color to grey (#595959)
             self.line(10, self.title_y - 6, 10, self.body_end_y - 6)
+            self.set_y(-15)
+            self.set_font('Arial', 'I', 8)
+            self.cell(0, 10, f'Page {self.page_no()}', 0, 0, 'C')
 
     def special_page(self, data):
         self.add_page()
@@ -103,6 +113,7 @@ for lead_department, group in grouped:
 pdf.special_page(special_data)
 
 # Save the PDF in the Tools folder
-pdf.output('/workspaces/GCOrgName/Tools/lead_department.pdf')
+output_file = os.path.join(script_folder, 'lead_department.pdf')
+pdf.output(output_file)
 
 print("PDF created successfully.")

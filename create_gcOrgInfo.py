@@ -65,12 +65,12 @@ final_joined_df = pd.merge(
     how='left'
 )
 
-# Join with infobase_en_df on 'Legal Title' and 'Organization Legal Name English'
+# Join with infobase_en_df on 'Legal title' and 'Organization Legal Name English'
 final_joined_df = pd.merge(
     final_joined_df, 
-    infobase_en_df[['Legal Title', 'Status', 'End date']], 
+    infobase_en_df[['Legal title', 'Status', 'End date']], 
     left_on='Organization Legal Name English', 
-    right_on='Legal Title', 
+    right_on='Legal title', 
     how='left'
 )
 
@@ -98,6 +98,16 @@ if 'End date' in final_joined_df.columns:
     final_joined_df['end_date_fin'] = final_joined_df['end_date_fin'].replace('.', '')
 else:
     final_joined_df['end_date_fin'] = ''
+
+# Clean the 'end_date_fin' column so that values like "2020.0" become "2020"
+def clean_year(val):
+    try:
+        # Convert value to float then to integer, then to string
+        return str(int(float(val)))
+    except (ValueError, TypeError):
+        return ''  # or keep val if you prefer
+
+final_joined_df['end_date_fin'] = final_joined_df['end_date_fin'].apply(clean_year)
 
 # Rename fields as specified
 final_joined_df = final_joined_df.rename(columns={

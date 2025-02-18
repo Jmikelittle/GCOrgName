@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 # URL of the text file
-url = 'https://www.tpsgc-pwgsc.gc.ca/recgen/pceaf-gwcoa/2425/fichiers-files/rg-3-num-eng.txt'
+url = 'https://www.tpsgc-pwgsc.gc.ca/recgen/pceaf-gwcoa/2526/fichiers-files/rg-3-num-eng.txt'
 
 # Path to save the downloaded CSV file
 script_folder = os.path.dirname(os.path.abspath(__file__))

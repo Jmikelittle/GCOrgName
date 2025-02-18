@@ -1,4 +1,4 @@
-﻿uuid,title_en,title_fr,short_form_en,short_form_fr,department_number,umd_number,open_canada_id
+﻿uuid,title_en,title_fr,short_form_en,short_form_fr,department_number,umd_number,open_canada_id
 9ced415c-3060-4d20-ab3c-302f38367037,2875039 Canada Limited,2875039 Canada Limited,2CANL,2CANL,,458,2canl
 73a9a5ff-b20f-4909-b3bb-095838099b64,3906949 Canada Inc.,3906949 Canada Inc.,3CAN,3CAN,,460,3can
 356516e9-3fc0-4a26-8476-f23c38a82ddb,3Net Indy Holdings,3Net Indy Holdings,3NIH,3NIH,,485,3nih
@@ -49,7 +49,7 @@ ee5e54b6-0c78-4635-92a7-2b7299045116,Canada Innovation Corporation,La Corporatio
 cec34510-faab-4722-9787-0245dd0cfa58,Canada Lands Company Limited,Société immobilière du Canada Limitée,CLCL,SICL,82,147,clcl-sicl
 05afe8d4-be53-4853-b529-a79c78757969,Canada Mortgage and Housing Corporation,Société canadienne d'hypothèques et de logement,CMHC,SCHL,87,149,cmhc-schl
 bb5fdf62-75d4-501f-a00b-e09c5eff6eb4,Canada-Newfoundland and Labrador Offshore Petroleum Board,Office Canada–Terre-Neuve-et Labrador des hydrocarbures extracôtiers,CNLOPB,CNLOPB,51,152,cnlopb
-16986d6d-7666-572f-a951-0d32630faca3,Canada-Nova Scotia Offshore-Petroleum Board,Office Canada-Nouvelle-Écosse des hydrocarbures extracôtiers,CNSOPB,CNSOPB,95,153,cnsopb
+16986d6d-7666-572f-a951-0d32630faca3,Canada-Nova Scotia Offshore Energy Regulator,Régie Canada-Nouvelle-Écosse de l'énergie extracôtière,CNSOER,RCNEEE,95,153,cnsopb
 ab335a43-ba88-4d3d-8b28-0c461019ebf6,Canada Pension Plan Investment Board,L'Office d'investment du Régime de pensions du Canada,cppib,oirpc,0002,150,cppib-oirpc
 d5a06ab7-88f9-45fa-8903-6245fd48216c,Canada Post,Postes Canada,CPC,SCP,83,151,cpc-scp
 88b6ee4b-aa19-475b-b92a-2a80260806c2,Canada Revenue Agency,Agence du revenu du Canada,CRA,ARC,47,72,cra-arc
@@ -100,8 +100,8 @@ dfd345ad-4b40-4eb7-b03c-9533c1989742,Datura Private Investments Inc.,Datura Priv
 aa37fa1c-bc8c-4196-9ac2-33b873c8c7a7,Defence Construction Canada,Construction de Défense Canada,DCC,CDC,28,176,dcc-cdc
 b274ff8b-610b-5f1c-b4f1-468247206108,Defence Research and Development Canada,Recherche et développement pour la Défense Canada,DRDC,RDDC,65656,274,drdc-rddc
 05d03dcb-5906-4555-a5a1-84d86e9e94dd,Department of Finance Canada,Ministère des Finances Canada,FIN,FIN,157,44,fin
+ac76b01b-0569-4067-a427-d1f6183a8746,"Department of Housing, Infrastructure and Communities","Ministère du Logement, de l'Infrastructure et des Collectivités",INFC,INFC,278,62,infc
 5f70b0df-d227-47ef-81fe-eb3a47c4ff0a,Department of Justice Canada,Ministère de la Justice Canada,JUS,JUS,119,69,jus
-2eb3b7d5-68ef-45f1-b962-f5014140b636,Deputy Prime Minister and Minister of Finance,Vice-première ministre et ministre des Finances,DPM,VPM,,,dpm-vpm
 d34a790c-a2e2-48c1-80d8-705205e3d979,Destination Canada,Destination Canada,CTC,CCT,178,170,ctc-cct
 7c6702ac-52b0-42e0-adab-0b5e09818e83,Development Finance Institution - FinDev Canada,Institution de financement du développement - FinDev Canada,DFI,IFD,,,dfi-ifd
 177f4c5d-5eb5-469f-b0db-7cbf3cc313f9,Elections Canada,Élections Canada,elections,elections,285,14,elections
@@ -111,7 +111,7 @@ d34a790c-a2e2-48c1-80d8-705205e3d979,Destination Canada,Destination Canada,CTC,C
 49e2adf4-ad7a-43eb-85c8-6433d37ed62c,Environment and Climate Change Canada,Environnement et Changement climatique Canada,EC,EC,99,33,ec
 e6f849ef-44dd-453a-91dc-219cd93a7dff,Exinvest Inc.,Exinvest Inc.,EXI,EXI,,483,exi
 978e1bc5-401f-4af2-a8a5-bfbbef62c818,Export Development Canada,Exportation et développement Canada,EDC,EDC,62,179,edc
-c0afabdb-3b37-4d0a-b45c-5a507a895b94,External User,Utilisateur externe,EU,Ue,,,external-externe
+c0afabdb-3b37-4d0a-b45c-5a507a895b94,External User Test,Utilisateur externe essai,EU,Ue,,,external-externe
 215f5df1-c82f-4b31-8899-735916a9c80c,Farm Credit Canada,Financement agricole Canada,FCC,FAC,23,180,fcc-fac
 dfcb28fb-9a1f-48e4-8c3d-a916257ca7cf,Farm Products Council of Canada,Conseil des produits agricoles du Canada,FPCC,CPAC,200,48,fpcc-cpac
 f0942d98-3f6b-4614-b6bc-0a0bf6284cff,Federal Bridge Corporation,Société des ponts fédéraux,FBCL,SPFL,254,181,fbcl-spfl
@@ -157,10 +157,8 @@ bb24ae53-ac26-4ffc-8d69-be6a9c156ca5,Infra H20 LP Partners Inc.,Infra H20 LP Par
 ca986022-e9db-4ed3-b50d-b5282a4cbee8,Infra-PSP Credit Inc.,Infra-PSP Credit Inc.,IPCRED,IPCRED,,499,ipcred
 1447b3cd-fef6-4cfa-907c-af7d8e6e57fc,Infra-PSP ECEF Inc.,Infra-PSP ECEF Inc.,IPE,IPE,,500,ipe
 d667a83a-7e97-4282-b0c0-855a965801ed,Infra-PSP Partners Inc.,Infra-PSP Partners Inc.,IPP,IPP,,501,ipp
-ac76b01b-0569-4067-a427-d1f6183a8746,Infrastructure Canada,Infrastructure Canada,INFC,INFC,278,62,infc
 4ea4dd29-5d51-409e-9358-51aa661e526e,Infra TM Investments Inc.,Infra TM Investments Inc.,ITI,ITI,,502,iti
 06cc519c-e56e-4fc8-8b9c-be0a461e3cd9,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",IC,IC,230,34,ic
-16d0354d-b873-4a50-b39a-8b6fab79034a,Intergovernmental Affairs,Affaires intergouvernementales,IGA,AIG,173,87,iga-aig
 da1fe533-dacd-58b6-b76d-c791afdf90fc,International Development Research Centre,Centre de recherches pour le développement international,IDRC,CRDI,280,196,idrc-crdi
 6a7ae9c6-15dd-4ccd-a2c4-29bbf020e109,International Joint Commission,Commission mixte internationale,IJC,CMI,4658,60,ijc-cmi
 781ee2ff-fa0a-4bac-9192-bf648c6dc92a,Invest in Canada,Investir Au Canada,IIC,IAC,,,iic-iac
@@ -176,7 +174,6 @@ db890cd6-68e6-4765-81b5-0061f904f0b9,Law Commission of Canada,Commission du droi
 1d15328a-acfb-4793-8abd-19d0a287a6ac,Marine Atlantic Inc.,Marine Atlantique S.C.C.,MAI,MAI,238,206,mai
 c3c6f115-462e-40ee-ae9c-1957152f52e5,Military Grievances External Review Committee,Comité externe d'examen des griefs militaires,MGERC,CEEGM,43,42,mgerc-ceegm
 88e53539-2a56-4169-b682-c11df3cb405f,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,MPCC,CPPM,66,23,mpcc-cppm
-99f22e81-b9bf-4812-9fd9-d383b5ca0caa,"Minister of Intergovernmental Affairs, Infrastructure and Communities","Ministre des Affaires intergouvernementales, de l'Infrastructure et des Collectivités",MIGA,MAIG,,,miga-maig
 e3d94b32-1653-52e0-be82-9bbf6d4323db,Montreal Port Authority,Administration portuaire de Montréal,MPA,APM,74,210,mpa-apm
 3c5dda60-94a2-5d89-b3c1-677de8fd5ac2,Nanaimo Port Authority,Administration portuaire de Nanaïmo,NNPA,APN,104,212,nnpa-apn
 9e178073-326d-500a-8b87-f6a282a0b101,National Arts Centre,Centre national des Arts,NAC,CNA,91,213,nac-cna
@@ -197,7 +194,8 @@ ab393e59-2e93-4932-a447-179a784c2553,Natural Sciences and Engineering Research C
 44768e19-b359-4bb4-94bc-2330d1c73be5,Nunavut Planning Commission,Commission d'aménagement du Nunavut,NPC,CAN,,582,npc-can
 6efdd362-c4dc-4563-8450-0a825f87f754,Nunavut Surface Rights Tribunal,Le Tribunal des droits de surface du Nunavut,NSRT,TDSN,,583,nsrt-tdsn
 9b63d08e-8d4c-497b-979a-c11882e6781f,Nunavut Water Board,l'Office des Eaux du Nunavut,NWB,OEN,,584,nwb-oen
-cb8fbbb4-81f7-401f-9ee4-d982bdb91160,Office of the Administrator of the Fund for Railway Accidents Involving Designated Goods,Caisse d'indemnisation pour les accidents ferroviaires impliquant des marchandises désignées,FRAIDG,CIAFIMD,,585,fraidg-ciafimd
+cb8fbbb4-81f7-401f-9ee4-d982bdb91160,Office of the Administrator of the Fund for Railway Accidents Involving Designated Goods; (operating under the name) Ship and Rail Compensation Canada,Bureau de l'administrateur de la Caisse d'indemnisation pour les accidents ferroviaires impliquant des marchandises désignées; (qui mène ses activités sous le nom de) Indemnisation Navire et Rail Canada,FRAIDG,CIAFIMD,,585,fraidg-ciafimd
+ba9e4fcd-845b-41a7-9671-06e836979177,Office of the Administrator of the Ship-source Oil Pollution Fund; (operating under the name) Ship and Rail Compensation Canada,Bureau de l'administrateur de la Caisse d'indemnisation des dommages dus à la pollution par les hydrocarbures causée par les navires; (qui mène ses activités sous le nom de) Indemnisation Navire et Rail Canada,SOPF,CIDP,65656,586,sopf-cidp
 4ddd2fc7-a8ea-4633-841b-248a5f792540,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,OAG,BVG,125,6,oag-bvg
 ef5d59d0-6f93-4b00-a248-db7c103d194b,Office of the Chief Science Advisor of Canada,Bureau du conseiller scientifique en chef du Canada,OCSA,BCSC,12121212,,ocsa-bcsc
 cdcd07c8-6c96-4a4c-81c1-a03616ce28d1,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada,FJA,CMF,140,45,fja-cmf
@@ -205,8 +203,6 @@ cdcd07c8-6c96-4a4c-81c1-a03616ce28d1,Office of the Commissioner for Federal Judi
 e45b1486-67db-431a-96c5-e127df594dba,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,OCOL,CLO,258,21,ocol-clo
 29a15a37-bb1f-5e43-aacc-48781b297fd6,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada,OIC,CI,41,65,oic-ci
 626f5b6f-4bc3-4622-a60c-ea10fdccaa90,Office of the Intelligence Commissioner,Bureau du commissaire au renseignement,OCSEC,BCCST,279,221,ocsec-bccst
-8ae76ce1-ed70-409e-abe5-d71d81b93d70,Office of the Leader of the Government in the House of Commons,Cabinet du Leader du gouvernement à la Chambre des communes,ghl,lgc,,,ghl-lgc
-32b71ddb-e73f-46c9-a816-ff0ca0869e7b,Office of the Minister of Democratic Institutions,Cabinet du Ministre des Institutions démocratiques,MDI,MID,,,mdi-mid
 cf247646-9a5a-43c7-acc9-b2ec890fdbc2,Office of the Prime Minister,Cabinet du premier ministre,PMO,CPM,,,pmo-cpm
 1e85edf7-8d3c-4e68-8b47-d17b5a69bd42,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,OPC,CPVP,226,84,opc-cpvp
 fa99e4f5-bf48-4622-9fc1-722ac1dac79f,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada,PSIC,ISPC,210,63,psic-ispc
@@ -292,7 +288,6 @@ b1686391-549b-4fad-8901-2721def98c1d,Public Servants Disclosure Protection Tribu
 e359fc5e-4894-427a-ac68-013c197f47d7,Public Service Labour Relations Board,Commission des relations de travail dans la fonction publique,PSLRB,CRTFP,102,103,pslrb-crtfp
 39c93b4d-4f69-4f43-a5b6-fff89e8b0df2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,PWGSC,TPSGC,81,114,pwgsc-tpsgc
 1676844b-e41c-49c2-956c-14056ae1df3c,Public Service Staffing Tribunal,Tribunal de la dotation de la fonction publique,PSST,TDFP,266,121,psst-tdfp
-c57b3bb0-24dc-40c5-9475-6768a71765e4,Quebec Lieutenant,Lieutenant du Québec,QL,LQ,,,ql-lq
 00105186-7a84-5fb4-8833-3c9d1d1d898a,Quebec Port Authority,Administration portuaire de Québec,QPA,APQ,60004,235,qpa-apq
 a9977135-d5ba-4dc5-a966-86937891cd95,RCMH-MRCF Inc.,RCMH-MRCF Inc.,RMRCF,RMRCF,,569,rmrcf
 fe709a24-3483-49ef-9a04-8f61d0c2806f,RCMP External Review Committee,Comité externe d'examen de la GRC,ERC,CEE,232,100,erc-cee
@@ -310,11 +305,9 @@ abf1cd5a-0c3b-59a3-aa4f-eeef5f6b977a,Saguenay Port Authority,Administration port
 14d92451-590d-4ae5-9e2e-ad00b903788d,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,SNSICOP,SCPSNR,,359,snsicp-scpssnr
 ed7f55ba-ecda-4599-8358-6d767b54e0cc,Security Intelligence Review Committee,Comité de surveillance des activités de renseignement de sécurité,SIRC,CSARS,109,109,sirc-csars
 a793f17d-6bcd-47dd-97fe-f00835fb4a0d,Shared Services Canada,Services partagés Canada,SSC,SPC,92,53,ssc-spc
-ba9e4fcd-845b-41a7-9671-06e836979177,Ship-source Oil Pollution Fund,Caisse d'indemnisation des dommages dus à la pollution par les hydrocarbures causée par les navires,SOPF,CIDP,65656,586,sopf-cidp
 df295e03-841d-49be-aae6-32bb6ac093fb,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,SSHRC,CRSH,207,110,sshrc-crsh
 901f0621-a2c8-41e9-ac93-a3c1a4fe1fe1,Social Security Tribunal of Canada,Tribunal de la Sécurité Sociale du Canada,SST,TSS,,346,sst-tss
 3604024d-e348-49cb-b758-4b15c04d3e41,Sooke Investments Inc.,Sooke Investments Inc.,SINV,SINV,,565,sinv
-c62b3639-18e6-420d-8c99-ee08339e4c72,Special Representative for the Prairies,Représentant spécial pour les Prairies,SRP,RSP,,,srp-rsp
 0ca4c1a6-f751-438a-b215-000245174a3c,Specific Claims Tribunal,Tribunal des revendications particulières,SCT,TRP,,119,sct-trp
 72f1cd74-bcd8-410f-9c67-d27afdc2ca40,Standards Council of Canada,Conseil canadien des normes,SCC-CCN,SCC-CCN,107,249,scc-ccn
 a0f0fcfc-bc3b-4696-8b6d-e7e411d55bac,Statistics Canada,Statistique Canada,StatCan,StatCan,256,112,statcan

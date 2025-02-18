@@ -42,7 +42,7 @@ final_joined_df = final_joined_df[final_joined_df['Names Match'] == 0]
 
 merge_columns = [
     ('applied_en_df', 'Legal title', ['Legal title', 'Applied title', "Titre d'usage", 'Abbreviation', 'Abreviation']),
-    ('infobase_en_df', 'Legal Title', ['Legal Title', 'OrgID', 'Website'])
+    ('infobase_en_df', 'Legal title', ['Legal title', 'OrgID', 'Website'])
 ]
 for df_name, on_col, columns in merge_columns:
     final_joined_df = final_joined_df.merge(dfs[df_name][columns], left_on='Organization Legal Name English', right_on=on_col, how='left')

@@ -46,7 +46,7 @@
 2266,National Film Board,Office national du film,NFB,ONF,223,39,National Film Board of Canada,nfb-onf,NFB,NFB00,www.onf-nfb.gc.ca,www.onf-nfb.gc.ca
 2267,Parole Board of Canada,Commission des libérations conditionnelles du Canada,PBC,CLCC,227,57,Parole Board of Canada,pbc-clcc,NPB,NPB00,www.canada.ca/en/parole-board.html,www.canada.ca/fr/commission-liberations-conditionnelles.html
 2268,Northern Pipeline Agency Canada,Administration du pipe-line du Nord Canada,NPA,APN,235,66,Northern Pipeline Agency Canada,npa-apn,NPA,,https://northern-pipeline.canada.ca/home,https://pipe-line-nord.canada.ca/accueil
-2269,"Housing, Infrastructure and Communities Canada","Logement, Infrastructures et Collectivités Canada",HICC,LICC,237,142,Office of Infrastructure of Canada,infc,HIC,INF00,,
+2269,"Housing, Infrastructure and Communities Canada","Logement, Infrastructures et Collectivités Canada",HICC,LICC,237,142,Office of Infrastructure of Canada,infc,HIC,INF00,https://housing-infrastructure.canada.ca/,https://housing-infrastructure.canada.ca/
 2270,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,OAG,BVG,238,2,Office of the Auditor General of Canada,oag-bvg,AUD,AUD00,www.oag-bvg.gc.ca,www.oag-bvg.gc.ca
 2271,Elections Canada,Élections Canada,elections,elections,239,15,Office of the Chief Electoral Officer,elections,CEO,CEO00,www.elections.ca,www.elections.ca
 2272,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada,FJA,CMF,240,51,,fja-cmf,FJA,FJA00,www.fja-cmf.gc.ca,www.fja-cmf.gc.ca
@@ -313,7 +313,7 @@
 3624,Canadian Race Relations Foundation,Fondation canadienne des relations raciales,,,92,135,Canadian Race Relations Foundation,,,,www.crr.ca,www.crrf-fcrr.ca/fr
 3625,National Arts Centre Corporation,Société du Centre national des Arts,,,217,135,National Arts Centre,,,,www.nac-cna.ca,www.cna-nac.ca
 3626,National Gallery of Canada,Musée des beaux-arts du Canada,,,224,135,National Gallery of Canada,,,,www.gallery.ca,www.beaux-arts.ca
-3627,Canada Science and Technology Museum,Musée des sciences et de la technologie du Canada,,,226,135,Ingenium   Canada's Museums of Science and Innovation,,,,www.techno-science.ca,www.techno-science.ca
+3627,Canada Science and Technology Museum,Musée des sciences et de la technologie du Canada,,,226,135,Ingenium   Canada's Museums of Science and Innovation,,,,https://ingeniumcanada.org/scitech,https://ingeniumcanada.org/fr/scitech
 3629,Telefilm Canada,Téléfilm Canada,,,315,37,Telefilm Canada,,,,www.telefilm.ca,www.telefilm.ca
 3630,Toronto Organizing Committee for the 2015 Pan American and Parapan American Games,Comité d'organisation des Jeux panaméricains et parapanaméricains de Toronto 2015,,,320,,,,,,,
 3631,Canada Mortgage and Housing Corporation,Société canadienne d'hypothèques et de logement,,,42,91,Canada Mortgage and Housing Corporation,,,,www.cmhc.ca,www.schl.ca
@@ -383,8 +383,8 @@
 3697,Transportation Appeal Tribunal of Canada,Tribunal d'appel des transports du Canada,,,324,,,,,,,
 3698,Vancouver Organizing Committee for the 2010 Olympic and Paralympic Winter Games,Comité d'organisation des Jeux olympiques et paralympiques d'hiver de 2010 à Vancouver,,,331,,,,,,,
 3700,The Halifax 2011 Canada Games Host Society,Société d'accueil des Jeux de 2011 de Halifax,,,317,,,,,,,
-3701,Prince George 2015 Canada Winter Games Host Society,Société hôtesse des Jeux d'hiver du Canada Prince George 2015,,,274,,,,,,www.canadagames2015.ca,www.canadagames2015.ca/fr
+3701,Prince George 2015 Canada Winter Games Host Society,Société hôtesse des Jeux d'hiver du Canada Prince George 2015,,,274,,,,,,,
 3702,2010 Games Operating Trust Society,Société du legs des Jeux de 2010,,,121,,,,,,,
-3703,Canada Water Agency,Agence de l'eau du Canada,CWA,AEC,,,,,,,,
+3703,Canada Water Agency,Agence de l'eau du Canada,CWA,AEC,563,,,,CWA,,https://www.canada.ca/en/canada-water-agency.html,https://www.canada.ca/fr/agence-eau-canada.html
 3704,Treasury Board,Conseil du Trésor,TB,CT,,,,,,,,
 3705,Federal Public Sector Labour Relations and Employment Board,Commission des relations de travail et de l'emploi dans le secteur public fédéral,,,,,,,,,,

@@ -16,7 +16,7 @@
 3438,Association of Canada Lands Surveyors,,,,
 2244,Atlantic Canada Opportunities Agency,acoa-apeca,Atlantic Canada Opportunities Agency,ACO,ACO00
 3654,Atlantic Pilotage Authority Canada,,Atlantic Pilotage Authority Canada,,
-3649,Atomic Energy of Canada Limited,,Atomic Energy of Canada Limited,,
+3649,Atomic Energy of Canada Limited,,Atomic Energy of Canada Limited,AEC,
 3633,Bank of Canada,,Bank of Canada,,
 3552,Bank of Canada Museum,,,,
 3439,Belledune Port Authority,pb,Belledune Port Authority,,
@@ -30,7 +30,7 @@
 2300,Canada Border Services Agency,cbsa-asfc,Canada Border Services Agency,BSF,BSF00
 3601,Canada Centre for Inland Waters,,,,
 3519,Canada Commonwealth Legacy Fund,,,,
-3618,Canada Council for the Arts,,Canada Council for the Arts,,
+3618,Canada Council for the Arts,,Canada Council for the Arts,CCL,
 3634,Canada Deposit Insurance Corporation,,Canada Deposit Insurance Corporation,,
 3635,Canada Development Investment Corporation,,Canada Development Investment Corporation,,
 2257,Canada Economic Development for Quebec Regions,ced-dec,Economic Development Agency of Canada for the Regions of Quebec,FRD,FRD00
@@ -64,24 +64,24 @@
 3619,Canadian Broadcasting Corporation,,Canadian Broadcasting Corporation,,
 2305,Canadian Centre for Occupational Health and Safety,ccohs-cchst,Canadian Centre for Occupational Health and Safety,OCC,OCC00
 3451,Canadian Centre on Substance Use and Addictions,,,,
-3533,Canadian Coast Guard,,,,
+3533,Canadian Coast Guard,,,DFO,
 3639,Canadian Commercial Corporation,,Canadian Commercial Corporation,,
-3534,Canadian Conservation Institute,,,,
+3534,Canadian Conservation Institute,,,PCH,
 3682,Canadian Cultural Property Export Review Board,,,,
-3615,Canadian Dairy Commission,,Canadian Dairy Commission,,
+3615,Canadian Dairy Commission,,Canadian Dairy Commission,CDC,
 3452,Canadian Energy Research Institute,,,,
 2306,Canadian Food Inspection Agency,cfia-acia,Canadian Food Inspection Agency,ICA,ICA00
-3535,Canadian Forces Housing Agency,,,,
+3535,Canadian Forces Housing Agency,,,DND,
 3520,Canadian Foundation for Climate and Atmospheric Sciences,,,,
 3516,Canadian Foundation for Healthcare Improvement (CFHI),,,,
 2246,Canadian Grain Commission,cgc-ccg,Canadian Grain Commission,CGC,CGC00
 2223,Canadian Heritage,pch,Canadian Heritage,PCH,PCH00
-3536,Canadian Heritage Information Network,,,,
+3536,Canadian Heritage Information Network,,,PCH,
 2247,Canadian Human Rights Commission,chrc-ccdp,Canadian Human Rights Commission,HRC,HRC00
 3683,Canadian Human Rights Tribunal,,,,
 3453,Canadian Institute for Health Information (CIHI),,,,
 2307,Canadian Institutes of Health Research,cihr-irsc,Canadian Institutes of Health Research,CRI,CRI00
-3537,Canadian Intellectual Property Office,,,,
+3537,Canadian Intellectual Property Office,,,DUS,
 2248,Canadian Intergovernmental Conference Secretariat,cics-scic,,CIC,CIC00
 3684,Canadian International Development Agency,,,,
 3521,Canadian International Grains Institute,,,,
@@ -95,7 +95,7 @@
 3623,Canadian Museum of Nature,,Canadian Museum of Nature,,
 2249,Canadian Northern Economic Development Agency,cannor,Canadian Northern Economic Development Agency,NED,NED00
 2308,Canadian Nuclear Safety Commission,cnsc-ccsn,Canadian Nuclear Safety Commission,CSN,CSN00
-3538,Canadian Pari-Mutuel Agency,,,,
+3538,Canadian Pari-Mutuel Agency,,,AGR,
 3455,Canadian Partnership Against Cancer Corporation (CPAC),,,,
 3456,Canadian Patient Safety Institute (CPSI),,,,
 3624,Canadian Race Relations Foundation,,Canadian Race Relations Foundation,,
@@ -115,24 +115,24 @@
 3459,Coaching Association of Canada,,,,
 3420,Commissioner of Canada Election,occe-bcef,,OCE,
 3417,Communication Canada,,,CIO,
-3562,Communications Research Centre Canada,,,,
+3562,Communications Research Centre Canada,,,DUS,
 2253,Communications Security Establishment Canada,csec-cstc,Communication Security Establishment,CSE,CSE00
-3563,Competition Bureau Canada,,,,
+3563,Competition Bureau Canada,,,DUS,
 3564,Competition Tribunal,ct-tc,,,
-3545,Consulting and Audit Canada Revolving Fund,,,,
+3545,Consulting and Audit Canada Revolving Fund,,,SVC,
 2254,Copyright Board Canada,cb-cda,Copyright Board Canada,COP,COP00
-3539,CORCAN,,,,
+3539,CORCAN,,,PEN,
 3667,Corporation for the Mitigation of Mackenzie Gas Project Impacts,,,,
 2255,Correctional Service Canada,csc-scc,Correctional Service of Canada,PEN,PEN00
 3565,Court Martial Appeal Court of Canada,,,,
 2256,Courts Administration Service,cas-satj,,CAJ,CAJ00
 2230,Crown-Indigenous Relations and Northern Affairs Canada,aandc-aadnc,Crown-Indigenous Relations and Northern Affairs Canada,IAN,IAN00
-3652,Defence Construction Canada,,Defence Construction Canada,,
-3540,Defence Research and Development Canada,drdc-rddc,,,
+3652,Defence Construction Canada,,Defence Construction Canada,DCL,
+3540,Defence Research and Development Canada,drdc-rddc,,DND,
 3566,Democratic Institutions,,,,
 2225,Department of Finance Canada,fin,Department of Finance Canada,FIN,FIN00
 2232,Department of Justice Canada,jus,Department of Justice Canada,JUS,JUS00
-3647,Destination Canada,,Destination Canada,,
+3647,Destination Canada,,Destination Canada,TRC,
 3422,Director of Soldier Settlement,,,SST,
 3461,Edmonton Regional Airports Authority,,,,
 2271,Elections Canada,elections,Office of the Chief Electoral Officer,CEO,CEO00
@@ -145,7 +145,7 @@
 3603,Environmental Protection Tribunal of Canada,,,,
 3402,European Bank for Reconstruction and Development,,,,
 3640,Export Development Canada,,Export Development Canada,,
-3616,Farm Credit Canada,,Farm Credit Canada,,
+3616,Farm Credit Canada,,Farm Credit Canada,FCC,
 2265,Farm Products Council of Canada,fpcc-cpac,Farm Products Council of Canada,FPN,
 3661,Federal Bridge Corporation,,Federal Bridge Corporation Limited,,
 3569,Federal Court of Appeal,,,,
@@ -163,8 +163,8 @@
 3638,Freshwater Fish Marketing Corporation,,Freshwater Fish Marketing Corporation,,
 3463,Gander International Airport Authority Inc.,,,,
 3604,Geographical Names Board of Canada,,,,
-3605,Geological Survey of Canada,,,,
-3606,Geomatics Canada,,,,
+3605,Geological Survey of Canada,,,RSN,
+3606,Geomatics Canada,,,RSN,
 2227,Global Affairs Canada,dfatd-maecd,Global Affairs Canada,EXT,EXT00
 3670,Grain Appeal Tribunal,,,,
 3656,Great Lakes Pilotage Authority Canada,,Great Lakes Pilotage Authority,,
@@ -188,7 +188,7 @@
 3607,Indian Residential Schools Resolution Canada,,,,
 3672,Indian Residential Schools Truth and Reconciliation Commission,,,,
 2243,Indigenous Services Canada,isc-sac,Indigenous Services Canada,DIS,DIS00
-3546,Industrial Technologies Office,,,,
+3546,Industrial Technologies Office,,,DUS,
 2269,"Housing, Infrastructure and Communities Canada",infc,Office of Infrastructure of Canada,HIC,INF00
 2231,"Innovation, Science and Economic Development Canada",ic,Innovation Science and Economic Development Canada,DUS,DUS00
 3470,Institut national du sport du Québec,,,,
@@ -221,7 +221,7 @@
 3578,Management Advisory Board for the RCMP,,,,
 3658,Marine Atlantic Inc.,,Marine Atlantic Inc,,
 3474,Maritime Forestry Complex Corporation,,,,
-3542,Measurement Canada,,,,
+3542,Measurement Canada,,,DUS,
 3475,Mental Health Commission of Canada (MHCC),,,,
 3674,Merchant Seamen Compensation Board Canada,,,,
 3476,Milit-Air Inc.,,,,
@@ -231,8 +231,8 @@
 3411,Multilateral Investment Guarantee Agency,,,,
 3478,Nanaimo Port Authority,nnpa-apn,Nanaimo Port Authority,,
 3608,National Advisory Council on Aging,,,,
-3625,National Arts Centre Corporation,,National Arts Centre,,
-3653,National Capital Commission,,National Capital Commission,,
+3625,National Arts Centre Corporation,,National Arts Centre,NAC,
+3653,National Capital Commission,,National Capital Commission,NCC,
 3609,National Council of Welfare,,,,
 2233,National Defence,dnd-mdn,National Defence,DND,DND00
 2266,National Film Board,nfb-onf,National Film Board of Canada,NFB,NFB00
@@ -260,17 +260,17 @@
 3571,Office of the Federal Ombudsperson for Victims Of Crime,,,,
 2281,Office of the Information Commissioner,oic-ci,Office of the Information Commissioner of Canada,IPC,IPC00
 2275,Office of the Intelligence Commissioner,ocsec-bccst,Office of the Intelligence Commissioner of Canada,OLC,OLC00
-3583,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,ndcfo-odnfc,Office of the Ombudsman for the Department of National Defence and the Canadian Forces,,
+3583,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,ndcfo-odnfc,Office of the Ombudsman for the Department of National Defence and the Canadian Forces,DND,
 3433,Office of the Parliamentary Budget Officer,,,PBO,
 2282,Office of the Privacy Commissioner of Canada,opc-cpvp,Office of the Privacy Commissioner of Canada,OPC,IPC00
-3585,Office of the Procurement Ombudsman,,,,
+3585,Office of the Procurement Ombudsman,,,SVC,
 2279,Office of the Public Sector Integrity Commissioner of Canada,psic-ispc,Office of the Public Sector Integrity Commissioner of Canada,INT,INT00
 2278,Office of the Secretary to the Governor General,osgg-bsgg,,GGS,GGS00
 3418,Office of the Superintendent of Bankruptcy Canada,,,OSB,
 2280,Office of the Superintendent of Financial Institutions Canada,osfi-bsif,Office of the Superintendent of Financial Institutions Canada,SIF,SIF00
 3594,Office of the Taxpayers' Ombudsperson,oto-boc,,,
 3688,Office of the Umpire,,,,
-3595,Office of the Veterans' Ombudsman,ovo-bov,,,
+3595,Office of the Veterans' Ombudsman,ovo-bov,,DVA,
 3689,Old Port of Montreal Corporation Inc.,,Old Port of Montreal,,
 3481,Oshawa Port Authority,opa-apd,,,
 3482,Ottawa International Airport Authority,,,,
@@ -282,14 +282,14 @@
 3584,Parliament of Canada,,,,
 3434,Parliamentary Protective Service,,,PPS,
 2267,Parole Board of Canada,pbc-clcc,Parole Board of Canada,NPB,NPB00
-3547,Passport Canada,pptc,,,
+3547,Passport Canada,pptc,,IMC,
 2283,Patented Medicine Prices Review Board Canada,pmprb-cepmb,Patented Medicine Prices Review Board,PXR,PXR00
 3548,Payroll System General Ledger,,,,
 3691,Pension Appeals Board,,,,
-3543,Physical Resources Bureau,,,,
+3543,Physical Resources Bureau,,,EXT,
 3484,"Pierre Elliott Trudeau Foundation, The",petf-fpet,Pierre Eliott Trudeau Foundation,,
 2318,Polar Knowledge Canada,polar-polaire,Polar Knowledge Canada,CHR,CHR00
-3612,Policy Horizons Canada,,,,
+3612,Policy Horizons Canada,,,CSD,
 3485,Porcupine Caribou Management Board,,,,
 3486,Port Alberni Port Authority,papa-appa,Port Alberni Port Authority,,
 3645,PPP Canada Inc.,,,,
@@ -310,7 +310,7 @@
 2286,Public Service Commission of Canada,psc-cfp,Public Service Commission of Canada,PSC,PSC00
 3692,Public Service Labour Relations and Employment Board,,,,
 3693,Public Service Staffing Tribunal,,,,
-3549,Public Service Superannuation,,,,
+3549,Public Service Superannuation,,,SVC,
 2236,Public Services and Procurement Canada,pwgsc-tpsgc,Public Services and Procurement Canada,SVC,SVC00
 3490,Québec Port Authority,qpa-apq,Quebec Port Authority,,
 2289,RCMP External Review Committee,erc-cee,Royal Canadian Mounted Police External Review Committee,REC,
@@ -334,7 +334,7 @@
 3432,Senate,,,SEN,
 3431,Senate Ethics Officer,,,ESN,
 3497,Sept-Îles Port Authority,psi,Sept-Îles Port Authority,,
-3591,Service Canada,,,,
+3591,Service Canada,,,CSD,
 2292,Shared Services Canada,ssc-spc,Shared Services Canada,GSS,GSS00
 3613,Ship-source Oil Pollution Fund,sopf-cidp,,,
 2316,Social Sciences and Humanities Research Council of Canada,sshrc-crsh,Social Sciences and Humanities Research Council,SSH,SSH00
@@ -361,7 +361,7 @@
 3504,Thunder Bay Port Authority,tbpa-aptb,Thunder Bay Port Authority,,
 3630,Toronto Organizing Committee for the 2015 Pan American and Parapan American Games,,,,
 3506,Toronto Port Authority,tpa-apt,Toronto Port Authority,,
-3544,Translation Bureau,,,,
+3544,Translation Bureau,,,SVC,
 2238,Transport Canada,tc,Transport Canada,MOT,MOT00
 3697,Transportation Appeal Tribunal of Canada,,,,
 2309,Transportation Safety Board of Canada,tsb-bst,Transportation Safety Board of Canada,TSB,TSB00
@@ -386,3 +386,4 @@
 2241,Women and Gender Equality Canada,wage,Women and Gender Equality Canada,CSW,CSW00
 3413,World Anti-Doping Agency,,,,
 3703,Canada Water Agency,,,CWA,
+,Treasury Board,,,TBD,

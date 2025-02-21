@@ -90,10 +90,10 @@ print(missing_in_manual_lead_department_portfolio)
 # Create the output text
 output_lines = []
 
-output_lines.append(f"Total unique GC OrgIDs in final_RG_match.csv: {len(final_rg_match_ids)}")
-output_lines.append(f"Total unique GC OrgIDs in Manual org ID link.csv: {len(manual_org_id_link_ids)}")
-output_lines.append(f"Total unique GC OrgIDs in manual pop phoenix.csv: {len(manual_pop_phoenix_ids)}")
-output_lines.append(f"Total unique GC OrgIDs in Manual_leadDepartmentPortfolio.csv: {len(manual_lead_department_portfolio_ids)}")
+output_lines.append(f"Count of GC OrgIDs in final_RG_match.csv: {len(final_rg_match_ids)}")
+output_lines.append(f"Count of GC OrgIDs in Manual org ID link.csv: {len(manual_org_id_link_ids)}")
+output_lines.append(f"Count of GC OrgIDs in manual pop phoenix.csv: {len(manual_pop_phoenix_ids)}")
+output_lines.append(f"Count of GC OrgIDs in Manual_leadDepartmentPortfolio.csv: {len(manual_lead_department_portfolio_ids)}")
 output_lines.append("\n")
 
 output_lines.append("Missing in final_RG_match.csv:")

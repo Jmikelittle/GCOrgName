@@ -1,7 +1,7 @@
-Total unique GC OrgIDs in final_RG_match.csv: 134
-Total unique GC OrgIDs in Manual org ID link.csv: 389
-Total unique GC OrgIDs in manual pop phoenix.csv: 387
-Total unique GC OrgIDs in Manual_leadDepartmentPortfolio.csv: 169
+Count of GC OrgIDs in final_RG_match.csv: 134
+Count of GC OrgIDs in Manual org ID link.csv: 389
+Count of GC OrgIDs in manual pop phoenix.csv: 389
+Count of GC OrgIDs in Manual_leadDepartmentPortfolio.csv: 169
 
 
 Missing in final_RG_match.csv:
@@ -269,8 +269,6 @@ Missing in Manual org ID link.csv:
 
 Missing in manual pop phoenix.csv:
 0
-3704
-3705
 
 
 Missing in Manual_leadDepartmentPortfolio.csv:

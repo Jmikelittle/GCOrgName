@@ -227,23 +227,23 @@
 3528,PrioNet Canada,PrioNet Canada,,,277,,,,,,,
 3531,Last Post Fund,Fonds du Souvenir,,,196,,,,,,,
 3532,"Vanier Institute of the Family, The",L'Institut Vanier de la famille,,,332,,,,,,,
-3533,Canadian Coast Guard,Garde côtière canadienne,,,57,,,,,,https://www.ccg-gcc.gc.ca/index-eng.html,https://www.ccg-gcc.gc.ca/index-fra.html
-3534,Canadian Conservation Institute,Institut canadien de conservation,,,59,,,,,,https://www.canada.ca/en/conservation-institute.html,https://www.canada.ca/fr/institut-conservation.html
-3535,Canadian Forces Housing Agency,Agence de logement des Forces canadiennes,,,67,,,,,,www.canada.ca/en/government/publicservice/benefitsmilitary/military-housing.html,www.canada.ca/fr/gouvernement/fonctionpublique/avantagesmilitaires/logements-militaires.html
-3536,Canadian Heritage Information Network,Réseau canadien d'information sur le patrimoine,,,70,,,,,,https://www.canada.ca/en/heritage-information-network.html,https://www.canada.ca/fr/reseau-information-patrimoine.html
-3537,Canadian Intellectual Property Office,Office de la propriété intellectuelle du Canada,,,75,,,,,,www.cipo.gc.ca,www.opic.gc.ca
-3538,Canadian Pari-Mutuel Agency,Agence canadienne du pari mutuel,,,88,,,,,,www.cpma-acpm.agr.gc.ca,www.cpma-acpm.agr.gc.ca
-3539,CORCAN,CORCAN,,,115,,,,,,,
-3540,Defence Research and Development Canada,Recherche et développement pour la Défense Canada,,,120,,,drdc-rddc,,,www.drdc-rddc.gc.ca/en/,www.drdc-rddc.gc.ca/fr/
+3533,Canadian Coast Guard,Garde côtière canadienne,,,57,,,,DFO,,https://www.ccg-gcc.gc.ca/index-eng.html,https://www.ccg-gcc.gc.ca/index-fra.html
+3534,Canadian Conservation Institute,Institut canadien de conservation,,,59,,,,PCH,,https://www.canada.ca/en/conservation-institute.html,https://www.canada.ca/fr/institut-conservation.html
+3535,Canadian Forces Housing Agency,Agence de logement des Forces canadiennes,,,67,,,,DND,,www.canada.ca/en/government/publicservice/benefitsmilitary/military-housing.html,www.canada.ca/fr/gouvernement/fonctionpublique/avantagesmilitaires/logements-militaires.html
+3536,Canadian Heritage Information Network,Réseau canadien d'information sur le patrimoine,,,70,,,,PCH,,https://www.canada.ca/en/heritage-information-network.html,https://www.canada.ca/fr/reseau-information-patrimoine.html
+3537,Canadian Intellectual Property Office,Office de la propriété intellectuelle du Canada,,,75,,,,DUS,,www.cipo.gc.ca,www.opic.gc.ca
+3538,Canadian Pari-Mutuel Agency,Agence canadienne du pari mutuel,,,88,,,,AGR,,www.cpma-acpm.agr.gc.ca,www.cpma-acpm.agr.gc.ca
+3539,CORCAN,CORCAN,,,115,,,,PEN,,,
+3540,Defence Research and Development Canada,Recherche et développement pour la Défense Canada,,,120,,,drdc-rddc,DND,,www.drdc-rddc.gc.ca/en/,www.drdc-rddc.gc.ca/fr/
 3541,Indian Oil and Gas Canada,Pétrole et gaz des Indiens du Canada,,,175,,,,IOG,,www.pgic-iogc.gc.ca/eng/1100110010002,www.pgic-iogc.gc.ca/fra/1100110010002/1100110010005
-3542,Measurement Canada,Mesures Canada,,,204,,,,,,www.ic.gc.ca/eic/site/mc-mc.nsf/eng/home,www.ic.gc.ca/eic/site/mc-mc.nsf/fra/accueil
-3543,Physical Resources Bureau,Direction générale des biens,,,268,,,,,,www.international.gc.ca/international/index.aspx?lang=eng&view=d,www.international.gc.ca/international/index.aspx?lang=fra&view=d
-3544,Translation Bureau,Bureau de la traduction,,,323,,,,,,www.tpsgc-pwgsc.gc.ca/bt-tb/index-eng.html,www.tpsgc-pwgsc.gc.ca/bt-tb/index-fra.html
-3545,Consulting and Audit Canada Revolving Fund,Fonds renouvelable de Conseils et Vérification Canada,,,112,,,,,,,
-3546,Industrial Technologies Office,Office des technologies industrielles,,,179,,,,,,,
-3547,Passport Canada,Passeport Canada,,,264,,,pptc,,,,
+3542,Measurement Canada,Mesures Canada,,,204,,,,DUS,,www.ic.gc.ca/eic/site/mc-mc.nsf/eng/home,www.ic.gc.ca/eic/site/mc-mc.nsf/fra/accueil
+3543,Physical Resources Bureau,Direction générale des biens,,,268,,,,EXT,,www.international.gc.ca/international/index.aspx?lang=eng&view=d,www.international.gc.ca/international/index.aspx?lang=fra&view=d
+3544,Translation Bureau,Bureau de la traduction,,,323,,,,SVC,,www.tpsgc-pwgsc.gc.ca/bt-tb/index-eng.html,www.tpsgc-pwgsc.gc.ca/bt-tb/index-fra.html
+3545,Consulting and Audit Canada Revolving Fund,Fonds renouvelable de Conseils et Vérification Canada,,,112,,,,SVC,,,
+3546,Industrial Technologies Office,Office des technologies industrielles,,,179,,,,DUS,,,
+3547,Passport Canada,Passeport Canada,,,264,,,pptc,IMC,,,
 3548,Payroll System General Ledger,Grand livre général du système de la paye,,,,79,,,,,,
-3549,Public Service Superannuation,Pension de retraite de la fonction publique,,,,87,,,,,,
+3549,Public Service Superannuation,Pension de retraite de la fonction publique,,,,87,,,SVC,,,
 3552,Bank of Canada Museum,Musée de la Banque du Canada,,,,,,,,,,
 3553,Canada Agriculture and Food Museum,Musée de l'agriculture et de l'alimentation du Canada,,,,,,,,,,
 3554,Canada Aviation and Space Museum,Musée de l'aviation et de l'espace du Canada,,,,,,,,,,
@@ -254,8 +254,8 @@
 3559,Canadian Special Operations Forces Command,Commandement des Forces d'opérations spéciales du Canada,,,,,,,,,,
 3560,Canadian Trade Commissioner Service,Service des délégués commerciaux du Canada,,,,,,,,,,
 3561,Canadian War Museum,Musée canadien de la guerre,,,,,Canadian Museum of History and the Canadian War Museum,,,,,
-3562,Communications Research Centre Canada,Centre de recherches sur les communications Canada,,,,,,,,,,
-3563,Competition Bureau Canada,Bureau de la concurrence Canada,,,,,,,,,,
+3562,Communications Research Centre Canada,Centre de recherches sur les communications Canada,,,,,,,DUS,,,
+3563,Competition Bureau Canada,Bureau de la concurrence Canada,,,,,,,DUS,,,
 3564,Competition Tribunal,Tribunal de la concurrence,,,,,,ct-tc,,,,
 3565,Court Martial Appeal Court of Canada,Cour d'appel de la cour martiale du Canada,,,,,,,,,,
 3566,Democratic Institutions,Institutions démocratiques,,,,,,,,,,
@@ -273,19 +273,19 @@
 3580,National Seniors Council,Conseil national des aînés,,,,,,,,,,
 3581,Occupational Health and Safety Tribunal Canada,Tribunal de santé et sécurité au travail Canada,,,,,,,,,,
 3582,Office of the Chief Military Judge,Le cabinet du juge militaire en chef,,,,,,,,,,
-3583,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,Bureau de l'ombudsman de la Défense nationale et des Forces armées canadiennes,,,,,Office of the Ombudsman for the Department of National Defence and the Canadian Forces,ndcfo-odnfc,,,,
+3583,Office of the Ombudsman for the Department of National Defence and the Canadian Armed Forces,Bureau de l'ombudsman de la Défense nationale et des Forces armées canadiennes,,,,,Office of the Ombudsman for the Department of National Defence and the Canadian Forces,ndcfo-odnfc,DND,,,
 3584,Parliament of Canada,Parlement du Canada,,,,,,,,,,
-3585,Office of the Procurement Ombudsman,Bureau de l'ombudsman de l'approvisionnement,,,,,,,,,,
+3585,Office of the Procurement Ombudsman,Bureau de l'ombudsman de l'approvisionnement,,,,,,,SVC,,,
 3586,Prime Minister of Canada,Premier ministre du Canada,,,,,,,,,,
 3587,Public Servants Disclosure Protection Tribunal Canada,Tribunal de la protection des fonctionnaires divulgateurs Canada,,,,,,psdpt-tpfd,,,,
 3588,Royal Canadian Air Force,Aviation royale canadienne,,,,,,,,,,
 3589,Royal Canadian Navy,Marine royale canadienne,,,,,,,,,,
 3590,Royal Military College of Canada,Collège militaire royal du Canada,,,,,,,,,,
-3591,Service Canada,Service Canada,,,,,,,,,,
+3591,Service Canada,Service Canada,,,,,,,CSD,,,
 3592,Supreme Court of Canada,Cour suprême du Canada,,,,,,,,,,
 3593,Tax Court of Canada,Cour canadienne de l'impôt,,,,,,,,,,
 3594,Office of the Taxpayers' Ombudsperson,Bureau de l'ombudsman des contribuables,,,,,,oto-boc,,,,
-3595,Office of the Veterans' Ombudsman,Bureau de l'ombud des vétérans,,,,,,ovo-bov,,,,
+3595,Office of the Veterans' Ombudsman,Bureau de l'ombud des vétérans,,,,,,ovo-bov,DVA,,,
 3596,Virtual Museum of Canada,Musée virtuel du Canada,,,,,,,,,,
 3599,Aboriginal Business Canada,Entreprise autochtone Canada,,,,,,,,,,
 3600,"Appeal Board, Hazardous Materials Information Review Act","Commission d'appel, Loi sur le contrôle des renseignements relatifs aux matières dangereuses",,,,,,,,,,
@@ -293,25 +293,25 @@
 3602,Canadian Museum of Contemporary Photography,Musée canadien de la photographie contemporaine,,,,,,,,,,
 3603,Environmental Protection Tribunal of Canada,Tribunal de la protection de I'environnement du Canada,,,,,,,,,,
 3604,Geographical Names Board of Canada,La Commission de toponymie du Canada,,,,,,,,,,
-3605,Geological Survey of Canada,Commission géologique du Canada,,,,,,,,,,
-3606,Geomatics Canada,Géomatique Canada,,,,,,,,,,
+3605,Geological Survey of Canada,Commission géologique du Canada,,,,,,,RSN,,,
+3606,Geomatics Canada,Géomatique Canada,,,,,,,RSN,,,
 3607,Indian Residential Schools Resolution Canada,Résolution des questions des pensionnats indiens Canada,,,,,,,,,,
 3608,National Advisory Council on Aging,Conseil consultatif national sur le troisième âge,,,,,,,,,,
 3609,National Advisory Council on Poverty,Conseil national du Bien-être,,,,,,,,,,
 3611,Office of the Chief Science Advisor of Canada,Bureau du conseiller scientifique en chef du Canada,,,,,,ocsa-bcsc,,,,
-3612,Policy Horizons Canada,Horizons de politiques Canada,,,,,,,,,,
+3612,Policy Horizons Canada,Horizons de politiques Canada,,,,,,,CSD,,,
 3613,Ship-source Oil Pollution Fund,Caisse d'indemnisation des dommages dus à la pollution par les hydrocarbures causée par les navires,,,,,,sopf-cidp,,,,
 3614,Statute Revision Commission Canada,Commission de révision des lois Canada,,,,,,,,,,
-3615,Canadian Dairy Commission,Commission canadienne du lait,,,61,134,Canadian Dairy Commission,,,,www.cdc-ccl.gc.ca,www.cdc-ccl.gc.ca
-3616,Farm Credit Canada,Financement agricole Canada,,,147,,Farm Credit Canada,,,,www.fcc-fac.ca,www.fcc-fac.ca
-3618,Canada Council for the Arts,Conseil des Arts du Canada,,,29,135,Canada Council for the Arts,,,,www.canadacouncil.ca,www.conseildesarts.ca
+3615,Canadian Dairy Commission,Commission canadienne du lait,,,61,134,Canadian Dairy Commission,,CDC,,www.cdc-ccl.gc.ca,www.cdc-ccl.gc.ca
+3616,Farm Credit Canada,Financement agricole Canada,,,147,,Farm Credit Canada,,FCC,,www.fcc-fac.ca,www.fcc-fac.ca
+3618,Canada Council for the Arts,Conseil des Arts du Canada,,,29,135,Canada Council for the Arts,,CCL,,www.canadacouncil.ca,www.conseildesarts.ca
 3619,Canadian Broadcasting Corporation,Société Radio-Canada,,,53,135,Canadian Broadcasting Corporation,,,,www.cbc.radio-canada.ca,www.cbc.radio-canada.ca
 3620,Canadian Museum for Human Rights,Musée canadien pour les droits de la personne,,,81,135,Canadian Museum for Human Rights,,,,www.humanrights.ca,www.droitsdelapersonne.ca
 3621,Canadian Museum of History,Musée canadien de l'histoire,,,82,135,,,,,www.historymuseum.ca,www.museedelhistoire.ca
 3622,Canadian Museum of Immigration at Pier 21,Musée canadien de l'immigration du Quai 21,,,84,135,Canadian Museum of Immigration at Pier 21,,,,www.pier21.ca,www.quai21.ca
 3623,Canadian Museum of Nature,Musée canadien de la nature,,,85,135,Canadian Museum of Nature,,,,www.nature.ca,www.nature.ca
 3624,Canadian Race Relations Foundation,Fondation canadienne des relations raciales,,,92,135,Canadian Race Relations Foundation,,,,www.crr.ca,www.crrf-fcrr.ca/fr
-3625,National Arts Centre Corporation,Société du Centre national des Arts,,,217,135,National Arts Centre,,,,www.nac-cna.ca,www.cna-nac.ca
+3625,National Arts Centre Corporation,Société du Centre national des Arts,,,217,135,National Arts Centre,,NAC,,www.nac-cna.ca,www.cna-nac.ca
 3626,National Gallery of Canada,Musée des beaux-arts du Canada,,,224,135,National Gallery of Canada,,,,www.gallery.ca,www.beaux-arts.ca
 3627,Canada Science and Technology Museum,Musée des sciences et de la technologie du Canada,,,226,135,Ingenium   Canada's Museums of Science and Innovation,,,,https://ingeniumcanada.org/scitech,https://ingeniumcanada.org/fr/scitech
 3629,Telefilm Canada,Téléfilm Canada,,,315,37,Telefilm Canada,,,,www.telefilm.ca,www.telefilm.ca
@@ -332,13 +332,13 @@
 3644,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit,,,339,142,Windsor-Detroit Bridge Authority,,,,https://www.gordiehoweinternationalbridge.com/en,https://www.gordiehoweinternationalbridge.com/fr
 3645,PPP Canada Inc.,PPP Canada Inc.,,,272,,,,,,www.p3canada.ca,www.p3canada.ca
 3646,Business Development Bank of Canada,Banque de développement du Canada,,,20,,Business Development Bank of Canada,,,,www.bdc.ca,www.bdc.ca
-3647,Destination Canada,Destination Canada,,,97,33,Destination Canada,,,,en-corporate.canada.travel,fr-corporate.canada.travel
+3647,Destination Canada,Destination Canada,,,97,33,Destination Canada,,TRC,,en-corporate.canada.travel,fr-corporate.canada.travel
 3648,Standards Council of Canada,Conseil canadien des normes,,,312,33,Standards Council of Canada,,,,www.scc.ca,www.ccn.ca
-3649,Atomic Energy of Canada Limited,Énergie atomique du Canada limitée,,,14,41,Atomic Energy of Canada Limited,,,,www.aecl.ca,www.aecl.ca
+3649,Atomic Energy of Canada Limited,Énergie atomique du Canada limitée,,,14,41,Atomic Energy of Canada Limited,,AEC,,www.aecl.ca,www.aecl.ca
 3650,Canada Lands Company Limited,Société immobilière du Canada limitée,,,40,,Canada Lands Company Limited,,,,www.clc.ca,www.clc.ca
 3651,Canada Post,Postes Canada,,,44,127,Canada Post Corporation,,,,www.canadapost.ca,www.postescanada.ca
-3652,Defence Construction Canada,Construction de Défense Canada,,,119,,Defence Construction Canada,,,,https://www.dcc-cdc.gc.ca/,https://www.cdc-dcc.gc.ca/
-3653,National Capital Commission,Commission de la capitale nationale,,,219,127,National Capital Commission,,,,www.ncc-ccn.gc.ca,www.ccn-ncc.gc.ca
+3652,Defence Construction Canada,Construction de Défense Canada,,,119,,Defence Construction Canada,,DCL,,https://www.dcc-cdc.gc.ca/,https://www.cdc-dcc.gc.ca/
+3653,National Capital Commission,Commission de la capitale nationale,,,219,127,National Capital Commission,,NCC,,www.ncc-ccn.gc.ca,www.ccn-ncc.gc.ca
 3654,Atlantic Pilotage Authority Canada,Administration de pilotage de l'Atlantique Canada,,,13,,Atlantic Pilotage Authority Canada,,,,www.atlanticpilotage.com,www.atlanticpilotage.com
 3655,Canadian Air Transport Security Authority,Administration canadienne de la sûreté du transport aérien,,,51,34,Canadian Air Transport Security Authority,,,,www.catsa.gc.ca,www.acsta.gc.ca
 3656,Great Lakes Pilotage Authority Canada,Administration de pilotage des Grands Lacs Canada,,,163,,Great Lakes Pilotage Authority,,,,www.glpa-apgl.com,www.glpa-apgl.com
@@ -386,5 +386,5 @@
 3701,Prince George 2015 Canada Winter Games Host Society,Société hôtesse des Jeux d'hiver du Canada Prince George 2015,,,274,,,,,,,
 3702,2010 Games Operating Trust Society,Société du legs des Jeux de 2010,,,121,,,,,,,
 3703,Canada Water Agency,Agence de l'eau du Canada,CWA,AEC,563,,,,CWA,,https://www.canada.ca/en/canada-water-agency.html,https://www.canada.ca/fr/agence-eau-canada.html
-3704,Treasury Board,Conseil du Trésor,TB,CT,,,,,,,,
+3704,Treasury Board,Conseil du Trésor,TB,CT,,,,,TBD,,,
 3705,Federal Public Sector Labour Relations and Employment Board,Commission des relations de travail et de l'emploi dans le secteur public fédéral,,,,,,,,,,

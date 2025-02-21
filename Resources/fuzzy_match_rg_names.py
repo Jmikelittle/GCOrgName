@@ -53,11 +53,11 @@ rg_duplicates_match_df = pd.DataFrame({
 })
 
 # Merge the matched names with the manual organization names to get GC OrgID
-final_df = match_df.merge(manual_org_df[['Organization Legal Name English', 'GC OrgID']], 
+final_df = match_df.merge(manual_org_df[['Organization Legal Name English', 'gc_orgID']], 
                           left_on='MatchedName', right_on='Organization Legal Name English', how='left')
 
 # Merge the rg_duplicates_match_df with the manual organization names to get GC OrgID
-rg_duplicates_final_df = rg_duplicates_match_df.merge(manual_org_df[['Organization Legal Name English', 'GC OrgID']], 
+rg_duplicates_final_df = rg_duplicates_match_df.merge(manual_org_df[['Organization Legal Name English', 'gc_orgID']], 
                                                       left_on='MatchedName', right_on='Organization Legal Name English', how='left')
 
 # Ensure 'rgnumber' values do not have decimals
@@ -74,7 +74,7 @@ final_df = final_df.drop_duplicates(subset=['MatchedName'])
 final_df['rgnumber'] = final_df['rgnumber'].fillna(final_df['RG DeptNo']).astype(int)
 
 # Reorder columns to ensure 'rgnumber' is the second field
-final_df = final_df[['RGOriginalName', 'rgnumber', 'MatchedName', 'MatchScore', 'GC OrgID']]
+final_df = final_df[['RGOriginalName', 'rgnumber', 'MatchedName', 'MatchScore', 'gc_orgID']]
 
 # Save the result to a new CSV file
 final_df.to_csv(matched_file, index=False, encoding='utf-8-sig')

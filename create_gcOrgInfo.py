@@ -75,18 +75,18 @@ final_joined_df = pd.merge(
 )
 
 # Pull in new values for harmonized_name and nom_harmonisé from create_harmonized_name.csv
-harmonized_names_df = harmonized_names_df[['GC OrgID', 'harmonized_name', 'nom_harmonisé']]
-final_joined_df = final_joined_df.merge(harmonized_names_df, on='GC OrgID', how='left')
+harmonized_names_df = harmonized_names_df[['gc_orgID', 'harmonized_name', 'nom_harmonisé']]
+final_joined_df = final_joined_df.merge(harmonized_names_df, on='gc_orgID', how='left')
 
 # Set the field 'GC OrgID' so that there are no decimals
-final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]
+final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str).str.split('.').str[0]
 
 # Rename 'GC OrgID' to 'gc_orgID'
 final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID'})
 
 # Convert gc_orgID to string to match the data type of GC OrgID in manual_lead_department_df
 final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str)
-manual_lead_department_df['GC OrgID'] = manual_lead_department_df['GC OrgID'].astype(str)
+manual_lead_department_df['gc_orgID'] = manual_lead_department_df['GC OrgID'].astype(str)
 
 # Rename 'Status' to 'status_statut' and set value to 'a' if empty
 final_joined_df = final_joined_df.rename(columns={'Status': 'status_statut'})
@@ -123,9 +123,9 @@ final_joined_df = final_joined_df.rename(columns={
 # Perform a simple merge to update lead_department and ministère_responsable
 final_joined_df = pd.merge(
     final_joined_df, 
-    manual_lead_department_df[['GC OrgID', 'Parent GC OrgID', 'lead department', 'ministère responsable']], 
+    manual_lead_department_df[['gc_orgID', 'Parent GC OrgID', 'lead department', 'ministère responsable']], 
     left_on='gc_orgID', 
-    right_on='GC OrgID', 
+    right_on='gc_orgID', 
     how='left'
 )
 

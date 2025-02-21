@@ -19,17 +19,17 @@ def main():
         manual_org_id_link_df = pd.read_csv(manual_org_id_link_file)
         manual_pop_phoenix_df = pd.read_csv(manual_pop_phoenix_file)
         manual_lead_department_portfolio_df = pd.read_csv(manual_lead_department_portfolio_file)
-    except (FileNotFoundError, pd.errors.EmptyDataError) as e:
+    except (FileNotFoundError, pd.errors.EmptyDataError):
         exit(1)
 
     # Extract the 'GC OrgID' columns
     try:
-        final_rg_match_ids = set(final_rg_match_df['GC OrgID'].dropna().astype(int))
-        manual_org_id_link_ids = set(manual_org_id_link_df['GC OrgID'].dropna().astype(int))
+        final_rg_match_ids = set(final_rg_match_df['gc_orgID'].dropna().astype(int))
+        manual_org_id_link_ids = set(manual_org_id_link_df['gc_orgID'].dropna().astype(int))
         manual_pop_phoenix_ids = set(manual_pop_phoenix_df['gc_orgID'].dropna().astype(int))
         manual_lead_department_portfolio_ids = set(
-            manual_lead_department_portfolio_df['GC OrgID'].dropna().astype(int))
-    except KeyError as e:
+            manual_lead_department_portfolio_df['gc_orgID'].dropna().astype(int))
+    except KeyError:
         exit(1)
 
     # Find missing IDs
@@ -42,7 +42,7 @@ def main():
             manual_org_id_link_ids, manual_lead_department_portfolio_ids) - manual_pop_phoenix_ids
         missing_in_manual_lead_department_portfolio = final_rg_match_ids.union(
             manual_org_id_link_ids, manual_pop_phoenix_ids) - manual_lead_department_portfolio_ids
-    except TypeError as e:
+    except TypeError:
         exit(1)
 
     # Create the output text

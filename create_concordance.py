@@ -48,11 +48,11 @@ for df_name, on_col, columns in merge_columns:
     final_joined_df = final_joined_df.merge(dfs[df_name][columns], left_on='Organization Legal Name English', right_on=on_col, how='left')
 
 # Pull in new values for harmonized_name and nom_harmonisé from create_harmonized_name.csv
-harmonized_names_df = dfs['harmonized_names_df'][['GC OrgID', 'harmonized_name', 'nom_harmonisé']]
-final_joined_df = final_joined_df.merge(harmonized_names_df, on='GC OrgID', how='left')
+harmonized_names_df = dfs['harmonized_names_df'][['gc_orgID', 'harmonized_name', 'nom_harmonisé']]
+final_joined_df = final_joined_df.merge(harmonized_names_df, on='gc_orgID', how='left')
 
 # Standardize columns
-final_joined_df['GC OrgID'] = final_joined_df['GC OrgID'].astype(str).str.split('.').str[0]
+final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str).str.split('.').str[0]
 final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID', 'OrgID': 'infobaseID', 'Website': 'website'})
 final_joined_df['infobaseID'] = final_joined_df['infobaseID'].fillna(0).astype(int)
 final_joined_df = final_joined_df.merge(dfs['final_rg_match_df'][['GC OrgID', 'rgnumber']], left_on='gc_orgID', right_on='GC OrgID', how='left').drop(columns=['GC OrgID'])

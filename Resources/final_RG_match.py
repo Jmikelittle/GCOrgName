@@ -25,22 +25,22 @@ for df, columns in [(matched_df, ['RGOriginalName', 'MatchedName']),
         if column in df.columns:
             df[column] = df[column].apply(standardize_text)
 
-# Replace values in 'MatchedName' and 'GC OrgID' when MatchScore is less than 95
+# Replace values in 'MatchedName' and 'gc_orgID' when MatchScore is less than 95
 for index, row in matched_df.iterrows():
     if row['MatchScore'] < 95:
         fixed_row = fixed_df[fixed_df['RGOriginalName'] == row['RGOriginalName']]
         if not fixed_row.empty:
             matched_df.at[index, 'MatchedName'] = fixed_row['Organization Legal Name English'].values[0]
-            matched_df.at[index, 'GC OrgID'] = fixed_row['GC OrgID'].values[0]
+            matched_df.at[index, 'gc_orgID'] = fixed_row['gc_orgID'].values[0]
 
-# Identify new entries in 'Fixed_RG_names.csv' based on 'GC OrgID'
-new_entries = fixed_df[~fixed_df['GC OrgID'].isin(matched_df['GC OrgID'])]
+# Identify new entries in 'Fixed_RG_names.csv' based on 'gc_orgID'
+new_entries = fixed_df[~fixed_df['gc_orgID'].isin(matched_df['gc_orgID'])]
 
 # Append new entries to the matched DataFrame
 final_df = pd.concat([matched_df, new_entries], ignore_index=True)
 
-# Set GC OrgID to whole numbers, handling non-finite values
-final_df['GC OrgID'] = pd.to_numeric(final_df['GC OrgID'], errors='coerce').fillna(0).astype(int)
+# Set gc_orgID to whole numbers, handling non-finite values
+final_df['gc_orgID'] = pd.to_numeric(final_df['gc_orgID'], errors='coerce').fillna(0).astype(int)
 
 # Merge 'rgnumber' field from 'Fixed_RG_names.csv' to 'final_RG_match.csv'
 if 'rgnumber' in fixed_df.columns:

@@ -58,8 +58,8 @@
 2278,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général,OSGG,BSGG,249,8,,osgg-bsgg,GGS,GGS00,www.gg.ca,www.gg.ca
 2279,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada,PSIC,ISPC,250,46,Office of the Public Sector Integrity Commissioner of Canada,psic-ispc,INT,INT00,www.psic-ispc.gc.ca,www.psic-ispc.gc.ca
 2280,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada,OSFI,BSIF,253,11,Office of the Superintendent of Financial Institutions Canada,osfi-bsif,SIF,SIF00,https://www.osfi-bsif.gc.ca/en,https://www.osfi-bsif.gc.ca/fr
-2281,Office of the Information Commissioner,Commissariat à l'information au Canada,OIC,CI,,96,Office of the Information Commissioner of Canada,oic-ci,IPC,IPC00,,
-2282,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,OPC,CPVP,,96,Office of the Privacy Commissioner of Canada,opc-cpvp,OPC,IPC00,,
+2281,Office of the Information Commissioner,Commissariat à l'information au Canada,OIC,CI,256,96,Office of the Information Commissioner of Canada,oic-ci,IPC,IPC00,https://www.oic-ci.gc.ca/en,https://www.oic-ci.gc.ca/fr
+2282,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,OPC,CPVP,256,96,Office of the Privacy Commissioner of Canada,opc-cpvp,OPC,IPC00,https://www.priv.gc.ca/en/,https://www.priv.gc.ca/fr/
 2283,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada,PMPRB,CEPMB,266,109,Patented Medicine Prices Review Board,pmprb-cepmb,PXR,PXR00,www.pmprb-cepmb.gc.ca,www.pmprb-cepmb.gc.ca
 2284,Privy Council Office,Bureau du Conseil privé,PCO,BCP,278,25,Privy Council Office,pco-bcp,PCO,PCO00,www.pco-bcp.gc.ca,www.pco-bcp.gc.ca
 2285,Public Health Agency of Canada,Agence de la santé publique du Canada,PHAC,ASPC,280,148,Public Health Agency of Canada,phac-aspc,AHS,AHS00,www.phac-aspc.gc.ca,www.phac-aspc.gc.ca

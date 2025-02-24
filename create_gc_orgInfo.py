@@ -145,7 +145,7 @@ final_joined_df = final_joined_df[ordered_fields]
 final_joined_df = final_joined_df.sort_values(by='gc_orgID')
 
 # Save the final joined DataFrame to a new CSV file with UTF-8 encoding
-output_file = os.path.join(script_folder, 'GC Org Info.csv')
+output_file = os.path.join(script_folder, 'GC_org_info.csv')
 final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
 # Save the unmatched values to a separate CSV file with UTF-8 encoding

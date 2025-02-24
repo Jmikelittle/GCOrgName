@@ -14,10 +14,10 @@ manual_ministries_df = pd.read_csv(manual_ministries_file)
 
 # Ensure the 'Parent GC OrgID' and 'GC OrgID' columns are treated as strings without decimals
 manual_lead_department_df['Parent GC OrgID'] = manual_lead_department_df['Parent GC OrgID'].astype(str).str.split('.').str[0]
-harmonized_names_df['GC OrgID'] = harmonized_names_df['GC OrgID'].astype(str)
+harmonized_names_df['gc_orgID'] = harmonized_names_df['gc_orgID'].astype(str)
 
 # Merge the dataframes on 'GC OrgID' from create_harmonized_name.csv and 'Parent GC OrgID' from Manual_leadDepartmentPortfolio.csv
-merged_df = pd.merge(manual_lead_department_df, harmonized_names_df[['GC OrgID', 'harmonized_name', 'nom_harmonisé']], left_on='Parent GC OrgID', right_on='GC OrgID', how='left')
+merged_df = pd.merge(manual_lead_department_df, harmonized_names_df[['gc_orgID', 'harmonized_name', 'nom_harmonisé']], left_on='Parent GC OrgID', right_on='gc_orgID', how='left')
 
 # Replace values in 'lead department' with 'harmonized_name' only if not already filled
 merged_df['lead department'] = merged_df.apply(
@@ -41,10 +41,10 @@ for index, row in merged_df.iterrows():
             merged_df.at[index, 'ministère responsable'] = titre_value[0]
 
 # Drop the 'harmonized_name', 'nom_harmonisé', and 'GC OrgID_y' columns as they are no longer needed
-merged_df = merged_df.drop(columns=['harmonized_name', 'nom_harmonisé', 'GC OrgID_y'])
+merged_df = merged_df.drop(columns=['harmonized_name', 'nom_harmonisé', 'gc_orgID_y'])
 
 # Rename 'GC OrgID_x' back to 'GC OrgID'
-merged_df = merged_df.rename(columns={'GC OrgID_x': 'GC OrgID'})
+merged_df = merged_df.rename(columns={'GC OrgID_x': 'gc_orgID'})
 
 # Save the updated dataframe back to the CSV file
 merged_df.to_csv(manual_lead_department_file, index=False, encoding='utf-8-sig')

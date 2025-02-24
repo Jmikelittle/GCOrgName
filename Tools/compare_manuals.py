@@ -19,7 +19,8 @@ def main():
         manual_org_id_link_df = pd.read_csv(manual_org_id_link_file)
         manual_pop_phoenix_df = pd.read_csv(manual_pop_phoenix_file)
         manual_lead_department_portfolio_df = pd.read_csv(manual_lead_department_portfolio_file)
-    except (FileNotFoundError, pd.errors.EmptyDataError):
+    except (FileNotFoundError, pd.errors.EmptyDataError) as e:
+        print(f"Error reading CSV files: {e}")
         exit(1)
 
     # Extract the 'GC OrgID' columns
@@ -29,7 +30,8 @@ def main():
         manual_pop_phoenix_ids = set(manual_pop_phoenix_df['gc_orgID'].dropna().astype(int))
         manual_lead_department_portfolio_ids = set(
             manual_lead_department_portfolio_df['gc_orgID'].dropna().astype(int))
-    except KeyError:
+    except KeyError as e:
+        print(f"Error extracting 'GC OrgID' columns: {e}")
         exit(1)
 
     # Find missing IDs
@@ -42,7 +44,8 @@ def main():
             manual_org_id_link_ids, manual_lead_department_portfolio_ids) - manual_pop_phoenix_ids
         missing_in_manual_lead_department_portfolio = final_rg_match_ids.union(
             manual_org_id_link_ids, manual_pop_phoenix_ids) - manual_lead_department_portfolio_ids
-    except TypeError:
+    except TypeError as e:
+        print(f"Error finding missing IDs: {e}")
         exit(1)
 
     # Create the output text
@@ -75,7 +78,9 @@ def main():
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("\n".join(output_lines))
+        print(f"Output written to {output_file}")
     except IOError as e:
+        print(f"Error writing output file: {e}")
         exit(1)
 
 if __name__ == "__main__":

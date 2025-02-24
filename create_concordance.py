@@ -23,10 +23,8 @@ dfs = {name: pd.read_csv(path) for name, path in files.items()}
 for name, df in dfs.items():
     dfs[name] = df.apply(lambda x: x.str.replace('’', "'").str.replace('\u2011', '-').str.strip() if x.dtype == "object" else x)
 
-# Convert 'GC OrgID' and 'gc_orgID' to string
+# Convert 'gc_orgID' to string
 for name, df in dfs.items():
-    if 'GC OrgID' in df.columns:
-        df['GC OrgID'] = df['GC OrgID'].astype(str)
     if 'gc_orgID' in df.columns:
         df['gc_orgID'] = df['gc_orgID'].astype(str)
 
@@ -53,9 +51,9 @@ final_joined_df = final_joined_df.merge(harmonized_names_df, on='gc_orgID', how=
 
 # Standardize columns
 final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str).str.split('.').str[0]
-final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID', 'OrgID': 'infobaseID', 'Website': 'website'})
+final_joined_df = final_joined_df.rename(columns={'OrgID': 'infobaseID', 'Website': 'website'})
 final_joined_df['infobaseID'] = final_joined_df['infobaseID'].fillna(0).astype(int)
-final_joined_df = final_joined_df.merge(dfs['final_rg_match_df'][['GC OrgID', 'rgnumber']], left_on='gc_orgID', right_on='GC OrgID', how='left').drop(columns=['GC OrgID'])
+final_joined_df = final_joined_df.merge(dfs['final_rg_match_df'][['gc_orgID', 'rgnumber']], on='gc_orgID', how='left')
 final_joined_df = final_joined_df.rename(columns={'rgnumber': 'rg'})
 final_joined_df['rg'] = final_joined_df['rg'].apply(lambda x: '' if x == 0 else int(x) if pd.notna(x) else '')
 

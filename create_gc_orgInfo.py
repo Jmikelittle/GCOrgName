@@ -78,15 +78,12 @@ final_joined_df = pd.merge(
 harmonized_names_df = harmonized_names_df[['gc_orgID', 'harmonized_name', 'nom_harmonisé']]
 final_joined_df = final_joined_df.merge(harmonized_names_df, on='gc_orgID', how='left')
 
-# Set the field 'GC OrgID' so that there are no decimals
+# Set the field 'gc_orgID' so that there are no decimals
 final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str).str.split('.').str[0]
 
-# Rename 'GC OrgID' to 'gc_orgID'
-final_joined_df = final_joined_df.rename(columns={'GC OrgID': 'gc_orgID'})
-
-# Convert gc_orgID to string to match the data type of GC OrgID in manual_lead_department_df
+# Convert gc_orgID to string to match the data type of gc_orgID in manual_lead_department_df
 final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str)
-manual_lead_department_df['gc_orgID'] = manual_lead_department_df['GC OrgID'].astype(str)
+manual_lead_department_df['gc_orgID'] = manual_lead_department_df['gc_orgID'].astype(str)
 
 # Rename 'Status' to 'status_statut' and set value to 'a' if empty
 final_joined_df = final_joined_df.rename(columns={'Status': 'status_statut'})

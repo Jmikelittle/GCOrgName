@@ -40,11 +40,14 @@ for index, row in merged_df.iterrows():
         if len(titre_value) > 0:
             merged_df.at[index, 'ministère responsable'] = titre_value[0]
 
-# Drop the 'harmonized_name', 'nom_harmonisé', and 'GC OrgID_y' columns as they are no longer needed
-merged_df = merged_df.drop(columns=['harmonized_name', 'nom_harmonisé', 'gc_orgID_y'])
+# Drop the 'harmonized_name', 'nom_harmonisé', and 'gc_orgID_y' columns if they exist
+columns_to_drop = ['harmonized_name', 'nom_harmonisé', 'gc_orgID_y']
+existing_columns_to_drop = [col for col in columns_to_drop if col in merged_df.columns]
+merged_df = merged_df.drop(columns=existing_columns_to_drop)
 
-# Rename 'GC OrgID_x' back to 'GC OrgID'
-merged_df = merged_df.rename(columns={'GC OrgID_x': 'gc_orgID'})
+# Rename 'GC OrgID_x' back to 'GC OrgID' if it exists
+if 'gc_orgID_x' in merged_df.columns:
+    merged_df = merged_df.rename(columns={'gc_orgID_x': 'gc_orgID'})
 
 # Save the updated dataframe back to the CSV file
 merged_df.to_csv(manual_lead_department_file, index=False, encoding='utf-8-sig')

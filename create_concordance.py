@@ -1,115 +1,235 @@
+"""Module for creating GC organization concordance file."""
 import os
 import pandas as pd
 
-# Define paths
-script_folder = os.path.dirname(os.path.abspath(__file__))
-resources_folder = os.path.join(script_folder, 'Resources')
-scraping_folder = os.path.join(script_folder, 'Scraping')
 
-# Load CSV files
-files = {
-    'manual_org_df': os.path.join(resources_folder, 'Manual org ID link.csv'),
-    'combined_faa_df': os.path.join(scraping_folder, 'combined_FAA_names.csv'),
-    'applied_en_df': os.path.join(resources_folder, 'applied_en.csv'),
-    'infobase_en_df': os.path.join(resources_folder, 'infobase_en.csv'),
-    'infobase_fr_df': os.path.join(resources_folder, 'infobase_fr.csv'),
-    'final_rg_match_df': os.path.join(resources_folder, 'final_RG_match.csv'),
-    'manual_pop_phoenix_df': os.path.join(resources_folder, 'manual pop phoenix.csv'),
-    'harmonized_names_df': os.path.join(script_folder, 'create_harmonized_name.csv')
-}
-dfs = {name: pd.read_csv(path) for name, path in files.items()}
+def load_dataframes(script_dir, resources_dir, scraping_dir):
+    """Load and standardize all required CSV files."""
+    files = {
+        'manual_org_df': os.path.join(resources_dir, 'Manual org ID link.csv'),
+        'combined_faa_df': os.path.join(scraping_dir, 'combined_FAA_names.csv'),
+        'applied_en_df': os.path.join(resources_dir, 'applied_en.csv'),
+        'infobase_en_df': os.path.join(resources_dir, 'infobase_fr.csv'),
+        'infobase_fr_df': os.path.join(resources_dir, 'infobase_fr.csv'),
+        'final_rg_match_df': os.path.join(resources_dir, 'final_RG_match.csv'),
+        'manual_pop_phoenix_df': os.path.join(resources_dir, 'manual pop phoenix.csv'),
+        'harmonized_names_df': os.path.join(script_dir, 'create_harmonized_name.csv')
+    }
+    
+    loaded_dfs = {}
+    for name, path in files.items():
+        print(f"Loading {name} from {path}")
+        if not os.path.exists(path):
+            print(f"Warning: File not found - {path}")
+            continue
+        loaded_dfs[name] = standardize_dataframe(pd.read_csv(path))
+        print(f"Columns in {name}: {loaded_dfs[name].columns.tolist()}")
+    
+    return loaded_dfs
 
-# Standardize text
-for name, df in dfs.items():
-    dfs[name] = df.apply(lambda x: x.str.replace('’', "'").str.replace('\u2011', '-').str.strip() if x.dtype == "object" else x)
 
-# Convert 'gc_orgID' to string
-for name, df in dfs.items():
-    if 'gc_orgID' in df.columns:
-        df['gc_orgID'] = df['gc_orgID'].astype(str)
+def standardize_dataframe(df):
+    """Standardize text in DataFrame by replacing special characters."""
+    return df.apply(
+        lambda x: x.str.replace('’', "'").str.replace('\u2011', '-').str.strip()
+        if x.dtype == "object" else x
+    )
 
-# Rename columns for joining
-dfs['combined_faa_df']['Original English Name'] = dfs['combined_faa_df']['English Name']
-dfs['combined_faa_df'] = dfs['combined_faa_df'].rename(columns={'English Name': 'Organization Legal Name English'})
 
-# Merge dataframes
-final_joined_df = dfs['manual_org_df'].merge(dfs['combined_faa_df'], on='Organization Legal Name English', how='outer')
-final_joined_df['Names Match'] = final_joined_df.apply(lambda row: 0 if pd.notna(row['Organization Legal Name English']) else 1, axis=1)
-unmatched_values = final_joined_df[final_joined_df['Names Match'] == 1]
-final_joined_df = final_joined_df[final_joined_df['Names Match'] == 0]
+def apply_manual_changes(df):
+    """Apply manual overrides to specific organizations."""
+    # Ensure gc_orgID is string type
+    df['gc_orgID'] = df['gc_orgID'].astype(str)
+    
+    manual_changes = {
+        "3592": {
+            "abbreviation": "SCC",
+            "abreviation": "CSC"
+        }
+        # Add more overrides as needed
+    }
 
-merge_columns = [
-    ('applied_en_df', 'Legal title', ['Legal title', 'Applied title', "Titre d'usage", 'Abbreviation', 'Abreviation']),
-    ('infobase_en_df', 'Legal title', ['Legal title', 'OrgID', 'Website'])
-]
-for df_name, on_col, columns in merge_columns:
-    final_joined_df = final_joined_df.merge(dfs[df_name][columns], left_on='Organization Legal Name English', right_on=on_col, how='left')
+    # Add debugging to verify the changes
+    print(f"Before changes - Row for gc_orgID 3592:")
+    print(df[df['gc_orgID'] == "3592"])
+    
+    for gc_orgid, changes in manual_changes.items():
+        for field, value in changes.items():
+            mask = df['gc_orgID'] == gc_orgid
+            if mask.any():
+                df.loc[mask, field] = value
+            else:
+                print(f"Warning: gc_orgID {gc_orgid} not found in DataFrame")
+    
+    print(f"\nAfter changes - Row for gc_orgID 3592:")
+    print(df[df['gc_orgID'] == "3592"])
+    
+    return df
 
-# Pull in new values for harmonized_name and nom_harmonisé from create_harmonized_name.csv
-harmonized_names_df = dfs['harmonized_names_df'][['gc_orgID', 'harmonized_name', 'nom_harmonisé']]
-final_joined_df = final_joined_df.merge(harmonized_names_df, on='gc_orgID', how='left')
 
-# Standardize columns
-final_joined_df['gc_orgID'] = final_joined_df['gc_orgID'].astype(str).str.split('.').str[0]
-final_joined_df = final_joined_df.rename(columns={'OrgID': 'infobaseID', 'Website': 'website'})
-final_joined_df['infobaseID'] = final_joined_df['infobaseID'].fillna(0).astype(int)
-final_joined_df = final_joined_df.merge(dfs['final_rg_match_df'][['gc_orgID', 'rgnumber']], on='gc_orgID', how='left')
-final_joined_df = final_joined_df.rename(columns={'rgnumber': 'rg'})
-final_joined_df['rg'] = final_joined_df['rg'].apply(lambda x: '' if x == 0 else int(x) if pd.notna(x) else '')
+def process_dataframes(dfs):
+    """Process and merge all dataframes."""
+    # Convert gc_orgID to string in all dataframes
+    for df in dfs.values():
+        if 'gc_orgID' in df.columns:
+            df['gc_orgID'] = df['gc_orgID'].astype(str)
 
-# Convert 'OrgID' in infobase_fr_df to int for merging
-dfs['infobase_fr_df']['OrgID'] = dfs['infobase_fr_df']['OrgID'].astype(int)
+    # Prepare combined_faa_df
+    dfs['combined_faa_df']['Original English Name'] = (
+        dfs['combined_faa_df']['English Name'])
+    dfs['combined_faa_df'] = dfs['combined_faa_df'].rename(
+        columns={'English Name': 'Organization Legal Name English'})
 
-# Merge with infobase_fr_df on infobaseID
-final_joined_df = final_joined_df.merge(dfs['infobase_fr_df'][['OrgID', 'Appellation legale', 'Site Web']], left_on='infobaseID', right_on='OrgID', how='left')
+    # Initial merge
+    final_df = dfs['manual_org_df'].merge(
+        dfs['combined_faa_df'],
+        on='gc_orgID',
+        how='outer'
+    )
 
-# Rename 'Site Web' to 'site_web'
-final_joined_df = final_joined_df.rename(columns={'Site Web': 'site_web'})
+    # Process matches
+    final_df['Names Match'] = final_df.apply(
+        lambda row: 0 if pd.notna(row['Organization Legal Name English']) else 1,
+        axis=1
+    )
+    unmatched = final_df[final_df['Names Match'] == 1]
+    final_df = final_df[final_df['Names Match'] == 0]
 
-# Merge with manual_pop_phoenix_df
-final_joined_df = final_joined_df.merge(dfs['manual_pop_phoenix_df'], on='gc_orgID', how='left')
+    return final_df, unmatched
 
-# Drop the 'gc_orgID' from manual_pop_phoenix_df after merge
-if 'gc_orgID_y' in final_joined_df.columns:
-    final_joined_df = final_joined_df.drop(columns=['gc_orgID_y'])
-final_joined_df = final_joined_df.rename(columns={'gc_orgID_x': 'gc_orgID'})
 
-# Remove duplicates based on gc_orgID
-final_joined_df = final_joined_df.drop_duplicates(subset=['gc_orgID'])
+def merge_additional_data(df, dfs):
+    """Merge additional data from other dataframes."""
+    print("\nBefore merges:")
+    print("Current columns:", df.columns.tolist())
+    
+    # Add harmonized names merge
+    if 'harmonized_names_df' in dfs:
+        print("\nMerging harmonized names...")
+        df = df.merge(
+            dfs['harmonized_names_df'][['gc_orgID', 'harmonized_name', 'nom_harmonisé']],
+            on='gc_orgID',
+            how='left'
+        )
+    else:
+        print("Warning: harmonized_names_df not found in dfs")
+    
+    # Add a merge for the manual pop phoenix data
+    if 'manual_pop_phoenix_df' in dfs:
+        print("\nMerging manual pop phoenix data...")
+        df = df.merge(
+            dfs['manual_pop_phoenix_df'][['gc_orgID', 'pop', 'phoenix', 'ati', 'open_gov_ouvert']],
+            on='gc_orgID',
+            how='left'
+        )
+    else:
+        print("Warning: manual_pop_phoenix_df not found in dfs")
+    
+    # Add merge for RG data
+    if 'final_rg_match_df' in dfs:
+        print("\nMerging final RG match data...")
+        df = df.merge(
+            dfs['final_rg_match_df'][['gc_orgID', 'rg']],
+            on='gc_orgID',
+            how='left'
+        )
+        print("RG data merged successfully.")
+        print("Columns after RG merge:", df.columns.tolist())
+    else:
+        print("Warning: final_rg_match_df not found in dfs")
+    
+    # Ensure all required columns exist
+    required_columns = ['harmonized_name', 'nom_harmonisé', 'rg', 'ati', 'open_gov_ouvert', 'pop', 'phoenix']
+    df = ensure_required_columns(df, required_columns)
+    
+    print("\nAfter all merges:")
+    print("Final columns:", df.columns.tolist())
+    
+    return df
 
-# Rename fields
-final_joined_df = final_joined_df.rename(columns={'Abbreviation': 'abbreviation', 'Abreviation': 'abreviation'})
 
-# Manual changes
-manual_changes = {
-    "2281": {"abbreviation": "OIC", "abreviation": "CI","infobaseID": 256,"website":"https://www.oic-ci.gc.ca/en","site_web":"https://www.oic-ci.gc.ca/fr"}, # Office of the Information Commissioner
-    "2282": {"abbreviation": "OPC", "abreviation": "CPVP","infobaseID": 256,"website":"https://www.priv.gc.ca/en/","site_web":"https://www.priv.gc.ca/fr/"}, # Office of the Privacy Commissioner
-    # not needed anymore? "2269": {"infobaseID": 237} 
-}
+def ensure_required_columns(df, required_columns):
+    """Ensure all required columns exist in the DataFrame."""
+    current_columns = set(df.columns)
+    missing_columns = [col for col in required_columns if col not in current_columns]
+    
+    # Print debug information
+    print("Current columns:", current_columns)
+    print("Missing columns:", missing_columns)
+    
+    # Initialize missing columns with empty strings
+    for col in missing_columns:
+        df[col] = ''
+    
+    return df
 
-for gc_orgID, changes in manual_changes.items():
-    for field, value in changes.items():
-        final_joined_df.loc[final_joined_df['gc_orgID'] == gc_orgID, field] = value
 
-# Replace zero values in 'infobaseID' with blank strings
-final_joined_df['infobaseID'] = final_joined_df['infobaseID'].replace(0, '')
+def main():
+    """Create GC organization concordance file."""
+    script_folder = os.path.dirname(os.path.abspath(__file__))
+    resources_folder = os.path.join(script_folder, 'Resources')
+    scraping_folder = os.path.join(script_folder, 'Scraping')
 
-# Ensure 'site_web' column exists
-if 'site_web' not in final_joined_df.columns:
-    final_joined_df['site_web'] = None
+    # Load and process dataframes
+    dfs = load_dataframes(script_folder, resources_folder, scraping_folder)
+    final_df, unmatched_values = process_dataframes(dfs)
+    
+    # Merge additional data
+    final_df = merge_additional_data(final_df, dfs)
+    
+    # Standardize and clean up
+    final_df = standardize_fields(final_df)
+    final_df = apply_manual_changes(final_df)
+    
+    # Save results
+    save_results(final_df, unmatched_values, script_folder)
 
-# Reorder and sort
-final_field_order = [
-    'gc_orgID', 'harmonized_name', 'nom_harmonisé', 'abbreviation', 'abreviation', 'infobaseID', 'rg',
-    'ati', 'open_gov_ouvert', 'pop', 'phoenix', 'website', 'site_web'
-]
-final_joined_df = final_joined_df[final_field_order].sort_values(by='gc_orgID')
 
-# Save results
-output_file = os.path.join(script_folder, 'gc_concordance.csv')
-final_joined_df.to_csv(output_file, index=False, encoding='utf-8-sig')
-unmatched_output_file = os.path.join(script_folder, 'unmatched_org_IDs.csv')
-unmatched_values.to_csv(unmatched_output_file, index=False, encoding='utf-8-sig')
+def standardize_fields(df):
+    """Standardize fields in the final dataframe."""
+    df['gc_orgID'] = df['gc_orgID'].astype(str).str.split('.').str[0]
+    df = df.rename(columns={
+        'OrgID': 'infobaseID',
+        'Website': 'website',
+        'Site Web': 'site_web',
+        'Abbreviation': 'abbreviation',
+        'Abreviation': 'abreviation'
+    })
+    
+    df['infobaseID'] = df['infobaseID'].fillna(0).astype(int)
+    df['infobaseID'] = df['infobaseID'].replace(0, '')
+    
+    if 'site_web' not in df.columns:
+        df['site_web'] = None
+    
+    return df
 
-print(f"The final joined DataFrame has been saved to {output_file}")
-print(f"The unmatched values have been saved to {unmatched_output_file}")
+
+def save_results(df, unmatched, output_dir):
+    """Save results to CSV files."""
+    # Ensure all required columns exist
+    field_order = [
+        'gc_orgID', 'harmonized_name', 'nom_harmonisé',
+        'abbreviation', 'abreviation', 'infobaseID', 'rg',
+        'ati', 'open_gov_ouvert', 'pop', 'phoenix',
+        'website', 'site_web'
+    ]
+    df = ensure_required_columns(df, field_order)
+    
+    # Now sort and save
+    df = df.sort_values(by='gc_orgID')
+    
+    df.to_csv(
+        os.path.join(output_dir, 'gc_concordance.csv'),
+        index=False,
+        encoding='utf-8-sig'
+    )
+    unmatched.to_csv(
+        os.path.join(output_dir, 'unmatched_org_IDs.csv'),
+        index=False,
+        encoding='utf-8-sig'
+    )
+
+
+if __name__ == "__main__":
+    main()

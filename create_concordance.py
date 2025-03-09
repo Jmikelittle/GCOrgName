@@ -50,7 +50,7 @@ def apply_manual_changes(df):
     }
 
     # Add debugging to verify the changes
-    print(f"Before changes - Row for gc_orgID 3592:")
+    print("Before changes - Row for gc_orgID 3592:")
     print(df[df['gc_orgID'] == "3592"])
     
     for gc_orgid, changes in manual_changes.items():
@@ -70,9 +70,10 @@ def apply_manual_changes(df):
 def process_dataframes(dfs):
     """Process and merge all dataframes."""
     # Convert gc_orgID to string in all dataframes
-    for df in dfs.values():
+    for name, df in dfs.items():
         if 'gc_orgID' in df.columns:
             df['gc_orgID'] = df['gc_orgID'].astype(str)
+        print(f"Columns in {name}: {df.columns.tolist()}")
 
     # Prepare combined_faa_df
     dfs['combined_faa_df']['Original English Name'] = (
@@ -81,11 +82,13 @@ def process_dataframes(dfs):
         columns={'English Name': 'Organization Legal Name English'})
 
     # Initial merge
+    print("Merging manual_org_df and combined_faa_df on 'Organization Legal Name English'")
     final_df = dfs['manual_org_df'].merge(
         dfs['combined_faa_df'],
-        on='gc_orgID',
+        on='Organization Legal Name English',
         how='outer'
     )
+    print("Columns after initial merge:", final_df.columns.tolist())
 
     # Process matches
     final_df['Names Match'] = final_df.apply(
@@ -128,8 +131,9 @@ def merge_additional_data(df, dfs):
     # Add merge for RG data
     if 'final_rg_match_df' in dfs:
         print("\nMerging final RG match data...")
+        print("Columns in final_rg_match_df before merge:", dfs['final_rg_match_df'].columns.tolist())
         df = df.merge(
-            dfs['final_rg_match_df'][['gc_orgID', 'rg']],
+            dfs['final_rg_match_df'][['gc_orgID', 'rgnumber']],
             on='gc_orgID',
             how='left'
         )
@@ -139,7 +143,7 @@ def merge_additional_data(df, dfs):
         print("Warning: final_rg_match_df not found in dfs")
     
     # Ensure all required columns exist
-    required_columns = ['harmonized_name', 'nom_harmonisé', 'rg', 'ati', 'open_gov_ouvert', 'pop', 'phoenix']
+    required_columns = ['harmonized_name', 'nom_harmonisé', 'rgnumber', 'ati', 'open_gov_ouvert', 'pop', 'phoenix']
     df = ensure_required_columns(df, required_columns)
     
     print("\nAfter all merges:")
@@ -210,7 +214,7 @@ def save_results(df, unmatched, output_dir):
     # Ensure all required columns exist
     field_order = [
         'gc_orgID', 'harmonized_name', 'nom_harmonisé',
-        'abbreviation', 'abreviation', 'infobaseID', 'rg',
+        'abbreviation', 'abreviation', 'infobaseID', 'rgnumber',
         'ati', 'open_gov_ouvert', 'pop', 'phoenix',
         'website', 'site_web'
     ]

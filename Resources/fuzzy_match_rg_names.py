@@ -53,7 +53,7 @@ rg_duplicates_match_df = pd.DataFrame({
 })
 
 # Merge the matched names with the manual organization names to get GC OrgID
-final_df = match_df.merge(manual_org_df[['Organization Legal Name English', 'gc_orgID']], 
+final_df = match_df.merge(manual_org_df[['Organization Legal Name English', 'gc_orgID']],
                           left_on='MatchedName', right_on='Organization Legal Name English', how='left')
 
 # Merge the rg_duplicates_match_df with the manual organization names to get GC OrgID
@@ -90,4 +90,4 @@ updated_fixed_df = pd.concat([fixed_df, new_entries], ignore_index=True)
 # Save the updated fixed DataFrame to the CSV file
 updated_fixed_df.to_csv(fixed_file, index=False, encoding='utf-8-sig')
 
-print(f"Fixed_RG_names.csv has been updated with new entries from matched_RG_names.csv")
+print("Fixed_RG_names.csv has been updated with new entries from matched_RG_names.csv")

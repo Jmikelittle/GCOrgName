@@ -27,7 +27,7 @@ def download_and_fix_csv(url, filename):
 download_and_fix_csv('https://open.canada.ca/data/en/datastore/dump/7c131a87-7784-4208-8e5c-043451240d95?bom=True', 'infobase_en.csv')
 download_and_fix_csv('https://open.canada.ca/data/en/datastore/dump/45069fe9-abe3-437f-97dd-3f64958bfa85?bom=True', 'infobase_fr.csv')
 
-# Applied Titles
+# Applied titles
 download_and_fix_csv('https://open.canada.ca/data/en/datastore/dump/f0ca63e0-c15e-45b5-9656-77abe1564b1c?bom=True', 'applied_en.csv')
 download_and_fix_csv('https://ouvert.canada.ca/data/fr/datastore/dump/f0ca63e0-c15e-45b5-9656-77abe1564b1c?bom=True', 'applied_fr.csv')
 

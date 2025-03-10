@@ -17,7 +17,7 @@ applied_en_df = pd.read_csv(applied_en_file)
 infobase_en_df = pd.read_csv(infobase_en_file)
 infobase_fr_df = pd.read_csv(infobase_fr_file)
 
-# Function to replace typographic apostrophes and non-breaking hyphens with standard ones
+# Standardize text
 def standardize_text(df):
     return df.apply(lambda x: x.str.replace('’', "'").str.replace('\u2011', '-').str.strip() if x.dtype == "object" else x)
 
@@ -30,13 +30,15 @@ infobase_fr_df = standardize_text(infobase_fr_df)
 # Perform a left join to include all entries from manual_org_df and only matching entries from applied_en_df
 joined_df = pd.merge(manual_org_df, applied_en_df, left_on='Organization Legal Name English', right_on='Legal title', how='left')
 
-# Merge with infobase_en_df and infobase_fr_df using the correct column names
-joined_df = pd.merge(joined_df, infobase_en_df[['Legal Title', 'Applied Title']], left_on='Organization Legal Name English', right_on='Legal Title', how='left')
-joined_df = pd.merge(joined_df, infobase_fr_df[['Appellation legale', 'Titre applique']], left_on='Organization Legal Name French', right_on='Appellation legale', how='left')
+# Merge with infobase_en_df and infobase_fr_df using the correct column names, excluding 'Applied title' and 'Appellation legale'
+joined_df = pd.merge(joined_df, infobase_en_df[['Legal title']], left_on='Organization Legal Name English', right_on='Legal title', how='left')
+joined_df = pd.merge(joined_df, infobase_fr_df[['Titre applique']], left_on='Organization Legal Name French', right_on='Titre applique', how='left')
+
+# Debug: Print the columns of joined_df
+print("Columns in joined_df:", joined_df.columns)
 
 # Create the 'harmonized_name' field with the specified priority
 joined_df['harmonized_name'] = joined_df['Applied title']
-joined_df.loc[joined_df['harmonized_name'].isna(), 'harmonized_name'] = joined_df['Applied Title']
 joined_df.loc[joined_df['harmonized_name'].isna(), 'harmonized_name'] = joined_df['Organization Legal Name English']
 
 # Create the 'nom_harmonisé' field with the specified priority
@@ -46,20 +48,23 @@ joined_df.loc[joined_df['nom_harmonisé'].isna(), 'nom_harmonisé'] = joined_df[
 
 # Manual changes
 manual_changes = {
-    'GC OrgID': 2271,
+    'gc_orgID': 2271,
     'harmonized_name': 'Elections Canada',
     'nom_harmonisé': 'Élections Canada'
 }
 
 # Apply manual changes explicitly
-joined_df.loc[joined_df['GC OrgID'] == manual_changes['GC OrgID'], 'harmonized_name'] = manual_changes['harmonized_name']
-joined_df.loc[joined_df['GC OrgID'] == manual_changes['GC OrgID'], 'nom_harmonisé'] = manual_changes['nom_harmonisé']
+joined_df.loc[joined_df['gc_orgID'] == manual_changes['gc_orgID'], 'harmonized_name'] = manual_changes['harmonized_name']
+joined_df.loc[joined_df['gc_orgID'] == manual_changes['gc_orgID'], 'nom_harmonisé'] = manual_changes['nom_harmonisé']
 
-# Set the field 'GC OrgID' so that there are no decimals
-joined_df['GC OrgID'] = joined_df['GC OrgID'].astype(str).str.split('.').str[0]
+# Set the field 'gc_orgID' so that there are no decimals
+joined_df['gc_orgID'] = joined_df['gc_orgID'].astype(str).str.split('.').str[0]
 
-# Sort the final joined DataFrame by GC OrgID from lowest to highest
-joined_df = joined_df.sort_values(by='GC OrgID')
+# Drop 'Legal title_x' and 'Legal title_y' columns if they exist
+joined_df = joined_df.drop(columns=['Legal title_x', 'Legal title_y'], errors='ignore')
+
+# Sort the final joined DataFrame by gc_orgID from lowest to highest
+joined_df = joined_df.sort_values(by='gc_orgID')
 
 # Save the final joined DataFrame to a new CSV file with UTF-8 encoding
 output_file = os.path.join(script_folder, 'create_harmonized_name.csv')

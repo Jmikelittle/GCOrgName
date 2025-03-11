@@ -67,8 +67,11 @@ rg_duplicates_final_df['RG DeptNo'] = pd.to_numeric(rg_duplicates_final_df['RG D
 # Concatenate the two DataFrames
 final_df = pd.concat([final_df, rg_duplicates_final_df], ignore_index=True)
 
-# Remove duplicates based on 'MatchedName'
-final_df = final_df.drop_duplicates(subset=['MatchedName'])
+# Sort by 'MatchedName' and 'MatchScore' in descending order
+final_df = final_df.sort_values(by=['MatchedName', 'MatchScore'], ascending=[True, False])
+
+# Remove duplicates based on 'MatchedName', keeping the one with the highest 'MatchScore'
+final_df = final_df.drop_duplicates(subset=['MatchedName'], keep='first')
 
 # Ensure 'rgnumber' values do not have decimals and fill missing 'rgnumber' with 'RG DeptNo'
 final_df['rgnumber'] = final_df['rgnumber'].fillna(final_df['RG DeptNo']).astype(int)

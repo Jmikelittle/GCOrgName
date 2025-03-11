@@ -25,12 +25,6 @@ for df, columns in [(matched_df, ['RGOriginalName', 'MatchedName']),
         if column in df.columns:
             df[column] = df[column].apply(standardize_text)
 
-# Debugging: Print initial data
-print("Initial matched_df:")
-print(matched_df.head())
-print("Initial fixed_df:")
-print(fixed_df.head())
-
 # Replace values in 'MatchedName' and 'gc_orgID' when MatchScore is less than 95
 for index, row in matched_df.iterrows():
     if row['MatchScore'] < 95:
@@ -39,16 +33,8 @@ for index, row in matched_df.iterrows():
             matched_df.at[index, 'MatchedName'] = fixed_row['Organization Legal Name English'].values[0]
             matched_df.at[index, 'gc_orgID'] = fixed_row['gc_orgID'].values[0]
 
-# Debugging: Print data after replacements
-print("matched_df after replacements:")
-print(matched_df.head())
-
 # Identify new entries in 'Fixed_RG_names.csv' based on 'gc_orgID'
 new_entries = fixed_df[~fixed_df['gc_orgID'].isin(matched_df['gc_orgID'])]
-
-# Debugging: Print new entries
-print("New entries from fixed_df:")
-print(new_entries.head())
 
 # Append new entries to the matched DataFrame
 final_df = pd.concat([matched_df, new_entries], ignore_index=True)
@@ -76,10 +62,6 @@ if 'rgnumber' in final_df.columns:
 # Round all numeric fields to whole numbers, handling non-finite values before conversion
 for col in final_df.select_dtypes(include=['float64', 'int64']).columns:
     final_df[col] = pd.to_numeric(final_df[col], errors='coerce').fillna(0).round(0).astype(int)
-
-# Debugging: Print final DataFrame before saving
-print("Final DataFrame:")
-print(final_df.head())
 
 # Save the updated DataFrame to a new CSV file in the Resources folder
 updated_output_file = os.path.join(script_folder, 'Resources', 'final_RG_match.csv')

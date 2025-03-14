@@ -34,9 +34,9 @@ def remove_specific_values(dataframe, filename):
             dataframe['English Name'] != "Office of the Governor General's Secretary"] #fun note that the French is translated different in schedules i1 and 4. 
         dataframe = dataframe[
             dataframe['English Name'] != "Staff of the Supreme Court"] #Only using one entry for the Supreme Court.
-        dataframe = dataframe[
-            dataframe['English Name'] != 
-            "Offices of the Information and Privacy Commissioners of Canada"] #these organzations are split into two throughout this Data Reference Standard
+        #dataframe = dataframe[
+            #dataframe['English Name'] != 
+            #"Offices of the Information and Privacy Commissioners of Canada"] #these organzations are split into two throughout this Data Reference Standard
     
     # For Schedule 5, remove entry that is not being removed in the priority section
     elif filename == 'FAA 5 names.csv':
@@ -44,10 +44,10 @@ def remove_specific_values(dataframe, filename):
             dataframe['English Name'] != "Office of the Auditor General of Canada"]
     
     # For Schedule i1, remove entry that will be split into two
-    elif filename == 'FAA i1 names.csv':
-        dataframe = dataframe[
-            dataframe['English Name'] != 
-            "Offices of the Information and Privacy Commissioners of Canada"]
+    #elif filename == 'FAA i1 names.csv':
+        #dataframe = dataframe[
+            #dataframe['English Name'] != 
+            #"Offices of the Information and Privacy Commissioners of Canada"]
     return dataframe
 
 
@@ -89,19 +89,19 @@ def main():
             combined_df = combined_df.drop(columns=unnamed_cols)
         
         # Overrides: Add the specified information manually
-        new_data = {
-            'English Name': [
-                'Office of the Information Commissioner',
-                'Office of the Privacy Commissioner of Canada'
-            ],
-            'French Name': [
-                "Commissariat à l'information au Canada",
-                'Commissariat à la protection de la vie privée du Canada'
-            ],
-            'FAA': ['4', '4']
-        }
-        new_df = pd.DataFrame(new_data)
-        combined_df = pd.concat([combined_df, new_df], ignore_index=True)
+        #new_data = {
+            #'English Name': [
+                #'Office of the Information Commissioner',
+                #'Office of the Privacy Commissioner of Canada'
+            #],
+            #'French Name': [
+                #"Commissariat à l'information au Canada",
+                #'Commissariat à la protection de la vie privée du Canada'
+            #],
+            #'FAA': ['4', '4']
+        #}
+        #new_df = pd.DataFrame(new_data)
+        combined_df = pd.concat([combined_df], ignore_index=True)
         
         # Renaming: Update specific entries
         combined_df.loc[
@@ -130,8 +130,8 @@ def main():
         # Sort the DataFrame based on English Name, French Name, and priority
         combined_df = combined_df.sort_values(by=['English Name', 'French Name', 'priority'])
         
-        # Drop duplicates based on English Name and French Name, keeping the highest priority
-        combined_df = combined_df.drop_duplicates(subset=['English Name', 'French Name'], keep='first')
+        # Drop duplicates based on English Name, keeping the highest priority
+        combined_df = combined_df.drop_duplicates(subset=['English Name'], keep='first')
         
         # Drop the priority column as it's no longer needed
         combined_df = combined_df.drop(columns=['priority'])

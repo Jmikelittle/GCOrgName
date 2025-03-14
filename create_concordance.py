@@ -82,8 +82,8 @@ final_joined_df = final_joined_df.rename(columns={'Abbreviation': 'abbreviation'
 
 # Manual changes
 manual_changes = {
-    "2281": {"abbreviation": "OIC", "abreviation": "CI","infobaseID": 256,"website":"https://www.oic-ci.gc.ca/en","site_web":"https://www.oic-ci.gc.ca/fr"}, # Office of the Information Commissioner
-    "2282": {"abbreviation": "OPC", "abreviation": "CPVP","infobaseID": 256,"website":"https://www.priv.gc.ca/en/","site_web":"https://www.priv.gc.ca/fr/"}, # Office of the Privacy Commissioner
+    #"2281": {"abbreviation": "OIC", "abreviation": "CI","infobaseID": 256,"website":"https://www.oic-ci.gc.ca/en","site_web":"https://www.oic-ci.gc.ca/fr"}, # Office of the Information Commissioner
+    #"2282": {"abbreviation": "OPC", "abreviation": "CPVP","infobaseID": 256,"website":"https://www.priv.gc.ca/en/","site_web":"https://www.priv.gc.ca/fr/"}, # Office of the Privacy Commissioner
     # not needed anymore? "2269": {"infobaseID": 237} 
 }
 

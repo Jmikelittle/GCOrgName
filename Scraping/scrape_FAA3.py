@@ -42,20 +42,34 @@ if response.status_code == 200:
     # Find all Schedule elements
     schedules = root.findall('.//Schedule')
 
-    # Iterate through Schedule elements and look for BilingualGroup with id="230535"
+    # Iterate through Schedule elements and look for BilingualGroup with id="230535" or id="230572"
     for schedule in schedules:
-        section = schedule.find('.//BilingualGroup[@id="230535"]')
+        section_230535 = schedule.find('.//BilingualGroup[@id="230535"]')
+        section_230572 = schedule.find('.//BilingualGroup[@id="230572"]')
         
-        if section is not None:
-            # Extract all BilingualItemEn and BilingualItemFr elements
-            english_items = section.findall('.//BilingualItemEn')
-            french_items = section.findall('.//BilingualItemFr')
+        if section_230535 is not None:
+            # Extract all BilingualItemEn and BilingualItemFr elements for id="230535"
+            english_items_230535 = section_230535.findall('.//BilingualItemEn')
+            french_items_230535 = section_230535.findall('.//BilingualItemFr')
             
             # Append the text content to the respective lists
-            for item in english_items:
+            for item in english_items_230535:
                 english_names.append(item.text)
             
-            for item in french_items:
+            for item in french_items_230535:
+                french_names.append(item.text)
+                faa_values.append('3')
+    
+        if section_230572 is not None:
+            # Extract all BilingualItemEn and BilingualItemFr elements for id="230572"
+            english_items_230572 = section_230572.findall('.//BilingualItemEn')
+            french_items_230572 = section_230572.findall('.//BilingualItemFr')
+            
+            # Append the text content to the respective lists
+            for item in english_items_230572:
+                english_names.append(item.text)
+            
+            for item in french_items_230572:
                 french_names.append(item.text)
                 faa_values.append('3')
     

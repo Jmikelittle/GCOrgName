@@ -8,48 +8,122 @@ manual_lead_department_file = os.path.join(resources_folder, 'Manual_leadDepartm
 manual_ministries_file = os.path.join(resources_folder, 'manualMinistries.csv')
 
 # Read the CSV files
-harmonized_names_df = pd.read_csv(harmonized_names_file)
-manual_lead_department_df = pd.read_csv(manual_lead_department_file)
-manual_ministries_df = pd.read_csv(manual_ministries_file)
+try:
+    harmonized_names_df = pd.read_csv(harmonized_names_file)
+    manual_lead_department_df = pd.read_csv(manual_lead_department_file)
+    manual_ministries_df = pd.read_csv(manual_ministries_file)
+    
+    print("Successfully loaded all CSV files")
+    print(f"Manual lead department file has {len(manual_lead_department_df)} rows")
+except Exception as e:
+    print(f"Error loading CSV files: {str(e)}")
+    exit(1)
+
+# Add this near the beginning of your script, after loading the CSV
+original_df = manual_lead_department_df.copy()
+
+# Then after making changes, create your updated_df
+updated_df = manual_lead_department_df.copy()
+# (make your modifications to updated_df)
+
+# Create a new dataframe for the updated data to preserve manual edits
+# Start with a copy of the original dataframe to maintain all original columns and data
+original_df = manual_lead_department_df.copy()  # Save original for comparison
+updated_df = manual_lead_department_df.copy()   # Create a copy for modifications
 
 # Ensure the 'Parent GC OrgID' and 'GC OrgID' columns are treated as strings without decimals
-manual_lead_department_df['Parent GC OrgID'] = manual_lead_department_df['Parent GC OrgID'].astype(str).str.split('.').str[0]
+# Only convert for processing, keep original values in updated_df
+parent_gc_orgids = manual_lead_department_df['Parent GC OrgID'].astype(str).str.split('.').str[0]
 harmonized_names_df['gc_orgID'] = harmonized_names_df['gc_orgID'].astype(str)
 
-# Merge the dataframes on 'GC OrgID' from create_harmonized_name.csv and 'Parent GC OrgID' from Manual_leadDepartmentPortfolio.csv
-merged_df = pd.merge(manual_lead_department_df, harmonized_names_df[['gc_orgID', 'harmonized_name', 'nom_harmonisé']], left_on='Parent GC OrgID', right_on='gc_orgID', how='left')
+# Process each row and update only specific columns
+updates = 0
+for index, row in manual_lead_department_df.iterrows():
+    parent_gc_orgid = parent_gc_orgids.iloc[index]
+    
+    # Case 1: Parent GC OrgID starts with 'm' (ministry ID)
+    if str(parent_gc_orgid).startswith('m'):
+        # Find the corresponding ministry in manualMinistries.csv
+        ministry_match = manual_ministries_df[manual_ministries_df['minID'] == parent_gc_orgid]
+        
+        if not ministry_match.empty:
+            # Update English department name
+            if 'Title' in ministry_match.columns and not pd.isna(ministry_match['Title'].iloc[0]):
+                ministry_title = ministry_match['Title'].iloc[0]
+                updated_df.at[index, 'Harmonized GC Name'] = ministry_title
+                updated_df.at[index, 'lead department'] = ministry_title
+                if 'lead_department' in updated_df.columns:
+                    updated_df.at[index, 'lead_department'] = ministry_title
+                
+            # Update French department name
+            if 'Titre' in ministry_match.columns:
+                # If French title is available in ministry data
+                if not pd.isna(ministry_match['Titre'].iloc[0]) and ministry_match['Titre'].iloc[0] != '':
+                    updated_df.at[index, 'ministère_responsable'] = ministry_match['Titre'].iloc[0]
+                # If French title is missing but English title is available, use English as fallback
+                elif 'Title' in ministry_match.columns and not pd.isna(ministry_match['Title'].iloc[0]):
+                    updated_df.at[index, 'ministère_responsable'] = ministry_match['Title'].iloc[0]
+                    print(f"Warning: No French title for ministry ID {parent_gc_orgid}, using English title as fallback")
+                
+            updates += 1
+    
+    # Case 2: Parent GC OrgID is a regular organization ID
+    else:
+        # Find the corresponding organization in harmonized_names_df
+        org_match = harmonized_names_df[harmonized_names_df['gc_orgID'] == parent_gc_orgid]
+        
+        if not org_match.empty:
+            # Update English department name
+            if 'harmonized_name' in org_match.columns and not pd.isna(org_match['harmonized_name'].iloc[0]):
+                harmonized_name = org_match['harmonized_name'].iloc[0]
+                updated_df.at[index, 'Harmonized GC Name'] = harmonized_name
+                updated_df.at[index, 'lead department'] = harmonized_name
+                if 'lead_department' in updated_df.columns:
+                    updated_df.at[index, 'lead_department'] = harmonized_name
+                
+            # Update French department name
+            if 'nom_harmonisé' in org_match.columns and not pd.isna(org_match['nom_harmonisé'].iloc[0]):
+                updated_df.at[index, 'ministère_responsable'] = org_match['nom_harmonisé'].iloc[0]
+                
+            updates += 1
 
-# Replace values in 'lead department' with 'harmonized_name' only if not already filled
-merged_df['lead department'] = merged_df.apply(
-    lambda row: row['harmonized_name'] if pd.isna(row['lead department']) else row['lead department'], axis=1
-)
+# Ensure consistency between lead_department and lead department fields
+if 'lead_department' in updated_df.columns and 'lead department' in updated_df.columns:
+    updated_df['lead_department'] = updated_df['lead department']
+    print("Synchronized 'lead_department' with 'lead department' for consistency")
 
-# Replace values in 'ministère responsable' with 'nom_harmonisé' only if not already filled
-merged_df['ministère responsable'] = merged_df.apply(
-    lambda row: row['nom_harmonisé'] if pd.isna(row['ministère responsable']) else row['ministère responsable'], axis=1
-)
+print(f"Process complete. Updated {updates} departments")
 
-# Fill lead department and ministère responsable with values from manualMinistries.csv if Parent GC OrgID starts with 'm'
-for index, row in merged_df.iterrows():
-    if str(row['Parent GC OrgID']).startswith('m'):
-        min_id = row['Parent GC OrgID']
-        title_value = manual_ministries_df.loc[manual_ministries_df['minID'] == min_id, 'Title'].values
-        titre_value = manual_ministries_df.loc[manual_ministries_df['minID'] == min_id, 'Titre'].values
-        if len(title_value) > 0:
-            merged_df.at[index, 'lead department'] = title_value[0]
-        if len(titre_value) > 0:
-            merged_df.at[index, 'ministère responsable'] = titre_value[0]
+# Compare with original to see changes - using the correct variable names now
+changed_rows = (original_df != updated_df).any(axis=1)
+if changed_rows.any():
+    print(f"\nModified {changed_rows.sum()} of {len(updated_df)} rows")
+    
+    # Print details of what was changed for ministries with 'm' IDs
+    m_id_rows = parent_gc_orgids.str.startswith('m')
+    if m_id_rows.any():
+        m_id_changes = changed_rows & m_id_rows
+        if m_id_changes.any():
+            print("\nDetails of changes for ministry IDs:")
+            for idx in m_id_changes[m_id_changes].index:
+                print(f"Row {idx}: {updated_df.loc[idx]['gc_orgID']} under {updated_df.loc[idx]['Parent GC OrgID']}")
+                
+                # Check what fields changed
+                for col in ['lead department', 'lead_department', 'ministère_responsable', 'Harmonized GC Name']:
+                    if col in updated_df.columns and col in original_df.columns:
+                        if updated_df.loc[idx, col] != original_df.loc[idx, col]:
+                            print(f"  - {col}: '{original_df.loc[idx, col]}' → '{updated_df.loc[idx, col]}'")
 
-# Drop the 'harmonized_name', 'nom_harmonisé', and 'gc_orgID_y' columns if they exist
-columns_to_drop = ['harmonized_name', 'nom_harmonisé', 'gc_orgID_y']
-existing_columns_to_drop = [col for col in columns_to_drop if col in merged_df.columns]
-merged_df = merged_df.drop(columns=existing_columns_to_drop)
-
-# Rename 'GC OrgID_x' back to 'GC OrgID' if it exists
-if 'gc_orgID_x' in merged_df.columns:
-    merged_df = merged_df.rename(columns={'gc_orgID_x': 'gc_orgID'})
-
-# Save the updated dataframe back to the CSV file
-merged_df.to_csv(manual_lead_department_file, index=False, encoding='utf-8-sig')
-
-print("The Manual_leadDepartmentPortfolio.csv file has been updated successfully.")
+    # Preview changes before saving
+    print("\nReady to write changes to CSV. Preview of changes:")
+    preview_count = min(5, changed_rows.sum())
+    if preview_count > 0:
+        change_indices = changed_rows[changed_rows].index[:preview_count]
+        for idx in change_indices:
+            print(f"Row {idx}: {updated_df.loc[idx]['gc_orgID']} - Parent ID: {updated_df.loc[idx]['Parent GC OrgID']}")
+    
+    # Save the updated dataframe back to the CSV file
+    updated_df.to_csv(manual_lead_department_file, index=False, encoding='utf-8-sig')
+    print(f"\nChanges saved to {manual_lead_department_file}")
+else:
+    print("No changes were detected. File not modified.")

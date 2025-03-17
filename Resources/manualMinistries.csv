@@ -1,48 +1,48 @@
-﻿Title,Precedence,Honorific Title,First Name,Last Name,Province / Territory,Start Date,End Date,minID,notes,Titre
-Prime Minister,1.0,Right Hon.,Mark,Carney,,2025-03-14 11:31:00 a.m.,,m0001,,
-Minister of International Trade and Intergovernmental Affairs,2.0,Hon.,Dominic,LeBlanc,,2025-03-14 11:31:00 a.m.,,m0013,,
-Minister of Foreign Affairs and International Development,3.0,Hon.,Mélanie,Joly,,2025-03-14 11:31:00 a.m.,,m0005,,
-Minister of Finance,4.0,Hon.,François-Philippe,Champagne,,2025-03-14 11:31:00 a.m.,,m0039,,
-"Minister of Innovation, Science and Industry",5.0,Hon.,Anita,Anand,,2025-03-14 11:31:00 a.m.,,m0009,,
-Minister of National Defence,6.0,Hon.,Bill,Blair,,2025-03-14 11:31:00 a.m.,,m0012,,
-Minister of Indigenous Services,7.0,Hon.,Patty,Hajdu,,2025-03-14 11:31:00 a.m.,,m0008,,
-Minister of Energy and Natural Resources,8.0,Hon.,Jonathan,Wilkinson,,2025-03-14 11:31:00 a.m.,,m0014,,
-President of the Treasury Board,9.0,Hon.,Ginette,Petitpas Taylor,,2025-03-14 11:31:00 a.m.,,m0011,,
-"Minister of Canadian Culture and Identity, Parks Canada",10.0,Hon.,Steven,Guilbeault,,2025-03-14 11:31:00 a.m.,,m0022,,
-Minister of Transport and Internal Trade,11.0,Hon.,Chrystia,Freeland,,2025-03-14 11:31:00 a.m.,,m0015,,
-Minister of Health,12.0,Hon.,Kamal,Khera,,2025-03-14 11:31:00 a.m.,,m0018,,
-Minister of Crown-Indigenous Relations and Northern Affairs,13.0,Hon.,Gary,Anandasangaree,,2025-03-14 11:31:00 a.m.,,m0024,,
-Chief government whip,14.0,Hon.,Rechie,Valdez,,2025-03-14 11:31:00 a.m.,,m0023,,
-Minister of Jobs and Families,15.0,Hon.,Steven,MacKinnon,,2025-03-14 11:31:00 a.m.,,m0028,,
-Minister of Public Safety and Emergency Preparedness,16.0,Hon.,David,McGuinty,,2025-03-14 11:31:00 a.m.,,m0031,,
-Minister of Environment and Climate Change,17.0,Hon.,Terry,Duguid,,2025-03-14 11:31:00 a.m.,,m0016,,
-"Minister of Housing, Infrastructure and Communities",18.0,Hon.,Nathaniel,Erskine-Smith,,2025-03-14 11:31:00 a.m.,,m0036,,
-"Minister of Immigration, Refugees and Citizenship",19.0,Hon.,Rachel,Bendayan,,2025-03-14 11:31:00 a.m.,,m0017,,
-Minister of Veterans Affairs,20.0,Hon.,Élisabeth,Brière,,2025-03-14 11:31:00 a.m.,,m0037,,
-"Minister of Fisheries, Oceans and the Canadian Coast Guard",21.0,Hon.,Joanne,Thompson,,2025-03-14 11:31:00 a.m.,,m0006,,
-Minister of Democratic Institutions,22.0,Hon.,Arielle,Kayabaga,,2025-03-14 11:31:00 a.m.,,m0032,,
-Minister of Agriculture and Agri-Food and Rural Economic Development,23.0,Hon.,Kody,Blois,,2025-03-14 11:31:00 a.m.,,m0002,,
-"Minister of Government Transformation, Public Services and Procurement",24.0,Hon.,Ali,Ehsassi,,2025-03-14 11:31:00 a.m.,,m0004,,
-Associate Minister of Health,,,,,,,,,Title changed/deleted,
-Leader of the Government in the House of Commons,,,,,,,,,Title changed/deleted,
-Minister for Women and Gender Equality and Youth,,,,,,,,,Title changed/deleted,
-Minister of Agriculture and Agri-Food,,,,,,,,,Title changed/deleted,
-Minister of Canadian Heritage,,,,,,,,,Title changed/deleted,
-Minister of Citizens’ Services,,,,,,,,,Title changed/deleted,
-"Minister of Diversity, Inclusion and Persons with Disabilities",,,,,,,,,Title changed/deleted,
-"Minister of Export Promotion, International Trade and Economic Development",,,,,,,,,Title changed/deleted,
-"Minister of Families, Children and Social Development",,,,,,,,,Title changed/deleted,
-Minister of Foreign Affairs,,,,,,,,,Title changed/deleted,
-Minister of Intergovernmental Affairs,,,,,,,,,Title changed/deleted,
-Minister of International Development,,,,,,,,,Title changed/deleted,
-Minister of Justice,,,,,,,,,Title changed/deleted,
-Minister of National Revenue,,,,,,,,,Title changed/deleted,
-Minister of Official Languages,,,,,,,,,Title changed/deleted,
-Minister of Public Safety,,,,,,,,,Title changed/deleted,
-Minister of Public Services and Procurement,,,,,,,,,Title changed/deleted,
-Minister of Seniors,,,,,,,,,Title changed/deleted,
-Minister of Small Business,,,,,,,,,Title changed/deleted,
-Minister of Sport,,,,,,,,,Title changed/deleted,
-Minister of Tourism,,,,,,,,,Title changed/deleted,
-Minister responsible for the Atlantic Canada Opportunities Agency,,,,,,,,,Title changed/deleted,
-President of the King’s Privy Council for Canada,,,,,,,,,Title changed/deleted,
+﻿Precedence,Honorific Title,First Name,Last Name,Title,Province / Territory,Start Date,End Date,minID,notes,Titre
+1.0,Right Hon.,Mark,Carney,Prime Minister,,2025-03-14 11:31:00 a.m.,,m0001,,Premier ministre
+2.0,Hon.,Dominic,LeBlanc,Minister of International Trade and Intergovernmental Affairs,,2025-03-14 11:31:00 a.m.,,m0013,,Ministre du Commerce international et des Affaires intergouvernementales
+3.0,Hon.,Mélanie,Joly,Minister of Foreign Affairs and International Development,,2025-03-14 11:31:00 a.m.,,m0005,,Ministre des Affaires étrangères et du Développement international
+4.0,Hon.,François-Philippe,Champagne,Minister of Finance,,2025-03-14 11:31:00 a.m.,,m0039,,Ministre des Finances
+5.0,Hon.,Anita,Anand,"Minister of Innovation, Science and Industry",,2025-03-14 11:31:00 a.m.,,m0009,,"Ministre de l’Innovation, des Sciences et de l’Industrie"
+6.0,Hon.,Bill,Blair,Minister of National Defence,,2025-03-14 11:31:00 a.m.,,m0012,,Ministre de la Défense nationale
+7.0,Hon.,Patty,Hajdu,Minister of Indigenous Services,,2025-03-14 11:31:00 a.m.,,m0008,,Ministre des Services aux Autochtones
+8.0,Hon.,Jonathan,Wilkinson,Minister of Energy and Natural Resources,,2025-03-14 11:31:00 a.m.,,m0014,,Ministre de l’Énergie et des Ressources naturelles
+9.0,Hon.,Ginette,Petitpas Taylor,President of the Treasury Board,,2025-03-14 11:31:00 a.m.,,m0011,,Présidente du Conseil du Trésor
+10.0,Hon.,Steven,Guilbeault,"Minister of Canadian Culture and Identity, Parks Canada",,2025-03-14 11:31:00 a.m.,,m0022,,"Ministre de la Culture et de l’Identité canadiennes, Parcs Canada"
+11.0,Hon.,Chrystia,Freeland,Minister of Transport and Internal Trade,,2025-03-14 11:31:00 a.m.,,m0015,,Ministre des Transports et du Commerce intérieur
+12.0,Hon.,Kamal,Khera,Minister of Health,,2025-03-14 11:31:00 a.m.,,m0018,,Ministre de la Santé
+13.0,Hon.,Gary,Anandasangaree,Minister of Crown-Indigenous Relations and Northern Affairs,,2025-03-14 11:31:00 a.m.,,m0024,,Ministre des Relations Couronne-Autochtones et des Affaires du Nord
+14.0,Hon.,Rechie,Valdez,Chief government whip,,2025-03-14 11:31:00 a.m.,,m0023,,Whip en chef du gouvernement
+15.0,Hon.,Steven,MacKinnon,Minister of Jobs and Families,,2025-03-14 11:31:00 a.m.,,m0028,,Ministre de l’Emploi et des Familles
+16.0,Hon.,David,McGuinty,Minister of Public Safety and Emergency Preparedness,,2025-03-14 11:31:00 a.m.,,m0031,,Ministre de la Sécurité publique et de la Protection civile
+17.0,Hon.,Terry,Duguid,Minister of Environment and Climate Change,,2025-03-14 11:31:00 a.m.,,m0016,,Ministre de l’Environnement et du Changement climatique
+18.0,Hon.,Nathaniel,Erskine-Smith,"Minister of Housing, Infrastructure and Communities",,2025-03-14 11:31:00 a.m.,,m0036,,"Ministre du Logement, de l’Infrastructure et des Collectivités"
+19.0,Hon.,Rachel,Bendayan,"Minister of Immigration, Refugees and Citizenship",,2025-03-14 11:31:00 a.m.,,m0017,,"Ministre de l’Immigration, des Réfugiés et de la Citoyenneté"
+20.0,Hon.,Élisabeth,Brière,Minister of Veterans Affairs,,2025-03-14 11:31:00 a.m.,,m0037,,Ministre des Anciens Combattants
+21.0,Hon.,Joanne,Thompson,"Minister of Fisheries, Oceans and the Canadian Coast Guard",,2025-03-14 11:31:00 a.m.,,m0006,,"Ministre des Pêches, des Océans et de la Garde côtière canadienne"
+22.0,Hon.,Arielle,Kayabaga,Minister of Democratic Institutions,,2025-03-14 11:31:00 a.m.,,m0032,,Ministre des Institutions démocratiques
+23.0,Hon.,Kody,Blois,Minister of Agriculture and Agri-Food and Rural Economic Development,,2025-03-14 11:31:00 a.m.,,m0002,,Ministre de l’Agriculture et de l’Agroalimentaire et du Développement économique rural
+24.0,Hon.,Ali,Ehsassi,"Minister of Government Transformation, Public Services and Procurement",,2025-03-14 11:31:00 a.m.,,m0004,,"Ministre de la Transformation du gouvernement, des Services publics et de l’Approvisionnement"
+,,,,Associate Minister of Health,,,,,Title changed/deleted,
+,,,,Leader of the Government in the House of Commons,,,,,Title changed/deleted,
+,,,,Minister for Women and Gender Equality and Youth,,,,,Title changed/deleted,
+,,,,Minister of Agriculture and Agri-Food,,,,,Title changed/deleted,
+,,,,Minister of Canadian Heritage,,,,,Title changed/deleted,
+,,,,Minister of Citizens’ Services,,,,,Title changed/deleted,
+,,,,"Minister of Diversity, Inclusion and Persons with Disabilities",,,,,Title changed/deleted,
+,,,,"Minister of Export Promotion, International Trade and Economic Development",,,,,Title changed/deleted,
+,,,,"Minister of Families, Children and Social Development",,,,,Title changed/deleted,
+,,,,Minister of Foreign Affairs,,,,,Title changed/deleted,
+,,,,Minister of Intergovernmental Affairs,,,,,Title changed/deleted,
+,,,,Minister of International Development,,,,,Title changed/deleted,
+,,,,Minister of Justice,,,,,Title changed/deleted,
+,,,,Minister of National Revenue,,,,,Title changed/deleted,
+,,,,Minister of Official Languages,,,,,Title changed/deleted,
+,,,,Minister of Public Safety,,,,,Title changed/deleted,
+,,,,Minister of Public Services and Procurement,,,,,Title changed/deleted,
+,,,,Minister of Seniors,,,,,Title changed/deleted,
+,,,,Minister of Small Business,,,,,Title changed/deleted,
+,,,,Minister of Sport,,,,,Title changed/deleted,
+,,,,Minister of Tourism,,,,,Title changed/deleted,
+,,,,Minister responsible for the Atlantic Canada Opportunities Agency,,,,,Title changed/deleted,
+,,,,President of the King’s Privy Council for Canada,,,,,Title changed/deleted,

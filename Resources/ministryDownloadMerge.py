@@ -164,7 +164,12 @@ def update_fields(row):
 
 print("\nApplying update function to each row...")
 # Apply the update function to each row
-updated_data = merged_data.apply(update_fields, axis=1)
+try:
+    updated_data = merged_data.apply(update_fields, axis=1)
+except ValueError as e:
+    print(f"Error during update_fields application: {e}")
+    print("Row causing the error:")
+    print(merged_data.loc[merged_data.apply(lambda row: update_fields(row).isna().any(), axis=1)])
 
 # Sort the data by 'Precedence'
 updated_data = updated_data.sort_values(by='Precedence', ascending=True)
@@ -200,7 +205,7 @@ print(f"The data has been merged, updated, and saved as '{json_path}'.")
 
 # Fix for fixLeadDepartment.py script
 print("\nChecking for missing French titles that might affect fixLeadDepartment.py:")
-m_ids = updated_data[updated_data['minID'].str.startswith('m') if not pd.isna(updated_data['minID']) else False]
+m_ids = updated_data[pd.notna(updated_data['minID']) & updated_data['minID'].str.startswith('m')]
 print(f"Found {len(m_ids)} entries with m-prefixed IDs")
 missing_fr = m_ids[pd.isna(m_ids['Titre'])]
 if not missing_fr.empty:

@@ -6,20 +6,20 @@ from rapidfuzz import process
 script_folder = os.path.dirname(os.path.abspath(__file__))
 receiver_general_file = os.path.join(script_folder, 'receiver_general.csv')
 manual_org_file = os.path.join(script_folder, 'Manual org ID link.csv')
-rg_duplicates_file = os.path.join(script_folder, 'RGDuplicates.csv')
+# rg_duplicates_file = os.path.join(script_folder, 'RGDuplicates.csv')  # Commented out
 matched_file = os.path.join(script_folder, 'matched_RG_names.csv')
 fixed_file = os.path.join(script_folder, 'Fixed_RG_names.csv')
 
 # Read the CSV files
 receiver_general_df = pd.read_csv(receiver_general_file)
 manual_org_df = pd.read_csv(manual_org_file)
-rg_duplicates_df = pd.read_csv(rg_duplicates_file)
+# rg_duplicates_df = pd.read_csv(rg_duplicates_file)  # Commented out
 fixed_df = pd.read_csv(fixed_file)
 
 # Extract the relevant columns for matching
 rg_names = receiver_general_df['RGOriginalName']
 manual_org_names = manual_org_df['Organization Legal Name English']
-rg_duplicates_names = rg_duplicates_df['Department']
+# rg_duplicates_names = rg_duplicates_df['Department']  # Commented out
 
 # Function to perform fuzzy matching and return best match and score
 def fuzzy_match(name, choices, threshold=80):
@@ -41,6 +41,8 @@ match_df = pd.DataFrame({
     'MatchScore': matches.apply(lambda x: x[1])
 })
 
+# Commenting out the RG duplicates matching section
+"""
 # Perform fuzzy matching for rg_duplicates_df
 rg_duplicates_matches = rg_duplicates_names.apply(lambda x: fuzzy_match(x, manual_org_names))
 
@@ -51,21 +53,25 @@ rg_duplicates_match_df = pd.DataFrame({
     'MatchedName': rg_duplicates_matches.apply(lambda x: x[0]),
     'MatchScore': rg_duplicates_matches.apply(lambda x: x[1])
 })
+"""
 
 # Merge the matched names with the manual organization names to get GC OrgID
 final_df = match_df.merge(manual_org_df[['Organization Legal Name English', 'gc_orgID']],
                           left_on='MatchedName', right_on='Organization Legal Name English', how='left')
 
+# Commenting out the RG duplicates merging section
+"""
 # Merge the rg_duplicates_match_df with the manual organization names to get GC OrgID
 rg_duplicates_final_df = rg_duplicates_match_df.merge(manual_org_df[['Organization Legal Name English', 'gc_orgID']], 
                                                       left_on='MatchedName', right_on='Organization Legal Name English', how='left')
+"""
 
 # Ensure 'rgnumber' values do not have decimals
 final_df['rgnumber'] = pd.to_numeric(final_df['rgnumber'], errors='coerce').fillna(0).astype(int)
-rg_duplicates_final_df['RG DeptNo'] = pd.to_numeric(rg_duplicates_final_df['RG DeptNo'], errors='coerce').fillna(0).astype(int)
+# rg_duplicates_final_df['RG DeptNo'] = pd.to_numeric(rg_duplicates_final_df['RG DeptNo'], errors='coerce').fillna(0).astype(int)  # Commented out
 
-# Concatenate the two DataFrames
-final_df = pd.concat([final_df, rg_duplicates_final_df], ignore_index=True)
+# Commenting out the concatenation of the two DataFrames
+# final_df = pd.concat([final_df, rg_duplicates_final_df], ignore_index=True)  # Commented out
 
 # Sort by 'MatchedName' and 'MatchScore' in descending order
 final_df = final_df.sort_values(by=['MatchedName', 'MatchScore'], ascending=[True, False])
@@ -73,8 +79,10 @@ final_df = final_df.sort_values(by=['MatchedName', 'MatchScore'], ascending=[Tru
 # Remove duplicates based on 'MatchedName', keeping the one with the highest 'MatchScore'
 final_df = final_df.drop_duplicates(subset=['MatchedName'], keep='first')
 
-# Ensure 'rgnumber' values do not have decimals and fill missing 'rgnumber' with 'RG DeptNo'
-final_df['rgnumber'] = final_df['rgnumber'].fillna(final_df['RG DeptNo']).astype(int)
+# Commenting out filling missing 'rgnumber' with 'RG DeptNo'
+# final_df['rgnumber'] = final_df['rgnumber'].fillna(final_df['RG DeptNo']).astype(int)  # Commented out
+# Just ensure rgnumber is an integer
+final_df['rgnumber'] = pd.to_numeric(final_df['rgnumber'], errors='coerce').fillna(0).astype(int)
 
 # Reorder columns to ensure 'rgnumber' is the second field
 final_df = final_df[['RGOriginalName', 'rgnumber', 'MatchedName', 'MatchScore', 'gc_orgID']]

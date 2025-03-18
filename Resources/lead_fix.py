@@ -1,5 +1,10 @@
 import pandas as pd
 import os
+# Add these imports for PDF generation
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import letter
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
+from reportlab.lib.styles import getSampleStyleSheet
 
 # Paths to the CSV files
 resources_folder = os.path.dirname(os.path.abspath(__file__))
@@ -31,6 +36,32 @@ gc_orgid_to_name = {}
 for _, row in gc_org_info_df.iterrows():
     if pd.notna(row['gc_orgID']) and pd.notna(row['harmonized_name']):
         gc_orgid_to_name[str(int(row['gc_orgID']))] = row['harmonized_name']
+
+# Get a set of existing gc_orgIDs in manual_lead_department_df
+existing_gc_orgids = set()
+for _, row in manual_lead_department_df.iterrows():
+    if pd.notna(row['gc_orgID']):
+        existing_gc_orgids.add(str(int(row['gc_orgID'])))
+
+# Identify missing gc_orgIDs and create new rows
+new_rows = []
+missing_count = 0
+
+for gc_orgid, harmonized_name in gc_orgid_to_name.items():
+    if gc_orgid not in existing_gc_orgids:
+        # Create a new row with the gc_orgID and harmonized_name
+        new_row = {col: '' for col in manual_lead_department_df.columns}  # Initialize with empty values
+        new_row['gc_orgID'] = gc_orgid
+        new_row['Harmonized GC Name'] = harmonized_name
+        new_rows.append(new_row)
+        missing_count += 1
+        print(f"Adding missing org ID {gc_orgid}: '{harmonized_name}'")
+
+# Add new rows to the dataframe
+if new_rows:
+    manual_lead_department_df = pd.concat([manual_lead_department_df, pd.DataFrame(new_rows)], ignore_index=True)
+
+print(f"Added {missing_count} missing organizations")
 
 # Create a mapping of ministry IDs to titles from manual_ministries_df
 ministry_id_to_title = {}
@@ -81,3 +112,14 @@ print(f"Updated {ministry_updated_count} ministry harmonized names")
 # Save the updated dataframe back to the CSV file
 manual_lead_department_df.to_csv(manual_lead_department_file, index=False)
 print(f"Updated file saved to {manual_lead_department_file}")
+
+# Identify organizations without a lead department
+orgs_without_lead = manual_lead_department_df[
+    (manual_lead_department_df['lead_department'].isna()) | 
+    (manual_lead_department_df['lead_department'] == '')
+]
+
+if not orgs_without_lead.empty:
+    print(f"Found {len(orgs_without_lead)} organizations without a lead department")
+else:
+    print("All organizations have lead departments assigned")

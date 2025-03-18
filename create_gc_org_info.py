@@ -9,7 +9,7 @@ def load_dataframes(script_folder):
         'applied_en': 'Resources/applied_en.csv',
         'infobase_en': 'Resources/infobase_en.csv',
         'harmonized_names': 'create_harmonized_name.csv',
-        'manual_lead_department': 'Resources/Manual_leadDepartmentPortfolio.csv'
+        'manual_lead_department': 'Resources/lead_manual.csv'  # Changed from 'Resources/Manual_leadDepartmentPortfolio.csv'
     }
     
     dfs = {}

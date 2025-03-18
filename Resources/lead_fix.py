@@ -3,9 +3,9 @@ import os
 
 # Paths to the CSV files
 resources_folder = os.path.dirname(os.path.abspath(__file__))
-manual_lead_department_file = os.path.join(resources_folder, 'Manual_leadDepartmentPortfolio.csv')
+manual_lead_department_file = os.path.join(resources_folder, 'lead_manual.csv')  # Changed
 gc_org_info_file = os.path.join(resources_folder, '..', 'gc_org_info.csv')
-manual_ministries_file = os.path.join(resources_folder, 'manualMinistries.csv')
+manual_ministries_file = os.path.join(resources_folder, 'lead_code_ministers.csv')  # Changed
 
 # Read the CSV files
 try:
@@ -22,7 +22,7 @@ except Exception as e:
     exit(1)
 
 # Create a backup of the original file
-backup_file = os.path.join(resources_folder, 'Manual_leadDepartmentPortfolio_backup.csv')
+backup_file = os.path.join(resources_folder, 'lead_manual_backup.csv')  # Changed
 manual_lead_department_df.to_csv(backup_file, index=False)
 print(f"Backup created at {backup_file}")
 

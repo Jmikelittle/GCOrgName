@@ -6,7 +6,7 @@ from fpdf import FPDF
 script_folder = os.path.dirname(os.path.abspath(__file__))
 
 # Read the CSV data
-data_file = os.path.join(script_folder, '..', 'GC Org Info.csv')
+data_file = os.path.join(script_folder, '..', 'gc_org_info.csv')
 data = pd.read_csv(data_file)
 
 # Fill NaN values with an empty string
@@ -20,19 +20,11 @@ data = data[data['lead_department'] != '']
 # Group data by lead_department
 grouped = data.groupby('lead_department')
 
-# List of lead departments for the special page
-special_lead_departments = [
-    'Minister of Crown-Indigenous Relations and Northern Affairs',
-    'Minister of Democratic Institutions',
-    'Minister of Indigenous Services',
-    'Minister of Sport',
-    'Minister of Tourism',
-    'Minister responsible for the Atlantic Canada Opportunities Agency',
-    'President of the King\'s Privy Council for Canada'
-]
+# List of gc_orgID for the special page
+special_gc_orgIDs = [2240, 2244, 2249, 2257, 2258, 2298, 2299]
 
 # Filter data for the special page
-special_data = data[data['lead_department'].isin(special_lead_departments)]
+special_data = data[data['gc_orgID'].isin(special_gc_orgIDs)]
 
 class PDF(FPDF):
     def __init__(self, orientation='P', unit='mm', format='A4'):
@@ -90,13 +82,13 @@ class PDF(FPDF):
         self.cell(0, 10, 'Regional Development Agencies', 0, 1, 'C')
         self.ln(10)
         self.set_font('Arial', 'B', 7)
-        self.cell(95, 10, 'Responsible Minister', 1)
-        self.cell(95, 10, 'Agency', 1)
+        self.cell(95, 10, 'Department', 1)
+        self.cell(95, 10, 'Lead Department', 1)
         self.ln()
         self.set_font('Arial', '', 7)
         for index, row in data.iterrows():
-            self.cell(95, 10, row['lead_department'], 1)
             self.cell(95, 10, f"{row['harmonized_name']} - GC Org ID: {row['gc_orgID']}", 1)
+            self.cell(95, 10, row['lead_department'], 1)
             self.ln()
 
 # Create a PDF object
@@ -104,7 +96,7 @@ pdf = PDF()
 
 # Add a page for each lead department excluding the special ones
 for lead_department, group in grouped:
-    if lead_department not in special_lead_departments:
+    if lead_department not in special_data['lead_department'].unique():
         pdf.add_page()
         pdf.chapter_title(lead_department)
         pdf.chapter_body(group)

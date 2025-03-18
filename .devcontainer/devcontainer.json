@@ -2,7 +2,7 @@
   "name": "Python Dev Container",
   "image": "mcr.microsoft.com/devcontainers/python:3.9",
   "features": {},
-  "postCreateCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "pip install --upgrade pip setuptools && pip install -r requirements.txt",
   "customizations": {
     "vscode": {
       "extensions": [

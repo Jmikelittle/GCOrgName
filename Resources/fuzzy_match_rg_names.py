@@ -79,13 +79,16 @@ final_df = final_df.sort_values(by=['MatchedName', 'MatchScore'], ascending=[Tru
 # Remove duplicates based on 'MatchedName', keeping the one with the highest 'MatchScore'
 final_df = final_df.drop_duplicates(subset=['MatchedName'], keep='first')
 
-# Commenting out filling missing 'rgnumber' with 'RG DeptNo'
-# final_df['rgnumber'] = final_df['rgnumber'].fillna(final_df['RG DeptNo']).astype(int)  # Commented out
-# Just ensure rgnumber is an integer
+# Ensure rgnumber is an integer
 final_df['rgnumber'] = pd.to_numeric(final_df['rgnumber'], errors='coerce').fillna(0).astype(int)
 
 # Reorder columns to ensure 'rgnumber' is the second field
 final_df = final_df[['RGOriginalName', 'rgnumber', 'MatchedName', 'MatchScore', 'gc_orgID']]
+
+# Sort by rgnumber, placing 0s at the top, then sorting ascending
+final_df['sort_key'] = (final_df['rgnumber'] != 0).astype(int)  # 0 for rgnumber=0, 1 for others
+final_df = final_df.sort_values(by=['sort_key', 'rgnumber'], ascending=[True, True])
+final_df = final_df.drop(columns=['sort_key'])  # Remove temporary sort column
 
 # Save the result to a new CSV file
 final_df.to_csv(matched_file, index=False, encoding='utf-8-sig')
@@ -98,7 +101,34 @@ new_entries = final_df[~final_df['RGOriginalName'].isin(fixed_df['RGOriginalName
 # Append new entries to the fixed DataFrame
 updated_fixed_df = pd.concat([fixed_df, new_entries], ignore_index=True)
 
+# Create a set of original RG names from receiver_general_df for quick lookup
+original_rg_names = set(receiver_general_df['RGOriginalName'])
+
+# Ensure rgnumber is properly updated for all records in fixed_df
+if 'rgnumber' in updated_fixed_df.columns:
+    # Create a mapping of RGOriginalName to rgnumber from final_df
+    rgnumber_mapping = dict(zip(final_df['RGOriginalName'], final_df['rgnumber']))
+    
+    # Update rgnumber in updated_fixed_df based on the mapping
+    for index, row in updated_fixed_df.iterrows():
+        if row['RGOriginalName'] in rgnumber_mapping:
+            updated_fixed_df.at[index, 'rgnumber'] = rgnumber_mapping[row['RGOriginalName']]
+        
+        # Reset rgnumber to 0 if the RGOriginalName is not in the original receiver_general.csv
+        # This will BREAK duplicates if you want duplicates
+        if row['RGOriginalName'] not in original_rg_names:
+            updated_fixed_df.at[index, 'rgnumber'] = 0
+    
+    # Ensure rgnumber is an integer
+    updated_fixed_df['rgnumber'] = pd.to_numeric(updated_fixed_df['rgnumber'], errors='coerce').fillna(0).astype(int)
+    
+    # Sort by rgnumber, placing 0s at the top, then sorting ascending
+    updated_fixed_df['sort_key'] = (updated_fixed_df['rgnumber'] != 0).astype(int)
+    updated_fixed_df = updated_fixed_df.sort_values(by=['sort_key', 'rgnumber'], ascending=[True, True])
+    updated_fixed_df = updated_fixed_df.drop(columns=['sort_key'])  # Remove temporary sort column
+
 # Save the updated fixed DataFrame to the CSV file
 updated_fixed_df.to_csv(fixed_file, index=False, encoding='utf-8-sig')
 
 print("Fixed_RG_names.csv has been updated with new entries from matched_RG_names.csv")
+print("Entries not in the original receiver_general.csv have had their rgnumber set to 0")

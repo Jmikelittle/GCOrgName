@@ -93,4 +93,4 @@ updated_fixed_df = pd.concat([fixed_df, new_entries], ignore_index=True)
 # Save the updated fixed DataFrame to the CSV file
 updated_fixed_df.to_csv(fixed_file, index=False, encoding='utf-8-sig')
 
-print(f"{fixed_file} has been updated with new entries from {matched_file}")
+print("rg_fixed_names.csv has been updated with new entries from rg_matched_names.csv")

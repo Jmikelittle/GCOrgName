@@ -7,7 +7,7 @@ url = 'https://www.tpsgc-pwgsc.gc.ca/recgen/pceaf-gwcoa/2526/fichiers-files/rg-3
 
 # Path to save the downloaded CSV file
 script_folder = os.path.dirname(os.path.abspath(__file__))
-output_file = os.path.join(script_folder, 'receiver_general.csv')
+output_file = os.path.join(script_folder, 'rg_receiver_general.csv')
 
 # Download the text file
 response = requests.get(url)

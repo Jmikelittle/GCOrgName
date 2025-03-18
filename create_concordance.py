@@ -8,12 +8,12 @@ scraping_folder = os.path.join(script_folder, 'Scraping')
 
 # Load CSV files
 files = {
-    'manual_org_df': os.path.join(resources_folder, 'Manual org ID link.csv'),
+    'manual_org_df': os.path.join(resources_folder, 'rg_manual_org_id_link.csv'),
     'combined_faa_df': os.path.join(scraping_folder, 'combined_FAA_names.csv'),
     'applied_en_df': os.path.join(resources_folder, 'applied_en.csv'),
     'infobase_en_df': os.path.join(resources_folder, 'infobase_en.csv'),
     'infobase_fr_df': os.path.join(resources_folder, 'infobase_fr.csv'),
-    'final_rg_match_df': os.path.join(resources_folder, 'final_RG_match.csv'),
+    'final_rg_match_df': os.path.join(resources_folder, 'rg_final_match.csv'),
     'manual_pop_phoenix_df': os.path.join(resources_folder, 'manual pop phoenix.csv'),
     'harmonized_names_df': os.path.join(script_folder, 'create_harmonized_name.csv')
 }

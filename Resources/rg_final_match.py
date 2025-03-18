@@ -5,7 +5,7 @@ import pandas as pd
 def standardize_text(text):
     if pd.isna(text):
         return text
-    return text.replace('–', '-').replace('—', '-').replace('’', "'").replace('‘', "'")
+    return text.replace('–', '-').replace('—', '-').replace(''', "'").replace(''', "'")
 
 # Get the directory of the current script
 script_folder = os.getcwd()

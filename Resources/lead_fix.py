@@ -1,10 +1,5 @@
 import pandas as pd
 import os
-# Add these imports for PDF generation
-from reportlab.lib import colors
-from reportlab.lib.pagesizes import letter
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
-from reportlab.lib.styles import getSampleStyleSheet
 
 # Paths to the CSV files
 resources_folder = os.path.dirname(os.path.abspath(__file__))

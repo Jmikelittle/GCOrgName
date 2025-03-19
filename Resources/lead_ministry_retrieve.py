@@ -7,10 +7,10 @@ print("Starting Ministry Download and Merge process...")
 # Define paths
 url_en = "https://www.ourcommons.ca/members/en/ministries/csv"
 url_fr = "https://www.ourcommons.ca/members/fr/ministries/csv"
-csv_path_en = 'Resources/ministries.csv'
-csv_path_fr = 'Resources/ministries_fr.csv'
-json_path = 'Resources/ministries.json'
-manual_csv_path = 'Resources/manualMinistries.csv'
+csv_path_en = 'Resources/lead_ministries_en.csv'  # Changed
+csv_path_fr = 'Resources/lead_ministries_fr.csv'  # Changed
+json_path = 'Resources/lead_ministries_en.json'  # Changed
+manual_csv_path = 'Resources/lead_code_ministers.csv'  # Changed
 
 print(f"Downloading English CSV from {url_en}")
 # Download the English CSV file

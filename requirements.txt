@@ -1,4 +1,4 @@
 pandas
 requests
 rapidfuzz
-fpdf
+reportlab

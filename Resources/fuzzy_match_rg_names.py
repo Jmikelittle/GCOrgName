@@ -4,20 +4,20 @@ from rapidfuzz import process
 
 # Paths to the CSV files
 script_folder = os.path.dirname(os.path.abspath(__file__))
-receiver_general_file = os.path.join(script_folder, 'receiver_general.csv')
+rg_data_file = os.path.join(script_folder, 'rg_data.csv')
 manual_org_file = os.path.join(script_folder, 'Manual org ID link.csv')
 rg_duplicates_file = os.path.join(script_folder, 'RGDuplicates.csv')
 matched_file = os.path.join(script_folder, 'matched_RG_names.csv')
 fixed_file = os.path.join(script_folder, 'Fixed_RG_names.csv')
 
 # Read the CSV files
-receiver_general_df = pd.read_csv(receiver_general_file)
+rg_data_df = pd.read_csv(rg_data_file)
 manual_org_df = pd.read_csv(manual_org_file)
 rg_duplicates_df = pd.read_csv(rg_duplicates_file)
 fixed_df = pd.read_csv(fixed_file)
 
 # Extract the relevant columns for matching
-rg_names = receiver_general_df['RGOriginalName']
+rg_names = rg_data_df['rg_dept_en']
 manual_org_names = manual_org_df['Organization Legal Name English']
 rg_duplicates_names = rg_duplicates_df['Department']
 
@@ -30,13 +30,13 @@ def fuzzy_match(name, choices, threshold=80):
             return match, score
     return None, 0
 
-# Perform fuzzy matching for receiver_general_df
+# Perform fuzzy matching for rg_data_df
 matches = rg_names.apply(lambda x: fuzzy_match(x, manual_org_names))
 
 # Create a DataFrame with the matching results
 match_df = pd.DataFrame({
     'RGOriginalName': rg_names,
-    'rgnumber': receiver_general_df['Number'],
+    'rgnumber': rg_data_df['rgnumber'],
     'MatchedName': matches.apply(lambda x: x[0]),
     'MatchScore': matches.apply(lambda x: x[1])
 })

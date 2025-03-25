@@ -11,8 +11,8 @@ def standardize_text(text):
 script_folder = os.getcwd()
 
 # Paths to the CSV files
-matched_file = os.path.join(script_folder, 'Resources', 'matched_RG_names.csv')
-fixed_file = os.path.join(script_folder, 'Resources', 'Fixed_RG_names.csv')
+matched_file = os.path.join(script_folder, 'Resources', 'rg_matched.csv')
+fixed_file = os.path.join(script_folder, 'Resources', 'rg_fixed.csv')
 
 # Load the CSV files
 matched_df = pd.read_csv(matched_file)
@@ -20,7 +20,7 @@ fixed_df = pd.read_csv(fixed_file)
 
 # Standardize hyphens and apostrophes in relevant columns if they exist
 for df, columns in [(matched_df, ['RGOriginalName', 'MatchedName']),
-                    (fixed_df, ['RGOriginalName', 'Organization Legal Name English'])]:
+                    (fixed_df, ['RGOriginalName', 'MatchedName', 'Organization Legal Name English'])]:
     for column in columns:
         if column in df.columns:
             df[column] = df[column].apply(standardize_text)
@@ -30,10 +30,10 @@ for index, row in matched_df.iterrows():
     if row['MatchScore'] < 95:
         fixed_row = fixed_df[fixed_df['RGOriginalName'] == row['RGOriginalName']]
         if not fixed_row.empty:
-            matched_df.at[index, 'MatchedName'] = fixed_row['Organization Legal Name English'].values[0]
+            matched_df.at[index, 'MatchedName'] = fixed_row['MatchedName'].values[0]
             matched_df.at[index, 'gc_orgID'] = fixed_row['gc_orgID'].values[0]
 
-# Identify new entries in 'Fixed_RG_names.csv' based on 'gc_orgID'
+# Identify new entries in rg_fixed.csv based on 'gc_orgID'
 new_entries = fixed_df[~fixed_df['gc_orgID'].isin(matched_df['gc_orgID'])]
 
 # Append new entries to the matched DataFrame
@@ -42,7 +42,7 @@ final_df = pd.concat([matched_df, new_entries], ignore_index=True)
 # Set gc_orgID to whole numbers, handling non-finite values
 final_df['gc_orgID'] = pd.to_numeric(final_df['gc_orgID'], errors='coerce').fillna(0).astype(int)
 
-# Merge 'rgnumber' field from 'Fixed_RG_names.csv' to 'final_RG_match.csv'
+# Merge 'rgnumber' field from rg_fixed.csv to final_RG_match.csv
 if 'rgnumber' in fixed_df.columns:
     final_df = final_df.merge(fixed_df[['RGOriginalName', 'rgnumber']], on='RGOriginalName', how='left')
 

@@ -140,5 +140,28 @@ def main():
         index=False, encoding='utf-8-sig'
     )
 
+    # Documentation for each field
+    documentation = {
+        'gc_orgID': 'Source: create_harmonized_name.csv',
+        'harmonized_name': 'Source: create_harmonized_name.csv',
+        'nom_harmonisé': 'Source: create_harmonized_name.csv',
+        'legal_title': 'Source: Resources/Manual org ID link.csv and Scraping/combined_FAA_names.csv',
+        'appellation_légale': 'Not provided in the code, likely from a similar source',
+        'preferred_name': 'Source: Resources/applied_en.csv',
+        'nom_préféré': 'Source: Resources/applied_en.csv',
+        'lead_department': 'Source: Resources/lead_manual.csv',
+        'ministère_responsable': 'Source: Resources/lead_manual.csv',
+        'abbreviation': 'Source: Resources/applied_en.csv',
+        'abreviation': 'Source: Resources/applied_en.csv',
+        'FAA_LGFP': 'Source: Scraping/combined_FAA_names.csv',
+        'status_statut': 'Source: Resources/infobase_en.csv',
+        'end_date_fin': 'Source: Resources/infobase_en.csv'
+    }
+
+    # Save documentation to a file
+    with open(os.path.join(script_folder, 'gc_org_info_documentation.txt'), 'w') as f:
+        for field, doc in documentation.items():
+            f.write(f'{field}: {doc}\n')
+
 if __name__ == "__main__":
     main()

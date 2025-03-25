@@ -152,7 +152,7 @@ else:
     debug_print("Organization Legal Name English column is NOT present in final output")
 
 # Save the updated DataFrame to a new CSV file in the Resources folder
-updated_output_file = os.path.join(script_folder, 'Resources', 'final_RG_match.csv')
+updated_output_file = os.path.join(script_folder, 'Resources', 'rg_final.csv')
 debug_print(f"Saving final result to {updated_output_file}")
 final_df.to_csv(updated_output_file, index=False, encoding='utf-8-sig')
 

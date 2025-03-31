@@ -33,8 +33,52 @@ def main():
         manual_lead_department_portfolio_ids = set(
             manual_lead_department_portfolio_df['gc_orgID'].dropna().astype(int))
         rg_final_ids = set(rg_final_df['gc_orgID'].dropna().astype(int))
+        
+        # Add diagnostic information about legal names
+        print(f"Total number of records found in each file:")
+        print(f"  final_RG_match.csv: {len(final_rg_match_df)} rows")
+        print(f"  Manual org ID link.csv: {len(manual_org_id_link_df)} rows")
+        print(f"  manual pop phoenix.csv: {len(manual_pop_phoenix_df)} rows")
+        print(f"  lead_manual.csv: {len(manual_lead_department_portfolio_df)} rows")
+        print(f"  rg_final.csv: {len(rg_final_df)} rows")
+        
+        # Check for legal name columns in each dataframe
+        legal_name_cols = {}
+        for df_name, df in [
+            ('final_RG_match', final_rg_match_df),
+            ('Manual org ID link', manual_org_id_link_df),
+            ('manual pop phoenix', manual_pop_phoenix_df),
+            ('lead_manual', manual_lead_department_portfolio_df),
+            ('rg_final', rg_final_df)
+        ]:
+            # Find columns that might contain legal names
+            potential_name_cols = [col for col in df.columns if 'name' in col.lower() or 'legal' in col.lower()]
+            legal_name_cols[df_name] = potential_name_cols
+            print(f"\nPotential legal name columns in {df_name}:")
+            for col in potential_name_cols:
+                non_null_count = df[col].notna().sum()
+                print(f"  - {col}: {non_null_count} non-null values ({non_null_count/len(df)*100:.1f}%)")
+        
+        # For each file with a legal name column, check how many gc_orgIDs have legal names
+        print("\nLegal name coverage by gc_orgID:")
+        for df_name, df in [
+            ('final_RG_match', final_rg_match_df),
+            ('Manual org ID link', manual_org_id_link_df),
+            ('manual pop phoenix', manual_pop_phoenix_df),
+            ('lead_manual', manual_lead_department_portfolio_df),
+            ('rg_final', rg_final_df)
+        ]:
+            if not legal_name_cols[df_name]:
+                print(f"  {df_name}: No legal name columns found")
+                continue
+                
+            # Check the first potential legal name column for each file
+            name_col = legal_name_cols[df_name][0]
+            has_id_and_name = df[df['gc_orgID'].notna() & df[name_col].notna()]
+            print(f"  {df_name} ({name_col}): {len(has_id_and_name)} out of {len(df[df['gc_orgID'].notna()])} gc_orgIDs have legal names ({len(has_id_and_name)/len(df[df['gc_orgID'].notna()])*100:.1f}%)")
+        
     except KeyError as e:
-        print(f"Error extracting 'GC OrgID' columns: {e}")
+        print(f"Error analyzing data: {e}")
         exit(1)
 
     # Find missing IDs

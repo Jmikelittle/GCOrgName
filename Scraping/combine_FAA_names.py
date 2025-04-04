@@ -29,9 +29,8 @@ def remove_specific_values(dataframe, filename):
                      "referred to in section 509.3 of the")
         dataframe = dataframe[dataframe['English Name'].str.strip() != long_entry]
         
-        # Remove entries that will be handled differently. The Priority is not removing these, so they're being removed here. 
-        dataframe = dataframe[
-            dataframe['English Name'] != "Office of the Governor General's Secretary"] #fun note that the French is translated different in schedules i1 and 4. 
+        # Remove entries that will be handled differently. The Priority is not removing these, so they're being removed here.
+        # NOTE: Keep the Governor General's Secretary in Schedule 4 to ensure we drop the i1 version later
         dataframe = dataframe[
             dataframe['English Name'] != "Staff of the Supreme Court"] #Only using one entry for the Supreme Court.
         dataframe = dataframe[
@@ -48,6 +47,9 @@ def remove_specific_values(dataframe, filename):
         dataframe = dataframe[
             dataframe['English Name'] != 
             "Offices of the Information and Privacy Commissioners of Canada"]
+        # Remove the Governor General's Secretary from i1 as we want to keep the version from Schedule 4
+        dataframe = dataframe[
+            dataframe['English Name'] != "Office of the Governor General's Secretary"]
     return dataframe
 
 
@@ -113,7 +115,7 @@ def main():
         ] = "Registrar of the Supreme Court of Canada"
         combined_df.loc[
             combined_df['French Name'] == (
-                "Registraire de la Cour suprême du Canada et le secteur de l’administration publique fédérale nommé en vertu du paragraphe 12(2) de la Loi sur la Cour suprême"
+                "Registraire de la Cour suprême du Canada et le secteur de l'administration publique fédérale nommé en vertu du paragraphe 12(2) de la Loi sur la Cour suprême"
             ), 'French Name'
         ] = "Registraire de la Cour suprême du Canada"
 
@@ -127,11 +129,11 @@ def main():
         # Map the priority order to a new column
         combined_df['priority'] = combined_df['FAA'].map(priority_order)
         
-        # Sort the DataFrame based on English Name, French Name, and priority
-        combined_df = combined_df.sort_values(by=['English Name', 'French Name', 'priority'])
+        # Sort the DataFrame based on English Name and priority
+        combined_df = combined_df.sort_values(by=['English Name', 'priority'])
         
-        # Drop duplicates based on English Name and French Name, keeping the highest priority
-        combined_df = combined_df.drop_duplicates(subset=['English Name', 'French Name'], keep='first')
+        # Drop duplicates based ONLY on English Name, keeping the highest priority
+        combined_df = combined_df.drop_duplicates(subset=['English Name'], keep='first')
         
         # Drop the priority column as it's no longer needed
         combined_df = combined_df.drop(columns=['priority'])

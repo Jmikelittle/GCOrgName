@@ -4,7 +4,7 @@ by merging data from multiple sources.
 """
 import os
 import logging
-from typing import Dict, Tuple
+from typing import Dict, Tuple, List
 
 import pandas as pd
 
@@ -14,6 +14,25 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+
+def ensure_required_columns(df: pd.DataFrame, required_columns: List[str], df_name: str) -> None:
+    """
+    Ensure that a DataFrame has the required columns.
+    
+    Args:
+        df: DataFrame to check
+        required_columns: List of column names that must exist
+        df_name: Name of the DataFrame for logging purposes
+        
+    Raises:
+        ValueError: If any required column is missing
+    """
+    missing_columns = [col for col in required_columns if col not in df.columns]
+    if missing_columns:
+        error_msg = f"Missing required columns in {df_name}: {missing_columns}"
+        logger.error(error_msg)
+        raise ValueError(error_msg)
 
 
 def setup_paths() -> Dict[str, str]:

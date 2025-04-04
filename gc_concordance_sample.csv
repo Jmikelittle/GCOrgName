@@ -1,0 +1,11 @@
+gc_orgID,harmonized_name,nom_harmonisé,abbreviation,abreviation,infobaseID,rg,ati,open_gov_ouvert,pop,phoenix,website,site_web
+2222,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,AAFC,AAC,1.0,1.0,Agriculture and Agri-Food Canada,aafc-aac,AGR,AGR00,www.agr.gc.ca,www.agr.gc.ca
+2223,Canadian Heritage,Patrimoine canadien,PCH,PCH,122.0,135.0,Canadian Heritage,pch,PCH,PCH00,https://www.canada.ca/en/canadian-heritage.html,https://www.canada.ca/fr/patrimoine-canadien.html
+2224,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",IRCC,IRCC,123.0,50.0,Immigration Refugees and Citizenship Canada,cic,IMC,IMC00,www.cic.gc.ca,www.cic.gc.ca
+2225,Department of Finance Canada,Ministère des Finances Canada,FIN,FIN,124.0,6.0,Department of Finance Canada,fin,FIN,FIN00,https://www.canada.ca/en/department-finance.html,https://www.canada.ca/fr/ministere-finances.html
+2226,Fisheries and Oceans Canada,Pêches et Océans Canada,DFO,MPO,125.0,86.0,Fisheries and Oceans Canada,dfo-mpo,DFO,DFO00,www.dfo-mpo.gc.ca,www.dfo-mpo.gc.ca
+2227,Global Affairs Canada,Affaires mondiales Canada,GAC,AMC,126.0,5.0,Global Affairs Canada,dfatd-maecd,EXT,EXT00,www.international.gc.ca,www.international.gc.ca
+2228,Health Canada,Santé Canada,HC,SC,127.0,22.0,Health Canada,hc-sc,SHC,NHW00,www.canada.ca/en/health-canada.html,www.canada.ca/fr/sante-canada.html
+2229,Employment and Social Development Canada,Emploi et Développement social Canada,ESDC,EDSC,128.0,14.0,Employment and Social Development Canada,esdc-edsc,CSD,CSD00,www.canada.ca/en/employment-social-development.html,www.canada.ca/fr/emploi-developpement-social.html
+2230,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada,CIRNAC,RCAANC,129.0,42.0,Crown-Indigenous Relations and Northern Affairs Canada,aandc-aadnc,IAN,IAN00,https://www.canada.ca/en/crown-indigenous-relations-northern-affairs.html,https://www.canada.ca/fr/relations-couronne-autochtones-affaires-nord.html
+2231,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",ISED,ISDE,130.0,33.0,Innovation Science and Economic Development Canada,ic,DUS,DUS00,www.ic.gc.ca,www.ic.gc.ca

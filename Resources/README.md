@@ -12,7 +12,7 @@ Below is an auto-generated summary of the files and scripts in this folder, alon
 **Update workflow, in order**
 1. retrieve_datasets.py
 (Probably not necessary, Receiver General only changes annually)
-2a. receiver_general.py
+2a. rg_download.py
 2b. fuzzy_match_rg_names.py
 2c. Fixed_RG_names.csv - manually update the GCOrgID for any new entries that arn't linked up automatically
 2d. final_RG_match.py
@@ -73,6 +73,11 @@ Below is an auto-generated summary of the files and scripts in this folder, alon
 - **Purpose**: Matches RG names to their corresponding organization IDs using fuzzy matching.
 - **Output**: `matched_RG_names.csv`
 
+### `rg_download.py`
+- **Description**: A script to download the Receiver General data and save it to `rg_data.csv`.
+- **Purpose**: Ensures the local `rg_data.csv` is always up-to-date with the latest external data.
+- **Output**: `rg_data.csv`
+
 ## How the Scripts Interact - To be validated
 
 ### Download Latest Data:
@@ -84,9 +89,9 @@ Below is an auto-generated summary of the files and scripts in this folder, alon
 3. The merged and updated data is saved to `ministries.json` and `ministries.csv`.
 
 ### Fuzzy Matching and Updating RG Names:
-1. Run `fuzzy_match_rg_names.py` to perform fuzzy matching of RG names from `receiver_general.csv` and `RGDuplicates.csv` against the legal titles in `Manual org ID link.csv`, in order to pull in GC orgIDs.
-2. The matched results are saved to `matched_RG_names.csv`.
-3. 
+1. Run `rg_download.py` to download the latest Receiver General data to `rg_data.csv`.
+2. Run `fuzzy_match_rg_names.py` to perform fuzzy matching of RG names from `rg_data.csv` and `RGDuplicates.csv` against the legal titles in `Manual org ID link.csv`, in order to pull in GC orgIDs.
+3. The matched results are saved to `matched_RG_names.csv`.
 
 ### Final Matching and Merging:
 1. Run `final_RG_match.py` to standardize text, replace values based on match scores, identify new entries, and merge fields from `Fixed_RG_names.csv` to `final_RG_match.csv`.
